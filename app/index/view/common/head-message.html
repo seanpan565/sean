@@ -1,0 +1,31 @@
+<div class="topbar">
+    <div class="container">
+        <div class="row">
+            <div class="col-md-6">
+                <div class="topbar-text">
+                    <span>工作时间：周一至周五：上午8点至下午6点 </span>
+                    <span>周六至周日：上午10点至下午6点</span>
+                </div>
+            </div>
+            <div class="col-md-6">
+                <div class="topbar-menu">
+                    <ul class="topbar-menu">
+                        <!-- <li class="dropdown">
+                            <a href="#">语言</a>
+                            <ul class="sub-menu">
+                                <li><a href="#">中文</a></li>
+                                <li><a href="#">English</a></li>
+                            </ul>
+                        </li> -->
+                        {if condition="$user['id'] eq '0'"}
+                            <li><a href="{:url('register/login')}">登录</a></li>
+                            <li><a href="{:url('Register/index')}">注册</a></li>
+                        {else}
+                            <li><a href="{:url('Register/logout')}">退出登录</a></li>
+                        {/if}
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>

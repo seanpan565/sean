@@ -1,0 +1,278 @@
+﻿<!doctype html>
+<html lang="zh-CN">
+<head>
+	<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=0">
+
+	<title>{$web_tdk.name}|联系我们</title>
+	<meta name="keywords" content="{$web_tdk.keywords}" />
+	<meta name="description" content="{$web_tdk.desc}" />
+	{include file="common/link"}
+	<link rel="stylesheet" href="__PUBLIC__/layui/css/layui.css">
+	<script type="text/javascript" src="__PUBLIC__/layui/layui.js" charset="utf-8"></script>
+</head>
+<body>
+<div class="noo-spinner">
+	<div class="spinner">
+		<div class="cube1"></div>
+		<div class="cube2"></div>
+	</div>
+</div>
+<!-- 移动端导航开始 -->
+{include file="common/mobile-part"}
+<!-- 移动端导航结束 -->
+
+
+<div class="site">
+	{include file="common/head-message"}
+	{include file="common/header-part"}
+
+	<header class="header header-mobile">
+		<div class="container">
+			<div class="row">
+				<div class="col-xs-2">
+					<div class="header-left">
+						<div id="open-left"><i class="ion-navicon"></i></div>
+					</div>
+				</div>
+				<div class="col-xs-8">
+					<div class="header-center">
+						<a href="javascript:;" id="logo-2">
+							<img class="logo-image" src="__INDEX__/images/logo.png" alt="Organik Logo" />
+						</a>
+					</div>
+				</div>
+				<div class="col-xs-2">
+					<div class="header-right">
+						<div class="mini-cart-wrap">
+							<a href="cart.html">
+								<div class="mini-cart">
+									<div class="mini-cart-icon" data-count="2">
+										<i class="ion-bag"></i>
+									</div>
+								</div>
+							</a>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</header>
+	<div id="main">
+		<div class="section section-bg-10 pt-11 pb-17">
+			<div class="container">
+				<div class="row">
+					<div class="col-sm-12">
+						<h2 class="page-title text-center">contact us</h2>
+					</div>
+				</div>
+			</div>
+		</div>
+		<div class="section border-bottom pt-2 pb-2">
+			<div class="container">
+				<div class="row">
+					<div class="col-sm-12">
+						<ul class="breadcrumbs">
+							<li><a href="{:url('index/index')}">首页</a></li>
+							<li>联系我们</li>
+						</ul>
+					</div>
+				</div>
+			</div>
+		</div>
+		<div class="section pt-10 pb-10">
+			<div class="container">
+				<div class="row">
+					<div class="col-sm-12">
+						<div class="text-center mb-2 section-pretitle">我们的地址</div>
+						<h4 class="text-center section-title mtn-1">健康的有机农场</h4>
+						<div class="organik-seperator mb-6 center">
+							<span class="sep-holder"><span class="sep-line"></span></span>
+							<div class="sep-icon"><i class="organik-flower"></i></div>
+							<span class="sep-holder"><span class="sep-line"></span></span>
+						</div>
+					</div>
+				</div>
+				<!-- <div class="row">
+					<div class="col-sm-12">
+						<div id="googleMap" class="mb-6" data-icon="images/icon_location.png" data-lat="37.789133" data-lon="-122.402158"></div>
+					</div>
+				</div> -->
+				<div class="row">
+					<div class="col-sm-3">
+						<div class="contact-info">
+							<div class="contact-icon">
+								<i class="fa fa-map-marker"></i>
+							</div>
+							<div class="contact-inner">
+								<h6 class="contact-title"> 地址</h6>
+								<div class="contact-content">
+									广西南宁市大学东路168号
+								</div>
+							</div>
+						</div>
+					</div>
+					<div class="col-sm-3">
+						<div class="contact-info">
+							<div class="contact-icon">
+								<i class="fa fa-phone"></i>
+							</div>
+							<div class="contact-inner">
+								<h6 class="contact-title"> 电话</h6>
+								<div class="contact-content">
+									18046557874
+								</div>
+							</div>
+						</div>
+					</div>
+					<div class="col-sm-3">
+						<div class="contact-info">
+							<div class="contact-icon">
+								<i class="fa fa-envelope"></i>
+							</div>
+							<div class="contact-inner">
+								<h6 class="contact-title"> 邮箱</h6>
+								<div class="contact-content">
+									xiansheng@gmail.com
+									<br />
+									xianzuanfeng@qq.com
+								</div>
+							</div>
+						</div>
+					</div>
+					<div class="col-sm-3">
+						<div class="contact-info">
+							<div class="contact-icon">
+								<i class="fa fa-globe"></i>
+							</div>
+							<div class="contact-inner">
+								<h6 class="contact-title"> 门店分布</h6>
+								<div class="contact-content">
+									南宁，广州
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="row">
+					<div class="col-sm-12">
+						<hr class="mt-4 mb-7" />
+						<div class="text-center mb-3 section-pretitle">message</div>
+						<div class="organik-seperator mb-6 center">
+							<span class="sep-holder"><span class="sep-line"></span></span>
+							<div class="sep-icon"><i class="organik-flower"></i></div>
+							<span class="sep-holder"><span class="sep-line"></span></span>
+						</div>
+						<div class="contact-form-wrapper">
+							<form class="contact-form">
+                                <!-- <input type="hidden" name="__token__" value="{$Request.token}" id="token"/> -->
+								<div class="row">
+									<div class="col-md-6">
+										<label>你的名字 <span class="required">*</span></label>
+										<div class="form-wrap">
+											<input type="text" name="name" id="name" placeholder="请输入您的名字" size="40" />
+										</div>
+									</div>
+									<div class="col-md-6">
+										<label>你的邮箱 <span class="required">*</span></label>
+										<div class="form-wrap">
+											<input type="email" name="email" id="email" placeholder="请输入您的邮箱" size="60" />
+										</div>
+									</div>
+								</div>
+								<div class="row">
+									<div class="col-md-12">
+										<label>标题</label>
+										<div class="form-wrap">
+											<input type="text" name="title" id="title" placeholder="请输入您的留言标题" size="60" />
+										</div>
+									</div>
+								</div>
+								<div class="row">
+									<div class="col-md-12">
+										<label>内容</label>
+										<div class="form-wrap">
+											<textarea name="message" id="message" cols="160" rows="5"></textarea>
+										</div>
+									</div>
+								</div>
+								<div class="row">
+									<div class="col-md-12">
+										<div class="form-wrap text-center">
+											<input type="button" onclick="onadd()" value="发送信息" />
+										</div>
+									</div>
+								</div>
+							</form>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+    {include file="common/footer"}
+</div>
+<script>
+
+	layui.use(['form', 'layer'],
+	function() {
+		$ = layui.jquery;
+		var form = layui.form,
+		layer = layui.layer;
+	});
+
+    function onadd(){
+			//请填写姓名
+			var name1 = $("#name").val().trim();
+			if (name1.length == 0) {
+				layer.msg('请填写姓名', {icon: 2});
+				return false;
+			}
+			//请填写邮箱
+			var email = $("#email").val().trim();
+			if (email.length == 0) {
+				layer.msg('邮箱不能为空', {icon: 2});
+				return false;
+			}
+			//请填写标题
+			var title = $("#title").val().trim();
+			if (title.length == 0) {
+				layer.msg('标题不能为空', {icon: 2});
+				return false;
+			}
+			var message = $("#message").val().trim();
+			var data = {
+				name:name1,
+				email:email,
+				message_title:title,
+				message:message,
+
+			}
+
+			//获取表单数据
+			$.ajax({
+				type:"post",
+				dataType:"json",
+				data:{data:data},
+				url:"{:url('contact/message')}",
+				success:function(data){
+					if (data.status == 1) {
+						layer.alert(data.msg, {
+							title: '提示框',
+							icon: 1,
+						});
+					} else {
+						layer.alert(data.msg, {
+							title: '提示框',
+							icon: 0,
+						});
+					}
+				}
+			},'json');
+			return false;
+
+	}
+</script>
+
+</body>
+</html>

@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <title>layui</title>
+  <meta name="renderer" content="webkit">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+  <link rel="stylesheet" href="__PUBLIC__/layui/css/layui.css"  media="all">
+  <link rel="stylesheet" href="__PUBLIC__/font-awesome/css/font-awesome.min.css" media="all" />
+  <link rel="stylesheet" href="__CSS__/admin.css"  media="all">
+  <style type="text/css">
+
+/* tooltip */
+#tooltip{
+  position:absolute;
+  border:1px solid #ccc;
+  background:#333;
+  padding:2px;
+  display:none;
+  color:#fff;
+}
+</style>
+</head>
+<body style="padding:10px;">
+  <div class="tplay-body-div">
+    <div class="layui-tab">
+      <ul class="layui-tab-title">
+        <li class="layui-this">商品管理</li>
+        <li><a href="{:url('admin/goods/create')}" class="a_menu">新增商品</a></li>
+      </ul>
+    </div>
+    <table class="layui-table" lay-size="sm">
+      <thead>
+        <tr>
+          <th>ID</th>
+          <th>商品名称</th>
+          <th>缩略图</th>
+          <th>所属分类</th>
+          <th>价格/优惠价</th>
+          <th>货号</th>
+          <th>销量</th>
+          <th>库存</th>
+          <th>上架/推荐</th>
+          <th>操作</th>
+        </tr>
+      </thead>
+      <tbody>
+          {volist name="goods" id="vo"}
+          <tr>
+            <td>{$vo.id}</td>
+            <td>{$vo.goods_name}</td>
+            <td><a href="#" class="tooltip"><img src="{$vo.goods_thumb}" width="30" height="30"></a></td>
+            <td>{$vo.name}</td>
+            <td>{$vo.goods_price}{$vo.goods_vip}</td>
+            <td>{$vo.goods_number}</td>
+            <td>{$vo.goods_sales}</td>
+            <td>{$vo.goods_inventory}</td>
+            <td>
+                <a href="javascript:;" title="上架" style="font-size:18px;" class="goods-putaway" data-id="{$vo.id}" data-val="{$vo.goods_putaway}">{eq name="vo.goods_putaway" value="1"}<i class="fa fa-toggle-on"></i>{else /}<i class="fa fa-toggle-off"></i>{/eq}</a>
+                <a href="javascript:;" title="推荐" style="font-size:18px;" class="goods-recommend" data-id="{$vo.id}" data-val="{$vo.goods_recommend}">{eq name="vo.goods_recommend" value="1"}<i class="fa fa-toggle-on"></i>{else /}<i class="fa fa-toggle-off"></i>{/eq}</a>
+            </td>
+            <td>
+                <a title="编辑" href="{:url('admin/goods/edit',['id'=>$vo.id])}" style="font-size:18px;"><i class="layui-icon"></i></a>
+                <a title="删除" href="javascript:;" id="{$vo.id}" class="delete" style="font-size:18px;"><i class="layui-icon"></i></a>
+            </td>
+          </tr>
+          {/volist}
+      </tbody>
+    </table>
+    <div style="padding:0 20px;">{$goods->render()}</div>
+    {include file="public/foot"}
+
+    <script type="text/javascript">
+        $('.delete').click(function(){
+          var id = $(this).attr('id');
+          layer.confirm('确定要删除?', function(index) {
+            $.ajax({
+              url:"{:url('admin/goods/delete')}",
+              data:{id:id},
+              success:function(res) {
+                layer.msg(res.msg);
+                if(res.code == 1) {
+                  setTimeout(function(){
+                    location.href = res.url;
+                  },1500)
+                }
+              }
+            })
+          })
+        })
+    </script>
+    <script type="text/javascript">
+    //是否上架ajax修改
+    $('.goods-putaway').click(function(){
+      var val = $(this).attr('data-val');
+      var id = $(this).attr('data-id');
+      var i = $(this).find('i');
+      var the = $(this);
+      if(val == 1){
+        var goods_putaway = 0;
+      } else {
+        var goods_putaway = 1;
+      }
+      $.ajax({
+        type:"post",
+        url:"{:url('admin/goods/goods_putaway')}",
+        data:{goods_putaway:goods_putaway,id:id},
+        success:function(res){
+          if(res.code == 1) {
+            putaway();
+          } else {
+            layer.msg(res.msg);
+          }
+        }
+     });
+
+      function putaway(){
+        if(val == 1){
+          i.attr("class","fa fa-toggle-off");
+          the.attr('data-val',0);
+        } else {
+          i.attr("class","fa fa-toggle-on");
+          the.attr('data-val',1);
+        }
+      }
+    });
+
+    //是否推荐ajax修改
+    $('.goods-recommend').click(function(){
+      var val = $(this).attr('data-val');
+      var id = $(this).attr('data-id');
+      var i = $(this).find('i');
+      var the = $(this);
+      if(val == 1){
+        var goods_recommend = 0;
+      } else {
+        var goods_recommend = 1;
+      }
+      $.ajax({
+        type:"post",
+        url:"{:url('admin/goods/goods_recommend')}",
+        data:{goods_recommend:goods_recommend,id:id},
+        success:function(res){
+          if(res.code == 1) {
+            recommend();
+          } else {
+            layer.msg(res.msg);
+          }
+        }
+      });
+      function recommend(){
+        if(val == 1){
+          i.attr("class","fa fa-toggle-off");
+          the.attr('data-val',0);
+        } else {
+          i.attr("class","fa fa-toggle-on");
+          the.attr('data-val',1);
+        }
+      }
+    });
+    </script>
+  </div>
+</body>
+</html>

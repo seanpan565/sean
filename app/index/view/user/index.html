@@ -1,0 +1,189 @@
+<!doctype html>
+<html lang="zh-CN">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=0">
+
+<title>{$web_tdk.name}|会员信息</title>
+<meta name="keywords" content="{$web_tdk.keywords}" />
+<meta name="description" content="{$web_tdk.desc}" />
+{include file="common/link"}
+</head>
+<body>
+<div class="noo-spinner">
+	<div class="spinner">
+		<div class="cube1"></div>
+		<div class="cube2"></div>
+	</div>
+</div>
+<!-- 移动端导航开始 -->
+{include file="common/mobile-part"}
+<!-- 移动端导航结束 -->
+
+<div class="site">
+	{include file="common/head-message"}
+	{include file="common/header-part"}
+
+	<header class="header header-mobile">
+		<div class="container">
+			<div class="row">
+				<div class="col-xs-2">
+					<div class="header-left">
+						<div id="open-left"><i class="ion-navicon"></i></div>
+					</div>
+				</div>
+				<div class="col-xs-8">
+					<div class="header-center">
+						<a href="javascript:;" id="logo-2">
+							<img class="logo-image" src="__INDEX__/images/logo.png" alt="Organik Logo" />
+						</a>
+					</div>
+				</div>
+				<div class="col-xs-2">
+					<div class="header-right">
+						<div class="mini-cart-wrap">
+							<a href="cart.html">
+								<div class="mini-cart">
+									<div class="mini-cart-icon" data-count="2">
+										<i class="ion-bag"></i>
+									</div>
+								</div>
+							</a>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</header>
+	<div id="main">
+		<div class="section section-bg-10 pt-11 pb-17">
+			<div class="container">
+				<div class="row">
+					<div class="col-sm-12">
+						<h2 class="page-title text-center">user us</h2>
+					</div>
+				</div>
+			</div>
+		</div>
+		<div class="section border-bottom pt-2 pb-2">
+			<div class="container">
+				<div class="row">
+					<div class="col-sm-12">
+						<ul class="breadcrumbs">
+							<li><a href="{:url('index/index')}">首页</a></li>
+							<li>个人中心</li>
+						</ul>
+					</div>
+				</div>
+			</div>
+		</div>
+
+        <!-- 详情页开始 -->
+		<div class="section pt-7 pb-7">
+			<div class="container">
+				<div class="row">
+                    <!-- 侧栏导航 -->
+					{include file="common/user-sidebar"}
+
+					<div class="col-md-9">
+
+						<div class="tplay-body-div">
+						    <form class="layui-form" id="admin">
+								<div class="layui-form-item">
+									<label class="layui-form-label">头像</label>
+									<div class="layui-input-block">
+										{if condition="$usermsg['thumb'] eq ''"}
+										<a id="btn-thumb"><img src="__IMG__/thumb.jpg" id="thumb-preview" style="cursor:pointer;width:100px; height:100px;"></a>
+										{else/}
+										<a id="btn-thumb"><img src="{$usermsg.thumb}" id="thumb-preview" style="cursor:pointer;width:100px; height:100px;"></a>
+										{/if}
+										<!-- 路径 -->
+										<input type="hidden" name="thumb" id="input-thumb" value="{$usermsg.thumb}">
+									</div>
+								</div>
+						        <div class="layui-form-item">
+							        <label class="layui-form-label">用户名</label>
+							        <div class="layui-input-inline" style="min-width:500px;">
+										{if condition="$usermsg['user_name'] eq ''"}
+							            <input name="user_name" lay-verify="required" autocomplete="off" class="layui-input" type="text" placeholder="请输入您的用户名，不可更改">
+										{else}
+										<input readonly="readonly" autocomplete="off" class="layui-input" type="text" placeholder="{$usermsg['user_name']}">
+										{/if}
+							        </div>
+						        </div>
+								<div class="layui-form-item">
+									  <label class="layui-form-label">性别</label>
+									  <div class="layui-input-block">
+										<input type="radio" name="user_sex" value="1" title="男" {if condition="$usermsg['user_sex'] eq 1 "} checked="checked" {/if}><div class="layui-unselect layui-form-radio layui-form-radioed"><i class="layui-anim layui-icon layui-anim-scaleSpring"></i><div>是</div></div>
+										<input type="radio" name="user_sex" value="0" title="女" {if condition="$usermsg['user_sex'] eq 0 "} checked="checked" {/if}><div class="layui-unselect layui-form-radio"><i class="layui-anim layui-icon"></i><div>否</div></div>
+									  </div>
+								</div>
+						        <div class="layui-form-item">
+									 <label class="layui-form-label"></label>
+									<button class="layui-btn" lay-submit="" lay-filter="admin">立即提交</button>
+						        </div>
+						    </form>
+
+						    <script>
+							layui.use('upload', function(){
+								var $ = layui.jquery;
+								var upload = layui.upload;
+								var uploadInst = upload.render({
+									elem:'#btn-thumb',
+									url: "{:url('index/common/upload')}",
+									size:2500,
+									exts: 'jpg|png|jpeg',
+									before: function(obj){
+										obj.preview(function(index,thumb, result){
+											$('#thumb-preview').attr('src',result);
+										});
+									},
+									done: function(res){
+										console.log(res);
+										if(res.code == 0){
+											return layer.msg(res.message);
+										}
+										$('#input-thumb').val(res.src);
+									}
+								});
+							});
+						      layui.use(['layer', 'form'], function() {
+						          var layer = layui.layer,
+						              $ = layui.jquery,
+						              form = layui.form;
+						          $(window).on('load', function() {
+						              form.on('submit(admin)', function(data) {
+						                  $.ajax({
+						                      url:"user/index",
+						                      data:$('#admin').serialize(),
+						                      type:'post',
+						                      async: false,
+						                      success:function(res) {
+						                          if(res.code == 1) {
+						                              layer.msg(res.msg);
+													  var url = "{:url('user/index')}";
+							          				  setTimeout(window.location.href = url,2000);
+						                          } else {
+						                              layer.msg(res.msg);
+						                          }
+						                      }
+						                  })
+						                  return false;
+						              });
+						          });
+						      });
+						    </script>
+						  </div>
+
+					</div>
+
+				</div>
+			</div>
+		</div>
+		<!-- 详情页结束 -->
+	</div>
+    {include file="common/footer"}
+</div>
+
+</body>
+</html>

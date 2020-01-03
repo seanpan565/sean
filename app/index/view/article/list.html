@@ -1,0 +1,170 @@
+<!doctype html>
+<html lang="zh-CN">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=0">
+
+<title>{$web_tdk.name}|文章列表</title>
+<meta name="keywords" content="{$web_tdk.keywords}" />
+<meta name="description" content="{$web_tdk.desc}" />
+{include file="common/link"}
+</head>
+<body>
+<div class="noo-spinner">
+	<div class="spinner">
+		<div class="cube1"></div>
+		<div class="cube2"></div>
+	</div>
+</div>
+<!-- 移动端导航开始 -->
+{include file="common/mobile-part"}
+<!-- 移动端导航结束 -->
+
+
+<div class="site">
+	{include file="common/head-message"}
+	{include file="common/header-part"}
+
+	<header class="header header-mobile">
+		<div class="container">
+			<div class="row">
+				<div class="col-xs-2">
+					<div class="header-left">
+						<div id="open-left"><i class="ion-navicon"></i></div>
+					</div>
+				</div>
+				<div class="col-xs-8">
+					<div class="header-center">
+						<a href="javascript:;" id="logo-2">
+							<img class="logo-image" src="__INDEX__/images/logo.png" alt="Organik Logo" />
+						</a>
+					</div>
+				</div>
+				<div class="col-xs-2">
+					<div class="header-right">
+						<div class="mini-cart-wrap">
+							<a href="cart.html">
+								<div class="mini-cart">
+									<div class="mini-cart-icon" data-count="2">
+										<i class="ion-bag"></i>
+									</div>
+								</div>
+							</a>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</header>
+	<div id="main">
+		<div class="section section-bg-10 pt-11 pb-17">
+			<div class="container">
+				<div class="row">
+					<div class="col-sm-12">
+						<h2 class="page-title text-center">article list</h2>
+					</div>
+				</div>
+			</div>
+		</div>
+		<div class="section border-bottom pt-2 pb-2">
+			<div class="container">
+				<div class="row">
+					<div class="col-sm-12">
+						<ul class="breadcrumbs">
+							<li><a href="{:url('index/index')}">首页</a></li>
+							<li>文章列表</li>
+						</ul>
+					</div>
+				</div>
+			</div>
+		</div>
+		<div class="section pt-7 pb-7">
+			<div class="container">
+				<div class="row">
+					<div class="col-md-9 col-md-push-3">
+						<div class="category-carousel-2 mb-3" data-auto-play="true" data-desktop="3" data-laptop="3" data-tablet="2" data-mobile="1">
+
+						</div>
+						<div class="product-grid">
+							<div class="section">
+								<div class="container">
+									<div class="row">
+				                        {volist name="article" id="vo"}
+										<div class="col-md-4">
+											<div class="blog-grid-item">
+												<div class="post-thumbnail">
+													<a href="{:url('article/article',array('id'=>$vo['id']))}">
+														<img src="{$vo.thumb|geturl}" alt="{$vo.title}" />
+													</a>
+												</div>
+												<div class="post-content">
+													<div class="entry-meta">
+														<span class="posted-on"><i class="ion-calendar"></i><span>{$vo.create_time|date="Y-m-d",###}</span></span>
+														<span class="comment"><i class="ion-chatbubble-working"></i>{$vo.read_count}</span>
+													</div>
+													<a href="{:url('article/article',array('id'=>$vo['id']))}">
+														<h1 class="entry-title">{$vo.title}</h1>
+													</a>
+													<div class="entry-content">
+														{$vo.description}
+													</div>
+													<div class="entry-more">
+														<a href="{:url('article/article',array('id'=>$vo['id']))}">阅读更多</a>
+													</div>
+												</div>
+											</div>
+										</div>
+				                        {/volist}
+									</div>
+								</div>
+							</div>
+
+							<div class="pagination">
+								{$article->render()}
+							</div>
+
+						</div>
+					</div>
+                    <div class="col-md-3 col-md-pull-9">
+						<div class="sidebar">
+							<div class="widget widget-product-categories">
+								<h3 class="widget-title">文章分类</h3>
+								<ul class="product-categories">
+									{volist name="articleCate" id="vo1"}
+									<li><a href="{:url('article/articleCate',array('id'=>$vo1['id']))}">{$vo1.name}</a></li>
+									{/volist}
+								</ul>
+							</div>
+							<div class="widget widget-products">
+								<h3 class="widget-title">推荐文章</h3>
+								<ul class="product-list-widget">
+                                    {volist name="article_istop" id="vo2"}
+									<li>
+										<a href="{:url('article/article',array('id'=>$vo2['id']))}">
+											<img src="{$vo2.thumb|geturl}" alt="{$vo2.title}" />
+											<span class="product-title">{$vo2.title}</span>
+										</a>
+										<ins>阅读数：{$vo2.read_count}</ins>
+									</li>
+                                    {/volist}
+								</ul>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+    {include file="common/footer"}
+
+</div>
+
+
+<script type="text/javascript" src="__INDEX__/js/core.min.js"></script>
+<script type="text/javascript" src="__INDEX__/js/widget.min.js"></script>
+<script type="text/javascript" src="__INDEX__/js/mouse.min.js"></script>
+<script type="text/javascript" src="__INDEX__/js/slider.min.js"></script>
+<script type="text/javascript" src="__INDEX__/js/jquery.ui.touch-punch.js"></script>
+<script type="text/javascript" src="__INDEX__/js/price-slider.js"></script>
+</body>
+</html>

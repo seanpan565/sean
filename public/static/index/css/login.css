@@ -1,0 +1,223 @@
+
+
+
+input[type="text"] {
+    font-size: 15px;
+    font-weight: 500;
+    text-align: left;
+    text-transform: capitalize;
+    letter-spacing: 1px;
+    padding: 12px 10px 12px 10px;
+	width:90%;
+	display:inline-block;
+    box-sizing: border-box;
+   	border: none;
+    outline: none;
+    background: transparent;
+	font-family: 'Raleway', sans-serif;
+}
+
+input[type="Password"] {
+	font-size: 15px;
+    font-weight: 500;
+    text-align: left;
+    text-transform: capitalize;
+    letter-spacing: 1px;
+    padding: 12px 10px 12px 10px;
+	width:90%;
+	display:inline-block;
+    box-sizing: border-box;
+   	border: none;
+    outline: none;
+    background: transparent;
+	font-family: 'Raleway', sans-serif;
+}
+.input-group {
+	width: 100%;
+    margin-bottom: 15px;
+	padding: 0px 10px;
+	border: 1px solid #bbb;
+}
+.btn-block {
+    display: block;
+    width: 100%;
+}
+.btn:active {
+    outline: none;
+}
+.btn-danger {
+    color: #fff;
+    background-color: #01cd74;
+    margin-top: 15px;
+	outline:none;
+    padding:15px 12px;
+	cursor:pointer;
+	letter-spacing: 2px;
+	font-size: 15px;
+    font-weight: 600;
+	border: none;
+    text-transform: uppercase;
+	font-family: 'Raleway', sans-serif;
+	transition: 0.5s all;
+	-webkit-transition: 0.5s all;
+	-moz-transition: 0.5s all;
+	-o-transition: 0.5s all;
+	-ms-transition: 0.5s all;
+}
+
+
+.btn-danger:hover{
+	background-color:#333;
+}
+.w3_info h2 {
+  display: inline-block;
+    font-size: 26px;
+    margin-bottom: 10px;
+    color: #01cd74;
+    letter-spacing: 2px;
+}
+.w3_info h4 {
+    display: inline-block;
+    font-size: 15px;
+	padding: 8px 0px;
+    color: #444;
+    text-transform: capitalize;
+}
+span.fa.fa-facebook {
+    vertical-align: middle;
+    font-size: 20px;
+    padding-left: 20px;
+}
+ ::-webkit-input-placeholder {
+color:#777 !important;
+}
+:-moz-placeholder { /* Firefox 18- */
+color:#777 !important;
+}
+::-moz-placeholder {  /* Firefox 19+ */
+color:#777 !important;
+letter-spacing:5px;
+}
+:-ms-input-placeholder {
+color:#777 !important;
+}
+
+a.btn.btn-block.btn-social.btn-facebook {
+    display: block;
+    width: 100%;
+    padding: 10px 0px;
+    text-align: center;
+    font-size: 16px;
+    font-weight: 600;
+	letter-spacing: 1px;
+	font-family: 'Raleway', sans-serif;
+}
+
+.w3_info {
+	-webkit-flex-basis: 50%;
+    box-sizing: border-box;
+	padding-left:3em;
+    background-color: #fff;
+}
+.left_grid_info {
+    padding: 10em 4em;
+}
+.left_grid_info h3 {
+    color: #fff;
+    font-size: 2.2em;
+}
+.left_grid_info h4 {
+    color: #fff;
+    font-size: 1.2em;
+	margin: 1em 0;
+	line-height: 28px;
+    font-weight: 500;
+    text-transform: capitalize;
+}
+.left_grid_info p {
+    color: #fff;
+    font-size: 14px;
+	margin: 1em 0;
+	line-height: 28px;
+}
+
+.agile_info {
+	display: -webkit-box;      /* OLD - iOS 6-, Safari 3.1-6 */
+	display: -moz-box;         /* OLD - Firefox 19- (buggy but mostly works) */
+	display: -ms-flexbox;      /* TWEENER - IE 10 */
+	display: -webkit-flex;     /* NEW - Chrome */
+	display: flex;             /* NEW, Spec - Opera 12.1, Firefox 20+ */
+}
+
+ul.social_section_1info li {
+    display: inline-block;
+}
+ul.social_section_1info {
+    margin-top: 25px;
+}
+ul.social_section_1info a {
+    color: #eee;
+    margin-right: 10px;
+    font-size: 15px;
+}
+ul.social_section_1info a:hover {
+	color: #01cd74;
+}
+.w3l_form {
+    padding: 0px;
+    flex-basis: 50%;
+	-webkit-flex-basis: 50%;
+	background:#333;
+}
+.w3_info p {
+    padding-bottom: 20px;
+}
+h3.w3ls {
+    margin: 10px 0px;
+    padding-left: 60px;
+}
+h3.agileits {
+    padding-left: 10px;
+}
+
+i.fa.fa-user {
+   font-size: 16px;
+    vertical-align: middle;
+    color:#01cd74;
+	box-sizing:border-box;
+	float:left;
+	width:6%;
+    margin-top: 13px;
+    text-align: center;
+}
+i.fa.fa-envelope {
+   font-size: 16px;
+    vertical-align: middle;
+    color: #01cd74;
+	box-sizing:border-box;
+	float:left;
+	width:6%;
+    margin-top: 13px;
+    text-align: center;
+}
+i.fa.fa-lock {
+    font-size: 16px;
+    vertical-align: middle;
+    color: #01cd74;
+	box-sizing:border-box;
+	float:left;
+	width:6%;
+    margin-top: 13px;
+    text-align: center;
+}
+h5 {
+    text-align: center;
+    margin: 10px 0px;
+    font-size: 15px;
+    font-weight: 600;
+	color: #000;
+}
+
+
+
+

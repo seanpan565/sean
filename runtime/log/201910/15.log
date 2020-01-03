@@ -1,0 +1,289 @@
+---------------------------------------------------------------
+[ 2019-10-15T15:59:36+08:00 ] 0.0.0.0 GET www.tplay.com/admin
+[运行时间：0.127497s] [吞吐率：7.84req/s] [内存消耗：2,248.89kb] [文件加载：52]
+[ info ] [ LANG ] D:\web\moban\thinkphp\tplay-master\thinkphp\lang\zh-cn.php
+[ info ] [ DB ] INIT mysql
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => NULL,
+    2 => NULL,
+  ),
+)
+[ info ] [ HEADER ] array (
+  'cookie' => 'PHPSESSID=3qd4hm7hpjjghcs9hcgkf1jcj2; usermember=admin',
+  'accept-language' => 'zh-CN,zh;q=0.9,en;q=0.8,und;q=0.7',
+  'accept-encoding' => 'gzip, deflate',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/77.0.3865.120 Safari/537.36',
+  'upgrade-insecure-requests' => '1',
+  'connection' => 'close',
+  'host' => 'www.tplay.com',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ RUN ] app\admin\controller\Index->index[ D:\web\moban\thinkphp\tplay-master\app\admin\controller\Index.php ]
+[ info ] [ VIEW ] D:\web\moban\thinkphp\tplay-master\public/../app/admin\view\index\index.html [ array (
+  0 => 'menus',
+  1 => 'cookie',
+) ]
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.012170s ] mysql:host=127.0.0.1;port=3306;dbname=tplay;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `tplay_urlconfig` [ RunTime:0.021608s ]
+[ sql ] [ SQL ] SELECT `aliases`,`url` FROM `tplay_urlconfig` WHERE  `status` = 1 [ RunTime:0.003399s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `tplay_webconfig` [ RunTime:0.006401s ]
+[ sql ] [ SQL ] SELECT `black_ip` FROM `tplay_webconfig` WHERE  `web` = 'web' LIMIT 1 [ RunTime:0.000641s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `tplay_admin_cate` [ RunTime:0.006127s ]
+[ sql ] [ SQL ] SELECT `permissions` FROM `tplay_admin_cate` WHERE  `id` = 1 LIMIT 1 [ RunTime:0.000234s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `tplay_admin_menu` [ RunTime:0.006655s ]
+[ sql ] [ SQL ] SELECT * FROM `tplay_admin_menu` WHERE  `module` = 'admin'  AND `controller` = 'Index'  AND `function` = 'index'  AND `type` = 1 LIMIT 1 [ RunTime:0.002982s ]
+[ sql ] [ SQL ] SELECT * FROM `tplay_admin_menu` WHERE  `is_display` = 1 ORDER BY `orders` ASC [ RunTime:0.002090s ]
+[ sql ] [ SQL ] SELECT `permissions` FROM `tplay_admin_cate` WHERE  `id` = 1 LIMIT 1 [ RunTime:0.000220s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `tplay_admin` [ RunTime:0.006043s ]
+[ sql ] [ SQL ] SELECT * FROM `tplay_admin` WHERE  `id` = 1 LIMIT 1 [ RunTime:0.000329s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `tplay_attachment` [ RunTime:0.019890s ]
+[ sql ] [ SQL ] SELECT * FROM `tplay_attachment` WHERE  `id` = 1 LIMIT 1 [ RunTime:0.002230s ]
+---------------------------------------------------------------
+[ 2019-10-15T15:59:37+08:00 ] 0.0.0.0 GET www.tplay.com/admin/main/index
+[运行时间：0.094410s] [吞吐率：10.59req/s] [内存消耗：2,213.59kb] [文件加载：52]
+[ info ] [ LANG ] D:\web\moban\thinkphp\tplay-master\thinkphp\lang\zh-cn.php
+[ info ] [ DB ] INIT mysql
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => 'main',
+    2 => 'index',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'cookie' => 'PHPSESSID=3qd4hm7hpjjghcs9hcgkf1jcj2; usermember=admin',
+  'accept-language' => 'zh-CN,zh;q=0.9,en;q=0.8,und;q=0.7',
+  'accept-encoding' => 'gzip, deflate',
+  'referer' => 'http://www.tplay.com/admin',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/77.0.3865.120 Safari/537.36',
+  'upgrade-insecure-requests' => '1',
+  'connection' => 'close',
+  'host' => 'www.tplay.com',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ RUN ] app\admin\controller\Main->index[ D:\web\moban\thinkphp\tplay-master\app\admin\controller\Main.php ]
+[ info ] [ VIEW ] D:\web\moban\thinkphp\tplay-master\public/../app/admin\view\main\index.html [ array (
+  0 => 'info',
+  1 => 'web',
+) ]
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000767s ] mysql:host=127.0.0.1;port=3306;dbname=tplay;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `tplay_urlconfig` [ RunTime:0.006430s ]
+[ sql ] [ SQL ] SELECT `aliases`,`url` FROM `tplay_urlconfig` WHERE  `status` = 1 [ RunTime:0.000230s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `tplay_webconfig` [ RunTime:0.004918s ]
+[ sql ] [ SQL ] SELECT `black_ip` FROM `tplay_webconfig` WHERE  `web` = 'web' LIMIT 1 [ RunTime:0.000260s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `tplay_admin_cate` [ RunTime:0.006440s ]
+[ sql ] [ SQL ] SELECT `permissions` FROM `tplay_admin_cate` WHERE  `id` = 1 LIMIT 1 [ RunTime:0.000206s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `tplay_admin_menu` [ RunTime:0.004870s ]
+[ sql ] [ SQL ] SELECT * FROM `tplay_admin_menu` WHERE  `module` = 'admin'  AND `controller` = 'Main'  AND `function` = 'index'  AND `type` = 1  AND `parameter` = 'main=' LIMIT 1 [ RunTime:0.000335s ]
+[ sql ] [ SQL ] SELECT * FROM `tplay_admin_menu` WHERE  `module` = 'admin'  AND `controller` = 'Main'  AND `function` = 'index'  AND `type` = 1 LIMIT 1 [ RunTime:0.000262s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `tplay_admin` [ RunTime:0.005046s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `tplay_admin` LIMIT 1 [ RunTime:0.002016s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `tplay_admin_cate` LIMIT 1 [ RunTime:0.000505s ]
+[ sql ] [ SQL ] SELECT `black_ip` FROM `tplay_webconfig` LIMIT 1 [ RunTime:0.000189s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `tplay_article` [ RunTime:0.006950s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `tplay_article` LIMIT 1 [ RunTime:0.000211s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `tplay_article` WHERE  `status` = 0 LIMIT 1 [ RunTime:0.000157s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `tplay_article` WHERE  `is_top` = 1 LIMIT 1 [ RunTime:0.000126s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `tplay_attachment` [ RunTime:0.004849s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `tplay_attachment` LIMIT 1 [ RunTime:0.000227s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `tplay_attachment` WHERE  `status` = 0 LIMIT 1 [ RunTime:0.000208s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `tplay_attachment` WHERE  `status` = -1 LIMIT 1 [ RunTime:0.000152s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `tplay_messages` [ RunTime:0.007838s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `tplay_messages` LIMIT 1 [ RunTime:0.000172s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `tplay_messages` WHERE  `is_look` = 0 LIMIT 1 [ RunTime:0.000189s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `tplay_admin_log` [ RunTime:0.006988s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `tplay_admin_log` WHERE  `admin_menu_id` = 50  AND ( `create_time` >= 1570291200 AND `create_time` <= 1570377600 ) LIMIT 1 [ RunTime:0.000339s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `tplay_admin_log` WHERE  `admin_menu_id` = 50  AND ( `create_time` >= 1570377600 AND `create_time` <= 1570464000 ) LIMIT 1 [ RunTime:0.000218s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `tplay_admin_log` WHERE  `admin_menu_id` = 50  AND ( `create_time` >= 1570464000 AND `create_time` <= 1570550400 ) LIMIT 1 [ RunTime:0.000178s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `tplay_admin_log` WHERE  `admin_menu_id` = 50  AND ( `create_time` >= 1570550400 AND `create_time` <= 1570636800 ) LIMIT 1 [ RunTime:0.000218s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `tplay_admin_log` WHERE  `admin_menu_id` = 50  AND ( `create_time` >= 1570636800 AND `create_time` <= 1570723200 ) LIMIT 1 [ RunTime:0.000219s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `tplay_admin_log` WHERE  `admin_menu_id` = 50  AND ( `create_time` >= 1570723200 AND `create_time` <= 1570809600 ) LIMIT 1 [ RunTime:0.000212s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `tplay_admin_log` WHERE  `admin_menu_id` = 50  AND ( `create_time` >= 1570809600 AND `create_time` <= 1570896000 ) LIMIT 1 [ RunTime:0.000535s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `tplay_admin_log` WHERE  `admin_menu_id` = 50  AND ( `create_time` >= 1570896000 AND `create_time` <= 1570982400 ) LIMIT 1 [ RunTime:0.000223s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `tplay_admin_log` WHERE  `admin_menu_id` = 50  AND ( `create_time` >= 1570982400 AND `create_time` <= 1571068800 ) LIMIT 1 [ RunTime:0.000194s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `tplay_admin_log` WHERE  `admin_menu_id` = 50  AND ( `create_time` >= 1571068800 AND `create_time` <= 1571155200 ) LIMIT 1 [ RunTime:0.000225s ]
+---------------------------------------------------------------
+[ 2019-10-15T16:00:55+08:00 ] 0.0.0.0 GET www.tplay.com/admin/article/index.shtml
+[运行时间：0.088292s] [吞吐率：11.33req/s] [内存消耗：2,532.13kb] [文件加载：58]
+[ info ] [ LANG ] D:\web\moban\thinkphp\tplay-master\thinkphp\lang\zh-cn.php
+[ info ] [ DB ] INIT mysql
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => 'article',
+    2 => 'index',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'cookie' => 'PHPSESSID=3qd4hm7hpjjghcs9hcgkf1jcj2; usermember=admin',
+  'accept-language' => 'zh-CN,zh;q=0.9,en;q=0.8,und;q=0.7',
+  'accept-encoding' => 'gzip, deflate',
+  'referer' => 'http://www.tplay.com/admin',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/77.0.3865.120 Safari/537.36',
+  'upgrade-insecure-requests' => '1',
+  'connection' => 'close',
+  'host' => 'www.tplay.com',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ RUN ] app\admin\controller\Article->index[ D:\web\moban\thinkphp\tplay-master\app\admin\controller\Article.php ]
+[ info ] [ VIEW ] D:\web\moban\thinkphp\tplay-master\public/../app/admin\view\article\index.html [ array (
+  0 => 'articles',
+  1 => 'info',
+) ]
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000942s ] mysql:host=127.0.0.1;port=3306;dbname=tplay;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `tplay_urlconfig` [ RunTime:0.012024s ]
+[ sql ] [ SQL ] SELECT `aliases`,`url` FROM `tplay_urlconfig` WHERE  `status` = 1 [ RunTime:0.000247s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `tplay_webconfig` [ RunTime:0.005342s ]
+[ sql ] [ SQL ] SELECT `black_ip` FROM `tplay_webconfig` WHERE  `web` = 'web' LIMIT 1 [ RunTime:0.000243s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `tplay_admin_cate` [ RunTime:0.005254s ]
+[ sql ] [ SQL ] SELECT `permissions` FROM `tplay_admin_cate` WHERE  `id` = 1 LIMIT 1 [ RunTime:0.000230s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `tplay_admin_menu` [ RunTime:0.007996s ]
+[ sql ] [ SQL ] SELECT * FROM `tplay_admin_menu` WHERE  `module` = 'admin'  AND `controller` = 'Article'  AND `function` = 'index'  AND `type` = 1  AND `parameter` = 'article=' LIMIT 1 [ RunTime:0.000366s ]
+[ sql ] [ SQL ] SELECT * FROM `tplay_admin_menu` WHERE  `module` = 'admin'  AND `controller` = 'Article'  AND `function` = 'index'  AND `type` = 1 LIMIT 1 [ RunTime:0.000286s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `tplay_article` [ RunTime:0.005360s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `tplay_article` LIMIT 1 [ RunTime:0.000278s ]
+[ sql ] [ SQL ] SELECT * FROM `tplay_article` ORDER BY `create_time` DESC LIMIT 0,20 [ RunTime:0.000459s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `tplay_article_cate` [ RunTime:0.006789s ]
+[ sql ] [ SQL ] SELECT * FROM `tplay_article_cate` [ RunTime:0.000175s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `tplay_admin` [ RunTime:0.004818s ]
+[ sql ] [ SQL ] SELECT * FROM `tplay_admin` [ RunTime:0.000233s ]
+---------------------------------------------------------------
+[ 2019-10-15T16:00:57+08:00 ] 0.0.0.0 GET www.tplay.com/admin/article/publish.shtml
+[运行时间：0.078086s] [吞吐率：12.81req/s] [内存消耗：2,439.26kb] [文件加载：56]
+[ info ] [ LANG ] D:\web\moban\thinkphp\tplay-master\thinkphp\lang\zh-cn.php
+[ info ] [ DB ] INIT mysql
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => 'article',
+    2 => 'publish',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'cookie' => 'PHPSESSID=3qd4hm7hpjjghcs9hcgkf1jcj2; usermember=admin',
+  'accept-language' => 'zh-CN,zh;q=0.9,en;q=0.8,und;q=0.7',
+  'accept-encoding' => 'gzip, deflate',
+  'referer' => 'http://www.tplay.com/admin/article/index.shtml',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/77.0.3865.120 Safari/537.36',
+  'x-requested-with' => 'XMLHttpRequest',
+  'accept' => '*/*',
+  'connection' => 'close',
+  'host' => 'www.tplay.com',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ RUN ] app\admin\controller\Article->publish[ D:\web\moban\thinkphp\tplay-master\app\admin\controller\Article.php ]
+[ info ] [ VIEW ] D:\web\moban\thinkphp\tplay-master\public/../app/admin\view\article\publish.html [ array (
+  0 => 'cates',
+) ]
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000697s ] mysql:host=127.0.0.1;port=3306;dbname=tplay;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `tplay_urlconfig` [ RunTime:0.028570s ]
+[ sql ] [ SQL ] SELECT `aliases`,`url` FROM `tplay_urlconfig` WHERE  `status` = 1 [ RunTime:0.000213s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `tplay_webconfig` [ RunTime:0.005103s ]
+[ sql ] [ SQL ] SELECT `black_ip` FROM `tplay_webconfig` WHERE  `web` = 'web' LIMIT 1 [ RunTime:0.000189s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `tplay_admin_cate` [ RunTime:0.004782s ]
+[ sql ] [ SQL ] SELECT `permissions` FROM `tplay_admin_cate` WHERE  `id` = 1 LIMIT 1 [ RunTime:0.000184s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `tplay_admin_menu` [ RunTime:0.004488s ]
+[ sql ] [ SQL ] SELECT * FROM `tplay_admin_menu` WHERE  `module` = 'admin'  AND `controller` = 'Article'  AND `function` = 'publish'  AND `type` = 1  AND `parameter` = 'article=' LIMIT 1 [ RunTime:0.000378s ]
+[ sql ] [ SQL ] SELECT * FROM `tplay_admin_menu` WHERE  `module` = 'admin'  AND `controller` = 'Article'  AND `function` = 'publish'  AND `type` = 1 LIMIT 1 [ RunTime:0.000297s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `tplay_article_cate` [ RunTime:0.004893s ]
+[ sql ] [ SQL ] SELECT * FROM `tplay_article_cate` [ RunTime:0.000169s ]
+---------------------------------------------------------------
+[ 2019-10-15T16:00:58+08:00 ] 0.0.0.0 GET www.tplay.com/admin/article/publish.shtml
+[运行时间：0.057909s] [吞吐率：17.27req/s] [内存消耗：2,452.38kb] [文件加载：55]
+[ info ] [ LANG ] D:\web\moban\thinkphp\tplay-master\thinkphp\lang\zh-cn.php
+[ info ] [ DB ] INIT mysql
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => 'article',
+    2 => 'publish',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'cookie' => 'PHPSESSID=3qd4hm7hpjjghcs9hcgkf1jcj2; usermember=admin',
+  'accept-language' => 'zh-CN,zh;q=0.9,en;q=0.8,und;q=0.7',
+  'accept-encoding' => 'gzip, deflate',
+  'referer' => 'http://www.tplay.com/admin/article/index.shtml',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/77.0.3865.120 Safari/537.36',
+  'upgrade-insecure-requests' => '1',
+  'connection' => 'close',
+  'host' => 'www.tplay.com',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ RUN ] app\admin\controller\Article->publish[ D:\web\moban\thinkphp\tplay-master\app\admin\controller\Article.php ]
+[ info ] [ VIEW ] D:\web\moban\thinkphp\tplay-master\public/../app/admin\view\article\publish.html [ array (
+  0 => 'cates',
+) ]
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000635s ] mysql:host=127.0.0.1;port=3306;dbname=tplay;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `tplay_urlconfig` [ RunTime:0.004517s ]
+[ sql ] [ SQL ] SELECT `aliases`,`url` FROM `tplay_urlconfig` WHERE  `status` = 1 [ RunTime:0.000195s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `tplay_webconfig` [ RunTime:0.004841s ]
+[ sql ] [ SQL ] SELECT `black_ip` FROM `tplay_webconfig` WHERE  `web` = 'web' LIMIT 1 [ RunTime:0.000246s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `tplay_admin_cate` [ RunTime:0.005202s ]
+[ sql ] [ SQL ] SELECT `permissions` FROM `tplay_admin_cate` WHERE  `id` = 1 LIMIT 1 [ RunTime:0.000201s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `tplay_admin_menu` [ RunTime:0.004897s ]
+[ sql ] [ SQL ] SELECT * FROM `tplay_admin_menu` WHERE  `module` = 'admin'  AND `controller` = 'Article'  AND `function` = 'publish'  AND `type` = 1  AND `parameter` = 'article=' LIMIT 1 [ RunTime:0.000369s ]
+[ sql ] [ SQL ] SELECT * FROM `tplay_admin_menu` WHERE  `module` = 'admin'  AND `controller` = 'Article'  AND `function` = 'publish'  AND `type` = 1 LIMIT 1 [ RunTime:0.000286s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `tplay_article_cate` [ RunTime:0.004750s ]
+[ sql ] [ SQL ] SELECT * FROM `tplay_article_cate` [ RunTime:0.000173s ]

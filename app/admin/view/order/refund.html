@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <title>layui</title>
+  <meta name="renderer" content="webkit">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+  <link rel="stylesheet" href="__PUBLIC__/layui/css/layui.css"  media="all">
+  <link rel="stylesheet" href="__PUBLIC__/font-awesome/css/font-awesome.min.css" media="all" />
+  <link rel="stylesheet" href="__CSS__/admin.css"  media="all">
+  <style type="text/css">
+
+/* tooltip */
+#tooltip{
+  position:absolute;
+  border:1px solid #ccc;
+  background:#333;
+  padding:2px;
+  display:none;
+  color:#fff;
+}
+</style>
+</head>
+<body style="padding:10px;">
+  <div class="tplay-body-div">
+    <div class="layui-tab">
+      <ul class="layui-tab-title">
+        <li class="layui-this">订单列表</li>
+      </ul>
+    </div>
+    <table class="layui-table" lay-size="sm">
+      <colgroup>
+        <col width="50">
+        <col width="300">
+        <col width="50">
+        <col width="100">
+        <col width="100">
+        <col width="150">
+        <col width="100">
+        <col width="150">
+        <col width="50">
+        <col width="50">
+        <col width="100">
+      </colgroup>
+      <thead>
+        <tr>
+          <th>ID</th>
+          <th>订单编号</th>
+          <th>用户账户</th>
+          <th>支付方式</th>
+          <th>订单总价</th>
+          <th>虎皮椒订单号</th>
+          <th>新增时间</th>
+          <th>订单状态</th>
+          <th>操作</th>
+        </tr>
+      </thead>
+      <tbody>
+          {volist name="order" id="vo"}
+          <tr>
+            <td>{$vo.main_order_id}</td>
+            <td>{$vo.order_sn}</td>
+            <td>{$vo.user_name}</td>
+            <td>
+                {if condition="$vo['pay_type'] eq '1'"}
+                    支付宝
+                {else/}
+                    微信
+                {/if}
+            </td>
+            <td>￥{$vo.order_price}</td>
+            <td>{$vo.trade_no}</td>
+            <td>{$vo.create_time|date="Y-m-d H:i:s",###}</td>
+            <td>
+                <span class="sub-title" {if condition="$vo['order_status'] eq 0"}style="display:block;" {else} style="display:none;"{/if}>未付款</span>
+                <span class="sub-title" {if condition="$vo['order_status'] eq 1"}style="display:block;" {else} style="display:none;"{/if}>待发货</span>
+                <span class="sub-title" {if condition="$vo['order_status'] eq 2"}style="display:block;" {else} style="display:none;"{/if}>已发货</span>
+                <span class="sub-title" {if condition="$vo['order_status'] eq 3"}style="display:block;" {else} style="display:none;"{/if}>待评价</span>
+                <span class="sub-title" {if condition="$vo['order_status'] eq 4"}style="display:block;" {else} style="display:none;"{/if}>已评价</span>
+                <span class="sub-title" {if condition="$vo['order_status'] eq 5"}style="display:block;" {else} style="display:none;"{/if}>已取消</span>
+                <span class="sub-title" {if condition="$vo['order_status'] eq 6"}style="display:block;" {else} style="display:none;"{/if}>交易关闭</span>
+                <span class="sub-title" {if condition="$vo['order_status'] eq 7"}style="display:block;" {else} style="display:none;"{/if}>退货中的订单</span>
+                <span class="sub-title" {if condition="$vo['order_status'] eq 8"}style="display:block;" {else} style="display:none;"{/if}>付款超时</span>
+                <input type="hidden" value="{$vo.order_status}">
+            </td>
+            <td style="min-width:150px;">
+                <button type="button" class="layui-btn layui-btn-primary layui-btn-sm"><a title="查看订单" href="{:url('admin/order/datails',['order_sn'=>$vo.order_sn])}">查看订单</a></button>
+                <button type="button" class="layui-btn layui-btn-primary layui-btn-sm"  {if condition="$vo['order_status'] eq 0"}style="display:block;float:right;" {else} style="display:none;float:right;"{/if}>
+                    <a title="查看订单" href="{:url('admin/order/edit',['order_sn'=>$vo.order_sn])}">订单未付</a>
+                </button>
+                <button type="button" class="layui-btn layui-btn-warm layui-btn-sm"  {if condition="$vo['order_status'] eq 1"}style="display:block;float:right;" {else} style="display:none;float:right;"{/if}>
+                    <a title="订单发货" href="{:url('admin/order/addres',['order_sn'=>$vo.order_sn])}">订单发货</a>
+                </button>
+                <button type="button" class="layui-btn layui-btn-sm freight"  {if condition="$vo['order_status'] eq 2"}style="display:block;float:right;" {else} style="display:none;float:right;"{/if}>
+                    <!-- <a title="查看物流" href="{:url('admin/order/edit',['order_sn'=>$vo.order_sn])}">查看物流</a> -->
+                    查看物流
+                </button>
+                <button type="button" class="layui-btn layui-btn-warm layui-btn-sm"  {if condition="$vo['order_status'] eq 3"}style="display:block;float:right;" {else} style="display:none;float:right;"{/if}>
+                    <a title="订单跟踪" href="{:url('admin/order/edit',['order_sn'=>$vo.order_sn])}">订单跟踪</a>
+                </button>
+                <button type="button" class="layui-btn layui-btn-sm"  {if condition="$vo['order_status'] eq 4"}style="display:block;float:right;" {else} style="display:none;float:right;"{/if}>
+                    <a title="查看评价" href="{:url('admin/order/edit',['order_sn'=>$vo.order_sn])}">查看评价</a>
+                </button>
+                <button type="button" class="layui-btn layui-btn-sm layui-btn-danger" onclick="order_del(this,'{$vo['order_sn']}')" {if condition="$vo['order_status'] eq 5"}style="display:block;float:right;" {else} style="display:none;float:right;"{/if}>
+                    删除订单
+                </button>
+                <button type="button" class="layui-btn layui-btn-sm layui-btn-danger"  {if condition="$vo['order_status'] eq 6"}style="display:block;float:right;" {else} style="display:none;float:right;"{/if}>
+                    <a title="删除订单" href="{:url('admin/order/edit',['order_sn'=>$vo.order_sn])}">删除订单</a>
+                </button>
+                <button type="button" class="layui-btn layui-btn-normal layui-btn-sm"  {if condition="$vo['order_status'] eq 7"}style="display:block;float:right;" {else} style="display:none;float:right;"{/if}>
+                    <a title="查看详情" href="{:url('admin/order/edit',['order_sn'=>$vo.order_sn])}">查看详情</a>
+                </button>
+                <button type="button" class="layui-btn layui-btn-sm layui-btn-danger" onclick="order_del(this,'{$vo['order_sn']}')" {if condition="$vo['order_status'] eq 8"}style="display:block;float:right;" {else} style="display:none;float:right;"{/if}>
+                    删除订单
+                    <!-- <a title="删除订单" href="{:url('admin/order/edit',['order_sn'=>$vo.order_sn])}">删除订单</a> -->
+                </button>
+            </td>
+          </tr>
+          {/volist}
+      </tbody>
+    </table>
+    <div style="padding:0 20px;">{$order->render()}</div>
+    {include file="public/foot"}
+
+    <script type="text/javascript">
+        //删除订单
+        function order_del(obj,id){
+            layer.confirm('确认要删除吗？',function(index){
+                //发异步删除数据
+                $.ajax({
+                    type:"post",
+                    dataType:"json",
+                    data:{order_sn:id},
+                    url:"{:url('admin/order/order_del')}",
+                    success:function(data){
+                        if (data.status == 1) {
+                            $(obj).parents("tr").remove();
+                            layer.alert(data.msg, {
+                                title: '提示框',
+                                icon: 0,
+                            });
+                        } else {
+                            layer.alert(data.msg, {
+                                title: '提示框',
+                                icon: 0,
+                            });
+                        }
+                    }
+                },'json');
+            });
+        }
+
+        //查看物流
+      //   $('.freight').click(function(){
+      //     var id = $(this).attr('id');
+      //     $.ajax({
+      //         url:"{:url('admin/order/freight')}",
+      //         type:'post'
+      //         data:{id:id},
+      //         success:function(res) {
+      //             layer.msg(res.msg);
+      //             if(res.code == 1) {
+      //                 layer.msg(res.msg);
+      //             } else {
+      //                 layer.msg(res.msg);
+      //             }
+      //         }
+      //     });
+      // });
+    </script>
+
+  </div>
+</body>
+</html>

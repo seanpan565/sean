@@ -1,0 +1,1960 @@
+---------------------------------------------------------------
+[ 2019-11-29T16:04:19+08:00 ] 0.0.0.0 GET www.sean.com/admin/index/index.shtml
+[运行时间：0.138251s] [吞吐率：7.23req/s] [内存消耗：2,260.95kb] [文件加载：52]
+[ info ] [ LANG ] D:\web\phpweb\sean\thinkphp\lang\zh-cn.php
+[ info ] [ DB ] INIT mysql
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => 'index',
+    2 => 'index',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'cookie' => 'PHPSESSID=442e6gogce0u2o1m3iclccpj33; log-username=seanpan565%40gmail.com; log-password=0bcc6c3004249dbe3e78cd106ab5efb4; adminer_version=4.7.5',
+  'accept-language' => 'zh-CN,zh;q=0.9,en;q=0.8,und;q=0.7',
+  'accept-encoding' => 'gzip, deflate',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/78.0.3904.108 Safari/537.36',
+  'upgrade-insecure-requests' => '1',
+  'connection' => 'close',
+  'host' => 'www.sean.com',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+  'expire' => 3600,
+)
+[ info ] [ RUN ] app\admin\controller\Index->index[ D:\web\phpweb\sean\app\admin\controller\Index.php ]
+[ info ] [ VIEW ] D:\web\phpweb\sean\public/../app/admin\view\index\index.html [ array (
+  0 => 'menus',
+  1 => 'cookie',
+) ]
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.002686s ] mysql:host=127.0.0.1;port=3306;dbname=sean;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `sean_urlconfig` [ RunTime:0.007969s ]
+[ sql ] [ SQL ] SELECT `aliases`,`url` FROM `sean_urlconfig` WHERE  `status` = 1 [ RunTime:0.000518s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `sean_webconfig` [ RunTime:0.006216s ]
+[ sql ] [ SQL ] SELECT `black_ip` FROM `sean_webconfig` WHERE  `web` = 'web' LIMIT 1 [ RunTime:0.000387s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `sean_admin_cate` [ RunTime:0.005797s ]
+[ sql ] [ SQL ] SELECT `permissions` FROM `sean_admin_cate` WHERE  `id` = 1 LIMIT 1 [ RunTime:0.000309s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `sean_admin_menu` [ RunTime:0.006430s ]
+[ sql ] [ SQL ] SELECT * FROM `sean_admin_menu` WHERE  `module` = 'admin'  AND `controller` = 'Index'  AND `function` = 'index'  AND `type` = 1 LIMIT 1 [ RunTime:0.000548s ]
+[ sql ] [ SQL ] SELECT * FROM `sean_admin_menu` WHERE  `is_display` = 1 ORDER BY `orders` ASC [ RunTime:0.001389s ]
+[ sql ] [ SQL ] SELECT `permissions` FROM `sean_admin_cate` WHERE  `id` = 1 LIMIT 1 [ RunTime:0.000295s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `sean_admin` [ RunTime:0.006425s ]
+[ sql ] [ SQL ] SELECT * FROM `sean_admin` WHERE  `id` = 1 LIMIT 1 [ RunTime:0.000541s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `sean_attachment` [ RunTime:0.009015s ]
+[ sql ] [ SQL ] SELECT * FROM `sean_attachment` WHERE  `id` = 5 LIMIT 1 [ RunTime:0.001153s ]
+---------------------------------------------------------------
+[ 2019-11-29T16:04:19+08:00 ] 0.0.0.0 GET www.sean.com/index/cart/index.shtml
+[运行时间：0.053917s] [吞吐率：18.55req/s] [内存消耗：2,192.89kb] [文件加载：52]
+[ info ] [ LANG ] D:\web\phpweb\sean\thinkphp\lang\zh-cn.php
+[ info ] [ DB ] INIT mysql
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'index',
+    1 => 'cart',
+    2 => 'index',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'cookie' => 'PHPSESSID=442e6gogce0u2o1m3iclccpj33; log-username=seanpan565%40gmail.com; log-password=0bcc6c3004249dbe3e78cd106ab5efb4; adminer_version=4.7.5',
+  'accept-language' => 'zh-CN,zh;q=0.9,en;q=0.8,und;q=0.7',
+  'accept-encoding' => 'gzip, deflate',
+  'referer' => 'http://www.sean.com/index/user/user_message.shtml',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/78.0.3904.108 Safari/537.36',
+  'upgrade-insecure-requests' => '1',
+  'connection' => 'close',
+  'host' => 'www.sean.com',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+  'expire' => 3600,
+)
+[ info ] [ RUN ] app\index\controller\Cart->index[ D:\web\phpweb\sean\app\index\controller\Cart.php ]
+[ info ] [ VIEW ] D:\web\phpweb\sean\public/../app/index\view\cart\cart.html [ array (
+  0 => 'controller',
+  1 => 'user',
+) ]
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000804s ] mysql:host=127.0.0.1;port=3306;dbname=sean;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `sean_urlconfig` [ RunTime:0.004236s ]
+[ sql ] [ SQL ] SELECT `aliases`,`url` FROM `sean_urlconfig` WHERE  `status` = 1 [ RunTime:0.000482s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `sean_user` [ RunTime:0.007027s ]
+[ sql ] [ SQL ] SELECT `id`,`user_name` FROM `sean_user` WHERE  `id` = 1 LIMIT 1 [ RunTime:0.000425s ]
+---------------------------------------------------------------
+[ 2019-11-29T16:04:24+08:00 ] 0.0.0.0 GET www.sean.com/admin/main/index
+[运行时间：0.091441s] [吞吐率：10.94req/s] [内存消耗：2,210.70kb] [文件加载：52]
+[ info ] [ LANG ] D:\web\phpweb\sean\thinkphp\lang\zh-cn.php
+[ info ] [ DB ] INIT mysql
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => 'main',
+    2 => 'index',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'cookie' => 'PHPSESSID=442e6gogce0u2o1m3iclccpj33; log-username=seanpan565%40gmail.com; log-password=0bcc6c3004249dbe3e78cd106ab5efb4; adminer_version=4.7.5',
+  'accept-language' => 'zh-CN,zh;q=0.9,en;q=0.8,und;q=0.7',
+  'accept-encoding' => 'gzip, deflate',
+  'referer' => 'http://www.sean.com/admin/index/index.shtml',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/78.0.3904.108 Safari/537.36',
+  'upgrade-insecure-requests' => '1',
+  'connection' => 'close',
+  'host' => 'www.sean.com',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+  'expire' => 3600,
+)
+[ info ] [ RUN ] app\admin\controller\Main->index[ D:\web\phpweb\sean\app\admin\controller\Main.php ]
+[ info ] [ VIEW ] D:\web\phpweb\sean\public/../app/admin\view\main\index.html [ array (
+  0 => 'info',
+  1 => 'web',
+) ]
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000724s ] mysql:host=127.0.0.1;port=3306;dbname=sean;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `sean_urlconfig` [ RunTime:0.003369s ]
+[ sql ] [ SQL ] SELECT `aliases`,`url` FROM `sean_urlconfig` WHERE  `status` = 1 [ RunTime:0.000193s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `sean_webconfig` [ RunTime:0.004821s ]
+[ sql ] [ SQL ] SELECT `black_ip` FROM `sean_webconfig` WHERE  `web` = 'web' LIMIT 1 [ RunTime:0.000341s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `sean_admin_cate` [ RunTime:0.003279s ]
+[ sql ] [ SQL ] SELECT `permissions` FROM `sean_admin_cate` WHERE  `id` = 1 LIMIT 1 [ RunTime:0.000226s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `sean_admin_menu` [ RunTime:0.003417s ]
+[ sql ] [ SQL ] SELECT * FROM `sean_admin_menu` WHERE  `module` = 'admin'  AND `controller` = 'Main'  AND `function` = 'index'  AND `type` = 1  AND `parameter` = 'main=' LIMIT 1 [ RunTime:0.000370s ]
+[ sql ] [ SQL ] SELECT * FROM `sean_admin_menu` WHERE  `module` = 'admin'  AND `controller` = 'Main'  AND `function` = 'index'  AND `type` = 1 LIMIT 1 [ RunTime:0.000402s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `sean_admin` [ RunTime:0.003815s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `sean_admin` LIMIT 1 [ RunTime:0.000277s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `sean_admin_cate` LIMIT 1 [ RunTime:0.000189s ]
+[ sql ] [ SQL ] SELECT `black_ip` FROM `sean_webconfig` LIMIT 1 [ RunTime:0.000196s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `sean_article` [ RunTime:0.005139s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `sean_article` LIMIT 1 [ RunTime:0.000185s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `sean_article` WHERE  `status` = 0 LIMIT 1 [ RunTime:0.000276s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `sean_article` WHERE  `is_top` = 1 LIMIT 1 [ RunTime:0.000172s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `sean_attachment` [ RunTime:0.003929s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `sean_attachment` LIMIT 1 [ RunTime:0.000242s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `sean_attachment` WHERE  `status` = 0 LIMIT 1 [ RunTime:0.000282s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `sean_attachment` WHERE  `status` = -1 LIMIT 1 [ RunTime:0.000180s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `sean_messages` [ RunTime:0.004989s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `sean_messages` LIMIT 1 [ RunTime:0.000167s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `sean_messages` WHERE  `is_look` = 0 LIMIT 1 [ RunTime:0.000282s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `sean_admin_log` [ RunTime:0.004755s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `sean_admin_log` WHERE  `admin_menu_id` = 50  AND ( `create_time` >= 1574179200 AND `create_time` <= 1574265600 ) LIMIT 1 [ RunTime:0.000998s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `sean_admin_log` WHERE  `admin_menu_id` = 50  AND ( `create_time` >= 1574265600 AND `create_time` <= 1574352000 ) LIMIT 1 [ RunTime:0.000245s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `sean_admin_log` WHERE  `admin_menu_id` = 50  AND ( `create_time` >= 1574352000 AND `create_time` <= 1574438400 ) LIMIT 1 [ RunTime:0.000218s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `sean_admin_log` WHERE  `admin_menu_id` = 50  AND ( `create_time` >= 1574438400 AND `create_time` <= 1574524800 ) LIMIT 1 [ RunTime:0.000196s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `sean_admin_log` WHERE  `admin_menu_id` = 50  AND ( `create_time` >= 1574524800 AND `create_time` <= 1574611200 ) LIMIT 1 [ RunTime:0.000257s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `sean_admin_log` WHERE  `admin_menu_id` = 50  AND ( `create_time` >= 1574611200 AND `create_time` <= 1574697600 ) LIMIT 1 [ RunTime:0.000172s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `sean_admin_log` WHERE  `admin_menu_id` = 50  AND ( `create_time` >= 1574697600 AND `create_time` <= 1574784000 ) LIMIT 1 [ RunTime:0.000199s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `sean_admin_log` WHERE  `admin_menu_id` = 50  AND ( `create_time` >= 1574784000 AND `create_time` <= 1574870400 ) LIMIT 1 [ RunTime:0.000215s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `sean_admin_log` WHERE  `admin_menu_id` = 50  AND ( `create_time` >= 1574870400 AND `create_time` <= 1574956800 ) LIMIT 1 [ RunTime:0.000220s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `sean_admin_log` WHERE  `admin_menu_id` = 50  AND ( `create_time` >= 1574956800 AND `create_time` <= 1575043200 ) LIMIT 1 [ RunTime:0.000173s ]
+---------------------------------------------------------------
+[ 2019-11-29T18:21:30+08:00 ] 0.0.0.0 GET www.sean.com/index/user/index.shtml
+[运行时间：0.049068s] [吞吐率：20.38req/s] [内存消耗：2,251.88kb] [文件加载：52]
+[ info ] [ LANG ] D:\web\phpweb\sean\thinkphp\lang\zh-cn.php
+[ info ] [ DB ] INIT mysql
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'index',
+    1 => 'user',
+    2 => 'index',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'cookie' => 'PHPSESSID=442e6gogce0u2o1m3iclccpj33; log-username=seanpan565%40gmail.com; log-password=0bcc6c3004249dbe3e78cd106ab5efb4; adminer_version=4.7.5',
+  'accept-language' => 'zh-CN,zh;q=0.9,en;q=0.8,und;q=0.7',
+  'accept-encoding' => 'gzip, deflate',
+  'referer' => 'http://www.sean.com/index/cart/index.shtml',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/78.0.3904.108 Safari/537.36',
+  'upgrade-insecure-requests' => '1',
+  'connection' => 'close',
+  'host' => 'www.sean.com',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+  'expire' => 3600,
+)
+[ info ] [ RUN ] app\index\controller\User->index[ D:\web\phpweb\sean\app\index\controller\User.php ]
+[ info ] [ VIEW ] D:\web\phpweb\sean\public/../app/index\view\user\index.html [ array (
+  0 => 'controller',
+  1 => 'user',
+  2 => 'usermsg',
+) ]
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.003142s ] mysql:host=127.0.0.1;port=3306;dbname=sean;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `sean_urlconfig` [ RunTime:0.004281s ]
+[ sql ] [ SQL ] SELECT `aliases`,`url` FROM `sean_urlconfig` WHERE  `status` = 1 [ RunTime:0.000315s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `sean_user` [ RunTime:0.004257s ]
+[ sql ] [ SQL ] SELECT `id`,`user_name` FROM `sean_user` WHERE  `id` = 1 LIMIT 1 [ RunTime:0.000348s ]
+[ sql ] [ SQL ] SELECT `id`,`user_name`,`user_sex`,`thumb` FROM `sean_user` WHERE  `id` = 1 LIMIT 1 [ RunTime:0.000255s ]
+---------------------------------------------------------------
+[ 2019-11-29T18:21:33+08:00 ] 0.0.0.0 GET www.sean.com/index/user/user_message.shtml
+[运行时间：0.038950s] [吞吐率：25.67req/s] [内存消耗：2,240.59kb] [文件加载：52]
+[ info ] [ LANG ] D:\web\phpweb\sean\thinkphp\lang\zh-cn.php
+[ info ] [ DB ] INIT mysql
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'index',
+    1 => 'user',
+    2 => 'user_message',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'cookie' => 'PHPSESSID=442e6gogce0u2o1m3iclccpj33; log-username=seanpan565%40gmail.com; log-password=0bcc6c3004249dbe3e78cd106ab5efb4; adminer_version=4.7.5',
+  'accept-language' => 'zh-CN,zh;q=0.9,en;q=0.8,und;q=0.7',
+  'accept-encoding' => 'gzip, deflate',
+  'referer' => 'http://www.sean.com/index/user/index.shtml',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/78.0.3904.108 Safari/537.36',
+  'upgrade-insecure-requests' => '1',
+  'connection' => 'close',
+  'host' => 'www.sean.com',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+  'expire' => 3600,
+)
+[ info ] [ RUN ] app\index\controller\User->user_message[ D:\web\phpweb\sean\app\index\controller\User.php ]
+[ info ] [ VIEW ] D:\web\phpweb\sean\public/../app/index\view\user\user_message.html [ array (
+  0 => 'controller',
+  1 => 'user',
+) ]
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000550s ] mysql:host=127.0.0.1;port=3306;dbname=sean;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `sean_urlconfig` [ RunTime:0.004772s ]
+[ sql ] [ SQL ] SELECT `aliases`,`url` FROM `sean_urlconfig` WHERE  `status` = 1 [ RunTime:0.000216s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `sean_user` [ RunTime:0.004846s ]
+[ sql ] [ SQL ] SELECT `id`,`user_name` FROM `sean_user` WHERE  `id` = 1 LIMIT 1 [ RunTime:0.000233s ]
+[ sql ] [ SQL ] SELECT `id`,`user_name`,`user_mobile`,`user_email`,`user_payword`,`user_status` FROM `sean_user` WHERE  `id` = 1  AND `user_status` = 1 LIMIT 1 [ RunTime:0.000198s ]
+---------------------------------------------------------------
+[ 2019-11-29T18:28:36+08:00 ] 0.0.0.0 GET www.sean.com/index/shop/index.shtml
+[运行时间：0.067130s] [吞吐率：14.90req/s] [内存消耗：2,540.79kb] [文件加载：58]
+[ info ] [ LANG ] D:\web\phpweb\sean\thinkphp\lang\zh-cn.php
+[ info ] [ DB ] INIT mysql
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'index',
+    1 => 'shop',
+    2 => 'index',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'cookie' => 'PHPSESSID=442e6gogce0u2o1m3iclccpj33; log-username=seanpan565%40gmail.com; log-password=0bcc6c3004249dbe3e78cd106ab5efb4; adminer_version=4.7.5',
+  'accept-language' => 'zh-CN,zh;q=0.9,en;q=0.8,und;q=0.7',
+  'accept-encoding' => 'gzip, deflate',
+  'referer' => 'http://www.sean.com/index/user/user_message.shtml',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/78.0.3904.108 Safari/537.36',
+  'upgrade-insecure-requests' => '1',
+  'connection' => 'close',
+  'host' => 'www.sean.com',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+  'expire' => 3600,
+)
+[ info ] [ RUN ] app\index\controller\Shop->index[ D:\web\phpweb\sean\app\index\controller\Shop.php ]
+[ info ] [ VIEW ] D:\web\phpweb\sean\public/../app/index\view\shop\shop.html [ array (
+  0 => 'controller',
+  1 => 'user',
+  2 => 'goodsCate',
+  3 => 'goodsVice',
+  4 => 'goodsList',
+) ]
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.001038s ] mysql:host=127.0.0.1;port=3306;dbname=sean;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `sean_urlconfig` [ RunTime:0.003583s ]
+[ sql ] [ SQL ] SELECT `aliases`,`url` FROM `sean_urlconfig` WHERE  `status` = 1 [ RunTime:0.000230s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `sean_user` [ RunTime:0.004609s ]
+[ sql ] [ SQL ] SELECT `id`,`user_name` FROM `sean_user` WHERE  `id` = 1 LIMIT 1 [ RunTime:0.000294s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `sean_goods` [ RunTime:0.005704s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `sean_goods` `a` LEFT JOIN `sean_goods_content` `b` ON `a`.`id`=`b`.`goods_id` WHERE  `b`.`goods_putaway` = 1 LIMIT 1 [ RunTime:0.001370s ]
+[ sql ] [ SQL ] SELECT `a`.`id`,`a`.`goods_cate_id`,`a`.`goods_name`,`a`.`goods_price`,`a`.`goods_vip`,`a`.`goods_thumb`,`b`.`goods_sales`,`b`.`goods_id`,`b`.`goods_putaway`,`b`.`goods_recommend`,`b`.`goods_collect`,`b`.`goods_inventory` FROM `sean_goods` `a` LEFT JOIN `sean_goods_content` `b` ON `a`.`id`=`b`.`goods_id` WHERE  `b`.`goods_putaway` = 1 LIMIT 0,15 [ RunTime:0.000795s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `sean_goods_cate` [ RunTime:0.004528s ]
+[ sql ] [ SQL ] SELECT * FROM `sean_goods_cate` [ RunTime:0.000297s ]
+[ sql ] [ SQL ] SELECT * FROM `sean_goods` `a` LEFT JOIN `sean_goods_content` `b` ON `a`.`id`=`b`.`goods_id` WHERE  `b`.`goods_putaway` = '1' LIMIT 3 [ RunTime:0.000562s ]
+---------------------------------------------------------------
+[ 2019-11-29T18:28:37+08:00 ] 0.0.0.0 GET www.sean.com/index/shopdateil/index/id/1.shtml
+[运行时间：0.097704s] [吞吐率：10.24req/s] [内存消耗：2,489.03kb] [文件加载：54]
+[ info ] [ LANG ] D:\web\phpweb\sean\thinkphp\lang\zh-cn.php
+[ info ] [ DB ] INIT mysql
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'index',
+    1 => 'shopdateil',
+    2 => 'index',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'cookie' => 'PHPSESSID=442e6gogce0u2o1m3iclccpj33; log-username=seanpan565%40gmail.com; log-password=0bcc6c3004249dbe3e78cd106ab5efb4; adminer_version=4.7.5',
+  'accept-language' => 'zh-CN,zh;q=0.9,en;q=0.8,und;q=0.7',
+  'accept-encoding' => 'gzip, deflate',
+  'referer' => 'http://www.sean.com/index/shop/index.shtml',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/78.0.3904.108 Safari/537.36',
+  'upgrade-insecure-requests' => '1',
+  'connection' => 'close',
+  'host' => 'www.sean.com',
+)
+[ info ] [ PARAM ] array (
+  'id' => '1',
+)
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+  'expire' => 3600,
+)
+[ info ] [ RUN ] app\index\controller\Shopdateil->index[ D:\web\phpweb\sean\app\index\controller\Shopdateil.php ]
+[ info ] [ VIEW ] D:\web\phpweb\sean\public/../app/index\view\shopdateil\shopdateil.html [ array (
+  0 => 'controller',
+  1 => 'user',
+  2 => 'goodsCate',
+  3 => 'goodsVice',
+  4 => 'goods',
+  5 => 'goods_content',
+  6 => 'goods_atlas',
+  7 => 'goods_attr',
+  8 => 'collect',
+) ]
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000531s ] mysql:host=127.0.0.1;port=3306;dbname=sean;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `sean_urlconfig` [ RunTime:0.023170s ]
+[ sql ] [ SQL ] SELECT `aliases`,`url` FROM `sean_urlconfig` WHERE  `status` = 1 [ RunTime:0.000197s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `sean_user` [ RunTime:0.010430s ]
+[ sql ] [ SQL ] SELECT `id`,`user_name` FROM `sean_user` WHERE  `id` = 1 LIMIT 1 [ RunTime:0.000280s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `sean_goods` [ RunTime:0.005472s ]
+[ sql ] [ SQL ] SELECT * FROM `sean_goods` WHERE  `id` = 1 LIMIT 1 [ RunTime:0.000387s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `sean_goods_content` [ RunTime:0.003560s ]
+[ sql ] [ SQL ] SELECT * FROM `sean_goods_content` WHERE  `goods_id` = 1 [ RunTime:0.000273s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `sean_goods_atlas` [ RunTime:0.004417s ]
+[ sql ] [ SQL ] SELECT * FROM `sean_goods_atlas` WHERE  `goods_id` = 1 [ RunTime:0.001100s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `sean_goods_attr` [ RunTime:0.005117s ]
+[ sql ] [ SQL ] SELECT * FROM `sean_goods_attr` WHERE  `goods_id` = 1 [ RunTime:0.000437s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `sean_goods_collect` [ RunTime:0.004571s ]
+[ sql ] [ SQL ] SELECT * FROM `sean_goods_collect` WHERE  `goods_id` = 1  AND `user_id` = 1 LIMIT 1 [ RunTime:0.000275s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `sean_goods_cate` [ RunTime:0.003527s ]
+[ sql ] [ SQL ] SELECT * FROM `sean_goods_cate` [ RunTime:0.000185s ]
+[ sql ] [ SQL ] SELECT * FROM `sean_goods` `a` LEFT JOIN `sean_goods_content` `b` ON `a`.`id`=`b`.`goods_id` WHERE  `b`.`goods_putaway` = '1' LIMIT 3 [ RunTime:0.000518s ]
+---------------------------------------------------------------
+[ 2019-11-29T18:28:40+08:00 ] 0.0.0.0 GET www.sean.com/index/shop/index.shtml
+[运行时间：0.074088s] [吞吐率：13.50req/s] [内存消耗：2,540.79kb] [文件加载：58]
+[ info ] [ LANG ] D:\web\phpweb\sean\thinkphp\lang\zh-cn.php
+[ info ] [ DB ] INIT mysql
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'index',
+    1 => 'shop',
+    2 => 'index',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'cookie' => 'PHPSESSID=442e6gogce0u2o1m3iclccpj33; log-username=seanpan565%40gmail.com; log-password=0bcc6c3004249dbe3e78cd106ab5efb4; adminer_version=4.7.5',
+  'accept-language' => 'zh-CN,zh;q=0.9,en;q=0.8,und;q=0.7',
+  'accept-encoding' => 'gzip, deflate',
+  'referer' => 'http://www.sean.com/index/user/user_message.shtml',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/78.0.3904.108 Safari/537.36',
+  'upgrade-insecure-requests' => '1',
+  'connection' => 'close',
+  'host' => 'www.sean.com',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+  'expire' => 3600,
+)
+[ info ] [ RUN ] app\index\controller\Shop->index[ D:\web\phpweb\sean\app\index\controller\Shop.php ]
+[ info ] [ VIEW ] D:\web\phpweb\sean\public/../app/index\view\shop\shop.html [ array (
+  0 => 'controller',
+  1 => 'user',
+  2 => 'goodsCate',
+  3 => 'goodsVice',
+  4 => 'goodsList',
+) ]
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000546s ] mysql:host=127.0.0.1;port=3306;dbname=sean;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `sean_urlconfig` [ RunTime:0.023198s ]
+[ sql ] [ SQL ] SELECT `aliases`,`url` FROM `sean_urlconfig` WHERE  `status` = 1 [ RunTime:0.000198s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `sean_user` [ RunTime:0.003511s ]
+[ sql ] [ SQL ] SELECT `id`,`user_name` FROM `sean_user` WHERE  `id` = 1 LIMIT 1 [ RunTime:0.000206s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `sean_goods` [ RunTime:0.004010s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `sean_goods` `a` LEFT JOIN `sean_goods_content` `b` ON `a`.`id`=`b`.`goods_id` WHERE  `b`.`goods_putaway` = 1 LIMIT 1 [ RunTime:0.000231s ]
+[ sql ] [ SQL ] SELECT `a`.`id`,`a`.`goods_cate_id`,`a`.`goods_name`,`a`.`goods_price`,`a`.`goods_vip`,`a`.`goods_thumb`,`b`.`goods_sales`,`b`.`goods_id`,`b`.`goods_putaway`,`b`.`goods_recommend`,`b`.`goods_collect`,`b`.`goods_inventory` FROM `sean_goods` `a` LEFT JOIN `sean_goods_content` `b` ON `a`.`id`=`b`.`goods_id` WHERE  `b`.`goods_putaway` = 1 LIMIT 0,15 [ RunTime:0.000448s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `sean_goods_cate` [ RunTime:0.010266s ]
+[ sql ] [ SQL ] SELECT * FROM `sean_goods_cate` [ RunTime:0.000199s ]
+[ sql ] [ SQL ] SELECT * FROM `sean_goods` `a` LEFT JOIN `sean_goods_content` `b` ON `a`.`id`=`b`.`goods_id` WHERE  `b`.`goods_putaway` = '1' LIMIT 3 [ RunTime:0.000392s ]
+---------------------------------------------------------------
+[ 2019-11-29T18:31:35+08:00 ] 0.0.0.0 GET www.sean.com/index/shop/index.shtml
+[运行时间：0.073295s] [吞吐率：13.64req/s] [内存消耗：2,459.75kb] [文件加载：60]
+[ info ] [ LANG ] D:\web\phpweb\sean\thinkphp\lang\zh-cn.php
+[ info ] [ DB ] INIT mysql
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'index',
+    1 => 'shop',
+    2 => 'index',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'cookie' => 'PHPSESSID=442e6gogce0u2o1m3iclccpj33; log-username=seanpan565%40gmail.com; log-password=0bcc6c3004249dbe3e78cd106ab5efb4; adminer_version=4.7.5',
+  'accept-language' => 'zh-CN,zh;q=0.9,en;q=0.8,und;q=0.7',
+  'accept-encoding' => 'gzip, deflate',
+  'referer' => 'http://www.sean.com/index/user/user_message.shtml',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/78.0.3904.108 Safari/537.36',
+  'upgrade-insecure-requests' => '1',
+  'cache-control' => 'max-age=0',
+  'connection' => 'close',
+  'host' => 'www.sean.com',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+  'expire' => 3600,
+)
+[ info ] [ RUN ] app\index\controller\Shop->index[ D:\web\phpweb\sean\app\index\controller\Shop.php ]
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000568s ] mysql:host=127.0.0.1;port=3306;dbname=sean;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `sean_urlconfig` [ RunTime:0.004682s ]
+[ sql ] [ SQL ] SELECT `aliases`,`url` FROM `sean_urlconfig` WHERE  `status` = 1 [ RunTime:0.000222s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `sean_user` [ RunTime:0.003367s ]
+[ sql ] [ SQL ] SELECT `id`,`user_name` FROM `sean_user` WHERE  `id` = 1 LIMIT 1 [ RunTime:0.000232s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `sean_goods` [ RunTime:0.004134s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `sean_goods` `a` LEFT JOIN `sean_goods_content` `b` ON `a`.`id`=`b`.`goods_id` WHERE  `b`.`goods_putaway` = 1 LIMIT 1 [ RunTime:0.000319s ]
+[ sql ] [ SQL ] SELECT `a`.`id`,`a`.`goods_cate_id`,`a`.`goods_name`,`a`.`goods_price`,`a`.`goods_vip`,`a`.`goods_thumb`,`b`.`goods_sales`,`b`.`goods_id`,`b`.`goods_putaway`,`b`.`goods_recommend`,`b`.`goods_collect`,`b`.`goods_inventory` FROM `sean_goods` `a` LEFT JOIN `sean_goods_content` `b` ON `a`.`id`=`b`.`goods_id` WHERE  `b`.`goods_putaway` = 1 LIMIT 0,15 [ RunTime:0.000451s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `sean_goods_cate` [ RunTime:0.003139s ]
+[ sql ] [ SQL ] SELECT * FROM `sean_goods_cate` [ RunTime:0.000184s ]
+[ error ] [8]未定义变量: id[D:\web\phpweb\sean\app\index\controller\Shop.php:35]
+---------------------------------------------------------------
+[ 2019-11-29T18:32:10+08:00 ] 0.0.0.0 GET www.sean.com/index/shop/index.shtml
+[运行时间：0.091577s] [吞吐率：10.92req/s] [内存消耗：2,697.78kb] [文件加载：60]
+[ info ] [ LANG ] D:\web\phpweb\sean\thinkphp\lang\zh-cn.php
+[ info ] [ DB ] INIT mysql
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'index',
+    1 => 'shop',
+    2 => 'index',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'cookie' => 'PHPSESSID=442e6gogce0u2o1m3iclccpj33; log-username=seanpan565%40gmail.com; log-password=0bcc6c3004249dbe3e78cd106ab5efb4; adminer_version=4.7.5',
+  'accept-language' => 'zh-CN,zh;q=0.9,en;q=0.8,und;q=0.7',
+  'accept-encoding' => 'gzip, deflate',
+  'referer' => 'http://www.sean.com/index/user/user_message.shtml',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/78.0.3904.108 Safari/537.36',
+  'upgrade-insecure-requests' => '1',
+  'cache-control' => 'max-age=0',
+  'connection' => 'close',
+  'host' => 'www.sean.com',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+  'expire' => 3600,
+)
+[ info ] [ RUN ] app\index\controller\Shop->index[ D:\web\phpweb\sean\app\index\controller\Shop.php ]
+[ info ] [ VIEW ] D:\web\phpweb\sean\public/../app/index\view\shop\shop.html [ array (
+  0 => 'controller',
+  1 => 'user',
+  2 => 'goodsCate',
+  3 => 'goodsVice',
+  4 => 'goodsList',
+  5 => 'collect',
+) ]
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000579s ] mysql:host=127.0.0.1;port=3306;dbname=sean;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `sean_urlconfig` [ RunTime:0.026028s ]
+[ sql ] [ SQL ] SELECT `aliases`,`url` FROM `sean_urlconfig` WHERE  `status` = 1 [ RunTime:0.000219s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `sean_user` [ RunTime:0.003383s ]
+[ sql ] [ SQL ] SELECT `id`,`user_name` FROM `sean_user` WHERE  `id` = 1 LIMIT 1 [ RunTime:0.000198s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `sean_goods` [ RunTime:0.003759s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `sean_goods` `a` LEFT JOIN `sean_goods_content` `b` ON `a`.`id`=`b`.`goods_id` WHERE  `b`.`goods_putaway` = 1 LIMIT 1 [ RunTime:0.000232s ]
+[ sql ] [ SQL ] SELECT `a`.`id`,`a`.`goods_cate_id`,`a`.`goods_name`,`a`.`goods_price`,`a`.`goods_vip`,`a`.`goods_thumb`,`b`.`goods_sales`,`b`.`goods_id`,`b`.`goods_putaway`,`b`.`goods_recommend`,`b`.`goods_collect`,`b`.`goods_inventory` FROM `sean_goods` `a` LEFT JOIN `sean_goods_content` `b` ON `a`.`id`=`b`.`goods_id` WHERE  `b`.`goods_putaway` = 1 LIMIT 0,15 [ RunTime:0.000313s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `sean_goods_cate` [ RunTime:0.010985s ]
+[ sql ] [ SQL ] SELECT * FROM `sean_goods_cate` [ RunTime:0.000270s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `sean_goods_collect` [ RunTime:0.003331s ]
+[ sql ] [ SQL ] SELECT * FROM `sean_goods_collect` WHERE  `user_id` = 1 LIMIT 1 [ RunTime:0.000255s ]
+[ sql ] [ SQL ] SELECT * FROM `sean_goods` `a` LEFT JOIN `sean_goods_content` `b` ON `a`.`id`=`b`.`goods_id` WHERE  `b`.`goods_putaway` = '1' LIMIT 3 [ RunTime:0.000300s ]
+---------------------------------------------------------------
+[ 2019-11-29T18:38:44+08:00 ] 0.0.0.0 GET www.sean.com/index/shop/index.shtml
+[运行时间：0.049462s] [吞吐率：20.22req/s] [内存消耗：2,414.07kb] [文件加载：55]
+[ info ] [ LANG ] D:\web\phpweb\sean\thinkphp\lang\zh-cn.php
+[ info ] [ DB ] INIT mysql
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'index',
+    1 => 'shop',
+    2 => 'index',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'cookie' => 'PHPSESSID=442e6gogce0u2o1m3iclccpj33; log-username=seanpan565%40gmail.com; log-password=0bcc6c3004249dbe3e78cd106ab5efb4; adminer_version=4.7.5',
+  'accept-language' => 'zh-CN,zh;q=0.9,en;q=0.8,und;q=0.7',
+  'accept-encoding' => 'gzip, deflate',
+  'referer' => 'http://www.sean.com/index/user/user_message.shtml',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/78.0.3904.108 Safari/537.36',
+  'upgrade-insecure-requests' => '1',
+  'cache-control' => 'max-age=0',
+  'connection' => 'close',
+  'host' => 'www.sean.com',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+  'expire' => 3600,
+)
+[ info ] [ RUN ] app\index\controller\Shop->index[ D:\web\phpweb\sean\app\index\controller\Shop.php ]
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.001051s ] mysql:host=127.0.0.1;port=3306;dbname=sean;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `sean_urlconfig` [ RunTime:0.003338s ]
+[ sql ] [ SQL ] SELECT `aliases`,`url` FROM `sean_urlconfig` WHERE  `status` = 1 [ RunTime:0.000211s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `sean_user` [ RunTime:0.003314s ]
+[ sql ] [ SQL ] SELECT `id`,`user_name` FROM `sean_user` WHERE  `id` = 1 LIMIT 1 [ RunTime:0.000198s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `sean_goods` [ RunTime:0.003218s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `sean_goods` `a` LEFT JOIN `sean_goods_content` `b` ON `a`.`id`=`b`.`goods_id` WHERE  `b`.`goods_putaway` = 1 LIMIT 1 [ RunTime:0.000254s ]
+[ sql ] [ SQL ] SELECT `a`.`id`,`a`.`goods_cate_id`,`a`.`goods_name`,`a`.`goods_price`,`a`.`goods_vip`,`a`.`goods_thumb`,`b`.`goods_sales`,`b`.`goods_id`,`b`.`goods_putaway`,`b`.`goods_recommend`,`b`.`goods_collect`,`b`.`goods_inventory` FROM `sean_goods` `a` LEFT JOIN `sean_goods_content` `b` ON `a`.`id`=`b`.`goods_id` WHERE  `b`.`goods_putaway` = 1 LIMIT 0,15 [ RunTime:0.000357s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `sean_goods_cate` [ RunTime:0.003269s ]
+[ sql ] [ SQL ] SELECT * FROM `sean_goods_cate` [ RunTime:0.000203s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `sean_goods_collect` [ RunTime:0.003606s ]
+[ sql ] [ SQL ] SELECT * FROM `sean_goods_collect` WHERE  `user_id` = 1 [ RunTime:0.000200s ]
+---------------------------------------------------------------
+[ 2019-11-29T18:39:18+08:00 ] 0.0.0.0 GET www.sean.com/index/shop/index.shtml
+[运行时间：0.079383s] [吞吐率：12.60req/s] [内存消耗：2,413.15kb] [文件加载：55]
+[ info ] [ LANG ] D:\web\phpweb\sean\thinkphp\lang\zh-cn.php
+[ info ] [ DB ] INIT mysql
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'index',
+    1 => 'shop',
+    2 => 'index',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'cookie' => 'PHPSESSID=442e6gogce0u2o1m3iclccpj33; log-username=seanpan565%40gmail.com; log-password=0bcc6c3004249dbe3e78cd106ab5efb4; adminer_version=4.7.5',
+  'accept-language' => 'zh-CN,zh;q=0.9,en;q=0.8,und;q=0.7',
+  'accept-encoding' => 'gzip, deflate',
+  'referer' => 'http://www.sean.com/index/user/user_message.shtml',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/78.0.3904.108 Safari/537.36',
+  'upgrade-insecure-requests' => '1',
+  'cache-control' => 'max-age=0',
+  'connection' => 'close',
+  'host' => 'www.sean.com',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+  'expire' => 3600,
+)
+[ info ] [ RUN ] app\index\controller\Shop->index[ D:\web\phpweb\sean\app\index\controller\Shop.php ]
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000521s ] mysql:host=127.0.0.1;port=3306;dbname=sean;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `sean_urlconfig` [ RunTime:0.028748s ]
+[ sql ] [ SQL ] SELECT `aliases`,`url` FROM `sean_urlconfig` WHERE  `status` = 1 [ RunTime:0.000211s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `sean_user` [ RunTime:0.003236s ]
+[ sql ] [ SQL ] SELECT `id`,`user_name` FROM `sean_user` WHERE  `id` = 1 LIMIT 1 [ RunTime:0.000282s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `sean_goods` [ RunTime:0.003819s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `sean_goods` `a` LEFT JOIN `sean_goods_content` `b` ON `a`.`id`=`b`.`goods_id` WHERE  `b`.`goods_putaway` = 1 LIMIT 1 [ RunTime:0.000258s ]
+[ sql ] [ SQL ] SELECT `a`.`id`,`a`.`goods_cate_id`,`a`.`goods_name`,`a`.`goods_price`,`a`.`goods_vip`,`a`.`goods_thumb`,`b`.`goods_sales`,`b`.`goods_id`,`b`.`goods_putaway`,`b`.`goods_recommend`,`b`.`goods_collect`,`b`.`goods_inventory` FROM `sean_goods` `a` LEFT JOIN `sean_goods_content` `b` ON `a`.`id`=`b`.`goods_id` WHERE  `b`.`goods_putaway` = 1 LIMIT 0,15 [ RunTime:0.000324s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `sean_goods_cate` [ RunTime:0.010880s ]
+[ sql ] [ SQL ] SELECT * FROM `sean_goods_cate` [ RunTime:0.000242s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `sean_goods_collect` [ RunTime:0.003143s ]
+[ sql ] [ SQL ] SELECT `goods_id`,`user_id` FROM `sean_goods_collect` WHERE  `user_id` = 1 [ RunTime:0.000187s ]
+---------------------------------------------------------------
+[ 2019-11-29T18:40:39+08:00 ] 0.0.0.0 GET www.sean.com/index/shop/index.shtml
+[运行时间：0.067178s] [吞吐率：14.89req/s] [内存消耗：2,412.39kb] [文件加载：55]
+[ info ] [ LANG ] D:\web\phpweb\sean\thinkphp\lang\zh-cn.php
+[ info ] [ DB ] INIT mysql
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'index',
+    1 => 'shop',
+    2 => 'index',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'cookie' => 'PHPSESSID=442e6gogce0u2o1m3iclccpj33; log-username=seanpan565%40gmail.com; log-password=0bcc6c3004249dbe3e78cd106ab5efb4',
+  'accept-language' => 'zh-CN,zh;q=0.9,en;q=0.8,und;q=0.7',
+  'accept-encoding' => 'gzip, deflate',
+  'referer' => 'http://www.sean.com/index/user/user_message.shtml',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/78.0.3904.108 Safari/537.36',
+  'upgrade-insecure-requests' => '1',
+  'cache-control' => 'max-age=0',
+  'connection' => 'close',
+  'host' => 'www.sean.com',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+  'expire' => 3600,
+)
+[ info ] [ RUN ] app\index\controller\Shop->index[ D:\web\phpweb\sean\app\index\controller\Shop.php ]
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000548s ] mysql:host=127.0.0.1;port=3306;dbname=sean;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `sean_urlconfig` [ RunTime:0.006943s ]
+[ sql ] [ SQL ] SELECT `aliases`,`url` FROM `sean_urlconfig` WHERE  `status` = 1 [ RunTime:0.000273s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `sean_user` [ RunTime:0.003229s ]
+[ sql ] [ SQL ] SELECT `id`,`user_name` FROM `sean_user` WHERE  `id` = 1 LIMIT 1 [ RunTime:0.000189s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `sean_goods` [ RunTime:0.003082s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `sean_goods` `a` LEFT JOIN `sean_goods_content` `b` ON `a`.`id`=`b`.`goods_id` WHERE  `b`.`goods_putaway` = 1 LIMIT 1 [ RunTime:0.000238s ]
+[ sql ] [ SQL ] SELECT `a`.`id`,`a`.`goods_cate_id`,`a`.`goods_name`,`a`.`goods_price`,`a`.`goods_vip`,`a`.`goods_thumb`,`b`.`goods_sales`,`b`.`goods_id`,`b`.`goods_putaway`,`b`.`goods_recommend`,`b`.`goods_collect`,`b`.`goods_inventory` FROM `sean_goods` `a` LEFT JOIN `sean_goods_content` `b` ON `a`.`id`=`b`.`goods_id` WHERE  `b`.`goods_putaway` = 1 LIMIT 0,15 [ RunTime:0.000320s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `sean_goods_cate` [ RunTime:0.003816s ]
+[ sql ] [ SQL ] SELECT * FROM `sean_goods_cate` [ RunTime:0.000224s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `sean_goods_collect` [ RunTime:0.003199s ]
+[ sql ] [ SQL ] SELECT `goods_id` FROM `sean_goods_collect` WHERE  `user_id` = 1 [ RunTime:0.000180s ]
+---------------------------------------------------------------
+[ 2019-11-29T18:43:05+08:00 ] 0.0.0.0 GET www.sean.com/index/shop/index.shtml
+[运行时间：0.096816s] [吞吐率：10.33req/s] [内存消耗：2,461.22kb] [文件加载：60]
+[ info ] [ LANG ] D:\web\phpweb\sean\thinkphp\lang\zh-cn.php
+[ info ] [ DB ] INIT mysql
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'index',
+    1 => 'shop',
+    2 => 'index',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'cookie' => 'PHPSESSID=442e6gogce0u2o1m3iclccpj33; log-username=seanpan565%40gmail.com; log-password=0bcc6c3004249dbe3e78cd106ab5efb4; adminer_version=4.7.5',
+  'accept-language' => 'zh-CN,zh;q=0.9,en;q=0.8,und;q=0.7',
+  'accept-encoding' => 'gzip, deflate',
+  'referer' => 'http://www.sean.com/index/user/user_message.shtml',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/78.0.3904.108 Safari/537.36',
+  'upgrade-insecure-requests' => '1',
+  'cache-control' => 'max-age=0',
+  'connection' => 'close',
+  'host' => 'www.sean.com',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+  'expire' => 3600,
+)
+[ info ] [ RUN ] app\index\controller\Shop->index[ D:\web\phpweb\sean\app\index\controller\Shop.php ]
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.011448s ] mysql:host=127.0.0.1;port=3306;dbname=sean;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `sean_urlconfig` [ RunTime:0.031676s ]
+[ sql ] [ SQL ] SELECT `aliases`,`url` FROM `sean_urlconfig` WHERE  `status` = 1 [ RunTime:0.000216s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `sean_user` [ RunTime:0.003270s ]
+[ sql ] [ SQL ] SELECT `id`,`user_name` FROM `sean_user` WHERE  `id` = 1 LIMIT 1 [ RunTime:0.000230s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `sean_goods` [ RunTime:0.003576s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `sean_goods` `a` LEFT JOIN `sean_goods_content` `b` ON `a`.`id`=`b`.`goods_id` WHERE  `b`.`goods_putaway` = 1 LIMIT 1 [ RunTime:0.000238s ]
+[ sql ] [ SQL ] SELECT `a`.`id`,`a`.`goods_cate_id`,`a`.`goods_name`,`a`.`goods_price`,`a`.`goods_vip`,`a`.`goods_thumb`,`b`.`goods_sales`,`b`.`goods_id`,`b`.`goods_putaway`,`b`.`goods_recommend`,`b`.`goods_collect`,`b`.`goods_inventory` FROM `sean_goods` `a` LEFT JOIN `sean_goods_content` `b` ON `a`.`id`=`b`.`goods_id` WHERE  `b`.`goods_putaway` = 1 LIMIT 0,15 [ RunTime:0.000318s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `sean_goods_cate` [ RunTime:0.010722s ]
+[ sql ] [ SQL ] SELECT * FROM `sean_goods_cate` [ RunTime:0.000200s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `sean_goods_collect` [ RunTime:0.003779s ]
+[ sql ] [ SQL ] SELECT `goods_id` FROM `sean_goods_collect` WHERE  `user_id` = 1 [ RunTime:0.000190s ]
+[ error ] [2]array_reduce() expects at least 2 parameters, 1 given[D:\web\phpweb\sean\app\index\controller\Shop.php:36]
+---------------------------------------------------------------
+[ 2019-11-29T18:43:57+08:00 ] 0.0.0.0 GET www.sean.com/index/shop/index.shtml
+[运行时间：0.077871s] [吞吐率：12.84req/s] [内存消耗：2,461.34kb] [文件加载：60]
+[ info ] [ LANG ] D:\web\phpweb\sean\thinkphp\lang\zh-cn.php
+[ info ] [ DB ] INIT mysql
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'index',
+    1 => 'shop',
+    2 => 'index',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'cookie' => 'PHPSESSID=442e6gogce0u2o1m3iclccpj33; log-username=seanpan565%40gmail.com; log-password=0bcc6c3004249dbe3e78cd106ab5efb4; adminer_version=4.7.5',
+  'accept-language' => 'zh-CN,zh;q=0.9,en;q=0.8,und;q=0.7',
+  'accept-encoding' => 'gzip, deflate',
+  'referer' => 'http://www.sean.com/index/user/user_message.shtml',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/78.0.3904.108 Safari/537.36',
+  'upgrade-insecure-requests' => '1',
+  'cache-control' => 'max-age=0',
+  'connection' => 'close',
+  'host' => 'www.sean.com',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+  'expire' => 3600,
+)
+[ info ] [ RUN ] app\index\controller\Shop->index[ D:\web\phpweb\sean\app\index\controller\Shop.php ]
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000559s ] mysql:host=127.0.0.1;port=3306;dbname=sean;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `sean_urlconfig` [ RunTime:0.006649s ]
+[ sql ] [ SQL ] SELECT `aliases`,`url` FROM `sean_urlconfig` WHERE  `status` = 1 [ RunTime:0.000251s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `sean_user` [ RunTime:0.003614s ]
+[ sql ] [ SQL ] SELECT `id`,`user_name` FROM `sean_user` WHERE  `id` = 1 LIMIT 1 [ RunTime:0.000204s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `sean_goods` [ RunTime:0.003022s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `sean_goods` `a` LEFT JOIN `sean_goods_content` `b` ON `a`.`id`=`b`.`goods_id` WHERE  `b`.`goods_putaway` = 1 LIMIT 1 [ RunTime:0.000240s ]
+[ sql ] [ SQL ] SELECT `a`.`id`,`a`.`goods_cate_id`,`a`.`goods_name`,`a`.`goods_price`,`a`.`goods_vip`,`a`.`goods_thumb`,`b`.`goods_sales`,`b`.`goods_id`,`b`.`goods_putaway`,`b`.`goods_recommend`,`b`.`goods_collect`,`b`.`goods_inventory` FROM `sean_goods` `a` LEFT JOIN `sean_goods_content` `b` ON `a`.`id`=`b`.`goods_id` WHERE  `b`.`goods_putaway` = 1 LIMIT 0,15 [ RunTime:0.000310s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `sean_goods_cate` [ RunTime:0.002997s ]
+[ sql ] [ SQL ] SELECT * FROM `sean_goods_cate` [ RunTime:0.000201s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `sean_goods_collect` [ RunTime:0.003697s ]
+[ sql ] [ SQL ] SELECT `goods_id` FROM `sean_goods_collect` WHERE  `user_id` = 1 [ RunTime:0.000232s ]
+[ error ] [2]array_reduce() expects parameter 2 to be a valid callback, function 'goods_id' not found or invalid function name[D:\web\phpweb\sean\app\index\controller\Shop.php:36]
+---------------------------------------------------------------
+[ 2019-11-29T18:44:49+08:00 ] 0.0.0.0 GET www.sean.com/index/shop/index.shtml
+[运行时间：0.056270s] [吞吐率：17.77req/s] [内存消耗：2,457.75kb] [文件加载：60]
+[ info ] [ LANG ] D:\web\phpweb\sean\thinkphp\lang\zh-cn.php
+[ info ] [ DB ] INIT mysql
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'index',
+    1 => 'shop',
+    2 => 'index',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'cookie' => 'PHPSESSID=442e6gogce0u2o1m3iclccpj33; log-username=seanpan565%40gmail.com; log-password=0bcc6c3004249dbe3e78cd106ab5efb4; adminer_version=4.7.5',
+  'accept-language' => 'zh-CN,zh;q=0.9,en;q=0.8,und;q=0.7',
+  'accept-encoding' => 'gzip, deflate',
+  'referer' => 'http://www.sean.com/index/user/user_message.shtml',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/78.0.3904.108 Safari/537.36',
+  'upgrade-insecure-requests' => '1',
+  'cache-control' => 'max-age=0',
+  'connection' => 'close',
+  'host' => 'www.sean.com',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+  'expire' => 3600,
+)
+[ info ] [ RUN ] app\index\controller\Shop->index[ D:\web\phpweb\sean\app\index\controller\Shop.php ]
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.001005s ] mysql:host=127.0.0.1;port=3306;dbname=sean;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `sean_urlconfig` [ RunTime:0.003259s ]
+[ sql ] [ SQL ] SELECT `aliases`,`url` FROM `sean_urlconfig` WHERE  `status` = 1 [ RunTime:0.000205s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `sean_user` [ RunTime:0.003461s ]
+[ sql ] [ SQL ] SELECT `id`,`user_name` FROM `sean_user` WHERE  `id` = 1 LIMIT 1 [ RunTime:0.000391s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `sean_goods` [ RunTime:0.003267s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `sean_goods` `a` LEFT JOIN `sean_goods_content` `b` ON `a`.`id`=`b`.`goods_id` WHERE  `b`.`goods_putaway` = 1 LIMIT 1 [ RunTime:0.000238s ]
+[ sql ] [ SQL ] SELECT `a`.`id`,`a`.`goods_cate_id`,`a`.`goods_name`,`a`.`goods_price`,`a`.`goods_vip`,`a`.`goods_thumb`,`b`.`goods_sales`,`b`.`goods_id`,`b`.`goods_putaway`,`b`.`goods_recommend`,`b`.`goods_collect`,`b`.`goods_inventory` FROM `sean_goods` `a` LEFT JOIN `sean_goods_content` `b` ON `a`.`id`=`b`.`goods_id` WHERE  `b`.`goods_putaway` = 1 LIMIT 0,15 [ RunTime:0.000316s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `sean_goods_cate` [ RunTime:0.003574s ]
+[ sql ] [ SQL ] SELECT * FROM `sean_goods_cate` [ RunTime:0.000255s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `sean_goods_collect` [ RunTime:0.003622s ]
+[ sql ] [ SQL ] SELECT `goods_id` FROM `sean_goods_collect` WHERE  `user_id` = 1 [ RunTime:0.000295s ]
+[ error ] [2]array_reduce() expects parameter 2 to be a valid callback, function 'goods_id' not found or invalid function name[D:\web\phpweb\sean\app\index\controller\Shop.php:36]
+---------------------------------------------------------------
+[ 2019-11-29T18:44:56+08:00 ] 0.0.0.0 GET www.sean.com/index/shop/index.shtml
+[运行时间：0.084492s] [吞吐率：11.84req/s] [内存消耗：2,412.55kb] [文件加载：55]
+[ info ] [ LANG ] D:\web\phpweb\sean\thinkphp\lang\zh-cn.php
+[ info ] [ DB ] INIT mysql
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'index',
+    1 => 'shop',
+    2 => 'index',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'cookie' => 'PHPSESSID=442e6gogce0u2o1m3iclccpj33; log-username=seanpan565%40gmail.com; log-password=0bcc6c3004249dbe3e78cd106ab5efb4; adminer_version=4.7.5',
+  'accept-language' => 'zh-CN,zh;q=0.9,en;q=0.8,und;q=0.7',
+  'accept-encoding' => 'gzip, deflate',
+  'referer' => 'http://www.sean.com/index/user/user_message.shtml',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/78.0.3904.108 Safari/537.36',
+  'upgrade-insecure-requests' => '1',
+  'cache-control' => 'max-age=0',
+  'connection' => 'close',
+  'host' => 'www.sean.com',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+  'expire' => 3600,
+)
+[ info ] [ RUN ] app\index\controller\Shop->index[ D:\web\phpweb\sean\app\index\controller\Shop.php ]
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.001647s ] mysql:host=127.0.0.1;port=3306;dbname=sean;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `sean_urlconfig` [ RunTime:0.033819s ]
+[ sql ] [ SQL ] SELECT `aliases`,`url` FROM `sean_urlconfig` WHERE  `status` = 1 [ RunTime:0.000239s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `sean_user` [ RunTime:0.003307s ]
+[ sql ] [ SQL ] SELECT `id`,`user_name` FROM `sean_user` WHERE  `id` = 1 LIMIT 1 [ RunTime:0.000191s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `sean_goods` [ RunTime:0.003325s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `sean_goods` `a` LEFT JOIN `sean_goods_content` `b` ON `a`.`id`=`b`.`goods_id` WHERE  `b`.`goods_putaway` = 1 LIMIT 1 [ RunTime:0.000284s ]
+[ sql ] [ SQL ] SELECT `a`.`id`,`a`.`goods_cate_id`,`a`.`goods_name`,`a`.`goods_price`,`a`.`goods_vip`,`a`.`goods_thumb`,`b`.`goods_sales`,`b`.`goods_id`,`b`.`goods_putaway`,`b`.`goods_recommend`,`b`.`goods_collect`,`b`.`goods_inventory` FROM `sean_goods` `a` LEFT JOIN `sean_goods_content` `b` ON `a`.`id`=`b`.`goods_id` WHERE  `b`.`goods_putaway` = 1 LIMIT 0,15 [ RunTime:0.000322s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `sean_goods_cate` [ RunTime:0.009666s ]
+[ sql ] [ SQL ] SELECT * FROM `sean_goods_cate` [ RunTime:0.000189s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `sean_goods_collect` [ RunTime:0.003411s ]
+[ sql ] [ SQL ] SELECT `goods_id` FROM `sean_goods_collect` WHERE  `user_id` = 1 [ RunTime:0.000279s ]
+---------------------------------------------------------------
+[ 2019-11-29T18:47:33+08:00 ] 0.0.0.0 GET www.sean.com/index/shop/index.shtml
+[运行时间：0.085939s] [吞吐率：11.64req/s] [内存消耗：2,481.51kb] [文件加载：60]
+[ info ] [ LANG ] D:\web\phpweb\sean\thinkphp\lang\zh-cn.php
+[ info ] [ DB ] INIT mysql
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'index',
+    1 => 'shop',
+    2 => 'index',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'cookie' => 'PHPSESSID=442e6gogce0u2o1m3iclccpj33; log-username=seanpan565%40gmail.com; log-password=0bcc6c3004249dbe3e78cd106ab5efb4; adminer_version=4.7.5',
+  'accept-language' => 'zh-CN,zh;q=0.9,en;q=0.8,und;q=0.7',
+  'accept-encoding' => 'gzip, deflate',
+  'referer' => 'http://www.sean.com/index/user/user_message.shtml',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/78.0.3904.108 Safari/537.36',
+  'upgrade-insecure-requests' => '1',
+  'cache-control' => 'max-age=0',
+  'connection' => 'close',
+  'host' => 'www.sean.com',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+  'expire' => 3600,
+)
+[ info ] [ RUN ] app\index\controller\Shop->index[ D:\web\phpweb\sean\app\index\controller\Shop.php ]
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000552s ] mysql:host=127.0.0.1;port=3306;dbname=sean;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `sean_urlconfig` [ RunTime:0.006973s ]
+[ sql ] [ SQL ] SELECT `aliases`,`url` FROM `sean_urlconfig` WHERE  `status` = 1 [ RunTime:0.000354s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `sean_user` [ RunTime:0.004765s ]
+[ sql ] [ SQL ] SELECT `id`,`user_name` FROM `sean_user` WHERE  `id` = 1 LIMIT 1 [ RunTime:0.000198s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `sean_goods` [ RunTime:0.003211s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `sean_goods` `a` LEFT JOIN `sean_goods_content` `b` ON `a`.`id`=`b`.`goods_id` WHERE  `b`.`goods_putaway` = 1 LIMIT 1 [ RunTime:0.000325s ]
+[ sql ] [ SQL ] SELECT `a`.`id`,`a`.`goods_cate_id`,`a`.`goods_name`,`a`.`goods_price`,`a`.`goods_vip`,`a`.`goods_thumb`,`b`.`goods_sales`,`b`.`goods_id`,`b`.`goods_putaway`,`b`.`goods_recommend`,`b`.`goods_collect`,`b`.`goods_inventory` FROM `sean_goods` `a` LEFT JOIN `sean_goods_content` `b` ON `a`.`id`=`b`.`goods_id` WHERE  `b`.`goods_putaway` = 1 LIMIT 0,15 [ RunTime:0.000343s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `sean_goods_cate` [ RunTime:0.011582s ]
+[ sql ] [ SQL ] SELECT * FROM `sean_goods_cate` [ RunTime:0.000198s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `sean_goods_collect` [ RunTime:0.003191s ]
+[ sql ] [ SQL ] SELECT `goods_id` FROM `sean_goods_collect` WHERE  `user_id` = 1 [ RunTime:0.000193s ]
+[ sql ] [ SQL ] SELECT * FROM `sean_goods` `a` LEFT JOIN `sean_goods_content` `b` ON `a`.`id`=`b`.`goods_id` WHERE  `b`.`goods_putaway` = '1' LIMIT 3 [ RunTime:0.000281s ]
+[ error ] [8]未定义变量: collect[D:\web\phpweb\sean\app\index\controller\Shop.php:49]
+---------------------------------------------------------------
+[ 2019-11-29T18:47:41+08:00 ] 0.0.0.0 GET www.sean.com/index/shop/index.shtml
+[运行时间：0.055593s] [吞吐率：17.99req/s] [内存消耗：2,550.14kb] [文件加载：62]
+[ info ] [ LANG ] D:\web\phpweb\sean\thinkphp\lang\zh-cn.php
+[ info ] [ DB ] INIT mysql
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'index',
+    1 => 'shop',
+    2 => 'index',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'cookie' => 'PHPSESSID=442e6gogce0u2o1m3iclccpj33; log-username=seanpan565%40gmail.com; log-password=0bcc6c3004249dbe3e78cd106ab5efb4; adminer_version=4.7.5',
+  'accept-language' => 'zh-CN,zh;q=0.9,en;q=0.8,und;q=0.7',
+  'accept-encoding' => 'gzip, deflate',
+  'referer' => 'http://www.sean.com/index/user/user_message.shtml',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/78.0.3904.108 Safari/537.36',
+  'upgrade-insecure-requests' => '1',
+  'cache-control' => 'max-age=0',
+  'connection' => 'close',
+  'host' => 'www.sean.com',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+  'expire' => 3600,
+)
+[ info ] [ RUN ] app\index\controller\Shop->index[ D:\web\phpweb\sean\app\index\controller\Shop.php ]
+[ info ] [ VIEW ] D:\web\phpweb\sean\public/../app/index\view\shop\shop.html [ array (
+  0 => 'controller',
+  1 => 'user',
+  2 => 'goodsCate',
+  3 => 'goodsVice',
+  4 => 'goodsList',
+) ]
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000515s ] mysql:host=127.0.0.1;port=3306;dbname=sean;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `sean_urlconfig` [ RunTime:0.003357s ]
+[ sql ] [ SQL ] SELECT `aliases`,`url` FROM `sean_urlconfig` WHERE  `status` = 1 [ RunTime:0.000204s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `sean_user` [ RunTime:0.003425s ]
+[ sql ] [ SQL ] SELECT `id`,`user_name` FROM `sean_user` WHERE  `id` = 1 LIMIT 1 [ RunTime:0.000193s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `sean_goods` [ RunTime:0.003148s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `sean_goods` `a` LEFT JOIN `sean_goods_content` `b` ON `a`.`id`=`b`.`goods_id` WHERE  `b`.`goods_putaway` = 1 LIMIT 1 [ RunTime:0.000236s ]
+[ sql ] [ SQL ] SELECT `a`.`id`,`a`.`goods_cate_id`,`a`.`goods_name`,`a`.`goods_price`,`a`.`goods_vip`,`a`.`goods_thumb`,`b`.`goods_sales`,`b`.`goods_id`,`b`.`goods_putaway`,`b`.`goods_recommend`,`b`.`goods_collect`,`b`.`goods_inventory` FROM `sean_goods` `a` LEFT JOIN `sean_goods_content` `b` ON `a`.`id`=`b`.`goods_id` WHERE  `b`.`goods_putaway` = 1 LIMIT 0,15 [ RunTime:0.000329s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `sean_goods_cate` [ RunTime:0.003707s ]
+[ sql ] [ SQL ] SELECT * FROM `sean_goods_cate` [ RunTime:0.000264s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `sean_goods_collect` [ RunTime:0.003163s ]
+[ sql ] [ SQL ] SELECT `goods_id` FROM `sean_goods_collect` WHERE  `user_id` = 1 [ RunTime:0.000183s ]
+[ sql ] [ SQL ] SELECT * FROM `sean_goods` `a` LEFT JOIN `sean_goods_content` `b` ON `a`.`id`=`b`.`goods_id` WHERE  `b`.`goods_putaway` = '1' LIMIT 3 [ RunTime:0.000290s ]
+[ error ] [8]未定义变量: collect[D:\web\phpweb\sean\runtime\temp\9f00085f35eebe97c31b8f0b176379d8.php:273]
+---------------------------------------------------------------
+[ 2019-11-29T18:47:46+08:00 ] 0.0.0.0 GET www.sean.com/index/shop/index.shtml
+[运行时间：0.063140s] [吞吐率：15.84req/s] [内存消耗：2,481.51kb] [文件加载：60]
+[ info ] [ LANG ] D:\web\phpweb\sean\thinkphp\lang\zh-cn.php
+[ info ] [ DB ] INIT mysql
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'index',
+    1 => 'shop',
+    2 => 'index',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'cookie' => 'PHPSESSID=442e6gogce0u2o1m3iclccpj33; log-username=seanpan565%40gmail.com; log-password=0bcc6c3004249dbe3e78cd106ab5efb4; adminer_version=4.7.5',
+  'accept-language' => 'zh-CN,zh;q=0.9,en;q=0.8,und;q=0.7',
+  'accept-encoding' => 'gzip, deflate',
+  'referer' => 'http://www.sean.com/index/user/user_message.shtml',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/78.0.3904.108 Safari/537.36',
+  'upgrade-insecure-requests' => '1',
+  'cache-control' => 'max-age=0',
+  'connection' => 'close',
+  'host' => 'www.sean.com',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+  'expire' => 3600,
+)
+[ info ] [ RUN ] app\index\controller\Shop->index[ D:\web\phpweb\sean\app\index\controller\Shop.php ]
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000565s ] mysql:host=127.0.0.1;port=3306;dbname=sean;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `sean_urlconfig` [ RunTime:0.007674s ]
+[ sql ] [ SQL ] SELECT `aliases`,`url` FROM `sean_urlconfig` WHERE  `status` = 1 [ RunTime:0.000205s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `sean_user` [ RunTime:0.003175s ]
+[ sql ] [ SQL ] SELECT `id`,`user_name` FROM `sean_user` WHERE  `id` = 1 LIMIT 1 [ RunTime:0.000192s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `sean_goods` [ RunTime:0.003087s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `sean_goods` `a` LEFT JOIN `sean_goods_content` `b` ON `a`.`id`=`b`.`goods_id` WHERE  `b`.`goods_putaway` = 1 LIMIT 1 [ RunTime:0.000484s ]
+[ sql ] [ SQL ] SELECT `a`.`id`,`a`.`goods_cate_id`,`a`.`goods_name`,`a`.`goods_price`,`a`.`goods_vip`,`a`.`goods_thumb`,`b`.`goods_sales`,`b`.`goods_id`,`b`.`goods_putaway`,`b`.`goods_recommend`,`b`.`goods_collect`,`b`.`goods_inventory` FROM `sean_goods` `a` LEFT JOIN `sean_goods_content` `b` ON `a`.`id`=`b`.`goods_id` WHERE  `b`.`goods_putaway` = 1 LIMIT 0,15 [ RunTime:0.000686s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `sean_goods_cate` [ RunTime:0.011739s ]
+[ sql ] [ SQL ] SELECT * FROM `sean_goods_cate` [ RunTime:0.000195s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `sean_goods_collect` [ RunTime:0.004382s ]
+[ sql ] [ SQL ] SELECT `goods_id` FROM `sean_goods_collect` WHERE  `user_id` = 1 [ RunTime:0.000199s ]
+[ sql ] [ SQL ] SELECT * FROM `sean_goods` `a` LEFT JOIN `sean_goods_content` `b` ON `a`.`id`=`b`.`goods_id` WHERE  `b`.`goods_putaway` = '1' LIMIT 3 [ RunTime:0.000301s ]
+[ error ] [8]未定义变量: collect[D:\web\phpweb\sean\app\index\controller\Shop.php:49]
+---------------------------------------------------------------
+[ 2019-11-29T18:49:41+08:00 ] 0.0.0.0 GET www.sean.com/index/shop/index.shtml
+[运行时间：0.073612s] [吞吐率：13.58req/s] [内存消耗：2,457.62kb] [文件加载：60]
+[ info ] [ LANG ] D:\web\phpweb\sean\thinkphp\lang\zh-cn.php
+[ info ] [ DB ] INIT mysql
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'index',
+    1 => 'shop',
+    2 => 'index',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'cookie' => 'PHPSESSID=442e6gogce0u2o1m3iclccpj33; log-username=seanpan565%40gmail.com; log-password=0bcc6c3004249dbe3e78cd106ab5efb4; adminer_version=4.7.5',
+  'accept-language' => 'zh-CN,zh;q=0.9,en;q=0.8,und;q=0.7',
+  'accept-encoding' => 'gzip, deflate',
+  'referer' => 'http://www.sean.com/index/user/user_message.shtml',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/78.0.3904.108 Safari/537.36',
+  'upgrade-insecure-requests' => '1',
+  'cache-control' => 'max-age=0',
+  'connection' => 'close',
+  'host' => 'www.sean.com',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+  'expire' => 3600,
+)
+[ info ] [ RUN ] app\index\controller\Shop->index[ D:\web\phpweb\sean\app\index\controller\Shop.php ]
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.010764s ] mysql:host=127.0.0.1;port=3306;dbname=sean;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `sean_urlconfig` [ RunTime:0.006245s ]
+[ sql ] [ SQL ] SELECT `aliases`,`url` FROM `sean_urlconfig` WHERE  `status` = 1 [ RunTime:0.000216s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `sean_user` [ RunTime:0.003429s ]
+[ sql ] [ SQL ] SELECT `id`,`user_name` FROM `sean_user` WHERE  `id` = 1 LIMIT 1 [ RunTime:0.000229s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `sean_goods` [ RunTime:0.003781s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `sean_goods` `a` LEFT JOIN `sean_goods_content` `b` ON `a`.`id`=`b`.`goods_id` WHERE  `b`.`goods_putaway` = 1 LIMIT 1 [ RunTime:0.000483s ]
+[ sql ] [ SQL ] SELECT `a`.`id`,`a`.`goods_cate_id`,`a`.`goods_name`,`a`.`goods_price`,`a`.`goods_vip`,`a`.`goods_thumb`,`b`.`goods_sales`,`b`.`goods_id`,`b`.`goods_putaway`,`b`.`goods_recommend`,`b`.`goods_collect`,`b`.`goods_inventory` FROM `sean_goods` `a` LEFT JOIN `sean_goods_content` `b` ON `a`.`id`=`b`.`goods_id` WHERE  `b`.`goods_putaway` = 1 LIMIT 0,15 [ RunTime:0.000342s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `sean_goods_cate` [ RunTime:0.003271s ]
+[ sql ] [ SQL ] SELECT * FROM `sean_goods_cate` [ RunTime:0.000229s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `sean_goods_collect` [ RunTime:0.003719s ]
+[ sql ] [ SQL ] SELECT `goods_id` FROM `sean_goods_collect` WHERE  `user_id` = 1 [ RunTime:0.000385s ]
+[ error ] [2]array_push() expects at least 2 parameters, 1 given[D:\web\phpweb\sean\app\index\controller\Shop.php:36]
+---------------------------------------------------------------
+[ 2019-11-29T18:50:07+08:00 ] 0.0.0.0 GET www.sean.com/index/shop/index.shtml
+[运行时间：0.071357s] [吞吐率：14.01req/s] [内存消耗：2,457.63kb] [文件加载：60]
+[ info ] [ LANG ] D:\web\phpweb\sean\thinkphp\lang\zh-cn.php
+[ info ] [ DB ] INIT mysql
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'index',
+    1 => 'shop',
+    2 => 'index',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'cookie' => 'PHPSESSID=442e6gogce0u2o1m3iclccpj33; log-username=seanpan565%40gmail.com; log-password=0bcc6c3004249dbe3e78cd106ab5efb4; adminer_version=4.7.5',
+  'accept-language' => 'zh-CN,zh;q=0.9,en;q=0.8,und;q=0.7',
+  'accept-encoding' => 'gzip, deflate',
+  'referer' => 'http://www.sean.com/index/user/user_message.shtml',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/78.0.3904.108 Safari/537.36',
+  'upgrade-insecure-requests' => '1',
+  'cache-control' => 'max-age=0',
+  'connection' => 'close',
+  'host' => 'www.sean.com',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+  'expire' => 3600,
+)
+[ info ] [ RUN ] app\index\controller\Shop->index[ D:\web\phpweb\sean\app\index\controller\Shop.php ]
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000535s ] mysql:host=127.0.0.1;port=3306;dbname=sean;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `sean_urlconfig` [ RunTime:0.012839s ]
+[ sql ] [ SQL ] SELECT `aliases`,`url` FROM `sean_urlconfig` WHERE  `status` = 1 [ RunTime:0.000326s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `sean_user` [ RunTime:0.003276s ]
+[ sql ] [ SQL ] SELECT `id`,`user_name` FROM `sean_user` WHERE  `id` = 1 LIMIT 1 [ RunTime:0.000191s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `sean_goods` [ RunTime:0.003585s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `sean_goods` `a` LEFT JOIN `sean_goods_content` `b` ON `a`.`id`=`b`.`goods_id` WHERE  `b`.`goods_putaway` = 1 LIMIT 1 [ RunTime:0.000338s ]
+[ sql ] [ SQL ] SELECT `a`.`id`,`a`.`goods_cate_id`,`a`.`goods_name`,`a`.`goods_price`,`a`.`goods_vip`,`a`.`goods_thumb`,`b`.`goods_sales`,`b`.`goods_id`,`b`.`goods_putaway`,`b`.`goods_recommend`,`b`.`goods_collect`,`b`.`goods_inventory` FROM `sean_goods` `a` LEFT JOIN `sean_goods_content` `b` ON `a`.`id`=`b`.`goods_id` WHERE  `b`.`goods_putaway` = 1 LIMIT 0,15 [ RunTime:0.000495s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `sean_goods_cate` [ RunTime:0.003601s ]
+[ sql ] [ SQL ] SELECT * FROM `sean_goods_cate` [ RunTime:0.000213s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `sean_goods_collect` [ RunTime:0.003641s ]
+[ sql ] [ SQL ] SELECT `goods_id` FROM `sean_goods_collect` WHERE  `user_id` = 1 [ RunTime:0.000228s ]
+[ error ] [2]array_column() expects at least 2 parameters, 1 given[D:\web\phpweb\sean\app\index\controller\Shop.php:36]
+---------------------------------------------------------------
+[ 2019-11-29T18:50:08+08:00 ] 0.0.0.0 GET www.sean.com/index/shop/index.shtml
+[运行时间：0.066316s] [吞吐率：15.08req/s] [内存消耗：2,457.63kb] [文件加载：60]
+[ info ] [ LANG ] D:\web\phpweb\sean\thinkphp\lang\zh-cn.php
+[ info ] [ DB ] INIT mysql
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'index',
+    1 => 'shop',
+    2 => 'index',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'cookie' => 'PHPSESSID=442e6gogce0u2o1m3iclccpj33; log-username=seanpan565%40gmail.com; log-password=0bcc6c3004249dbe3e78cd106ab5efb4; adminer_version=4.7.5',
+  'accept-language' => 'zh-CN,zh;q=0.9,en;q=0.8,und;q=0.7',
+  'accept-encoding' => 'gzip, deflate',
+  'referer' => 'http://www.sean.com/index/user/user_message.shtml',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/78.0.3904.108 Safari/537.36',
+  'upgrade-insecure-requests' => '1',
+  'cache-control' => 'max-age=0',
+  'connection' => 'close',
+  'host' => 'www.sean.com',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+  'expire' => 3600,
+)
+[ info ] [ RUN ] app\index\controller\Shop->index[ D:\web\phpweb\sean\app\index\controller\Shop.php ]
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000506s ] mysql:host=127.0.0.1;port=3306;dbname=sean;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `sean_urlconfig` [ RunTime:0.011478s ]
+[ sql ] [ SQL ] SELECT `aliases`,`url` FROM `sean_urlconfig` WHERE  `status` = 1 [ RunTime:0.000205s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `sean_user` [ RunTime:0.003233s ]
+[ sql ] [ SQL ] SELECT `id`,`user_name` FROM `sean_user` WHERE  `id` = 1 LIMIT 1 [ RunTime:0.000208s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `sean_goods` [ RunTime:0.004533s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `sean_goods` `a` LEFT JOIN `sean_goods_content` `b` ON `a`.`id`=`b`.`goods_id` WHERE  `b`.`goods_putaway` = 1 LIMIT 1 [ RunTime:0.000235s ]
+[ sql ] [ SQL ] SELECT `a`.`id`,`a`.`goods_cate_id`,`a`.`goods_name`,`a`.`goods_price`,`a`.`goods_vip`,`a`.`goods_thumb`,`b`.`goods_sales`,`b`.`goods_id`,`b`.`goods_putaway`,`b`.`goods_recommend`,`b`.`goods_collect`,`b`.`goods_inventory` FROM `sean_goods` `a` LEFT JOIN `sean_goods_content` `b` ON `a`.`id`=`b`.`goods_id` WHERE  `b`.`goods_putaway` = 1 LIMIT 0,15 [ RunTime:0.000327s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `sean_goods_cate` [ RunTime:0.011499s ]
+[ sql ] [ SQL ] SELECT * FROM `sean_goods_cate` [ RunTime:0.000278s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `sean_goods_collect` [ RunTime:0.003474s ]
+[ sql ] [ SQL ] SELECT `goods_id` FROM `sean_goods_collect` WHERE  `user_id` = 1 [ RunTime:0.000193s ]
+[ error ] [2]array_column() expects at least 2 parameters, 1 given[D:\web\phpweb\sean\app\index\controller\Shop.php:36]
+---------------------------------------------------------------
+[ 2019-11-29T18:50:31+08:00 ] 0.0.0.0 GET www.sean.com/index/shop/index.shtml
+[运行时间：0.061982s] [吞吐率：16.13req/s] [内存消耗：2,413.38kb] [文件加载：55]
+[ info ] [ LANG ] D:\web\phpweb\sean\thinkphp\lang\zh-cn.php
+[ info ] [ DB ] INIT mysql
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'index',
+    1 => 'shop',
+    2 => 'index',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'cookie' => 'PHPSESSID=442e6gogce0u2o1m3iclccpj33; log-username=seanpan565%40gmail.com; log-password=0bcc6c3004249dbe3e78cd106ab5efb4; adminer_version=4.7.5',
+  'accept-language' => 'zh-CN,zh;q=0.9,en;q=0.8,und;q=0.7',
+  'accept-encoding' => 'gzip, deflate',
+  'referer' => 'http://www.sean.com/index/user/user_message.shtml',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/78.0.3904.108 Safari/537.36',
+  'upgrade-insecure-requests' => '1',
+  'cache-control' => 'max-age=0',
+  'connection' => 'close',
+  'host' => 'www.sean.com',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+  'expire' => 3600,
+)
+[ info ] [ RUN ] app\index\controller\Shop->index[ D:\web\phpweb\sean\app\index\controller\Shop.php ]
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000540s ] mysql:host=127.0.0.1;port=3306;dbname=sean;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `sean_urlconfig` [ RunTime:0.012073s ]
+[ sql ] [ SQL ] SELECT `aliases`,`url` FROM `sean_urlconfig` WHERE  `status` = 1 [ RunTime:0.000200s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `sean_user` [ RunTime:0.003429s ]
+[ sql ] [ SQL ] SELECT `id`,`user_name` FROM `sean_user` WHERE  `id` = 1 LIMIT 1 [ RunTime:0.000194s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `sean_goods` [ RunTime:0.003592s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `sean_goods` `a` LEFT JOIN `sean_goods_content` `b` ON `a`.`id`=`b`.`goods_id` WHERE  `b`.`goods_putaway` = 1 LIMIT 1 [ RunTime:0.000286s ]
+[ sql ] [ SQL ] SELECT `a`.`id`,`a`.`goods_cate_id`,`a`.`goods_name`,`a`.`goods_price`,`a`.`goods_vip`,`a`.`goods_thumb`,`b`.`goods_sales`,`b`.`goods_id`,`b`.`goods_putaway`,`b`.`goods_recommend`,`b`.`goods_collect`,`b`.`goods_inventory` FROM `sean_goods` `a` LEFT JOIN `sean_goods_content` `b` ON `a`.`id`=`b`.`goods_id` WHERE  `b`.`goods_putaway` = 1 LIMIT 0,15 [ RunTime:0.000472s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `sean_goods_cate` [ RunTime:0.010998s ]
+[ sql ] [ SQL ] SELECT * FROM `sean_goods_cate` [ RunTime:0.000197s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `sean_goods_collect` [ RunTime:0.004086s ]
+[ sql ] [ SQL ] SELECT `goods_id` FROM `sean_goods_collect` WHERE  `user_id` = 1 [ RunTime:0.000205s ]
+---------------------------------------------------------------
+[ 2019-11-29T18:52:41+08:00 ] 0.0.0.0 GET www.sean.com/index/shop/index.shtml
+[运行时间：0.058154s] [吞吐率：17.20req/s] [内存消耗：2,703.34kb] [文件加载：62]
+[ info ] [ LANG ] D:\web\phpweb\sean\thinkphp\lang\zh-cn.php
+[ info ] [ DB ] INIT mysql
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'index',
+    1 => 'shop',
+    2 => 'index',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'cookie' => 'PHPSESSID=442e6gogce0u2o1m3iclccpj33; log-username=seanpan565%40gmail.com; log-password=0bcc6c3004249dbe3e78cd106ab5efb4; adminer_version=4.7.5',
+  'accept-language' => 'zh-CN,zh;q=0.9,en;q=0.8,und;q=0.7',
+  'accept-encoding' => 'gzip, deflate',
+  'referer' => 'http://www.sean.com/index/user/user_message.shtml',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/78.0.3904.108 Safari/537.36',
+  'upgrade-insecure-requests' => '1',
+  'cache-control' => 'max-age=0',
+  'connection' => 'close',
+  'host' => 'www.sean.com',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+  'expire' => 3600,
+)
+[ info ] [ RUN ] app\index\controller\Shop->index[ D:\web\phpweb\sean\app\index\controller\Shop.php ]
+[ info ] [ VIEW ] D:\web\phpweb\sean\public/../app/index\view\shop\shop.html [ array (
+  0 => 'controller',
+  1 => 'user',
+  2 => 'goodsCate',
+  3 => 'goodsVice',
+  4 => 'goodsList',
+  5 => 'collect',
+) ]
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000983s ] mysql:host=127.0.0.1;port=3306;dbname=sean;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `sean_urlconfig` [ RunTime:0.004055s ]
+[ sql ] [ SQL ] SELECT `aliases`,`url` FROM `sean_urlconfig` WHERE  `status` = 1 [ RunTime:0.000342s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `sean_user` [ RunTime:0.003362s ]
+[ sql ] [ SQL ] SELECT `id`,`user_name` FROM `sean_user` WHERE  `id` = 1 LIMIT 1 [ RunTime:0.000199s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `sean_goods` [ RunTime:0.003245s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `sean_goods` `a` LEFT JOIN `sean_goods_content` `b` ON `a`.`id`=`b`.`goods_id` WHERE  `b`.`goods_putaway` = 1 LIMIT 1 [ RunTime:0.000325s ]
+[ sql ] [ SQL ] SELECT `a`.`id`,`a`.`goods_cate_id`,`a`.`goods_name`,`a`.`goods_price`,`a`.`goods_vip`,`a`.`goods_thumb`,`b`.`goods_sales`,`b`.`goods_id`,`b`.`goods_putaway`,`b`.`goods_recommend`,`b`.`goods_collect`,`b`.`goods_inventory` FROM `sean_goods` `a` LEFT JOIN `sean_goods_content` `b` ON `a`.`id`=`b`.`goods_id` WHERE  `b`.`goods_putaway` = 1 LIMIT 0,15 [ RunTime:0.000360s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `sean_goods_cate` [ RunTime:0.003789s ]
+[ sql ] [ SQL ] SELECT * FROM `sean_goods_cate` [ RunTime:0.000201s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `sean_goods_collect` [ RunTime:0.003112s ]
+[ sql ] [ SQL ] SELECT `goods_id` FROM `sean_goods_collect` WHERE  `user_id` = 1 [ RunTime:0.000211s ]
+[ sql ] [ SQL ] SELECT * FROM `sean_goods` `a` LEFT JOIN `sean_goods_content` `b` ON `a`.`id`=`b`.`goods_id` WHERE  `b`.`goods_putaway` = '1' LIMIT 3 [ RunTime:0.000284s ]
+[ error ] [64]Cannot use [] for reading[D:\web\phpweb\sean\runtime\temp\9f00085f35eebe97c31b8f0b176379d8.php:273]
+---------------------------------------------------------------
+[ 2019-11-29T18:52:48+08:00 ] 0.0.0.0 GET www.sean.com/index/shop/index.shtml
+[运行时间：0.078872s] [吞吐率：12.68req/s] [内存消耗：2,694.45kb] [文件加载：60]
+[ info ] [ LANG ] D:\web\phpweb\sean\thinkphp\lang\zh-cn.php
+[ info ] [ DB ] INIT mysql
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'index',
+    1 => 'shop',
+    2 => 'index',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'cookie' => 'PHPSESSID=442e6gogce0u2o1m3iclccpj33; log-username=seanpan565%40gmail.com; log-password=0bcc6c3004249dbe3e78cd106ab5efb4; adminer_version=4.7.5',
+  'accept-language' => 'zh-CN,zh;q=0.9,en;q=0.8,und;q=0.7',
+  'accept-encoding' => 'gzip, deflate',
+  'referer' => 'http://www.sean.com/index/user/user_message.shtml',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/78.0.3904.108 Safari/537.36',
+  'upgrade-insecure-requests' => '1',
+  'cache-control' => 'max-age=0',
+  'connection' => 'close',
+  'host' => 'www.sean.com',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+  'expire' => 3600,
+)
+[ info ] [ RUN ] app\index\controller\Shop->index[ D:\web\phpweb\sean\app\index\controller\Shop.php ]
+[ info ] [ VIEW ] D:\web\phpweb\sean\public/../app/index\view\shop\shop.html [ array (
+  0 => 'controller',
+  1 => 'user',
+  2 => 'goodsCate',
+  3 => 'goodsVice',
+  4 => 'goodsList',
+  5 => 'collect',
+) ]
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000570s ] mysql:host=127.0.0.1;port=3306;dbname=sean;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `sean_urlconfig` [ RunTime:0.012576s ]
+[ sql ] [ SQL ] SELECT `aliases`,`url` FROM `sean_urlconfig` WHERE  `status` = 1 [ RunTime:0.000197s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `sean_user` [ RunTime:0.003217s ]
+[ sql ] [ SQL ] SELECT `id`,`user_name` FROM `sean_user` WHERE  `id` = 1 LIMIT 1 [ RunTime:0.000197s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `sean_goods` [ RunTime:0.004031s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `sean_goods` `a` LEFT JOIN `sean_goods_content` `b` ON `a`.`id`=`b`.`goods_id` WHERE  `b`.`goods_putaway` = 1 LIMIT 1 [ RunTime:0.000268s ]
+[ sql ] [ SQL ] SELECT `a`.`id`,`a`.`goods_cate_id`,`a`.`goods_name`,`a`.`goods_price`,`a`.`goods_vip`,`a`.`goods_thumb`,`b`.`goods_sales`,`b`.`goods_id`,`b`.`goods_putaway`,`b`.`goods_recommend`,`b`.`goods_collect`,`b`.`goods_inventory` FROM `sean_goods` `a` LEFT JOIN `sean_goods_content` `b` ON `a`.`id`=`b`.`goods_id` WHERE  `b`.`goods_putaway` = 1 LIMIT 0,15 [ RunTime:0.000343s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `sean_goods_cate` [ RunTime:0.010745s ]
+[ sql ] [ SQL ] SELECT * FROM `sean_goods_cate` [ RunTime:0.000189s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `sean_goods_collect` [ RunTime:0.004480s ]
+[ sql ] [ SQL ] SELECT `goods_id` FROM `sean_goods_collect` WHERE  `user_id` = 1 [ RunTime:0.000232s ]
+[ sql ] [ SQL ] SELECT * FROM `sean_goods` `a` LEFT JOIN `sean_goods_content` `b` ON `a`.`id`=`b`.`goods_id` WHERE  `b`.`goods_putaway` = '1' LIMIT 3 [ RunTime:0.000292s ]
+---------------------------------------------------------------
+[ 2019-11-29T18:54:15+08:00 ] 0.0.0.0 GET www.sean.com/index/shop/index.shtml
+[运行时间：0.063772s] [吞吐率：15.68req/s] [内存消耗：2,413.38kb] [文件加载：55]
+[ info ] [ LANG ] D:\web\phpweb\sean\thinkphp\lang\zh-cn.php
+[ info ] [ DB ] INIT mysql
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'index',
+    1 => 'shop',
+    2 => 'index',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'cookie' => 'PHPSESSID=442e6gogce0u2o1m3iclccpj33; log-username=seanpan565%40gmail.com; log-password=0bcc6c3004249dbe3e78cd106ab5efb4; adminer_version=4.7.5',
+  'accept-language' => 'zh-CN,zh;q=0.9,en;q=0.8,und;q=0.7',
+  'accept-encoding' => 'gzip, deflate',
+  'referer' => 'http://www.sean.com/index/user/user_message.shtml',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/78.0.3904.108 Safari/537.36',
+  'upgrade-insecure-requests' => '1',
+  'cache-control' => 'max-age=0',
+  'connection' => 'close',
+  'host' => 'www.sean.com',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+  'expire' => 3600,
+)
+[ info ] [ RUN ] app\index\controller\Shop->index[ D:\web\phpweb\sean\app\index\controller\Shop.php ]
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000561s ] mysql:host=127.0.0.1;port=3306;dbname=sean;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `sean_urlconfig` [ RunTime:0.014099s ]
+[ sql ] [ SQL ] SELECT `aliases`,`url` FROM `sean_urlconfig` WHERE  `status` = 1 [ RunTime:0.000215s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `sean_user` [ RunTime:0.003341s ]
+[ sql ] [ SQL ] SELECT `id`,`user_name` FROM `sean_user` WHERE  `id` = 1 LIMIT 1 [ RunTime:0.000194s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `sean_goods` [ RunTime:0.003790s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `sean_goods` `a` LEFT JOIN `sean_goods_content` `b` ON `a`.`id`=`b`.`goods_id` WHERE  `b`.`goods_putaway` = 1 LIMIT 1 [ RunTime:0.000296s ]
+[ sql ] [ SQL ] SELECT `a`.`id`,`a`.`goods_cate_id`,`a`.`goods_name`,`a`.`goods_price`,`a`.`goods_vip`,`a`.`goods_thumb`,`b`.`goods_sales`,`b`.`goods_id`,`b`.`goods_putaway`,`b`.`goods_recommend`,`b`.`goods_collect`,`b`.`goods_inventory` FROM `sean_goods` `a` LEFT JOIN `sean_goods_content` `b` ON `a`.`id`=`b`.`goods_id` WHERE  `b`.`goods_putaway` = 1 LIMIT 0,15 [ RunTime:0.000458s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `sean_goods_cate` [ RunTime:0.009861s ]
+[ sql ] [ SQL ] SELECT * FROM `sean_goods_cate` [ RunTime:0.000195s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `sean_goods_collect` [ RunTime:0.003811s ]
+[ sql ] [ SQL ] SELECT `goods_id` FROM `sean_goods_collect` WHERE  `user_id` = 1 [ RunTime:0.000211s ]
+---------------------------------------------------------------
+[ 2019-11-29T19:00:20+08:00 ] 0.0.0.0 GET www.sean.com/index/shop/index.shtml
+[运行时间：0.077453s] [吞吐率：12.91req/s] [内存消耗：2,623.90kb] [文件加载：61]
+[ info ] [ LANG ] D:\web\phpweb\sean\thinkphp\lang\zh-cn.php
+[ info ] [ DB ] INIT mysql
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'index',
+    1 => 'shop',
+    2 => 'index',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'cookie' => 'PHPSESSID=442e6gogce0u2o1m3iclccpj33; log-username=seanpan565%40gmail.com; log-password=0bcc6c3004249dbe3e78cd106ab5efb4; adminer_version=4.7.5',
+  'accept-language' => 'zh-CN,zh;q=0.9,en;q=0.8,und;q=0.7',
+  'accept-encoding' => 'gzip, deflate',
+  'referer' => 'http://www.sean.com/index/user/user_message.shtml',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/78.0.3904.108 Safari/537.36',
+  'upgrade-insecure-requests' => '1',
+  'cache-control' => 'max-age=0',
+  'connection' => 'close',
+  'host' => 'www.sean.com',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+  'expire' => 3600,
+)
+[ info ] [ RUN ] app\index\controller\Shop->index[ D:\web\phpweb\sean\app\index\controller\Shop.php ]
+[ info ] [ VIEW ] D:\web\phpweb\sean\public/../app/index\view\shop\shop.html [ array (
+  0 => 'controller',
+  1 => 'user',
+  2 => 'goodsCate',
+  3 => 'goodsVice',
+  4 => 'goodsList',
+  5 => 'collect',
+) ]
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.001093s ] mysql:host=127.0.0.1;port=3306;dbname=sean;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `sean_urlconfig` [ RunTime:0.003290s ]
+[ sql ] [ SQL ] SELECT `aliases`,`url` FROM `sean_urlconfig` WHERE  `status` = 1 [ RunTime:0.000209s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `sean_user` [ RunTime:0.003501s ]
+[ sql ] [ SQL ] SELECT `id`,`user_name` FROM `sean_user` WHERE  `id` = 1 LIMIT 1 [ RunTime:0.000286s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `sean_goods` [ RunTime:0.003741s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `sean_goods` `a` LEFT JOIN `sean_goods_content` `b` ON `a`.`id`=`b`.`goods_id` WHERE  `b`.`goods_putaway` = 1 LIMIT 1 [ RunTime:0.000515s ]
+[ sql ] [ SQL ] SELECT `a`.`id`,`a`.`goods_cate_id`,`a`.`goods_name`,`a`.`goods_price`,`a`.`goods_vip`,`a`.`goods_thumb`,`b`.`goods_sales`,`b`.`goods_id`,`b`.`goods_putaway`,`b`.`goods_recommend`,`b`.`goods_collect`,`b`.`goods_inventory` FROM `sean_goods` `a` LEFT JOIN `sean_goods_content` `b` ON `a`.`id`=`b`.`goods_id` WHERE  `b`.`goods_putaway` = 1 LIMIT 0,15 [ RunTime:0.000421s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `sean_goods_cate` [ RunTime:0.003144s ]
+[ sql ] [ SQL ] SELECT * FROM `sean_goods_cate` [ RunTime:0.000197s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `sean_goods_collect` [ RunTime:0.003502s ]
+[ sql ] [ SQL ] SELECT `goods_id` FROM `sean_goods_collect` WHERE  `user_id` = 1 [ RunTime:0.000264s ]
+[ sql ] [ SQL ] SELECT * FROM `sean_goods` `a` LEFT JOIN `sean_goods_content` `b` ON `a`.`id`=`b`.`goods_id` WHERE  `b`.`goods_putaway` = '1' LIMIT 3 [ RunTime:0.000359s ]
+[ error ] [0]语法解析错误: syntax error, unexpected '<'[D:\web\phpweb\sean\runtime\temp\9f00085f35eebe97c31b8f0b176379d8.php:273]
+---------------------------------------------------------------
+[ 2019-11-29T19:00:38+08:00 ] 0.0.0.0 GET www.sean.com/index/shop/index.shtml
+[运行时间：0.060950s] [吞吐率：16.41req/s] [内存消耗：2,624.15kb] [文件加载：61]
+[ info ] [ LANG ] D:\web\phpweb\sean\thinkphp\lang\zh-cn.php
+[ info ] [ DB ] INIT mysql
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'index',
+    1 => 'shop',
+    2 => 'index',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'cookie' => 'PHPSESSID=442e6gogce0u2o1m3iclccpj33; log-username=seanpan565%40gmail.com; log-password=0bcc6c3004249dbe3e78cd106ab5efb4; adminer_version=4.7.5',
+  'accept-language' => 'zh-CN,zh;q=0.9,en;q=0.8,und;q=0.7',
+  'accept-encoding' => 'gzip, deflate',
+  'referer' => 'http://www.sean.com/index/user/user_message.shtml',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/78.0.3904.108 Safari/537.36',
+  'upgrade-insecure-requests' => '1',
+  'cache-control' => 'max-age=0',
+  'connection' => 'close',
+  'host' => 'www.sean.com',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+  'expire' => 3600,
+)
+[ info ] [ RUN ] app\index\controller\Shop->index[ D:\web\phpweb\sean\app\index\controller\Shop.php ]
+[ info ] [ VIEW ] D:\web\phpweb\sean\public/../app/index\view\shop\shop.html [ array (
+  0 => 'controller',
+  1 => 'user',
+  2 => 'goodsCate',
+  3 => 'goodsVice',
+  4 => 'goodsList',
+  5 => 'collect',
+) ]
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000555s ] mysql:host=127.0.0.1;port=3306;dbname=sean;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `sean_urlconfig` [ RunTime:0.007121s ]
+[ sql ] [ SQL ] SELECT `aliases`,`url` FROM `sean_urlconfig` WHERE  `status` = 1 [ RunTime:0.000217s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `sean_user` [ RunTime:0.003692s ]
+[ sql ] [ SQL ] SELECT `id`,`user_name` FROM `sean_user` WHERE  `id` = 1 LIMIT 1 [ RunTime:0.000297s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `sean_goods` [ RunTime:0.003619s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `sean_goods` `a` LEFT JOIN `sean_goods_content` `b` ON `a`.`id`=`b`.`goods_id` WHERE  `b`.`goods_putaway` = 1 LIMIT 1 [ RunTime:0.000237s ]
+[ sql ] [ SQL ] SELECT `a`.`id`,`a`.`goods_cate_id`,`a`.`goods_name`,`a`.`goods_price`,`a`.`goods_vip`,`a`.`goods_thumb`,`b`.`goods_sales`,`b`.`goods_id`,`b`.`goods_putaway`,`b`.`goods_recommend`,`b`.`goods_collect`,`b`.`goods_inventory` FROM `sean_goods` `a` LEFT JOIN `sean_goods_content` `b` ON `a`.`id`=`b`.`goods_id` WHERE  `b`.`goods_putaway` = 1 LIMIT 0,15 [ RunTime:0.000315s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `sean_goods_cate` [ RunTime:0.002972s ]
+[ sql ] [ SQL ] SELECT * FROM `sean_goods_cate` [ RunTime:0.000220s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `sean_goods_collect` [ RunTime:0.003246s ]
+[ sql ] [ SQL ] SELECT `goods_id` FROM `sean_goods_collect` WHERE  `user_id` = 1 [ RunTime:0.000218s ]
+[ sql ] [ SQL ] SELECT * FROM `sean_goods` `a` LEFT JOIN `sean_goods_content` `b` ON `a`.`id`=`b`.`goods_id` WHERE  `b`.`goods_putaway` = '1' LIMIT 3 [ RunTime:0.000301s ]
+[ error ] [0]语法解析错误: syntax error, unexpected '' (T_ENCAPSED_AND_WHITESPACE), expecting identifier (T_STRING) or variable (T_VARIABLE) or number (T_NUM_STRING)[D:\web\phpweb\sean\runtime\temp\9f00085f35eebe97c31b8f0b176379d8.php:273]
+---------------------------------------------------------------
+[ 2019-11-29T19:02:58+08:00 ] 0.0.0.0 GET www.sean.com/index/shop/index.shtml
+[运行时间：0.078371s] [吞吐率：12.76req/s] [内存消耗：2,457.59kb] [文件加载：60]
+[ info ] [ LANG ] D:\web\phpweb\sean\thinkphp\lang\zh-cn.php
+[ info ] [ DB ] INIT mysql
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'index',
+    1 => 'shop',
+    2 => 'index',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'cookie' => 'PHPSESSID=442e6gogce0u2o1m3iclccpj33; log-username=seanpan565%40gmail.com; log-password=0bcc6c3004249dbe3e78cd106ab5efb4; adminer_version=4.7.5',
+  'accept-language' => 'zh-CN,zh;q=0.9,en;q=0.8,und;q=0.7',
+  'accept-encoding' => 'gzip, deflate',
+  'referer' => 'http://www.sean.com/index/user/user_message.shtml',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/78.0.3904.108 Safari/537.36',
+  'upgrade-insecure-requests' => '1',
+  'cache-control' => 'max-age=0',
+  'connection' => 'close',
+  'host' => 'www.sean.com',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+  'expire' => 3600,
+)
+[ info ] [ RUN ] app\index\controller\Shop->index[ D:\web\phpweb\sean\app\index\controller\Shop.php ]
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000562s ] mysql:host=127.0.0.1;port=3306;dbname=sean;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `sean_urlconfig` [ RunTime:0.017997s ]
+[ sql ] [ SQL ] SELECT `aliases`,`url` FROM `sean_urlconfig` WHERE  `status` = 1 [ RunTime:0.000197s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `sean_user` [ RunTime:0.005947s ]
+[ sql ] [ SQL ] SELECT `id`,`user_name` FROM `sean_user` WHERE  `id` = 1 LIMIT 1 [ RunTime:0.000193s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `sean_goods` [ RunTime:0.003146s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `sean_goods` `a` LEFT JOIN `sean_goods_content` `b` ON `a`.`id`=`b`.`goods_id` WHERE  `b`.`goods_putaway` = 1 LIMIT 1 [ RunTime:0.000294s ]
+[ sql ] [ SQL ] SELECT `a`.`id`,`a`.`goods_cate_id`,`a`.`goods_name`,`a`.`goods_price`,`a`.`goods_vip`,`a`.`goods_thumb`,`b`.`goods_sales`,`b`.`goods_id`,`b`.`goods_putaway`,`b`.`goods_recommend`,`b`.`goods_collect`,`b`.`goods_inventory` FROM `sean_goods` `a` LEFT JOIN `sean_goods_content` `b` ON `a`.`id`=`b`.`goods_id` WHERE  `b`.`goods_putaway` = 1 LIMIT 0,15 [ RunTime:0.000348s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `sean_goods_cate` [ RunTime:0.004353s ]
+[ sql ] [ SQL ] SELECT * FROM `sean_goods_cate` [ RunTime:0.000411s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `sean_goods_collect` [ RunTime:0.003221s ]
+[ sql ] [ SQL ] SELECT `goods_id` FROM `sean_goods_collect` WHERE  `user_id` = 1 [ RunTime:0.000194s ]
+[ error ] [8]未定义数组索引: goods_id[D:\web\phpweb\sean\thinkphp\library\think\Collection.php:366]
+---------------------------------------------------------------
+[ 2019-11-29T19:03:09+08:00 ] 0.0.0.0 GET www.sean.com/index/shop/index.shtml
+[运行时间：0.070249s] [吞吐率：14.24req/s] [内存消耗：2,695.27kb] [文件加载：60]
+[ info ] [ LANG ] D:\web\phpweb\sean\thinkphp\lang\zh-cn.php
+[ info ] [ DB ] INIT mysql
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'index',
+    1 => 'shop',
+    2 => 'index',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'cookie' => 'PHPSESSID=442e6gogce0u2o1m3iclccpj33; log-username=seanpan565%40gmail.com; log-password=0bcc6c3004249dbe3e78cd106ab5efb4; adminer_version=4.7.5',
+  'accept-language' => 'zh-CN,zh;q=0.9,en;q=0.8,und;q=0.7',
+  'accept-encoding' => 'gzip, deflate',
+  'referer' => 'http://www.sean.com/index/user/user_message.shtml',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/78.0.3904.108 Safari/537.36',
+  'upgrade-insecure-requests' => '1',
+  'cache-control' => 'max-age=0',
+  'connection' => 'close',
+  'host' => 'www.sean.com',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+  'expire' => 3600,
+)
+[ info ] [ RUN ] app\index\controller\Shop->index[ D:\web\phpweb\sean\app\index\controller\Shop.php ]
+[ info ] [ VIEW ] D:\web\phpweb\sean\public/../app/index\view\shop\shop.html [ array (
+  0 => 'controller',
+  1 => 'user',
+  2 => 'goodsCate',
+  3 => 'goodsVice',
+  4 => 'goodsList',
+  5 => 'collect',
+) ]
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000632s ] mysql:host=127.0.0.1;port=3306;dbname=sean;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `sean_urlconfig` [ RunTime:0.003378s ]
+[ sql ] [ SQL ] SELECT `aliases`,`url` FROM `sean_urlconfig` WHERE  `status` = 1 [ RunTime:0.000193s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `sean_user` [ RunTime:0.003297s ]
+[ sql ] [ SQL ] SELECT `id`,`user_name` FROM `sean_user` WHERE  `id` = 1 LIMIT 1 [ RunTime:0.000218s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `sean_goods` [ RunTime:0.004224s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `sean_goods` `a` LEFT JOIN `sean_goods_content` `b` ON `a`.`id`=`b`.`goods_id` WHERE  `b`.`goods_putaway` = 1 LIMIT 1 [ RunTime:0.000264s ]
+[ sql ] [ SQL ] SELECT `a`.`id`,`a`.`goods_cate_id`,`a`.`goods_name`,`a`.`goods_price`,`a`.`goods_vip`,`a`.`goods_thumb`,`b`.`goods_sales`,`b`.`goods_id`,`b`.`goods_putaway`,`b`.`goods_recommend`,`b`.`goods_collect`,`b`.`goods_inventory` FROM `sean_goods` `a` LEFT JOIN `sean_goods_content` `b` ON `a`.`id`=`b`.`goods_id` WHERE  `b`.`goods_putaway` = 1 LIMIT 0,15 [ RunTime:0.000323s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `sean_goods_cate` [ RunTime:0.003134s ]
+[ sql ] [ SQL ] SELECT * FROM `sean_goods_cate` [ RunTime:0.000209s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `sean_goods_collect` [ RunTime:0.003264s ]
+[ sql ] [ SQL ] SELECT `goods_id` FROM `sean_goods_collect` WHERE  `user_id` = 1 [ RunTime:0.000191s ]
+[ sql ] [ SQL ] SELECT * FROM `sean_goods` `a` LEFT JOIN `sean_goods_content` `b` ON `a`.`id`=`b`.`goods_id` WHERE  `b`.`goods_putaway` = '1' LIMIT 3 [ RunTime:0.000279s ]
+---------------------------------------------------------------
+[ 2019-11-29T19:03:55+08:00 ] 0.0.0.0 GET www.sean.com/index/shop/index.shtml
+[运行时间：0.094883s] [吞吐率：10.54req/s] [内存消耗：2,695.27kb] [文件加载：60]
+[ info ] [ LANG ] D:\web\phpweb\sean\thinkphp\lang\zh-cn.php
+[ info ] [ DB ] INIT mysql
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'index',
+    1 => 'shop',
+    2 => 'index',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'cookie' => 'PHPSESSID=442e6gogce0u2o1m3iclccpj33; log-username=seanpan565%40gmail.com; log-password=0bcc6c3004249dbe3e78cd106ab5efb4; adminer_version=4.7.5',
+  'accept-language' => 'zh-CN,zh;q=0.9,en;q=0.8,und;q=0.7',
+  'accept-encoding' => 'gzip, deflate',
+  'referer' => 'http://www.sean.com/index/user/user_message.shtml',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/78.0.3904.108 Safari/537.36',
+  'upgrade-insecure-requests' => '1',
+  'cache-control' => 'max-age=0',
+  'connection' => 'close',
+  'host' => 'www.sean.com',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+  'expire' => 3600,
+)
+[ info ] [ RUN ] app\index\controller\Shop->index[ D:\web\phpweb\sean\app\index\controller\Shop.php ]
+[ info ] [ VIEW ] D:\web\phpweb\sean\public/../app/index\view\shop\shop.html [ array (
+  0 => 'controller',
+  1 => 'user',
+  2 => 'goodsCate',
+  3 => 'goodsVice',
+  4 => 'goodsList',
+  5 => 'collect',
+) ]
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000523s ] mysql:host=127.0.0.1;port=3306;dbname=sean;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `sean_urlconfig` [ RunTime:0.018802s ]
+[ sql ] [ SQL ] SELECT `aliases`,`url` FROM `sean_urlconfig` WHERE  `status` = 1 [ RunTime:0.000205s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `sean_user` [ RunTime:0.004085s ]
+[ sql ] [ SQL ] SELECT `id`,`user_name` FROM `sean_user` WHERE  `id` = 1 LIMIT 1 [ RunTime:0.000234s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `sean_goods` [ RunTime:0.004103s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `sean_goods` `a` LEFT JOIN `sean_goods_content` `b` ON `a`.`id`=`b`.`goods_id` WHERE  `b`.`goods_putaway` = 1 LIMIT 1 [ RunTime:0.000303s ]
+[ sql ] [ SQL ] SELECT `a`.`id`,`a`.`goods_cate_id`,`a`.`goods_name`,`a`.`goods_price`,`a`.`goods_vip`,`a`.`goods_thumb`,`b`.`goods_sales`,`b`.`goods_id`,`b`.`goods_putaway`,`b`.`goods_recommend`,`b`.`goods_collect`,`b`.`goods_inventory` FROM `sean_goods` `a` LEFT JOIN `sean_goods_content` `b` ON `a`.`id`=`b`.`goods_id` WHERE  `b`.`goods_putaway` = 1 LIMIT 0,15 [ RunTime:0.000315s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `sean_goods_cate` [ RunTime:0.011275s ]
+[ sql ] [ SQL ] SELECT * FROM `sean_goods_cate` [ RunTime:0.000196s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `sean_goods_collect` [ RunTime:0.003403s ]
+[ sql ] [ SQL ] SELECT `goods_id` FROM `sean_goods_collect` WHERE  `user_id` = 1 [ RunTime:0.000286s ]
+[ sql ] [ SQL ] SELECT * FROM `sean_goods` `a` LEFT JOIN `sean_goods_content` `b` ON `a`.`id`=`b`.`goods_id` WHERE  `b`.`goods_putaway` = '1' LIMIT 3 [ RunTime:0.000323s ]
+---------------------------------------------------------------
+[ 2019-11-29T19:04:09+08:00 ] 0.0.0.0 POST www.sean.com/index/shopdateil/collect.shtml
+[运行时间：0.060126s] [吞吐率：16.63req/s] [内存消耗：2,099.93kb] [文件加载：51]
+[ info ] [ LANG ] D:\web\phpweb\sean\thinkphp\lang\zh-cn.php
+[ info ] [ DB ] INIT mysql
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'index',
+    1 => 'shopdateil',
+    2 => 'collect',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'cookie' => 'PHPSESSID=442e6gogce0u2o1m3iclccpj33; log-username=seanpan565%40gmail.com; log-password=0bcc6c3004249dbe3e78cd106ab5efb4; adminer_version=4.7.5',
+  'accept-language' => 'zh-CN,zh;q=0.9,en;q=0.8,und;q=0.7',
+  'accept-encoding' => 'gzip, deflate',
+  'referer' => 'http://www.sean.com/index/shop/index.shtml',
+  'content-type' => 'application/x-www-form-urlencoded; charset=UTF-8',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/78.0.3904.108 Safari/537.36',
+  'x-requested-with' => 'XMLHttpRequest',
+  'origin' => 'http://www.sean.com',
+  'accept' => 'application/json, text/javascript, */*; q=0.01',
+  'content-length' => '4',
+  'connection' => 'close',
+  'host' => 'www.sean.com',
+)
+[ info ] [ PARAM ] array (
+  'id' => '5',
+)
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+  'expire' => 3600,
+)
+[ info ] [ RUN ] app\index\controller\Shopdateil->collect[ D:\web\phpweb\sean\app\index\controller\Shopdateil.php ]
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000513s ] mysql:host=127.0.0.1;port=3306;dbname=sean;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `sean_urlconfig` [ RunTime:0.018777s ]
+[ sql ] [ SQL ] SELECT `aliases`,`url` FROM `sean_urlconfig` WHERE  `status` = 1 [ RunTime:0.000208s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `sean_user` [ RunTime:0.003344s ]
+[ sql ] [ SQL ] SELECT `id`,`user_name` FROM `sean_user` WHERE  `id` = 1 LIMIT 1 [ RunTime:0.000191s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `sean_goods_collect` [ RunTime:0.002948s ]
+[ sql ] [ SQL ] SELECT * FROM `sean_goods_collect` WHERE  `goods_id` = 5  AND `user_id` = 1 LIMIT 1 [ RunTime:0.000208s ]
+[ sql ] [ SQL ] INSERT INTO `sean_goods_collect` (`user_id` , `goods_id` , `collect_create`) VALUES (1 , 5 , 1575025449) [ RunTime:0.000315s ]
+---------------------------------------------------------------
+[ 2019-11-29T19:04:11+08:00 ] 0.0.0.0 GET www.sean.com/index/shop/index.shtml
+[运行时间：0.079820s] [吞吐率：12.53req/s] [内存消耗：2,545.10kb] [文件加载：58]
+[ info ] [ LANG ] D:\web\phpweb\sean\thinkphp\lang\zh-cn.php
+[ info ] [ DB ] INIT mysql
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'index',
+    1 => 'shop',
+    2 => 'index',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'cookie' => 'PHPSESSID=442e6gogce0u2o1m3iclccpj33; log-username=seanpan565%40gmail.com; log-password=0bcc6c3004249dbe3e78cd106ab5efb4; adminer_version=4.7.5',
+  'accept-language' => 'zh-CN,zh;q=0.9,en;q=0.8,und;q=0.7',
+  'accept-encoding' => 'gzip, deflate',
+  'referer' => 'http://www.sean.com/index/user/user_message.shtml',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/78.0.3904.108 Safari/537.36',
+  'upgrade-insecure-requests' => '1',
+  'cache-control' => 'max-age=0',
+  'connection' => 'close',
+  'host' => 'www.sean.com',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+  'expire' => 3600,
+)
+[ info ] [ RUN ] app\index\controller\Shop->index[ D:\web\phpweb\sean\app\index\controller\Shop.php ]
+[ info ] [ VIEW ] D:\web\phpweb\sean\public/../app/index\view\shop\shop.html [ array (
+  0 => 'controller',
+  1 => 'user',
+  2 => 'goodsCate',
+  3 => 'goodsVice',
+  4 => 'goodsList',
+  5 => 'collect',
+) ]
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000538s ] mysql:host=127.0.0.1;port=3306;dbname=sean;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `sean_urlconfig` [ RunTime:0.019261s ]
+[ sql ] [ SQL ] SELECT `aliases`,`url` FROM `sean_urlconfig` WHERE  `status` = 1 [ RunTime:0.000329s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `sean_user` [ RunTime:0.003486s ]
+[ sql ] [ SQL ] SELECT `id`,`user_name` FROM `sean_user` WHERE  `id` = 1 LIMIT 1 [ RunTime:0.000233s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `sean_goods` [ RunTime:0.003122s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `sean_goods` `a` LEFT JOIN `sean_goods_content` `b` ON `a`.`id`=`b`.`goods_id` WHERE  `b`.`goods_putaway` = 1 LIMIT 1 [ RunTime:0.000221s ]
+[ sql ] [ SQL ] SELECT `a`.`id`,`a`.`goods_cate_id`,`a`.`goods_name`,`a`.`goods_price`,`a`.`goods_vip`,`a`.`goods_thumb`,`b`.`goods_sales`,`b`.`goods_id`,`b`.`goods_putaway`,`b`.`goods_recommend`,`b`.`goods_collect`,`b`.`goods_inventory` FROM `sean_goods` `a` LEFT JOIN `sean_goods_content` `b` ON `a`.`id`=`b`.`goods_id` WHERE  `b`.`goods_putaway` = 1 LIMIT 0,15 [ RunTime:0.000415s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `sean_goods_cate` [ RunTime:0.011524s ]
+[ sql ] [ SQL ] SELECT * FROM `sean_goods_cate` [ RunTime:0.000200s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `sean_goods_collect` [ RunTime:0.003056s ]
+[ sql ] [ SQL ] SELECT `goods_id` FROM `sean_goods_collect` WHERE  `user_id` = 1 [ RunTime:0.000194s ]
+[ sql ] [ SQL ] SELECT * FROM `sean_goods` `a` LEFT JOIN `sean_goods_content` `b` ON `a`.`id`=`b`.`goods_id` WHERE  `b`.`goods_putaway` = '1' LIMIT 3 [ RunTime:0.000294s ]
+---------------------------------------------------------------
+[ 2019-11-29T19:05:21+08:00 ] 0.0.0.0 GET www.sean.com/index/shop/shoplist/id/2.shtml
+[运行时间：0.083814s] [吞吐率：11.93req/s] [内存消耗：2,546.88kb] [文件加载：62]
+[ info ] [ LANG ] D:\web\phpweb\sean\thinkphp\lang\zh-cn.php
+[ info ] [ DB ] INIT mysql
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'index',
+    1 => 'shop',
+    2 => 'shoplist',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'cookie' => 'PHPSESSID=442e6gogce0u2o1m3iclccpj33; log-username=seanpan565%40gmail.com; log-password=0bcc6c3004249dbe3e78cd106ab5efb4; adminer_version=4.7.5',
+  'accept-language' => 'zh-CN,zh;q=0.9,en;q=0.8,und;q=0.7',
+  'accept-encoding' => 'gzip, deflate',
+  'referer' => 'http://www.sean.com/index/shop/index.shtml',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/78.0.3904.108 Safari/537.36',
+  'upgrade-insecure-requests' => '1',
+  'connection' => 'close',
+  'host' => 'www.sean.com',
+)
+[ info ] [ PARAM ] array (
+  'id' => '2',
+)
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+  'expire' => 3600,
+)
+[ info ] [ RUN ] app\index\controller\Shop->shopList[ D:\web\phpweb\sean\app\index\controller\Shop.php ]
+[ info ] [ VIEW ] D:\web\phpweb\sean\public/../app/index\view\shop\shop.html [ array (
+  0 => 'controller',
+  1 => 'user',
+  2 => 'goodsCate',
+  3 => 'goodsVice',
+  4 => 'goodsList',
+) ]
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.001046s ] mysql:host=127.0.0.1;port=3306;dbname=sean;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `sean_urlconfig` [ RunTime:0.019493s ]
+[ sql ] [ SQL ] SELECT `aliases`,`url` FROM `sean_urlconfig` WHERE  `status` = 1 [ RunTime:0.000229s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `sean_user` [ RunTime:0.003443s ]
+[ sql ] [ SQL ] SELECT `id`,`user_name` FROM `sean_user` WHERE  `id` = 1 LIMIT 1 [ RunTime:0.000202s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `sean_goods` [ RunTime:0.003275s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `sean_goods` `a` INNER JOIN `sean_goods_content` `b` ON `a`.`id`=`b`.`goods_id` WHERE  `goods_cate_id` = 2  AND `b`.`goods_putaway` = 1 LIMIT 1 [ RunTime:0.000411s ]
+[ sql ] [ SQL ] SELECT `a`.`id`,`a`.`goods_cate_id`,`a`.`goods_name`,`a`.`goods_price`,`a`.`goods_vip`,`a`.`goods_thumb`,`b`.`goods_sales`,`b`.`goods_id`,`b`.`goods_putaway`,`b`.`goods_recommend`,`b`.`goods_collect` FROM `sean_goods` `a` INNER JOIN `sean_goods_content` `b` ON `a`.`id`=`b`.`goods_id` WHERE  `goods_cate_id` = 2  AND `b`.`goods_putaway` = 1 LIMIT 0,15 [ RunTime:0.000444s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `sean_goods_cate` [ RunTime:0.011401s ]
+[ sql ] [ SQL ] SELECT * FROM `sean_goods_cate` [ RunTime:0.000200s ]
+[ sql ] [ SQL ] SELECT * FROM `sean_goods` `a` LEFT JOIN `sean_goods_content` `b` ON `a`.`id`=`b`.`goods_id` WHERE  `b`.`goods_putaway` = '1' LIMIT 3 [ RunTime:0.000980s ]
+[ error ] [8]未定义变量: collect[D:\web\phpweb\sean\runtime\temp\9f00085f35eebe97c31b8f0b176379d8.php:273]
+---------------------------------------------------------------
+[ 2019-11-29T19:05:42+08:00 ] 0.0.0.0 GET www.sean.com/index/shop/shoplist/id/2.shtml
+[运行时间：0.089016s] [吞吐率：11.23req/s] [内存消耗：2,545.04kb] [文件加载：58]
+[ info ] [ LANG ] D:\web\phpweb\sean\thinkphp\lang\zh-cn.php
+[ info ] [ DB ] INIT mysql
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'index',
+    1 => 'shop',
+    2 => 'shoplist',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'cookie' => 'PHPSESSID=442e6gogce0u2o1m3iclccpj33; log-username=seanpan565%40gmail.com; log-password=0bcc6c3004249dbe3e78cd106ab5efb4; adminer_version=4.7.5',
+  'accept-language' => 'zh-CN,zh;q=0.9,en;q=0.8,und;q=0.7',
+  'accept-encoding' => 'gzip, deflate',
+  'referer' => 'http://www.sean.com/index/shop/index.shtml',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/78.0.3904.108 Safari/537.36',
+  'upgrade-insecure-requests' => '1',
+  'cache-control' => 'max-age=0',
+  'connection' => 'close',
+  'host' => 'www.sean.com',
+)
+[ info ] [ PARAM ] array (
+  'id' => '2',
+)
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+  'expire' => 3600,
+)
+[ info ] [ RUN ] app\index\controller\Shop->shopList[ D:\web\phpweb\sean\app\index\controller\Shop.php ]
+[ info ] [ VIEW ] D:\web\phpweb\sean\public/../app/index\view\shop\shop.html [ array (
+  0 => 'controller',
+  1 => 'user',
+  2 => 'goodsCate',
+  3 => 'goodsVice',
+  4 => 'goodsList',
+  5 => 'collect',
+) ]
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000560s ] mysql:host=127.0.0.1;port=3306;dbname=sean;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `sean_urlconfig` [ RunTime:0.019644s ]
+[ sql ] [ SQL ] SELECT `aliases`,`url` FROM `sean_urlconfig` WHERE  `status` = 1 [ RunTime:0.000199s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `sean_user` [ RunTime:0.004208s ]
+[ sql ] [ SQL ] SELECT `id`,`user_name` FROM `sean_user` WHERE  `id` = 1 LIMIT 1 [ RunTime:0.000207s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `sean_goods` [ RunTime:0.003196s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `sean_goods` `a` INNER JOIN `sean_goods_content` `b` ON `a`.`id`=`b`.`goods_id` WHERE  `goods_cate_id` = 2  AND `b`.`goods_putaway` = 1 LIMIT 1 [ RunTime:0.000286s ]
+[ sql ] [ SQL ] SELECT `a`.`id`,`a`.`goods_cate_id`,`a`.`goods_name`,`a`.`goods_price`,`a`.`goods_vip`,`a`.`goods_thumb`,`b`.`goods_sales`,`b`.`goods_id`,`b`.`goods_putaway`,`b`.`goods_recommend`,`b`.`goods_collect` FROM `sean_goods` `a` INNER JOIN `sean_goods_content` `b` ON `a`.`id`=`b`.`goods_id` WHERE  `goods_cate_id` = 2  AND `b`.`goods_putaway` = 1 LIMIT 0,15 [ RunTime:0.000325s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `sean_goods_cate` [ RunTime:0.010883s ]
+[ sql ] [ SQL ] SELECT * FROM `sean_goods_cate` [ RunTime:0.000226s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `sean_goods_collect` [ RunTime:0.003058s ]
+[ sql ] [ SQL ] SELECT `goods_id` FROM `sean_goods_collect` WHERE  `user_id` = 1 [ RunTime:0.000180s ]
+[ sql ] [ SQL ] SELECT * FROM `sean_goods` `a` LEFT JOIN `sean_goods_content` `b` ON `a`.`id`=`b`.`goods_id` WHERE  `b`.`goods_putaway` = '1' LIMIT 3 [ RunTime:0.000285s ]

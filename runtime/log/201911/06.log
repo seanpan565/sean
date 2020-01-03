@@ -1,0 +1,2131 @@
+---------------------------------------------------------------
+[ 2019-11-06T13:45:40+08:00 ] 0.0.0.0 GET www.sean.com/admin/goodscate/index.shtml
+[运行时间：0.095616s] [吞吐率：10.46req/s] [内存消耗：2,425.48kb] [文件加载：54]
+[ info ] [ LANG ] D:\web\phpweb\sean\thinkphp\lang\zh-cn.php
+[ info ] [ DB ] INIT mysql
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => 'goodscate',
+    2 => 'index',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'cookie' => 'PHPSESSID=292iq1pcapgpu9ikf2j7opcb55; adminer_version=4.7.4',
+  'accept-language' => 'zh-CN,zh;q=0.9,en;q=0.8,und;q=0.7',
+  'accept-encoding' => 'gzip, deflate',
+  'referer' => 'http://www.sean.com/admin',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/78.0.3904.70 Safari/537.36',
+  'upgrade-insecure-requests' => '1',
+  'connection' => 'close',
+  'host' => 'www.sean.com',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ RUN ] app\admin\controller\Goodscate->index[ D:\web\phpweb\sean\app\admin\controller\Goodscate.php ]
+[ info ] [ VIEW ] D:\web\phpweb\sean\public/../app/admin\view\goodscate\index.html [ array (
+  0 => 'cates',
+) ]
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000539s ] mysql:host=127.0.0.1;port=3306;dbname=sean;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `sean_urlconfig` [ RunTime:0.007740s ]
+[ sql ] [ SQL ] SELECT `aliases`,`url` FROM `sean_urlconfig` WHERE  `status` = 1 [ RunTime:0.000308s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `sean_webconfig` [ RunTime:0.005766s ]
+[ sql ] [ SQL ] SELECT `black_ip` FROM `sean_webconfig` WHERE  `web` = 'web' LIMIT 1 [ RunTime:0.000236s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `sean_admin_cate` [ RunTime:0.005106s ]
+[ sql ] [ SQL ] SELECT `permissions` FROM `sean_admin_cate` WHERE  `id` = 1 LIMIT 1 [ RunTime:0.000315s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `sean_admin_menu` [ RunTime:0.008287s ]
+[ sql ] [ SQL ] SELECT * FROM `sean_admin_menu` WHERE  `module` = 'admin'  AND `controller` = 'Goodscate'  AND `function` = 'index'  AND `type` = 1  AND `parameter` = 'goodscate=' LIMIT 1 [ RunTime:0.001032s ]
+[ sql ] [ SQL ] SELECT * FROM `sean_admin_menu` WHERE  `module` = 'admin'  AND `controller` = 'Goodscate'  AND `function` = 'index'  AND `type` = 1 LIMIT 1 [ RunTime:0.000310s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `sean_goods_cate` [ RunTime:0.006052s ]
+[ sql ] [ SQL ] SELECT * FROM `sean_goods_cate` [ RunTime:0.000211s ]
+---------------------------------------------------------------
+[ 2019-11-06T13:45:42+08:00 ] 0.0.0.0 GET www.sean.com/admin/goodscate/publish.shtml
+[运行时间：0.088618s] [吞吐率：11.28req/s] [内存消耗：2,537.71kb] [文件加载：57]
+[ info ] [ LANG ] D:\web\phpweb\sean\thinkphp\lang\zh-cn.php
+[ info ] [ DB ] INIT mysql
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => 'goodscate',
+    2 => 'publish',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'cookie' => 'PHPSESSID=292iq1pcapgpu9ikf2j7opcb55; adminer_version=4.7.4',
+  'accept-language' => 'zh-CN,zh;q=0.9,en;q=0.8,und;q=0.7',
+  'accept-encoding' => 'gzip, deflate',
+  'referer' => 'http://www.sean.com/admin/goodscate/index.shtml',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/78.0.3904.70 Safari/537.36',
+  'x-requested-with' => 'XMLHttpRequest',
+  'accept' => '*/*',
+  'connection' => 'close',
+  'host' => 'www.sean.com',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ RUN ] app\admin\controller\Goodscate->publish[ D:\web\phpweb\sean\app\admin\controller\Goodscate.php ]
+[ info ] [ VIEW ] D:\web\phpweb\sean\public/../app/admin\view\goodscate\publish.html [ array (
+  0 => 'cates',
+) ]
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000548s ] mysql:host=127.0.0.1;port=3306;dbname=sean;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `sean_urlconfig` [ RunTime:0.014520s ]
+[ sql ] [ SQL ] SELECT `aliases`,`url` FROM `sean_urlconfig` WHERE  `status` = 1 [ RunTime:0.000196s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `sean_webconfig` [ RunTime:0.005250s ]
+[ sql ] [ SQL ] SELECT `black_ip` FROM `sean_webconfig` WHERE  `web` = 'web' LIMIT 1 [ RunTime:0.000196s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `sean_admin_cate` [ RunTime:0.005560s ]
+[ sql ] [ SQL ] SELECT `permissions` FROM `sean_admin_cate` WHERE  `id` = 1 LIMIT 1 [ RunTime:0.000212s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `sean_admin_menu` [ RunTime:0.013565s ]
+[ sql ] [ SQL ] SELECT * FROM `sean_admin_menu` WHERE  `module` = 'admin'  AND `controller` = 'Goodscate'  AND `function` = 'publish'  AND `type` = 1  AND `parameter` = 'goodscate=' LIMIT 1 [ RunTime:0.000336s ]
+[ sql ] [ SQL ] SELECT * FROM `sean_admin_menu` WHERE  `module` = 'admin'  AND `controller` = 'Goodscate'  AND `function` = 'publish'  AND `type` = 1 LIMIT 1 [ RunTime:0.000269s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `sean_goods_cate` [ RunTime:0.006040s ]
+[ sql ] [ SQL ] SELECT * FROM `sean_goods_cate` [ RunTime:0.000206s ]
+---------------------------------------------------------------
+[ 2019-11-06T13:45:42+08:00 ] 0.0.0.0 GET www.sean.com/admin/goodscate/publish.shtml
+[运行时间：0.058781s] [吞吐率：17.01req/s] [内存消耗：2,425.42kb] [文件加载：54]
+[ info ] [ LANG ] D:\web\phpweb\sean\thinkphp\lang\zh-cn.php
+[ info ] [ DB ] INIT mysql
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => 'goodscate',
+    2 => 'publish',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'cookie' => 'PHPSESSID=292iq1pcapgpu9ikf2j7opcb55; adminer_version=4.7.4',
+  'accept-language' => 'zh-CN,zh;q=0.9,en;q=0.8,und;q=0.7',
+  'accept-encoding' => 'gzip, deflate',
+  'referer' => 'http://www.sean.com/admin/goodscate/index.shtml',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/78.0.3904.70 Safari/537.36',
+  'upgrade-insecure-requests' => '1',
+  'connection' => 'close',
+  'host' => 'www.sean.com',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ RUN ] app\admin\controller\Goodscate->publish[ D:\web\phpweb\sean\app\admin\controller\Goodscate.php ]
+[ info ] [ VIEW ] D:\web\phpweb\sean\public/../app/admin\view\goodscate\publish.html [ array (
+  0 => 'cates',
+) ]
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000524s ] mysql:host=127.0.0.1;port=3306;dbname=sean;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `sean_urlconfig` [ RunTime:0.005763s ]
+[ sql ] [ SQL ] SELECT `aliases`,`url` FROM `sean_urlconfig` WHERE  `status` = 1 [ RunTime:0.000206s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `sean_webconfig` [ RunTime:0.005838s ]
+[ sql ] [ SQL ] SELECT `black_ip` FROM `sean_webconfig` WHERE  `web` = 'web' LIMIT 1 [ RunTime:0.000210s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `sean_admin_cate` [ RunTime:0.005386s ]
+[ sql ] [ SQL ] SELECT `permissions` FROM `sean_admin_cate` WHERE  `id` = 1 LIMIT 1 [ RunTime:0.000212s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `sean_admin_menu` [ RunTime:0.004757s ]
+[ sql ] [ SQL ] SELECT * FROM `sean_admin_menu` WHERE  `module` = 'admin'  AND `controller` = 'Goodscate'  AND `function` = 'publish'  AND `type` = 1  AND `parameter` = 'goodscate=' LIMIT 1 [ RunTime:0.000341s ]
+[ sql ] [ SQL ] SELECT * FROM `sean_admin_menu` WHERE  `module` = 'admin'  AND `controller` = 'Goodscate'  AND `function` = 'publish'  AND `type` = 1 LIMIT 1 [ RunTime:0.000278s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `sean_goods_cate` [ RunTime:0.005468s ]
+[ sql ] [ SQL ] SELECT * FROM `sean_goods_cate` [ RunTime:0.000222s ]
+---------------------------------------------------------------
+[ 2019-11-06T13:45:43+08:00 ] 0.0.0.0 GET www.sean.com/admin/goodscate/index.shtml
+[运行时间：0.060787s] [吞吐率：16.45req/s] [内存消耗：2,425.77kb] [文件加载：54]
+[ info ] [ LANG ] D:\web\phpweb\sean\thinkphp\lang\zh-cn.php
+[ info ] [ DB ] INIT mysql
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => 'goodscate',
+    2 => 'index',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'cookie' => 'PHPSESSID=292iq1pcapgpu9ikf2j7opcb55; adminer_version=4.7.4',
+  'accept-language' => 'zh-CN,zh;q=0.9,en;q=0.8,und;q=0.7',
+  'accept-encoding' => 'gzip, deflate',
+  'referer' => 'http://www.sean.com/admin/goodscate/publish.shtml',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/78.0.3904.70 Safari/537.36',
+  'upgrade-insecure-requests' => '1',
+  'connection' => 'close',
+  'host' => 'www.sean.com',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ RUN ] app\admin\controller\Goodscate->index[ D:\web\phpweb\sean\app\admin\controller\Goodscate.php ]
+[ info ] [ VIEW ] D:\web\phpweb\sean\public/../app/admin\view\goodscate\index.html [ array (
+  0 => 'cates',
+) ]
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000507s ] mysql:host=127.0.0.1;port=3306;dbname=sean;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `sean_urlconfig` [ RunTime:0.006797s ]
+[ sql ] [ SQL ] SELECT `aliases`,`url` FROM `sean_urlconfig` WHERE  `status` = 1 [ RunTime:0.000199s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `sean_webconfig` [ RunTime:0.005758s ]
+[ sql ] [ SQL ] SELECT `black_ip` FROM `sean_webconfig` WHERE  `web` = 'web' LIMIT 1 [ RunTime:0.000193s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `sean_admin_cate` [ RunTime:0.005167s ]
+[ sql ] [ SQL ] SELECT `permissions` FROM `sean_admin_cate` WHERE  `id` = 1 LIMIT 1 [ RunTime:0.000204s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `sean_admin_menu` [ RunTime:0.005468s ]
+[ sql ] [ SQL ] SELECT * FROM `sean_admin_menu` WHERE  `module` = 'admin'  AND `controller` = 'Goodscate'  AND `function` = 'index'  AND `type` = 1  AND `parameter` = 'goodscate=' LIMIT 1 [ RunTime:0.000649s ]
+[ sql ] [ SQL ] SELECT * FROM `sean_admin_menu` WHERE  `module` = 'admin'  AND `controller` = 'Goodscate'  AND `function` = 'index'  AND `type` = 1 LIMIT 1 [ RunTime:0.000389s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `sean_goods_cate` [ RunTime:0.005381s ]
+[ sql ] [ SQL ] SELECT * FROM `sean_goods_cate` [ RunTime:0.000164s ]
+---------------------------------------------------------------
+[ 2019-11-06T13:45:43+08:00 ] 0.0.0.0 GET www.sean.com/admin/goodscate/publish.shtml
+[运行时间：0.059856s] [吞吐率：16.71req/s] [内存消耗：2,412.27kb] [文件加载：55]
+[ info ] [ LANG ] D:\web\phpweb\sean\thinkphp\lang\zh-cn.php
+[ info ] [ DB ] INIT mysql
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => 'goodscate',
+    2 => 'publish',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'cookie' => 'PHPSESSID=292iq1pcapgpu9ikf2j7opcb55; adminer_version=4.7.4',
+  'accept-language' => 'zh-CN,zh;q=0.9,en;q=0.8,und;q=0.7',
+  'accept-encoding' => 'gzip, deflate',
+  'referer' => 'http://www.sean.com/admin/goodscate/index.shtml',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/78.0.3904.70 Safari/537.36',
+  'x-requested-with' => 'XMLHttpRequest',
+  'accept' => '*/*',
+  'connection' => 'close',
+  'host' => 'www.sean.com',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ RUN ] app\admin\controller\Goodscate->publish[ D:\web\phpweb\sean\app\admin\controller\Goodscate.php ]
+[ info ] [ VIEW ] D:\web\phpweb\sean\public/../app/admin\view\goodscate\publish.html [ array (
+  0 => 'cates',
+) ]
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000832s ] mysql:host=127.0.0.1;port=3306;dbname=sean;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `sean_urlconfig` [ RunTime:0.005962s ]
+[ sql ] [ SQL ] SELECT `aliases`,`url` FROM `sean_urlconfig` WHERE  `status` = 1 [ RunTime:0.000221s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `sean_webconfig` [ RunTime:0.005243s ]
+[ sql ] [ SQL ] SELECT `black_ip` FROM `sean_webconfig` WHERE  `web` = 'web' LIMIT 1 [ RunTime:0.000224s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `sean_admin_cate` [ RunTime:0.004980s ]
+[ sql ] [ SQL ] SELECT `permissions` FROM `sean_admin_cate` WHERE  `id` = 1 LIMIT 1 [ RunTime:0.000194s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `sean_admin_menu` [ RunTime:0.005511s ]
+[ sql ] [ SQL ] SELECT * FROM `sean_admin_menu` WHERE  `module` = 'admin'  AND `controller` = 'Goodscate'  AND `function` = 'publish'  AND `type` = 1  AND `parameter` = 'goodscate=' LIMIT 1 [ RunTime:0.000338s ]
+[ sql ] [ SQL ] SELECT * FROM `sean_admin_menu` WHERE  `module` = 'admin'  AND `controller` = 'Goodscate'  AND `function` = 'publish'  AND `type` = 1 LIMIT 1 [ RunTime:0.000268s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `sean_goods_cate` [ RunTime:0.005409s ]
+[ sql ] [ SQL ] SELECT * FROM `sean_goods_cate` [ RunTime:0.000171s ]
+---------------------------------------------------------------
+[ 2019-11-06T13:45:43+08:00 ] 0.0.0.0 GET www.sean.com/admin/goodscate/publish.shtml
+[运行时间：0.062475s] [吞吐率：16.01req/s] [内存消耗：2,425.42kb] [文件加载：54]
+[ info ] [ LANG ] D:\web\phpweb\sean\thinkphp\lang\zh-cn.php
+[ info ] [ DB ] INIT mysql
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => 'goodscate',
+    2 => 'publish',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'cookie' => 'PHPSESSID=292iq1pcapgpu9ikf2j7opcb55; adminer_version=4.7.4',
+  'accept-language' => 'zh-CN,zh;q=0.9,en;q=0.8,und;q=0.7',
+  'accept-encoding' => 'gzip, deflate',
+  'referer' => 'http://www.sean.com/admin/goodscate/index.shtml',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/78.0.3904.70 Safari/537.36',
+  'upgrade-insecure-requests' => '1',
+  'connection' => 'close',
+  'host' => 'www.sean.com',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ RUN ] app\admin\controller\Goodscate->publish[ D:\web\phpweb\sean\app\admin\controller\Goodscate.php ]
+[ info ] [ VIEW ] D:\web\phpweb\sean\public/../app/admin\view\goodscate\publish.html [ array (
+  0 => 'cates',
+) ]
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000597s ] mysql:host=127.0.0.1;port=3306;dbname=sean;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `sean_urlconfig` [ RunTime:0.005907s ]
+[ sql ] [ SQL ] SELECT `aliases`,`url` FROM `sean_urlconfig` WHERE  `status` = 1 [ RunTime:0.000236s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `sean_webconfig` [ RunTime:0.006190s ]
+[ sql ] [ SQL ] SELECT `black_ip` FROM `sean_webconfig` WHERE  `web` = 'web' LIMIT 1 [ RunTime:0.000204s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `sean_admin_cate` [ RunTime:0.005729s ]
+[ sql ] [ SQL ] SELECT `permissions` FROM `sean_admin_cate` WHERE  `id` = 1 LIMIT 1 [ RunTime:0.000210s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `sean_admin_menu` [ RunTime:0.005058s ]
+[ sql ] [ SQL ] SELECT * FROM `sean_admin_menu` WHERE  `module` = 'admin'  AND `controller` = 'Goodscate'  AND `function` = 'publish'  AND `type` = 1  AND `parameter` = 'goodscate=' LIMIT 1 [ RunTime:0.000438s ]
+[ sql ] [ SQL ] SELECT * FROM `sean_admin_menu` WHERE  `module` = 'admin'  AND `controller` = 'Goodscate'  AND `function` = 'publish'  AND `type` = 1 LIMIT 1 [ RunTime:0.000340s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `sean_goods_cate` [ RunTime:0.005737s ]
+[ sql ] [ SQL ] SELECT * FROM `sean_goods_cate` [ RunTime:0.000210s ]
+---------------------------------------------------------------
+[ 2019-11-06T19:36:07+08:00 ] 0.0.0.0 GET www.sean.com/admin/goodscate/index.shtml
+[运行时间：0.107234s] [吞吐率：9.33req/s] [内存消耗：2,421.90kb] [文件加载：54]
+[ info ] [ LANG ] D:\web\phpweb\sean\thinkphp\lang\zh-cn.php
+[ info ] [ DB ] INIT mysql
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => 'goodscate',
+    2 => 'index',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'cookie' => 'PHPSESSID=292iq1pcapgpu9ikf2j7opcb55; adminer_version=4.7.4',
+  'accept-language' => 'zh-CN,zh;q=0.9,en;q=0.8,und;q=0.7',
+  'accept-encoding' => 'gzip, deflate',
+  'referer' => 'http://www.sean.com/admin',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/78.0.3904.70 Safari/537.36',
+  'upgrade-insecure-requests' => '1',
+  'connection' => 'close',
+  'host' => 'www.sean.com',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ RUN ] app\admin\controller\Goodscate->index[ D:\web\phpweb\sean\app\admin\controller\Goodscate.php ]
+[ info ] [ VIEW ] D:\web\phpweb\sean\public/../app/admin\view\goodscate\index.html [ array (
+  0 => 'cates',
+) ]
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000639s ] mysql:host=127.0.0.1;port=3306;dbname=sean;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `sean_urlconfig` [ RunTime:0.003616s ]
+[ sql ] [ SQL ] SELECT `aliases`,`url` FROM `sean_urlconfig` WHERE  `status` = 1 [ RunTime:0.000272s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `sean_webconfig` [ RunTime:0.003520s ]
+[ sql ] [ SQL ] SELECT `black_ip` FROM `sean_webconfig` WHERE  `web` = 'web' LIMIT 1 [ RunTime:0.000266s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `sean_admin_cate` [ RunTime:0.003842s ]
+[ sql ] [ SQL ] SELECT `permissions` FROM `sean_admin_cate` WHERE  `id` = 1 LIMIT 1 [ RunTime:0.000239s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `sean_admin_menu` [ RunTime:0.003695s ]
+[ sql ] [ SQL ] SELECT * FROM `sean_admin_menu` WHERE  `module` = 'admin'  AND `controller` = 'Goodscate'  AND `function` = 'index'  AND `type` = 1  AND `parameter` = 'goodscate=' LIMIT 1 [ RunTime:0.001240s ]
+[ sql ] [ SQL ] SELECT * FROM `sean_admin_menu` WHERE  `module` = 'admin'  AND `controller` = 'Goodscate'  AND `function` = 'index'  AND `type` = 1 LIMIT 1 [ RunTime:0.000321s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `sean_goods_cate` [ RunTime:0.003796s ]
+[ sql ] [ SQL ] SELECT * FROM `sean_goods_cate` [ RunTime:0.000173s ]
+---------------------------------------------------------------
+[ 2019-11-06T19:36:08+08:00 ] 0.0.0.0 GET www.sean.com/admin/goodscate/publish.shtml
+[运行时间：0.065408s] [吞吐率：15.29req/s] [内存消耗：2,408.68kb] [文件加载：55]
+[ info ] [ LANG ] D:\web\phpweb\sean\thinkphp\lang\zh-cn.php
+[ info ] [ DB ] INIT mysql
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => 'goodscate',
+    2 => 'publish',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'cookie' => 'PHPSESSID=292iq1pcapgpu9ikf2j7opcb55; adminer_version=4.7.4',
+  'accept-language' => 'zh-CN,zh;q=0.9,en;q=0.8,und;q=0.7',
+  'accept-encoding' => 'gzip, deflate',
+  'referer' => 'http://www.sean.com/admin/goodscate/index.shtml',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/78.0.3904.70 Safari/537.36',
+  'x-requested-with' => 'XMLHttpRequest',
+  'accept' => '*/*',
+  'connection' => 'close',
+  'host' => 'www.sean.com',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ RUN ] app\admin\controller\Goodscate->publish[ D:\web\phpweb\sean\app\admin\controller\Goodscate.php ]
+[ info ] [ VIEW ] D:\web\phpweb\sean\public/../app/admin\view\goodscate\publish.html [ array (
+  0 => 'cates',
+) ]
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000817s ] mysql:host=127.0.0.1;port=3306;dbname=sean;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `sean_urlconfig` [ RunTime:0.004051s ]
+[ sql ] [ SQL ] SELECT `aliases`,`url` FROM `sean_urlconfig` WHERE  `status` = 1 [ RunTime:0.000207s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `sean_webconfig` [ RunTime:0.004172s ]
+[ sql ] [ SQL ] SELECT `black_ip` FROM `sean_webconfig` WHERE  `web` = 'web' LIMIT 1 [ RunTime:0.000203s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `sean_admin_cate` [ RunTime:0.003143s ]
+[ sql ] [ SQL ] SELECT `permissions` FROM `sean_admin_cate` WHERE  `id` = 1 LIMIT 1 [ RunTime:0.000192s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `sean_admin_menu` [ RunTime:0.003231s ]
+[ sql ] [ SQL ] SELECT * FROM `sean_admin_menu` WHERE  `module` = 'admin'  AND `controller` = 'Goodscate'  AND `function` = 'publish'  AND `type` = 1  AND `parameter` = 'goodscate=' LIMIT 1 [ RunTime:0.000383s ]
+[ sql ] [ SQL ] SELECT * FROM `sean_admin_menu` WHERE  `module` = 'admin'  AND `controller` = 'Goodscate'  AND `function` = 'publish'  AND `type` = 1 LIMIT 1 [ RunTime:0.000298s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `sean_goods_cate` [ RunTime:0.004303s ]
+[ sql ] [ SQL ] SELECT * FROM `sean_goods_cate` [ RunTime:0.000174s ]
+---------------------------------------------------------------
+[ 2019-11-06T19:36:08+08:00 ] 0.0.0.0 GET www.sean.com/admin/goodscate/publish.shtml
+[运行时间：0.060614s] [吞吐率：16.50req/s] [内存消耗：2,421.83kb] [文件加载：54]
+[ info ] [ LANG ] D:\web\phpweb\sean\thinkphp\lang\zh-cn.php
+[ info ] [ DB ] INIT mysql
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => 'goodscate',
+    2 => 'publish',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'cookie' => 'PHPSESSID=292iq1pcapgpu9ikf2j7opcb55; adminer_version=4.7.4',
+  'accept-language' => 'zh-CN,zh;q=0.9,en;q=0.8,und;q=0.7',
+  'accept-encoding' => 'gzip, deflate',
+  'referer' => 'http://www.sean.com/admin/goodscate/index.shtml',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/78.0.3904.70 Safari/537.36',
+  'upgrade-insecure-requests' => '1',
+  'connection' => 'close',
+  'host' => 'www.sean.com',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ RUN ] app\admin\controller\Goodscate->publish[ D:\web\phpweb\sean\app\admin\controller\Goodscate.php ]
+[ info ] [ VIEW ] D:\web\phpweb\sean\public/../app/admin\view\goodscate\publish.html [ array (
+  0 => 'cates',
+) ]
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000550s ] mysql:host=127.0.0.1;port=3306;dbname=sean;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `sean_urlconfig` [ RunTime:0.004404s ]
+[ sql ] [ SQL ] SELECT `aliases`,`url` FROM `sean_urlconfig` WHERE  `status` = 1 [ RunTime:0.000218s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `sean_webconfig` [ RunTime:0.003610s ]
+[ sql ] [ SQL ] SELECT `black_ip` FROM `sean_webconfig` WHERE  `web` = 'web' LIMIT 1 [ RunTime:0.000218s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `sean_admin_cate` [ RunTime:0.003693s ]
+[ sql ] [ SQL ] SELECT `permissions` FROM `sean_admin_cate` WHERE  `id` = 1 LIMIT 1 [ RunTime:0.000212s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `sean_admin_menu` [ RunTime:0.003323s ]
+[ sql ] [ SQL ] SELECT * FROM `sean_admin_menu` WHERE  `module` = 'admin'  AND `controller` = 'Goodscate'  AND `function` = 'publish'  AND `type` = 1  AND `parameter` = 'goodscate=' LIMIT 1 [ RunTime:0.000325s ]
+[ sql ] [ SQL ] SELECT * FROM `sean_admin_menu` WHERE  `module` = 'admin'  AND `controller` = 'Goodscate'  AND `function` = 'publish'  AND `type` = 1 LIMIT 1 [ RunTime:0.000272s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `sean_goods_cate` [ RunTime:0.003366s ]
+[ sql ] [ SQL ] SELECT * FROM `sean_goods_cate` [ RunTime:0.000168s ]
+---------------------------------------------------------------
+[ 2019-11-06T19:36:25+08:00 ] 0.0.0.0 POST www.sean.com/admin/goodscate/publish.shtml
+[运行时间：0.230916s] [吞吐率：4.33req/s] [内存消耗：2,364.74kb] [文件加载：57]
+[ info ] [ LANG ] D:\web\phpweb\sean\thinkphp\lang\zh-cn.php
+[ info ] [ DB ] INIT mysql
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => 'goodscate',
+    2 => 'publish',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'cookie' => 'PHPSESSID=292iq1pcapgpu9ikf2j7opcb55; adminer_version=4.7.4',
+  'accept-language' => 'zh-CN,zh;q=0.9,en;q=0.8,und;q=0.7',
+  'accept-encoding' => 'gzip, deflate',
+  'referer' => 'http://www.sean.com/admin/goodscate/publish.shtml',
+  'content-type' => 'application/x-www-form-urlencoded; charset=UTF-8',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/78.0.3904.70 Safari/537.36',
+  'x-requested-with' => 'XMLHttpRequest',
+  'origin' => 'http://www.sean.com',
+  'accept' => '*/*',
+  'content-length' => '83',
+  'connection' => 'close',
+  'host' => 'www.sean.com',
+)
+[ info ] [ PARAM ] array (
+  'pid' => '0',
+  'name' => '水果',
+  'tag' => '水果',
+  'description' => '水果',
+)
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ RUN ] app\admin\controller\Goodscate->publish[ D:\web\phpweb\sean\app\admin\controller\Goodscate.php ]
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000536s ] mysql:host=127.0.0.1;port=3306;dbname=sean;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `sean_urlconfig` [ RunTime:0.146274s ]
+[ sql ] [ SQL ] SELECT `aliases`,`url` FROM `sean_urlconfig` WHERE  `status` = 1 [ RunTime:0.000687s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `sean_webconfig` [ RunTime:0.005628s ]
+[ sql ] [ SQL ] SELECT `black_ip` FROM `sean_webconfig` WHERE  `web` = 'web' LIMIT 1 [ RunTime:0.000322s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `sean_admin_cate` [ RunTime:0.003917s ]
+[ sql ] [ SQL ] SELECT `permissions` FROM `sean_admin_cate` WHERE  `id` = 1 LIMIT 1 [ RunTime:0.000221s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `sean_admin_menu` [ RunTime:0.003502s ]
+[ sql ] [ SQL ] SELECT * FROM `sean_admin_menu` WHERE  `module` = 'admin'  AND `controller` = 'Goodscate'  AND `function` = 'publish'  AND `type` = 1  AND `parameter` = 'goodscate=' LIMIT 1 [ RunTime:0.000345s ]
+[ sql ] [ SQL ] SELECT * FROM `sean_admin_menu` WHERE  `module` = 'admin'  AND `controller` = 'Goodscate'  AND `function` = 'publish'  AND `type` = 1 LIMIT 1 [ RunTime:0.000282s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `sean_goods_cate` [ RunTime:0.003497s ]
+[ sql ] [ SQL ] INSERT INTO `sean_goods_cate` (`pid` , `name` , `tag` , `description` , `create_time` , `update_time`) VALUES (0 , '水果' , '水果' , '水果' , 1573040185 , 1573040185) [ RunTime:0.003526s ]
+[ sql ] [ SQL ] SELECT * FROM `sean_webconfig` WHERE  `web` = 'web' LIMIT 1 [ RunTime:0.000231s ]
+[ sql ] [ SQL ] SELECT `id` FROM `sean_admin_menu` WHERE  `module` = 'admin'  AND `controller` = 'Goodscate'  AND `function` = 'publish'  AND `parameter` = 'goodscate=' LIMIT 1 [ RunTime:0.000232s ]
+[ sql ] [ SQL ] SELECT `id` FROM `sean_admin_menu` WHERE  `module` = 'admin'  AND `controller` = 'Goodscate'  AND `function` = 'publish' LIMIT 1 [ RunTime:0.000212s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `sean_admin_log` [ RunTime:0.003382s ]
+[ error ] [10501]SQLSTATE[23000]: Integrity constraint violation: 1048 Column 'admin_menu_id' cannot be null[D:\web\phpweb\sean\thinkphp\library\think\db\Connection.php:453]
+---------------------------------------------------------------
+[ 2019-11-06T19:36:34+08:00 ] 0.0.0.0 POST www.sean.com/admin/goodscate/publish.shtml
+[运行时间：0.100354s] [吞吐率：9.96req/s] [内存消耗：2,364.74kb] [文件加载：57]
+[ info ] [ LANG ] D:\web\phpweb\sean\thinkphp\lang\zh-cn.php
+[ info ] [ DB ] INIT mysql
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => 'goodscate',
+    2 => 'publish',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'cookie' => 'PHPSESSID=292iq1pcapgpu9ikf2j7opcb55; adminer_version=4.7.4',
+  'accept-language' => 'zh-CN,zh;q=0.9,en;q=0.8,und;q=0.7',
+  'accept-encoding' => 'gzip, deflate',
+  'referer' => 'http://www.sean.com/admin/goodscate/publish.shtml',
+  'content-type' => 'application/x-www-form-urlencoded; charset=UTF-8',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/78.0.3904.70 Safari/537.36',
+  'x-requested-with' => 'XMLHttpRequest',
+  'origin' => 'http://www.sean.com',
+  'accept' => '*/*',
+  'content-length' => '83',
+  'connection' => 'close',
+  'host' => 'www.sean.com',
+)
+[ info ] [ PARAM ] array (
+  'pid' => '0',
+  'name' => '水果',
+  'tag' => '水果',
+  'description' => '水果',
+)
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ RUN ] app\admin\controller\Goodscate->publish[ D:\web\phpweb\sean\app\admin\controller\Goodscate.php ]
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000960s ] mysql:host=127.0.0.1;port=3306;dbname=sean;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `sean_urlconfig` [ RunTime:0.024780s ]
+[ sql ] [ SQL ] SELECT `aliases`,`url` FROM `sean_urlconfig` WHERE  `status` = 1 [ RunTime:0.000498s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `sean_webconfig` [ RunTime:0.003395s ]
+[ sql ] [ SQL ] SELECT `black_ip` FROM `sean_webconfig` WHERE  `web` = 'web' LIMIT 1 [ RunTime:0.000192s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `sean_admin_cate` [ RunTime:0.003322s ]
+[ sql ] [ SQL ] SELECT `permissions` FROM `sean_admin_cate` WHERE  `id` = 1 LIMIT 1 [ RunTime:0.000209s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `sean_admin_menu` [ RunTime:0.004206s ]
+[ sql ] [ SQL ] SELECT * FROM `sean_admin_menu` WHERE  `module` = 'admin'  AND `controller` = 'Goodscate'  AND `function` = 'publish'  AND `type` = 1  AND `parameter` = 'goodscate=' LIMIT 1 [ RunTime:0.000339s ]
+[ sql ] [ SQL ] SELECT * FROM `sean_admin_menu` WHERE  `module` = 'admin'  AND `controller` = 'Goodscate'  AND `function` = 'publish'  AND `type` = 1 LIMIT 1 [ RunTime:0.000296s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `sean_goods_cate` [ RunTime:0.003336s ]
+[ sql ] [ SQL ] INSERT INTO `sean_goods_cate` (`pid` , `name` , `tag` , `description` , `create_time` , `update_time`) VALUES (0 , '水果' , '水果' , '水果' , 1573040194 , 1573040194) [ RunTime:0.000206s ]
+[ sql ] [ SQL ] SELECT * FROM `sean_webconfig` WHERE  `web` = 'web' LIMIT 1 [ RunTime:0.000211s ]
+[ sql ] [ SQL ] SELECT `id` FROM `sean_admin_menu` WHERE  `module` = 'admin'  AND `controller` = 'Goodscate'  AND `function` = 'publish'  AND `parameter` = 'goodscate=' LIMIT 1 [ RunTime:0.000240s ]
+[ sql ] [ SQL ] SELECT `id` FROM `sean_admin_menu` WHERE  `module` = 'admin'  AND `controller` = 'Goodscate'  AND `function` = 'publish' LIMIT 1 [ RunTime:0.000205s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `sean_admin_log` [ RunTime:0.004822s ]
+[ error ] [10501]SQLSTATE[23000]: Integrity constraint violation: 1048 Column 'admin_menu_id' cannot be null[D:\web\phpweb\sean\thinkphp\library\think\db\Connection.php:453]
+---------------------------------------------------------------
+[ 2019-11-06T19:38:31+08:00 ] 0.0.0.0 POST www.sean.com/admin/goodscate/publish.shtml
+[运行时间：0.048236s] [吞吐率：20.73req/s] [内存消耗：2,340.28kb] [文件加载：51]
+[ info ] [ LANG ] D:\web\phpweb\sean\thinkphp\lang\zh-cn.php
+[ info ] [ DB ] INIT mysql
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => 'goodscate',
+    2 => 'publish',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'cookie' => 'PHPSESSID=292iq1pcapgpu9ikf2j7opcb55; adminer_version=4.7.4',
+  'accept-language' => 'zh-CN,zh;q=0.9,en;q=0.8,und;q=0.7',
+  'accept-encoding' => 'gzip, deflate',
+  'referer' => 'http://www.sean.com/admin/goodscate/publish.shtml',
+  'content-type' => 'application/x-www-form-urlencoded; charset=UTF-8',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/78.0.3904.70 Safari/537.36',
+  'x-requested-with' => 'XMLHttpRequest',
+  'origin' => 'http://www.sean.com',
+  'accept' => '*/*',
+  'content-length' => '83',
+  'connection' => 'close',
+  'host' => 'www.sean.com',
+)
+[ info ] [ PARAM ] array (
+  'pid' => '0',
+  'name' => '水果',
+  'tag' => '水果',
+  'description' => '水果',
+)
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ RUN ] app\admin\controller\Goodscate->publish[ D:\web\phpweb\sean\app\admin\controller\Goodscate.php ]
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000567s ] mysql:host=127.0.0.1;port=3306;dbname=sean;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `sean_urlconfig` [ RunTime:0.004062s ]
+[ sql ] [ SQL ] SELECT `aliases`,`url` FROM `sean_urlconfig` WHERE  `status` = 1 [ RunTime:0.000200s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `sean_webconfig` [ RunTime:0.003710s ]
+[ sql ] [ SQL ] SELECT `black_ip` FROM `sean_webconfig` WHERE  `web` = 'web' LIMIT 1 [ RunTime:0.000329s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `sean_admin_cate` [ RunTime:0.004069s ]
+[ sql ] [ SQL ] SELECT `permissions` FROM `sean_admin_cate` WHERE  `id` = 1 LIMIT 1 [ RunTime:0.000220s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `sean_admin_menu` [ RunTime:0.003130s ]
+[ sql ] [ SQL ] SELECT * FROM `sean_admin_menu` WHERE  `module` = 'admin'  AND `controller` = 'Goodscate'  AND `function` = 'publish'  AND `type` = 1  AND `parameter` = 'goodscate=' LIMIT 1 [ RunTime:0.000368s ]
+[ sql ] [ SQL ] SELECT * FROM `sean_admin_menu` WHERE  `module` = 'admin'  AND `controller` = 'Goodscate'  AND `function` = 'publish'  AND `type` = 1 LIMIT 1 [ RunTime:0.000275s ]
+---------------------------------------------------------------
+[ 2019-11-06T19:39:40+08:00 ] 0.0.0.0 POST www.sean.com/admin/goodscate/publish.shtml
+[运行时间：0.051121s] [吞吐率：19.56req/s] [内存消耗：2,132.20kb] [文件加载：49]
+[ info ] [ LANG ] D:\web\phpweb\sean\thinkphp\lang\zh-cn.php
+[ info ] [ DB ] INIT mysql
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => 'goodscate',
+    2 => 'publish',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'cookie' => 'PHPSESSID=292iq1pcapgpu9ikf2j7opcb55; adminer_version=4.7.4',
+  'accept-language' => 'zh-CN,zh;q=0.9,en;q=0.8,und;q=0.7',
+  'accept-encoding' => 'gzip, deflate',
+  'referer' => 'http://www.sean.com/admin/goodscate/publish.shtml',
+  'content-type' => 'application/x-www-form-urlencoded; charset=UTF-8',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/78.0.3904.70 Safari/537.36',
+  'x-requested-with' => 'XMLHttpRequest',
+  'origin' => 'http://www.sean.com',
+  'accept' => '*/*',
+  'content-length' => '83',
+  'connection' => 'close',
+  'host' => 'www.sean.com',
+)
+[ info ] [ PARAM ] array (
+  'pid' => '0',
+  'name' => '水果',
+  'tag' => '水果',
+  'description' => '水果',
+)
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ RUN ] app\admin\controller\Goodscate->publish[ D:\web\phpweb\sean\app\admin\controller\Goodscate.php ]
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000643s ] mysql:host=127.0.0.1;port=3306;dbname=sean;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `sean_urlconfig` [ RunTime:0.004595s ]
+[ sql ] [ SQL ] SELECT `aliases`,`url` FROM `sean_urlconfig` WHERE  `status` = 1 [ RunTime:0.000199s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `sean_webconfig` [ RunTime:0.003503s ]
+[ sql ] [ SQL ] SELECT `black_ip` FROM `sean_webconfig` WHERE  `web` = 'web' LIMIT 1 [ RunTime:0.000189s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `sean_admin_cate` [ RunTime:0.004460s ]
+[ sql ] [ SQL ] SELECT `permissions` FROM `sean_admin_cate` WHERE  `id` = 1 LIMIT 1 [ RunTime:0.000212s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `sean_admin_menu` [ RunTime:0.003415s ]
+[ sql ] [ SQL ] SELECT * FROM `sean_admin_menu` WHERE  `module` = 'admin'  AND `controller` = 'Goodscate'  AND `function` = 'publish'  AND `type` = 1  AND `parameter` = 'goodscate=' LIMIT 1 [ RunTime:0.000485s ]
+[ sql ] [ SQL ] SELECT * FROM `sean_admin_menu` WHERE  `module` = 'admin'  AND `controller` = 'Goodscate'  AND `function` = 'publish'  AND `type` = 1 LIMIT 1 [ RunTime:0.000315s ]
+---------------------------------------------------------------
+[ 2019-11-06T19:40:06+08:00 ] 0.0.0.0 GET www.sean.com/admin/articlecate/index.shtml
+[运行时间：0.071752s] [吞吐率：13.94req/s] [内存消耗：2,424.41kb] [文件加载：54]
+[ info ] [ LANG ] D:\web\phpweb\sean\thinkphp\lang\zh-cn.php
+[ info ] [ DB ] INIT mysql
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => 'articlecate',
+    2 => 'index',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'cookie' => 'PHPSESSID=292iq1pcapgpu9ikf2j7opcb55; adminer_version=4.7.4',
+  'accept-language' => 'zh-CN,zh;q=0.9,en;q=0.8,und;q=0.7',
+  'accept-encoding' => 'gzip, deflate',
+  'referer' => 'http://www.sean.com/admin',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/78.0.3904.70 Safari/537.36',
+  'upgrade-insecure-requests' => '1',
+  'connection' => 'close',
+  'host' => 'www.sean.com',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ RUN ] app\admin\controller\Articlecate->index[ D:\web\phpweb\sean\app\admin\controller\Articlecate.php ]
+[ info ] [ VIEW ] D:\web\phpweb\sean\public/../app/admin\view\articlecate\index.html [ array (
+  0 => 'cates',
+) ]
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000815s ] mysql:host=127.0.0.1;port=3306;dbname=sean;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `sean_urlconfig` [ RunTime:0.007341s ]
+[ sql ] [ SQL ] SELECT `aliases`,`url` FROM `sean_urlconfig` WHERE  `status` = 1 [ RunTime:0.000294s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `sean_webconfig` [ RunTime:0.004186s ]
+[ sql ] [ SQL ] SELECT `black_ip` FROM `sean_webconfig` WHERE  `web` = 'web' LIMIT 1 [ RunTime:0.000212s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `sean_admin_cate` [ RunTime:0.003831s ]
+[ sql ] [ SQL ] SELECT `permissions` FROM `sean_admin_cate` WHERE  `id` = 1 LIMIT 1 [ RunTime:0.000204s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `sean_admin_menu` [ RunTime:0.006377s ]
+[ sql ] [ SQL ] SELECT * FROM `sean_admin_menu` WHERE  `module` = 'admin'  AND `controller` = 'Articlecate'  AND `function` = 'index'  AND `type` = 1  AND `parameter` = 'articlecate=' LIMIT 1 [ RunTime:0.000767s ]
+[ sql ] [ SQL ] SELECT * FROM `sean_admin_menu` WHERE  `module` = 'admin'  AND `controller` = 'Articlecate'  AND `function` = 'index'  AND `type` = 1 LIMIT 1 [ RunTime:0.000381s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `sean_article_cate` [ RunTime:0.003551s ]
+[ sql ] [ SQL ] SELECT * FROM `sean_article_cate` [ RunTime:0.000336s ]
+---------------------------------------------------------------
+[ 2019-11-06T19:40:09+08:00 ] 0.0.0.0 GET www.sean.com/admin/articlecate/publish.shtml
+[运行时间：0.055485s] [吞吐率：18.02req/s] [内存消耗：2,131.59kb] [文件加载：49]
+[ info ] [ LANG ] D:\web\phpweb\sean\thinkphp\lang\zh-cn.php
+[ info ] [ DB ] INIT mysql
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => 'articlecate',
+    2 => 'publish',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'cookie' => 'PHPSESSID=292iq1pcapgpu9ikf2j7opcb55; adminer_version=4.7.4',
+  'accept-language' => 'zh-CN,zh;q=0.9,en;q=0.8,und;q=0.7',
+  'accept-encoding' => 'gzip, deflate',
+  'referer' => 'http://www.sean.com/admin/articlecate/index.shtml',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/78.0.3904.70 Safari/537.36',
+  'x-requested-with' => 'XMLHttpRequest',
+  'accept' => '*/*',
+  'connection' => 'close',
+  'host' => 'www.sean.com',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ RUN ] app\admin\controller\Articlecate->publish[ D:\web\phpweb\sean\app\admin\controller\Articlecate.php ]
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000597s ] mysql:host=127.0.0.1;port=3306;dbname=sean;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `sean_urlconfig` [ RunTime:0.007141s ]
+[ sql ] [ SQL ] SELECT `aliases`,`url` FROM `sean_urlconfig` WHERE  `status` = 1 [ RunTime:0.000214s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `sean_webconfig` [ RunTime:0.003502s ]
+[ sql ] [ SQL ] SELECT `black_ip` FROM `sean_webconfig` WHERE  `web` = 'web' LIMIT 1 [ RunTime:0.000193s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `sean_admin_cate` [ RunTime:0.003217s ]
+[ sql ] [ SQL ] SELECT `permissions` FROM `sean_admin_cate` WHERE  `id` = 1 LIMIT 1 [ RunTime:0.000192s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `sean_admin_menu` [ RunTime:0.003120s ]
+[ sql ] [ SQL ] SELECT * FROM `sean_admin_menu` WHERE  `module` = 'admin'  AND `controller` = 'Articlecate'  AND `function` = 'publish'  AND `type` = 1  AND `parameter` = 'articlecate=' LIMIT 1 [ RunTime:0.000338s ]
+[ sql ] [ SQL ] SELECT * FROM `sean_admin_menu` WHERE  `module` = 'admin'  AND `controller` = 'Articlecate'  AND `function` = 'publish'  AND `type` = 1 LIMIT 1 [ RunTime:0.000334s ]
+---------------------------------------------------------------
+[ 2019-11-06T19:40:09+08:00 ] 0.0.0.0 GET www.sean.com/admin/articlecate/publish.shtml
+[运行时间：0.048643s] [吞吐率：20.56req/s] [内存消耗：2,131.97kb] [文件加载：49]
+[ info ] [ LANG ] D:\web\phpweb\sean\thinkphp\lang\zh-cn.php
+[ info ] [ DB ] INIT mysql
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => 'articlecate',
+    2 => 'publish',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'cookie' => 'PHPSESSID=292iq1pcapgpu9ikf2j7opcb55; adminer_version=4.7.4',
+  'accept-language' => 'zh-CN,zh;q=0.9,en;q=0.8,und;q=0.7',
+  'accept-encoding' => 'gzip, deflate',
+  'referer' => 'http://www.sean.com/admin/articlecate/index.shtml',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/78.0.3904.70 Safari/537.36',
+  'upgrade-insecure-requests' => '1',
+  'connection' => 'close',
+  'host' => 'www.sean.com',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ RUN ] app\admin\controller\Articlecate->publish[ D:\web\phpweb\sean\app\admin\controller\Articlecate.php ]
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000676s ] mysql:host=127.0.0.1;port=3306;dbname=sean;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `sean_urlconfig` [ RunTime:0.004567s ]
+[ sql ] [ SQL ] SELECT `aliases`,`url` FROM `sean_urlconfig` WHERE  `status` = 1 [ RunTime:0.000269s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `sean_webconfig` [ RunTime:0.005383s ]
+[ sql ] [ SQL ] SELECT `black_ip` FROM `sean_webconfig` WHERE  `web` = 'web' LIMIT 1 [ RunTime:0.000239s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `sean_admin_cate` [ RunTime:0.003602s ]
+[ sql ] [ SQL ] SELECT `permissions` FROM `sean_admin_cate` WHERE  `id` = 1 LIMIT 1 [ RunTime:0.000243s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `sean_admin_menu` [ RunTime:0.003309s ]
+[ sql ] [ SQL ] SELECT * FROM `sean_admin_menu` WHERE  `module` = 'admin'  AND `controller` = 'Articlecate'  AND `function` = 'publish'  AND `type` = 1  AND `parameter` = 'articlecate=' LIMIT 1 [ RunTime:0.000345s ]
+[ sql ] [ SQL ] SELECT * FROM `sean_admin_menu` WHERE  `module` = 'admin'  AND `controller` = 'Articlecate'  AND `function` = 'publish'  AND `type` = 1 LIMIT 1 [ RunTime:0.000280s ]
+---------------------------------------------------------------
+[ 2019-11-06T19:40:17+08:00 ] 0.0.0.0 GET www.sean.com/admin/articlecate/index.shtml
+[运行时间：0.079899s] [吞吐率：12.52req/s] [内存消耗：2,424.36kb] [文件加载：54]
+[ info ] [ LANG ] D:\web\phpweb\sean\thinkphp\lang\zh-cn.php
+[ info ] [ DB ] INIT mysql
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => 'articlecate',
+    2 => 'index',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'cookie' => 'PHPSESSID=292iq1pcapgpu9ikf2j7opcb55; adminer_version=4.7.4',
+  'accept-language' => 'zh-CN,zh;q=0.9,en;q=0.8,und;q=0.7',
+  'accept-encoding' => 'gzip, deflate',
+  'referer' => 'http://www.sean.com/admin',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/78.0.3904.70 Safari/537.36',
+  'upgrade-insecure-requests' => '1',
+  'connection' => 'close',
+  'host' => 'www.sean.com',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ RUN ] app\admin\controller\Articlecate->index[ D:\web\phpweb\sean\app\admin\controller\Articlecate.php ]
+[ info ] [ VIEW ] D:\web\phpweb\sean\public/../app/admin\view\articlecate\index.html [ array (
+  0 => 'cates',
+) ]
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000751s ] mysql:host=127.0.0.1;port=3306;dbname=sean;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `sean_urlconfig` [ RunTime:0.015866s ]
+[ sql ] [ SQL ] SELECT `aliases`,`url` FROM `sean_urlconfig` WHERE  `status` = 1 [ RunTime:0.000411s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `sean_webconfig` [ RunTime:0.003540s ]
+[ sql ] [ SQL ] SELECT `black_ip` FROM `sean_webconfig` WHERE  `web` = 'web' LIMIT 1 [ RunTime:0.000203s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `sean_admin_cate` [ RunTime:0.005654s ]
+[ sql ] [ SQL ] SELECT `permissions` FROM `sean_admin_cate` WHERE  `id` = 1 LIMIT 1 [ RunTime:0.000268s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `sean_admin_menu` [ RunTime:0.011521s ]
+[ sql ] [ SQL ] SELECT * FROM `sean_admin_menu` WHERE  `module` = 'admin'  AND `controller` = 'Articlecate'  AND `function` = 'index'  AND `type` = 1  AND `parameter` = 'articlecate=' LIMIT 1 [ RunTime:0.000377s ]
+[ sql ] [ SQL ] SELECT * FROM `sean_admin_menu` WHERE  `module` = 'admin'  AND `controller` = 'Articlecate'  AND `function` = 'index'  AND `type` = 1 LIMIT 1 [ RunTime:0.000341s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `sean_article_cate` [ RunTime:0.004270s ]
+[ sql ] [ SQL ] SELECT * FROM `sean_article_cate` [ RunTime:0.000214s ]
+---------------------------------------------------------------
+[ 2019-11-06T19:40:18+08:00 ] 0.0.0.0 GET www.sean.com/admin/articlecate/publish.shtml
+[运行时间：0.059928s] [吞吐率：16.69req/s] [内存消耗：2,410.27kb] [文件加载：55]
+[ info ] [ LANG ] D:\web\phpweb\sean\thinkphp\lang\zh-cn.php
+[ info ] [ DB ] INIT mysql
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => 'articlecate',
+    2 => 'publish',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'cookie' => 'PHPSESSID=292iq1pcapgpu9ikf2j7opcb55; adminer_version=4.7.4',
+  'accept-language' => 'zh-CN,zh;q=0.9,en;q=0.8,und;q=0.7',
+  'accept-encoding' => 'gzip, deflate',
+  'referer' => 'http://www.sean.com/admin/articlecate/index.shtml',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/78.0.3904.70 Safari/537.36',
+  'x-requested-with' => 'XMLHttpRequest',
+  'accept' => '*/*',
+  'connection' => 'close',
+  'host' => 'www.sean.com',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ RUN ] app\admin\controller\Articlecate->publish[ D:\web\phpweb\sean\app\admin\controller\Articlecate.php ]
+[ info ] [ VIEW ] D:\web\phpweb\sean\public/../app/admin\view\articlecate\publish.html [ array (
+  0 => 'cates',
+) ]
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000814s ] mysql:host=127.0.0.1;port=3306;dbname=sean;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `sean_urlconfig` [ RunTime:0.008981s ]
+[ sql ] [ SQL ] SELECT `aliases`,`url` FROM `sean_urlconfig` WHERE  `status` = 1 [ RunTime:0.000410s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `sean_webconfig` [ RunTime:0.003473s ]
+[ sql ] [ SQL ] SELECT `black_ip` FROM `sean_webconfig` WHERE  `web` = 'web' LIMIT 1 [ RunTime:0.000194s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `sean_admin_cate` [ RunTime:0.005323s ]
+[ sql ] [ SQL ] SELECT `permissions` FROM `sean_admin_cate` WHERE  `id` = 1 LIMIT 1 [ RunTime:0.000238s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `sean_admin_menu` [ RunTime:0.003381s ]
+[ sql ] [ SQL ] SELECT * FROM `sean_admin_menu` WHERE  `module` = 'admin'  AND `controller` = 'Articlecate'  AND `function` = 'publish'  AND `type` = 1  AND `parameter` = 'articlecate=' LIMIT 1 [ RunTime:0.000350s ]
+[ sql ] [ SQL ] SELECT * FROM `sean_admin_menu` WHERE  `module` = 'admin'  AND `controller` = 'Articlecate'  AND `function` = 'publish'  AND `type` = 1 LIMIT 1 [ RunTime:0.000275s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `sean_article_cate` [ RunTime:0.003265s ]
+[ sql ] [ SQL ] SELECT * FROM `sean_article_cate` [ RunTime:0.000214s ]
+---------------------------------------------------------------
+[ 2019-11-06T19:40:18+08:00 ] 0.0.0.0 GET www.sean.com/admin/articlecate/publish.shtml
+[运行时间：0.057809s] [吞吐率：17.30req/s] [内存消耗：2,423.41kb] [文件加载：54]
+[ info ] [ LANG ] D:\web\phpweb\sean\thinkphp\lang\zh-cn.php
+[ info ] [ DB ] INIT mysql
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => 'articlecate',
+    2 => 'publish',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'cookie' => 'PHPSESSID=292iq1pcapgpu9ikf2j7opcb55; adminer_version=4.7.4',
+  'accept-language' => 'zh-CN,zh;q=0.9,en;q=0.8,und;q=0.7',
+  'accept-encoding' => 'gzip, deflate',
+  'referer' => 'http://www.sean.com/admin/articlecate/index.shtml',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/78.0.3904.70 Safari/537.36',
+  'upgrade-insecure-requests' => '1',
+  'connection' => 'close',
+  'host' => 'www.sean.com',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ RUN ] app\admin\controller\Articlecate->publish[ D:\web\phpweb\sean\app\admin\controller\Articlecate.php ]
+[ info ] [ VIEW ] D:\web\phpweb\sean\public/../app/admin\view\articlecate\publish.html [ array (
+  0 => 'cates',
+) ]
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000679s ] mysql:host=127.0.0.1;port=3306;dbname=sean;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `sean_urlconfig` [ RunTime:0.004702s ]
+[ sql ] [ SQL ] SELECT `aliases`,`url` FROM `sean_urlconfig` WHERE  `status` = 1 [ RunTime:0.000294s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `sean_webconfig` [ RunTime:0.003403s ]
+[ sql ] [ SQL ] SELECT `black_ip` FROM `sean_webconfig` WHERE  `web` = 'web' LIMIT 1 [ RunTime:0.000425s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `sean_admin_cate` [ RunTime:0.003987s ]
+[ sql ] [ SQL ] SELECT `permissions` FROM `sean_admin_cate` WHERE  `id` = 1 LIMIT 1 [ RunTime:0.000201s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `sean_admin_menu` [ RunTime:0.003236s ]
+[ sql ] [ SQL ] SELECT * FROM `sean_admin_menu` WHERE  `module` = 'admin'  AND `controller` = 'Articlecate'  AND `function` = 'publish'  AND `type` = 1  AND `parameter` = 'articlecate=' LIMIT 1 [ RunTime:0.000415s ]
+[ sql ] [ SQL ] SELECT * FROM `sean_admin_menu` WHERE  `module` = 'admin'  AND `controller` = 'Articlecate'  AND `function` = 'publish'  AND `type` = 1 LIMIT 1 [ RunTime:0.000384s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `sean_article_cate` [ RunTime:0.005637s ]
+[ sql ] [ SQL ] SELECT * FROM `sean_article_cate` [ RunTime:0.000274s ]
+---------------------------------------------------------------
+[ 2019-11-06T19:40:30+08:00 ] 0.0.0.0 POST www.sean.com/admin/articlecate/publish.shtml
+[运行时间：0.066735s] [吞吐率：14.98req/s] [内存消耗：2,132.45kb] [文件加载：49]
+[ info ] [ LANG ] D:\web\phpweb\sean\thinkphp\lang\zh-cn.php
+[ info ] [ DB ] INIT mysql
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => 'articlecate',
+    2 => 'publish',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'cookie' => 'PHPSESSID=292iq1pcapgpu9ikf2j7opcb55; adminer_version=4.7.4',
+  'accept-language' => 'zh-CN,zh;q=0.9,en;q=0.8,und;q=0.7',
+  'accept-encoding' => 'gzip, deflate',
+  'referer' => 'http://www.sean.com/admin/articlecate/publish.shtml',
+  'content-type' => 'application/x-www-form-urlencoded; charset=UTF-8',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/78.0.3904.70 Safari/537.36',
+  'x-requested-with' => 'XMLHttpRequest',
+  'origin' => 'http://www.sean.com',
+  'accept' => '*/*',
+  'content-length' => '89',
+  'connection' => 'close',
+  'host' => 'www.sean.com',
+)
+[ info ] [ PARAM ] array (
+  'pid' => '0',
+  'name' => 'dump($id);die;',
+  'tag' => 'dump($id);die;',
+  'description' => 'dump($id);die;',
+)
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ RUN ] app\admin\controller\Articlecate->publish[ D:\web\phpweb\sean\app\admin\controller\Articlecate.php ]
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000555s ] mysql:host=127.0.0.1;port=3306;dbname=sean;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `sean_urlconfig` [ RunTime:0.014450s ]
+[ sql ] [ SQL ] SELECT `aliases`,`url` FROM `sean_urlconfig` WHERE  `status` = 1 [ RunTime:0.000210s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `sean_webconfig` [ RunTime:0.004216s ]
+[ sql ] [ SQL ] SELECT `black_ip` FROM `sean_webconfig` WHERE  `web` = 'web' LIMIT 1 [ RunTime:0.000294s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `sean_admin_cate` [ RunTime:0.003597s ]
+[ sql ] [ SQL ] SELECT `permissions` FROM `sean_admin_cate` WHERE  `id` = 1 LIMIT 1 [ RunTime:0.000205s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `sean_admin_menu` [ RunTime:0.012129s ]
+[ sql ] [ SQL ] SELECT * FROM `sean_admin_menu` WHERE  `module` = 'admin'  AND `controller` = 'Articlecate'  AND `function` = 'publish'  AND `type` = 1  AND `parameter` = 'articlecate=' LIMIT 1 [ RunTime:0.000355s ]
+[ sql ] [ SQL ] SELECT * FROM `sean_admin_menu` WHERE  `module` = 'admin'  AND `controller` = 'Articlecate'  AND `function` = 'publish'  AND `type` = 1 LIMIT 1 [ RunTime:0.000281s ]
+---------------------------------------------------------------
+[ 2019-11-06T19:40:42+08:00 ] 0.0.0.0 GET www.sean.com/admin/goodscate/index.shtml
+[运行时间：0.086095s] [吞吐率：11.62req/s] [内存消耗：2,425.39kb] [文件加载：54]
+[ info ] [ LANG ] D:\web\phpweb\sean\thinkphp\lang\zh-cn.php
+[ info ] [ DB ] INIT mysql
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => 'goodscate',
+    2 => 'index',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'cookie' => 'PHPSESSID=292iq1pcapgpu9ikf2j7opcb55; adminer_version=4.7.4',
+  'accept-language' => 'zh-CN,zh;q=0.9,en;q=0.8,und;q=0.7',
+  'accept-encoding' => 'gzip, deflate',
+  'referer' => 'http://www.sean.com/admin',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/78.0.3904.70 Safari/537.36',
+  'upgrade-insecure-requests' => '1',
+  'connection' => 'close',
+  'host' => 'www.sean.com',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ RUN ] app\admin\controller\Goodscate->index[ D:\web\phpweb\sean\app\admin\controller\Goodscate.php ]
+[ info ] [ VIEW ] D:\web\phpweb\sean\public/../app/admin\view\goodscate\index.html [ array (
+  0 => 'cates',
+) ]
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000658s ] mysql:host=127.0.0.1;port=3306;dbname=sean;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `sean_urlconfig` [ RunTime:0.014783s ]
+[ sql ] [ SQL ] SELECT `aliases`,`url` FROM `sean_urlconfig` WHERE  `status` = 1 [ RunTime:0.000229s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `sean_webconfig` [ RunTime:0.003430s ]
+[ sql ] [ SQL ] SELECT `black_ip` FROM `sean_webconfig` WHERE  `web` = 'web' LIMIT 1 [ RunTime:0.000186s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `sean_admin_cate` [ RunTime:0.005246s ]
+[ sql ] [ SQL ] SELECT `permissions` FROM `sean_admin_cate` WHERE  `id` = 1 LIMIT 1 [ RunTime:0.000204s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `sean_admin_menu` [ RunTime:0.013260s ]
+[ sql ] [ SQL ] SELECT * FROM `sean_admin_menu` WHERE  `module` = 'admin'  AND `controller` = 'Goodscate'  AND `function` = 'index'  AND `type` = 1  AND `parameter` = 'goodscate=' LIMIT 1 [ RunTime:0.000456s ]
+[ sql ] [ SQL ] SELECT * FROM `sean_admin_menu` WHERE  `module` = 'admin'  AND `controller` = 'Goodscate'  AND `function` = 'index'  AND `type` = 1 LIMIT 1 [ RunTime:0.000868s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `sean_goods_cate` [ RunTime:0.003746s ]
+[ sql ] [ SQL ] SELECT * FROM `sean_goods_cate` [ RunTime:0.000197s ]
+---------------------------------------------------------------
+[ 2019-11-06T19:40:42+08:00 ] 0.0.0.0 GET www.sean.com/admin/goodscate/index.shtml
+[运行时间：0.095621s] [吞吐率：10.46req/s] [内存消耗：2,425.39kb] [文件加载：54]
+[ info ] [ LANG ] D:\web\phpweb\sean\thinkphp\lang\zh-cn.php
+[ info ] [ DB ] INIT mysql
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => 'goodscate',
+    2 => 'index',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'cookie' => 'PHPSESSID=292iq1pcapgpu9ikf2j7opcb55; adminer_version=4.7.4',
+  'accept-language' => 'zh-CN,zh;q=0.9,en;q=0.8,und;q=0.7',
+  'accept-encoding' => 'gzip, deflate',
+  'referer' => 'http://www.sean.com/admin',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/78.0.3904.70 Safari/537.36',
+  'upgrade-insecure-requests' => '1',
+  'connection' => 'close',
+  'host' => 'www.sean.com',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ RUN ] app\admin\controller\Goodscate->index[ D:\web\phpweb\sean\app\admin\controller\Goodscate.php ]
+[ info ] [ VIEW ] D:\web\phpweb\sean\public/../app/admin\view\goodscate\index.html [ array (
+  0 => 'cates',
+) ]
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.001012s ] mysql:host=127.0.0.1;port=3306;dbname=sean;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `sean_urlconfig` [ RunTime:0.031680s ]
+[ sql ] [ SQL ] SELECT `aliases`,`url` FROM `sean_urlconfig` WHERE  `status` = 1 [ RunTime:0.000350s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `sean_webconfig` [ RunTime:0.005510s ]
+[ sql ] [ SQL ] SELECT `black_ip` FROM `sean_webconfig` WHERE  `web` = 'web' LIMIT 1 [ RunTime:0.000263s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `sean_admin_cate` [ RunTime:0.004528s ]
+[ sql ] [ SQL ] SELECT `permissions` FROM `sean_admin_cate` WHERE  `id` = 1 LIMIT 1 [ RunTime:0.000343s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `sean_admin_menu` [ RunTime:0.006361s ]
+[ sql ] [ SQL ] SELECT * FROM `sean_admin_menu` WHERE  `module` = 'admin'  AND `controller` = 'Goodscate'  AND `function` = 'index'  AND `type` = 1  AND `parameter` = 'goodscate=' LIMIT 1 [ RunTime:0.000553s ]
+[ sql ] [ SQL ] SELECT * FROM `sean_admin_menu` WHERE  `module` = 'admin'  AND `controller` = 'Goodscate'  AND `function` = 'index'  AND `type` = 1 LIMIT 1 [ RunTime:0.000391s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `sean_goods_cate` [ RunTime:0.005050s ]
+[ sql ] [ SQL ] SELECT * FROM `sean_goods_cate` [ RunTime:0.000387s ]
+---------------------------------------------------------------
+[ 2019-11-06T19:40:44+08:00 ] 0.0.0.0 GET www.sean.com/admin/goodscate/index.shtml
+[运行时间：0.076446s] [吞吐率：13.08req/s] [内存消耗：2,425.39kb] [文件加载：54]
+[ info ] [ LANG ] D:\web\phpweb\sean\thinkphp\lang\zh-cn.php
+[ info ] [ DB ] INIT mysql
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => 'goodscate',
+    2 => 'index',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'cookie' => 'PHPSESSID=292iq1pcapgpu9ikf2j7opcb55; adminer_version=4.7.4',
+  'accept-language' => 'zh-CN,zh;q=0.9,en;q=0.8,und;q=0.7',
+  'accept-encoding' => 'gzip, deflate',
+  'referer' => 'http://www.sean.com/admin',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/78.0.3904.70 Safari/537.36',
+  'upgrade-insecure-requests' => '1',
+  'connection' => 'close',
+  'host' => 'www.sean.com',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ RUN ] app\admin\controller\Goodscate->index[ D:\web\phpweb\sean\app\admin\controller\Goodscate.php ]
+[ info ] [ VIEW ] D:\web\phpweb\sean\public/../app/admin\view\goodscate\index.html [ array (
+  0 => 'cates',
+) ]
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000557s ] mysql:host=127.0.0.1;port=3306;dbname=sean;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `sean_urlconfig` [ RunTime:0.015729s ]
+[ sql ] [ SQL ] SELECT `aliases`,`url` FROM `sean_urlconfig` WHERE  `status` = 1 [ RunTime:0.000208s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `sean_webconfig` [ RunTime:0.003907s ]
+[ sql ] [ SQL ] SELECT `black_ip` FROM `sean_webconfig` WHERE  `web` = 'web' LIMIT 1 [ RunTime:0.000193s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `sean_admin_cate` [ RunTime:0.003512s ]
+[ sql ] [ SQL ] SELECT `permissions` FROM `sean_admin_cate` WHERE  `id` = 1 LIMIT 1 [ RunTime:0.000217s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `sean_admin_menu` [ RunTime:0.003184s ]
+[ sql ] [ SQL ] SELECT * FROM `sean_admin_menu` WHERE  `module` = 'admin'  AND `controller` = 'Goodscate'  AND `function` = 'index'  AND `type` = 1  AND `parameter` = 'goodscate=' LIMIT 1 [ RunTime:0.000346s ]
+[ sql ] [ SQL ] SELECT * FROM `sean_admin_menu` WHERE  `module` = 'admin'  AND `controller` = 'Goodscate'  AND `function` = 'index'  AND `type` = 1 LIMIT 1 [ RunTime:0.000277s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `sean_goods_cate` [ RunTime:0.008182s ]
+[ sql ] [ SQL ] SELECT * FROM `sean_goods_cate` [ RunTime:0.000192s ]
+---------------------------------------------------------------
+[ 2019-11-06T19:40:45+08:00 ] 0.0.0.0 GET www.sean.com/admin
+[运行时间：0.079358s] [吞吐率：12.60req/s] [内存消耗：2,242.95kb] [文件加载：52]
+[ info ] [ LANG ] D:\web\phpweb\sean\thinkphp\lang\zh-cn.php
+[ info ] [ DB ] INIT mysql
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => NULL,
+    2 => NULL,
+  ),
+)
+[ info ] [ HEADER ] array (
+  'cookie' => 'PHPSESSID=292iq1pcapgpu9ikf2j7opcb55; adminer_version=4.7.4',
+  'accept-language' => 'zh-CN,zh;q=0.9,en;q=0.8,und;q=0.7',
+  'accept-encoding' => 'gzip, deflate',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/78.0.3904.70 Safari/537.36',
+  'upgrade-insecure-requests' => '1',
+  'cache-control' => 'max-age=0',
+  'connection' => 'close',
+  'host' => 'www.sean.com',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ RUN ] app\admin\controller\Index->index[ D:\web\phpweb\sean\app\admin\controller\Index.php ]
+[ info ] [ VIEW ] D:\web\phpweb\sean\public/../app/admin\view\index\index.html [ array (
+  0 => 'menus',
+  1 => 'cookie',
+) ]
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000530s ] mysql:host=127.0.0.1;port=3306;dbname=sean;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `sean_urlconfig` [ RunTime:0.003770s ]
+[ sql ] [ SQL ] SELECT `aliases`,`url` FROM `sean_urlconfig` WHERE  `status` = 1 [ RunTime:0.000230s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `sean_webconfig` [ RunTime:0.003835s ]
+[ sql ] [ SQL ] SELECT `black_ip` FROM `sean_webconfig` WHERE  `web` = 'web' LIMIT 1 [ RunTime:0.000235s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `sean_admin_cate` [ RunTime:0.003385s ]
+[ sql ] [ SQL ] SELECT `permissions` FROM `sean_admin_cate` WHERE  `id` = 1 LIMIT 1 [ RunTime:0.000208s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `sean_admin_menu` [ RunTime:0.003553s ]
+[ sql ] [ SQL ] SELECT * FROM `sean_admin_menu` WHERE  `module` = 'admin'  AND `controller` = 'Index'  AND `function` = 'index'  AND `type` = 1 LIMIT 1 [ RunTime:0.000377s ]
+[ sql ] [ SQL ] SELECT * FROM `sean_admin_menu` WHERE  `is_display` = 1 ORDER BY `orders` ASC [ RunTime:0.002409s ]
+[ sql ] [ SQL ] SELECT `permissions` FROM `sean_admin_cate` WHERE  `id` = 1 LIMIT 1 [ RunTime:0.000381s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `sean_admin` [ RunTime:0.003458s ]
+[ sql ] [ SQL ] SELECT * FROM `sean_admin` WHERE  `id` = 1 LIMIT 1 [ RunTime:0.000553s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `sean_attachment` [ RunTime:0.003335s ]
+[ sql ] [ SQL ] SELECT * FROM `sean_attachment` WHERE  `id` = 5 LIMIT 1 [ RunTime:0.004851s ]
+---------------------------------------------------------------
+[ 2019-11-06T19:40:46+08:00 ] 0.0.0.0 GET www.sean.com/admin/main/index
+[运行时间：0.119104s] [吞吐率：8.40req/s] [内存消耗：2,205.34kb] [文件加载：52]
+[ info ] [ LANG ] D:\web\phpweb\sean\thinkphp\lang\zh-cn.php
+[ info ] [ DB ] INIT mysql
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => 'main',
+    2 => 'index',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'cookie' => 'PHPSESSID=292iq1pcapgpu9ikf2j7opcb55; adminer_version=4.7.4',
+  'accept-language' => 'zh-CN,zh;q=0.9,en;q=0.8,und;q=0.7',
+  'accept-encoding' => 'gzip, deflate',
+  'referer' => 'http://www.sean.com/admin',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/78.0.3904.70 Safari/537.36',
+  'upgrade-insecure-requests' => '1',
+  'connection' => 'close',
+  'host' => 'www.sean.com',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ RUN ] app\admin\controller\Main->index[ D:\web\phpweb\sean\app\admin\controller\Main.php ]
+[ info ] [ VIEW ] D:\web\phpweb\sean\public/../app/admin\view\main\index.html [ array (
+  0 => 'info',
+  1 => 'web',
+) ]
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000712s ] mysql:host=127.0.0.1;port=3306;dbname=sean;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `sean_urlconfig` [ RunTime:0.016215s ]
+[ sql ] [ SQL ] SELECT `aliases`,`url` FROM `sean_urlconfig` WHERE  `status` = 1 [ RunTime:0.000319s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `sean_webconfig` [ RunTime:0.003544s ]
+[ sql ] [ SQL ] SELECT `black_ip` FROM `sean_webconfig` WHERE  `web` = 'web' LIMIT 1 [ RunTime:0.000194s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `sean_admin_cate` [ RunTime:0.007054s ]
+[ sql ] [ SQL ] SELECT `permissions` FROM `sean_admin_cate` WHERE  `id` = 1 LIMIT 1 [ RunTime:0.000340s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `sean_admin_menu` [ RunTime:0.004619s ]
+[ sql ] [ SQL ] SELECT * FROM `sean_admin_menu` WHERE  `module` = 'admin'  AND `controller` = 'Main'  AND `function` = 'index'  AND `type` = 1  AND `parameter` = 'main=' LIMIT 1 [ RunTime:0.000329s ]
+[ sql ] [ SQL ] SELECT * FROM `sean_admin_menu` WHERE  `module` = 'admin'  AND `controller` = 'Main'  AND `function` = 'index'  AND `type` = 1 LIMIT 1 [ RunTime:0.000284s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `sean_admin` [ RunTime:0.003452s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `sean_admin` LIMIT 1 [ RunTime:0.000291s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `sean_admin_cate` LIMIT 1 [ RunTime:0.000518s ]
+[ sql ] [ SQL ] SELECT `black_ip` FROM `sean_webconfig` LIMIT 1 [ RunTime:0.000347s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `sean_article` [ RunTime:0.005829s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `sean_article` LIMIT 1 [ RunTime:0.000158s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `sean_article` WHERE  `status` = 0 LIMIT 1 [ RunTime:0.000920s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `sean_article` WHERE  `is_top` = 1 LIMIT 1 [ RunTime:0.000144s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `sean_attachment` [ RunTime:0.003348s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `sean_attachment` LIMIT 1 [ RunTime:0.000228s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `sean_attachment` WHERE  `status` = 0 LIMIT 1 [ RunTime:0.000552s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `sean_attachment` WHERE  `status` = -1 LIMIT 1 [ RunTime:0.000231s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `sean_messages` [ RunTime:0.004894s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `sean_messages` LIMIT 1 [ RunTime:0.000347s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `sean_messages` WHERE  `is_look` = 0 LIMIT 1 [ RunTime:0.000250s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `sean_admin_log` [ RunTime:0.003941s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `sean_admin_log` WHERE  `admin_menu_id` = 50  AND ( `create_time` >= 1572192000 AND `create_time` <= 1572278400 ) LIMIT 1 [ RunTime:0.001423s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `sean_admin_log` WHERE  `admin_menu_id` = 50  AND ( `create_time` >= 1572278400 AND `create_time` <= 1572364800 ) LIMIT 1 [ RunTime:0.000190s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `sean_admin_log` WHERE  `admin_menu_id` = 50  AND ( `create_time` >= 1572364800 AND `create_time` <= 1572451200 ) LIMIT 1 [ RunTime:0.000164s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `sean_admin_log` WHERE  `admin_menu_id` = 50  AND ( `create_time` >= 1572451200 AND `create_time` <= 1572537600 ) LIMIT 1 [ RunTime:0.000160s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `sean_admin_log` WHERE  `admin_menu_id` = 50  AND ( `create_time` >= 1572537600 AND `create_time` <= 1572624000 ) LIMIT 1 [ RunTime:0.000157s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `sean_admin_log` WHERE  `admin_menu_id` = 50  AND ( `create_time` >= 1572624000 AND `create_time` <= 1572710400 ) LIMIT 1 [ RunTime:0.000154s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `sean_admin_log` WHERE  `admin_menu_id` = 50  AND ( `create_time` >= 1572710400 AND `create_time` <= 1572796800 ) LIMIT 1 [ RunTime:0.000152s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `sean_admin_log` WHERE  `admin_menu_id` = 50  AND ( `create_time` >= 1572796800 AND `create_time` <= 1572883200 ) LIMIT 1 [ RunTime:0.000155s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `sean_admin_log` WHERE  `admin_menu_id` = 50  AND ( `create_time` >= 1572883200 AND `create_time` <= 1572969600 ) LIMIT 1 [ RunTime:0.000295s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `sean_admin_log` WHERE  `admin_menu_id` = 50  AND ( `create_time` >= 1572969600 AND `create_time` <= 1573056000 ) LIMIT 1 [ RunTime:0.000207s ]
+---------------------------------------------------------------
+[ 2019-11-06T19:40:48+08:00 ] 0.0.0.0 GET www.sean.com/admin/goodscate/index.shtml
+[运行时间：0.079259s] [吞吐率：12.62req/s] [内存消耗：2,425.39kb] [文件加载：54]
+[ info ] [ LANG ] D:\web\phpweb\sean\thinkphp\lang\zh-cn.php
+[ info ] [ DB ] INIT mysql
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => 'goodscate',
+    2 => 'index',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'cookie' => 'PHPSESSID=292iq1pcapgpu9ikf2j7opcb55; adminer_version=4.7.4',
+  'accept-language' => 'zh-CN,zh;q=0.9,en;q=0.8,und;q=0.7',
+  'accept-encoding' => 'gzip, deflate',
+  'referer' => 'http://www.sean.com/admin',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/78.0.3904.70 Safari/537.36',
+  'upgrade-insecure-requests' => '1',
+  'connection' => 'close',
+  'host' => 'www.sean.com',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ RUN ] app\admin\controller\Goodscate->index[ D:\web\phpweb\sean\app\admin\controller\Goodscate.php ]
+[ info ] [ VIEW ] D:\web\phpweb\sean\public/../app/admin\view\goodscate\index.html [ array (
+  0 => 'cates',
+) ]
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000627s ] mysql:host=127.0.0.1;port=3306;dbname=sean;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `sean_urlconfig` [ RunTime:0.015841s ]
+[ sql ] [ SQL ] SELECT `aliases`,`url` FROM `sean_urlconfig` WHERE  `status` = 1 [ RunTime:0.000382s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `sean_webconfig` [ RunTime:0.007683s ]
+[ sql ] [ SQL ] SELECT `black_ip` FROM `sean_webconfig` WHERE  `web` = 'web' LIMIT 1 [ RunTime:0.000349s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `sean_admin_cate` [ RunTime:0.003800s ]
+[ sql ] [ SQL ] SELECT `permissions` FROM `sean_admin_cate` WHERE  `id` = 1 LIMIT 1 [ RunTime:0.000263s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `sean_admin_menu` [ RunTime:0.011505s ]
+[ sql ] [ SQL ] SELECT * FROM `sean_admin_menu` WHERE  `module` = 'admin'  AND `controller` = 'Goodscate'  AND `function` = 'index'  AND `type` = 1  AND `parameter` = 'goodscate=' LIMIT 1 [ RunTime:0.000365s ]
+[ sql ] [ SQL ] SELECT * FROM `sean_admin_menu` WHERE  `module` = 'admin'  AND `controller` = 'Goodscate'  AND `function` = 'index'  AND `type` = 1 LIMIT 1 [ RunTime:0.000273s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `sean_goods_cate` [ RunTime:0.003242s ]
+[ sql ] [ SQL ] SELECT * FROM `sean_goods_cate` [ RunTime:0.000241s ]
+---------------------------------------------------------------
+[ 2019-11-06T19:40:48+08:00 ] 0.0.0.0 GET www.sean.com/admin/goodscate/publish.shtml
+[运行时间：0.077596s] [吞吐率：12.89req/s] [内存消耗：2,412.17kb] [文件加载：55]
+[ info ] [ LANG ] D:\web\phpweb\sean\thinkphp\lang\zh-cn.php
+[ info ] [ DB ] INIT mysql
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => 'goodscate',
+    2 => 'publish',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'cookie' => 'PHPSESSID=292iq1pcapgpu9ikf2j7opcb55; adminer_version=4.7.4',
+  'accept-language' => 'zh-CN,zh;q=0.9,en;q=0.8,und;q=0.7',
+  'accept-encoding' => 'gzip, deflate',
+  'referer' => 'http://www.sean.com/admin/goodscate/index.shtml',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/78.0.3904.70 Safari/537.36',
+  'x-requested-with' => 'XMLHttpRequest',
+  'accept' => '*/*',
+  'connection' => 'close',
+  'host' => 'www.sean.com',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ RUN ] app\admin\controller\Goodscate->publish[ D:\web\phpweb\sean\app\admin\controller\Goodscate.php ]
+[ info ] [ VIEW ] D:\web\phpweb\sean\public/../app/admin\view\goodscate\publish.html [ array (
+  0 => 'cates',
+) ]
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000959s ] mysql:host=127.0.0.1;port=3306;dbname=sean;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `sean_urlconfig` [ RunTime:0.019747s ]
+[ sql ] [ SQL ] SELECT `aliases`,`url` FROM `sean_urlconfig` WHERE  `status` = 1 [ RunTime:0.000214s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `sean_webconfig` [ RunTime:0.003590s ]
+[ sql ] [ SQL ] SELECT `black_ip` FROM `sean_webconfig` WHERE  `web` = 'web' LIMIT 1 [ RunTime:0.000280s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `sean_admin_cate` [ RunTime:0.006291s ]
+[ sql ] [ SQL ] SELECT `permissions` FROM `sean_admin_cate` WHERE  `id` = 1 LIMIT 1 [ RunTime:0.000217s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `sean_admin_menu` [ RunTime:0.003282s ]
+[ sql ] [ SQL ] SELECT * FROM `sean_admin_menu` WHERE  `module` = 'admin'  AND `controller` = 'Goodscate'  AND `function` = 'publish'  AND `type` = 1  AND `parameter` = 'goodscate=' LIMIT 1 [ RunTime:0.000333s ]
+[ sql ] [ SQL ] SELECT * FROM `sean_admin_menu` WHERE  `module` = 'admin'  AND `controller` = 'Goodscate'  AND `function` = 'publish'  AND `type` = 1 LIMIT 1 [ RunTime:0.000294s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `sean_goods_cate` [ RunTime:0.009631s ]
+[ sql ] [ SQL ] SELECT * FROM `sean_goods_cate` [ RunTime:0.000195s ]
+---------------------------------------------------------------
+[ 2019-11-06T19:40:49+08:00 ] 0.0.0.0 GET www.sean.com/admin/goodscate/publish.shtml
+[运行时间：0.065419s] [吞吐率：15.29req/s] [内存消耗：2,425.32kb] [文件加载：54]
+[ info ] [ LANG ] D:\web\phpweb\sean\thinkphp\lang\zh-cn.php
+[ info ] [ DB ] INIT mysql
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => 'goodscate',
+    2 => 'publish',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'cookie' => 'PHPSESSID=292iq1pcapgpu9ikf2j7opcb55; adminer_version=4.7.4',
+  'accept-language' => 'zh-CN,zh;q=0.9,en;q=0.8,und;q=0.7',
+  'accept-encoding' => 'gzip, deflate',
+  'referer' => 'http://www.sean.com/admin/goodscate/index.shtml',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/78.0.3904.70 Safari/537.36',
+  'upgrade-insecure-requests' => '1',
+  'connection' => 'close',
+  'host' => 'www.sean.com',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ RUN ] app\admin\controller\Goodscate->publish[ D:\web\phpweb\sean\app\admin\controller\Goodscate.php ]
+[ info ] [ VIEW ] D:\web\phpweb\sean\public/../app/admin\view\goodscate\publish.html [ array (
+  0 => 'cates',
+) ]
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000975s ] mysql:host=127.0.0.1;port=3306;dbname=sean;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `sean_urlconfig` [ RunTime:0.005942s ]
+[ sql ] [ SQL ] SELECT `aliases`,`url` FROM `sean_urlconfig` WHERE  `status` = 1 [ RunTime:0.000389s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `sean_webconfig` [ RunTime:0.003479s ]
+[ sql ] [ SQL ] SELECT `black_ip` FROM `sean_webconfig` WHERE  `web` = 'web' LIMIT 1 [ RunTime:0.000201s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `sean_admin_cate` [ RunTime:0.006621s ]
+[ sql ] [ SQL ] SELECT `permissions` FROM `sean_admin_cate` WHERE  `id` = 1 LIMIT 1 [ RunTime:0.000218s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `sean_admin_menu` [ RunTime:0.004024s ]
+[ sql ] [ SQL ] SELECT * FROM `sean_admin_menu` WHERE  `module` = 'admin'  AND `controller` = 'Goodscate'  AND `function` = 'publish'  AND `type` = 1  AND `parameter` = 'goodscate=' LIMIT 1 [ RunTime:0.000344s ]
+[ sql ] [ SQL ] SELECT * FROM `sean_admin_menu` WHERE  `module` = 'admin'  AND `controller` = 'Goodscate'  AND `function` = 'publish'  AND `type` = 1 LIMIT 1 [ RunTime:0.000321s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `sean_goods_cate` [ RunTime:0.004532s ]
+[ sql ] [ SQL ] SELECT * FROM `sean_goods_cate` [ RunTime:0.000670s ]
+---------------------------------------------------------------
+[ 2019-11-06T19:40:59+08:00 ] 0.0.0.0 POST www.sean.com/admin/goodscate/publish.shtml
+[运行时间：0.089870s] [吞吐率：11.13req/s] [内存消耗：2,364.74kb] [文件加载：57]
+[ info ] [ LANG ] D:\web\phpweb\sean\thinkphp\lang\zh-cn.php
+[ info ] [ DB ] INIT mysql
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => 'goodscate',
+    2 => 'publish',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'cookie' => 'PHPSESSID=292iq1pcapgpu9ikf2j7opcb55; adminer_version=4.7.4',
+  'accept-language' => 'zh-CN,zh;q=0.9,en;q=0.8,und;q=0.7',
+  'accept-encoding' => 'gzip, deflate',
+  'referer' => 'http://www.sean.com/admin/goodscate/publish.shtml',
+  'content-type' => 'application/x-www-form-urlencoded; charset=UTF-8',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/78.0.3904.70 Safari/537.36',
+  'x-requested-with' => 'XMLHttpRequest',
+  'origin' => 'http://www.sean.com',
+  'accept' => '*/*',
+  'content-length' => '83',
+  'connection' => 'close',
+  'host' => 'www.sean.com',
+)
+[ info ] [ PARAM ] array (
+  'pid' => '0',
+  'name' => '水果',
+  'tag' => '水果',
+  'description' => '水果',
+)
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ RUN ] app\admin\controller\Goodscate->publish[ D:\web\phpweb\sean\app\admin\controller\Goodscate.php ]
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000529s ] mysql:host=127.0.0.1;port=3306;dbname=sean;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `sean_urlconfig` [ RunTime:0.015240s ]
+[ sql ] [ SQL ] SELECT `aliases`,`url` FROM `sean_urlconfig` WHERE  `status` = 1 [ RunTime:0.000217s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `sean_webconfig` [ RunTime:0.003587s ]
+[ sql ] [ SQL ] SELECT `black_ip` FROM `sean_webconfig` WHERE  `web` = 'web' LIMIT 1 [ RunTime:0.000302s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `sean_admin_cate` [ RunTime:0.004085s ]
+[ sql ] [ SQL ] SELECT `permissions` FROM `sean_admin_cate` WHERE  `id` = 1 LIMIT 1 [ RunTime:0.000194s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `sean_admin_menu` [ RunTime:0.012076s ]
+[ sql ] [ SQL ] SELECT * FROM `sean_admin_menu` WHERE  `module` = 'admin'  AND `controller` = 'Goodscate'  AND `function` = 'publish'  AND `type` = 1  AND `parameter` = 'goodscate=' LIMIT 1 [ RunTime:0.000492s ]
+[ sql ] [ SQL ] SELECT * FROM `sean_admin_menu` WHERE  `module` = 'admin'  AND `controller` = 'Goodscate'  AND `function` = 'publish'  AND `type` = 1 LIMIT 1 [ RunTime:0.000329s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `sean_goods_cate` [ RunTime:0.003336s ]
+[ sql ] [ SQL ] INSERT INTO `sean_goods_cate` (`pid` , `name` , `tag` , `description` , `create_time` , `update_time`) VALUES (0 , '水果' , '水果' , '水果' , 1573040459 , 1573040459) [ RunTime:0.000221s ]
+[ sql ] [ SQL ] SELECT * FROM `sean_webconfig` WHERE  `web` = 'web' LIMIT 1 [ RunTime:0.000214s ]
+[ sql ] [ SQL ] SELECT `id` FROM `sean_admin_menu` WHERE  `module` = 'admin'  AND `controller` = 'Goodscate'  AND `function` = 'publish'  AND `parameter` = 'goodscate=' LIMIT 1 [ RunTime:0.000222s ]
+[ sql ] [ SQL ] SELECT `id` FROM `sean_admin_menu` WHERE  `module` = 'admin'  AND `controller` = 'Goodscate'  AND `function` = 'publish' LIMIT 1 [ RunTime:0.000197s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `sean_admin_log` [ RunTime:0.003349s ]
+[ error ] [10501]SQLSTATE[23000]: Integrity constraint violation: 1048 Column 'admin_menu_id' cannot be null[D:\web\phpweb\sean\thinkphp\library\think\db\Connection.php:453]
+---------------------------------------------------------------
+[ 2019-11-06T19:42:34+08:00 ] 0.0.0.0 POST www.sean.com/admin/goodscate/publish.shtml
+[运行时间：0.057794s] [吞吐率：17.30req/s] [内存消耗：2,364.24kb] [文件加载：57]
+[ info ] [ LANG ] D:\web\phpweb\sean\thinkphp\lang\zh-cn.php
+[ info ] [ DB ] INIT mysql
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => 'goodscate',
+    2 => 'publish',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'cookie' => 'PHPSESSID=292iq1pcapgpu9ikf2j7opcb55; adminer_version=4.7.4',
+  'accept-language' => 'zh-CN,zh;q=0.9,en;q=0.8,und;q=0.7',
+  'accept-encoding' => 'gzip, deflate',
+  'referer' => 'http://www.sean.com/admin/goodscate/publish.shtml',
+  'content-type' => 'application/x-www-form-urlencoded; charset=UTF-8',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/78.0.3904.70 Safari/537.36',
+  'x-requested-with' => 'XMLHttpRequest',
+  'origin' => 'http://www.sean.com',
+  'accept' => '*/*',
+  'content-length' => '83',
+  'connection' => 'close',
+  'host' => 'www.sean.com',
+)
+[ info ] [ PARAM ] array (
+  'pid' => '0',
+  'name' => '水果',
+  'tag' => '水果',
+  'description' => '水果',
+)
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ RUN ] app\admin\controller\Goodscate->publish[ D:\web\phpweb\sean\app\admin\controller\Goodscate.php ]
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.001027s ] mysql:host=127.0.0.1;port=3306;dbname=sean;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `sean_urlconfig` [ RunTime:0.003902s ]
+[ sql ] [ SQL ] SELECT `aliases`,`url` FROM `sean_urlconfig` WHERE  `status` = 1 [ RunTime:0.000223s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `sean_webconfig` [ RunTime:0.003658s ]
+[ sql ] [ SQL ] SELECT `black_ip` FROM `sean_webconfig` WHERE  `web` = 'web' LIMIT 1 [ RunTime:0.000238s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `sean_admin_cate` [ RunTime:0.003292s ]
+[ sql ] [ SQL ] SELECT `permissions` FROM `sean_admin_cate` WHERE  `id` = 1 LIMIT 1 [ RunTime:0.000205s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `sean_admin_menu` [ RunTime:0.003512s ]
+[ sql ] [ SQL ] SELECT * FROM `sean_admin_menu` WHERE  `module` = 'admin'  AND `controller` = 'Goodscate'  AND `function` = 'publish'  AND `type` = 1  AND `parameter` = 'goodscate=' LIMIT 1 [ RunTime:0.000486s ]
+[ sql ] [ SQL ] SELECT * FROM `sean_admin_menu` WHERE  `module` = 'admin'  AND `controller` = 'Goodscate'  AND `function` = 'publish'  AND `type` = 1 LIMIT 1 [ RunTime:0.000419s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `sean_goods_cate` [ RunTime:0.003405s ]
+[ sql ] [ SQL ] INSERT INTO `sean_goods_cate` (`pid` , `name` , `tag` , `description` , `create_time` , `update_time`) VALUES (0 , '水果' , '水果' , '水果' , 1573040554 , 1573040554) [ RunTime:0.000232s ]
+[ sql ] [ SQL ] SELECT * FROM `sean_webconfig` WHERE  `web` = 'web' LIMIT 1 [ RunTime:0.000206s ]
+[ sql ] [ SQL ] SELECT `id` FROM `sean_admin_menu` WHERE  `module` = 'admin'  AND `controller` = 'Goodscate'  AND `function` = 'publish'  AND `parameter` = 'goodscate=' LIMIT 1 [ RunTime:0.000225s ]
+[ sql ] [ SQL ] SELECT `id` FROM `sean_admin_menu` WHERE  `module` = 'admin'  AND `controller` = 'Goodscate'  AND `function` = 'publish' LIMIT 1 [ RunTime:0.000196s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `sean_admin_log` [ RunTime:0.003422s ]
+[ error ] [10501]SQLSTATE[23000]: Integrity constraint violation: 1048 Column 'admin_menu_id' cannot be null[D:\web\phpweb\sean\thinkphp\library\think\db\Connection.php:453]
+---------------------------------------------------------------
+[ 2019-11-06T19:44:19+08:00 ] 0.0.0.0 POST www.sean.com/admin/goodscate/publish.shtml
+[运行时间：0.060768s] [吞吐率：16.46req/s] [内存消耗：2,391.20kb] [文件加载：55]
+[ info ] [ LANG ] D:\web\phpweb\sean\thinkphp\lang\zh-cn.php
+[ info ] [ DB ] INIT mysql
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => 'goodscate',
+    2 => 'publish',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'cookie' => 'PHPSESSID=292iq1pcapgpu9ikf2j7opcb55; adminer_version=4.7.4',
+  'accept-language' => 'zh-CN,zh;q=0.9,en;q=0.8,und;q=0.7',
+  'accept-encoding' => 'gzip, deflate',
+  'referer' => 'http://www.sean.com/admin/goodscate/publish.shtml',
+  'content-type' => 'application/x-www-form-urlencoded; charset=UTF-8',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/78.0.3904.70 Safari/537.36',
+  'x-requested-with' => 'XMLHttpRequest',
+  'origin' => 'http://www.sean.com',
+  'accept' => '*/*',
+  'content-length' => '83',
+  'connection' => 'close',
+  'host' => 'www.sean.com',
+)
+[ info ] [ PARAM ] array (
+  'pid' => '0',
+  'name' => '水果',
+  'tag' => '水果',
+  'description' => '水果',
+)
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ RUN ] app\admin\controller\Goodscate->publish[ D:\web\phpweb\sean\app\admin\controller\Goodscate.php ]
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.010797s ] mysql:host=127.0.0.1;port=3306;dbname=sean;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `sean_urlconfig` [ RunTime:0.007055s ]
+[ sql ] [ SQL ] SELECT `aliases`,`url` FROM `sean_urlconfig` WHERE  `status` = 1 [ RunTime:0.000236s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `sean_webconfig` [ RunTime:0.003871s ]
+[ sql ] [ SQL ] SELECT `black_ip` FROM `sean_webconfig` WHERE  `web` = 'web' LIMIT 1 [ RunTime:0.000229s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `sean_admin_cate` [ RunTime:0.004893s ]
+[ sql ] [ SQL ] SELECT `permissions` FROM `sean_admin_cate` WHERE  `id` = 1 LIMIT 1 [ RunTime:0.000247s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `sean_admin_menu` [ RunTime:0.003687s ]
+[ sql ] [ SQL ] SELECT * FROM `sean_admin_menu` WHERE  `module` = 'admin'  AND `controller` = 'Goodscate'  AND `function` = 'publish'  AND `type` = 1  AND `parameter` = 'goodscate=' LIMIT 1 [ RunTime:0.000510s ]
+[ sql ] [ SQL ] SELECT * FROM `sean_admin_menu` WHERE  `module` = 'admin'  AND `controller` = 'Goodscate'  AND `function` = 'publish'  AND `type` = 1 LIMIT 1 [ RunTime:0.000291s ]
+[ error ] [0]method not exist:think\db\Query->save[D:\web\phpweb\sean\thinkphp\library\think\db\Query.php:103]
+---------------------------------------------------------------
+[ 2019-11-06T19:45:09+08:00 ] 0.0.0.0 POST www.sean.com/admin/goodscate/publish.shtml
+[运行时间：0.073639s] [吞吐率：13.58req/s] [内存消耗：2,350.85kb] [文件加载：54]
+[ info ] [ LANG ] D:\web\phpweb\sean\thinkphp\lang\zh-cn.php
+[ info ] [ DB ] INIT mysql
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => 'goodscate',
+    2 => 'publish',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'cookie' => 'PHPSESSID=292iq1pcapgpu9ikf2j7opcb55; adminer_version=4.7.4',
+  'accept-language' => 'zh-CN,zh;q=0.9,en;q=0.8,und;q=0.7',
+  'accept-encoding' => 'gzip, deflate',
+  'referer' => 'http://www.sean.com/admin/goodscate/publish.shtml',
+  'content-type' => 'application/x-www-form-urlencoded; charset=UTF-8',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/78.0.3904.70 Safari/537.36',
+  'x-requested-with' => 'XMLHttpRequest',
+  'origin' => 'http://www.sean.com',
+  'accept' => '*/*',
+  'content-length' => '83',
+  'connection' => 'close',
+  'host' => 'www.sean.com',
+)
+[ info ] [ PARAM ] array (
+  'pid' => '0',
+  'name' => '水果',
+  'tag' => '水果',
+  'description' => '水果',
+)
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ RUN ] app\admin\controller\Goodscate->publish[ D:\web\phpweb\sean\app\admin\controller\Goodscate.php ]
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000690s ] mysql:host=127.0.0.1;port=3306;dbname=sean;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `sean_urlconfig` [ RunTime:0.025686s ]
+[ sql ] [ SQL ] SELECT `aliases`,`url` FROM `sean_urlconfig` WHERE  `status` = 1 [ RunTime:0.000196s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `sean_webconfig` [ RunTime:0.003384s ]
+[ sql ] [ SQL ] SELECT `black_ip` FROM `sean_webconfig` WHERE  `web` = 'web' LIMIT 1 [ RunTime:0.000203s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `sean_admin_cate` [ RunTime:0.003401s ]
+[ sql ] [ SQL ] SELECT `permissions` FROM `sean_admin_cate` WHERE  `id` = 1 LIMIT 1 [ RunTime:0.000200s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `sean_admin_menu` [ RunTime:0.003146s ]
+[ sql ] [ SQL ] SELECT * FROM `sean_admin_menu` WHERE  `module` = 'admin'  AND `controller` = 'Goodscate'  AND `function` = 'publish'  AND `type` = 1  AND `parameter` = 'goodscate=' LIMIT 1 [ RunTime:0.000356s ]
+[ sql ] [ SQL ] SELECT * FROM `sean_admin_menu` WHERE  `module` = 'admin'  AND `controller` = 'Goodscate'  AND `function` = 'publish'  AND `type` = 1 LIMIT 1 [ RunTime:0.000494s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `sean_goods_cate` [ RunTime:0.003742s ]
+[ sql ] [ SQL ] INSERT INTO `sean_goods_cate` (`pid` , `name` , `tag` , `description`) VALUES (0 , '水果' , '水果' , '水果') [ RunTime:0.000805s ]
+[ error ] [0]类的属性不存在:app\admin\model\GoodsCate->id[D:\web\phpweb\sean\thinkphp\library\think\Model.php:626]
+---------------------------------------------------------------
+[ 2019-11-06T19:46:37+08:00 ] 0.0.0.0 POST www.sean.com/admin/goodscate/publish.shtml
+[运行时间：0.108171s] [吞吐率：9.24req/s] [内存消耗：2,350.85kb] [文件加载：54]
+[ info ] [ LANG ] D:\web\phpweb\sean\thinkphp\lang\zh-cn.php
+[ info ] [ DB ] INIT mysql
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => 'goodscate',
+    2 => 'publish',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'cookie' => 'PHPSESSID=292iq1pcapgpu9ikf2j7opcb55; adminer_version=4.7.4',
+  'accept-language' => 'zh-CN,zh;q=0.9,en;q=0.8,und;q=0.7',
+  'accept-encoding' => 'gzip, deflate',
+  'referer' => 'http://www.sean.com/admin/goodscate/publish.shtml',
+  'content-type' => 'application/x-www-form-urlencoded; charset=UTF-8',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/78.0.3904.70 Safari/537.36',
+  'x-requested-with' => 'XMLHttpRequest',
+  'origin' => 'http://www.sean.com',
+  'accept' => '*/*',
+  'content-length' => '83',
+  'connection' => 'close',
+  'host' => 'www.sean.com',
+)
+[ info ] [ PARAM ] array (
+  'pid' => '0',
+  'name' => '水果',
+  'tag' => '水果',
+  'description' => '水果',
+)
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ RUN ] app\admin\controller\Goodscate->publish[ D:\web\phpweb\sean\app\admin\controller\Goodscate.php ]
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000655s ] mysql:host=127.0.0.1;port=3306;dbname=sean;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `sean_urlconfig` [ RunTime:0.028434s ]
+[ sql ] [ SQL ] SELECT `aliases`,`url` FROM `sean_urlconfig` WHERE  `status` = 1 [ RunTime:0.000252s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `sean_webconfig` [ RunTime:0.004767s ]
+[ sql ] [ SQL ] SELECT `black_ip` FROM `sean_webconfig` WHERE  `web` = 'web' LIMIT 1 [ RunTime:0.000232s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `sean_admin_cate` [ RunTime:0.004220s ]
+[ sql ] [ SQL ] SELECT `permissions` FROM `sean_admin_cate` WHERE  `id` = 1 LIMIT 1 [ RunTime:0.000304s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `sean_admin_menu` [ RunTime:0.011607s ]
+[ sql ] [ SQL ] SELECT * FROM `sean_admin_menu` WHERE  `module` = 'admin'  AND `controller` = 'Goodscate'  AND `function` = 'publish'  AND `type` = 1  AND `parameter` = 'goodscate=' LIMIT 1 [ RunTime:0.000428s ]
+[ sql ] [ SQL ] SELECT * FROM `sean_admin_menu` WHERE  `module` = 'admin'  AND `controller` = 'Goodscate'  AND `function` = 'publish'  AND `type` = 1 LIMIT 1 [ RunTime:0.000359s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `sean_goods_cate` [ RunTime:0.004111s ]
+[ sql ] [ SQL ] INSERT INTO `sean_goods_cate` (`pid` , `name` , `tag` , `description`) VALUES (0 , '水果' , '水果' , '水果') [ RunTime:0.000234s ]
+[ error ] [0]类的属性不存在:app\admin\model\GoodsCate->id[D:\web\phpweb\sean\thinkphp\library\think\Model.php:626]
+---------------------------------------------------------------
+[ 2019-11-06T19:47:13+08:00 ] 0.0.0.0 POST www.sean.com/admin/goodscate/publish.shtml
+[运行时间：0.117064s] [吞吐率：8.54req/s] [内存消耗：2,364.74kb] [文件加载：57]
+[ info ] [ LANG ] D:\web\phpweb\sean\thinkphp\lang\zh-cn.php
+[ info ] [ DB ] INIT mysql
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => 'goodscate',
+    2 => 'publish',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'cookie' => 'PHPSESSID=292iq1pcapgpu9ikf2j7opcb55; adminer_version=4.7.4',
+  'accept-language' => 'zh-CN,zh;q=0.9,en;q=0.8,und;q=0.7',
+  'accept-encoding' => 'gzip, deflate',
+  'referer' => 'http://www.sean.com/admin/goodscate/publish.shtml',
+  'content-type' => 'application/x-www-form-urlencoded; charset=UTF-8',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/78.0.3904.70 Safari/537.36',
+  'x-requested-with' => 'XMLHttpRequest',
+  'origin' => 'http://www.sean.com',
+  'accept' => '*/*',
+  'content-length' => '86',
+  'connection' => 'close',
+  'host' => 'www.sean.com',
+)
+[ info ] [ PARAM ] array (
+  'pid' => '0',
+  'name' => '水果1',
+  'tag' => '水果1',
+  'description' => '水果1',
+)
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ RUN ] app\admin\controller\Goodscate->publish[ D:\web\phpweb\sean\app\admin\controller\Goodscate.php ]
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.001183s ] mysql:host=127.0.0.1;port=3306;dbname=sean;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `sean_urlconfig` [ RunTime:0.030700s ]
+[ sql ] [ SQL ] SELECT `aliases`,`url` FROM `sean_urlconfig` WHERE  `status` = 1 [ RunTime:0.000224s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `sean_webconfig` [ RunTime:0.003638s ]
+[ sql ] [ SQL ] SELECT `black_ip` FROM `sean_webconfig` WHERE  `web` = 'web' LIMIT 1 [ RunTime:0.000190s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `sean_admin_cate` [ RunTime:0.003227s ]
+[ sql ] [ SQL ] SELECT `permissions` FROM `sean_admin_cate` WHERE  `id` = 1 LIMIT 1 [ RunTime:0.000193s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `sean_admin_menu` [ RunTime:0.010592s ]
+[ sql ] [ SQL ] SELECT * FROM `sean_admin_menu` WHERE  `module` = 'admin'  AND `controller` = 'Goodscate'  AND `function` = 'publish'  AND `type` = 1  AND `parameter` = 'goodscate=' LIMIT 1 [ RunTime:0.000379s ]
+[ sql ] [ SQL ] SELECT * FROM `sean_admin_menu` WHERE  `module` = 'admin'  AND `controller` = 'Goodscate'  AND `function` = 'publish'  AND `type` = 1 LIMIT 1 [ RunTime:0.000281s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `sean_goods_cate` [ RunTime:0.003322s ]
+[ sql ] [ SQL ] INSERT INTO `sean_goods_cate` (`pid` , `name` , `tag` , `description` , `create_time` , `update_time`) VALUES (0 , '水果1' , '水果1' , '水果1' , 1573040833 , 1573040833) [ RunTime:0.000208s ]
+[ sql ] [ SQL ] SELECT * FROM `sean_webconfig` WHERE  `web` = 'web' LIMIT 1 [ RunTime:0.000197s ]
+[ sql ] [ SQL ] SELECT `id` FROM `sean_admin_menu` WHERE  `module` = 'admin'  AND `controller` = 'Goodscate'  AND `function` = 'publish'  AND `parameter` = 'goodscate=' LIMIT 1 [ RunTime:0.000227s ]
+[ sql ] [ SQL ] SELECT `id` FROM `sean_admin_menu` WHERE  `module` = 'admin'  AND `controller` = 'Goodscate'  AND `function` = 'publish' LIMIT 1 [ RunTime:0.000325s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `sean_admin_log` [ RunTime:0.003911s ]
+[ error ] [10501]SQLSTATE[23000]: Integrity constraint violation: 1048 Column 'admin_menu_id' cannot be null[D:\web\phpweb\sean\thinkphp\library\think\db\Connection.php:453]
+---------------------------------------------------------------
+[ 2019-11-06T19:48:47+08:00 ] 0.0.0.0 POST www.sean.com/admin/goodscate/publish.shtml
+[运行时间：0.096707s] [吞吐率：10.34req/s] [内存消耗：2,364.47kb] [文件加载：57]
+[ info ] [ LANG ] D:\web\phpweb\sean\thinkphp\lang\zh-cn.php
+[ info ] [ DB ] INIT mysql
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => 'goodscate',
+    2 => 'publish',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'cookie' => 'PHPSESSID=292iq1pcapgpu9ikf2j7opcb55; adminer_version=4.7.4',
+  'accept-language' => 'zh-CN,zh;q=0.9,en;q=0.8,und;q=0.7',
+  'accept-encoding' => 'gzip, deflate',
+  'referer' => 'http://www.sean.com/admin/goodscate/publish.shtml',
+  'content-type' => 'application/x-www-form-urlencoded; charset=UTF-8',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/78.0.3904.70 Safari/537.36',
+  'x-requested-with' => 'XMLHttpRequest',
+  'origin' => 'http://www.sean.com',
+  'accept' => '*/*',
+  'content-length' => '86',
+  'connection' => 'close',
+  'host' => 'www.sean.com',
+)
+[ info ] [ PARAM ] array (
+  'pid' => '0',
+  'name' => '水果2',
+  'tag' => '水果1',
+  'description' => '水果1',
+)
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ RUN ] app\admin\controller\Goodscate->publish[ D:\web\phpweb\sean\app\admin\controller\Goodscate.php ]
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000754s ] mysql:host=127.0.0.1;port=3306;dbname=sean;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `sean_urlconfig` [ RunTime:0.031127s ]
+[ sql ] [ SQL ] SELECT `aliases`,`url` FROM `sean_urlconfig` WHERE  `status` = 1 [ RunTime:0.000223s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `sean_webconfig` [ RunTime:0.003598s ]
+[ sql ] [ SQL ] SELECT `black_ip` FROM `sean_webconfig` WHERE  `web` = 'web' LIMIT 1 [ RunTime:0.000205s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `sean_admin_cate` [ RunTime:0.004280s ]
+[ sql ] [ SQL ] SELECT `permissions` FROM `sean_admin_cate` WHERE  `id` = 1 LIMIT 1 [ RunTime:0.000292s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `sean_admin_menu` [ RunTime:0.010384s ]
+[ sql ] [ SQL ] SELECT * FROM `sean_admin_menu` WHERE  `module` = 'admin'  AND `controller` = 'Goodscate'  AND `function` = 'publish'  AND `type` = 1  AND `parameter` = 'goodscate=' LIMIT 1 [ RunTime:0.000346s ]
+[ sql ] [ SQL ] SELECT * FROM `sean_admin_menu` WHERE  `module` = 'admin'  AND `controller` = 'Goodscate'  AND `function` = 'publish'  AND `type` = 1 LIMIT 1 [ RunTime:0.000273s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `sean_goods_cate` [ RunTime:0.003929s ]
+[ sql ] [ SQL ] INSERT INTO `sean_goods_cate` (`pid` , `name` , `tag` , `description` , `create_time` , `update_time`) VALUES (0 , '水果2' , '水果1' , '水果1' , 1573040927 , 1573040927) [ RunTime:0.000215s ]
+[ sql ] [ SQL ] SELECT * FROM `sean_webconfig` WHERE  `web` = 'web' LIMIT 1 [ RunTime:0.000210s ]
+[ sql ] [ SQL ] SELECT `id` FROM `sean_admin_menu` WHERE  `module` = 'admin'  AND `controller` = 'Goodscate'  AND `function` = 'publish'  AND `parameter` = 'goodscate=' LIMIT 1 [ RunTime:0.000223s ]
+[ sql ] [ SQL ] SELECT `id` FROM `sean_admin_menu` WHERE  `module` = 'admin'  AND `controller` = 'Goodscate'  AND `function` = 'publish' LIMIT 1 [ RunTime:0.000194s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `sean_admin_log` [ RunTime:0.003180s ]
+[ error ] [10501]SQLSTATE[23000]: Integrity constraint violation: 1048 Column 'admin_menu_id' cannot be null[D:\web\phpweb\sean\thinkphp\library\think\db\Connection.php:453]
+---------------------------------------------------------------
+[ 2019-11-06T19:50:03+08:00 ] 0.0.0.0 GET www.sean.com/admin/admin/log.shtml
+[运行时间：0.122408s] [吞吐率：8.17req/s] [内存消耗：2,889.00kb] [文件加载：63]
+[ info ] [ LANG ] D:\web\phpweb\sean\thinkphp\lang\zh-cn.php
+[ info ] [ DB ] INIT mysql
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => 'admin',
+    2 => 'log',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'cookie' => 'PHPSESSID=292iq1pcapgpu9ikf2j7opcb55; adminer_version=4.7.4',
+  'accept-language' => 'zh-CN,zh;q=0.9,en;q=0.8,und;q=0.7',
+  'accept-encoding' => 'gzip, deflate',
+  'referer' => 'http://www.sean.com/admin',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/78.0.3904.70 Safari/537.36',
+  'upgrade-insecure-requests' => '1',
+  'connection' => 'close',
+  'host' => 'www.sean.com',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ RUN ] app\admin\controller\Admin->log[ D:\web\phpweb\sean\app\admin\controller\Admin.php ]
+[ info ] [ VIEW ] D:\web\phpweb\sean\public/../app/admin\view\admin\log.html [ array (
+  0 => 'log',
+  1 => 'admin_cate',
+  2 => 'info',
+) ]
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000769s ] mysql:host=127.0.0.1;port=3306;dbname=sean;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `sean_urlconfig` [ RunTime:0.010125s ]
+[ sql ] [ SQL ] SELECT `aliases`,`url` FROM `sean_urlconfig` WHERE  `status` = 1 [ RunTime:0.000288s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `sean_webconfig` [ RunTime:0.003493s ]
+[ sql ] [ SQL ] SELECT `black_ip` FROM `sean_webconfig` WHERE  `web` = 'web' LIMIT 1 [ RunTime:0.000186s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `sean_admin_cate` [ RunTime:0.004863s ]
+[ sql ] [ SQL ] SELECT `permissions` FROM `sean_admin_cate` WHERE  `id` = 1 LIMIT 1 [ RunTime:0.000314s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `sean_admin_menu` [ RunTime:0.003808s ]
+[ sql ] [ SQL ] SELECT * FROM `sean_admin_menu` WHERE  `module` = 'admin'  AND `controller` = 'Admin'  AND `function` = 'log'  AND `type` = 1 LIMIT 1 [ RunTime:0.000339s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `sean_admin_log` [ RunTime:0.003432s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `sean_admin_log` LIMIT 1 [ RunTime:0.000291s ]
+[ sql ] [ SQL ] SELECT * FROM `sean_admin_log` ORDER BY `create_time` DESC LIMIT 0,20 [ RunTime:0.000535s ]
+[ sql ] [ SQL ] SELECT * FROM `sean_admin_cate` [ RunTime:0.000389s ]
+[ sql ] [ SQL ] SELECT * FROM `sean_admin_menu` [ RunTime:0.000348s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `sean_admin` [ RunTime:0.003363s ]
+[ sql ] [ SQL ] SELECT * FROM `sean_admin` [ RunTime:0.000218s ]
+[ sql ] [ SQL ] SELECT * FROM `sean_admin_menu` WHERE  `id` = 4 LIMIT 1 [ RunTime:0.000376s ]
+[ sql ] [ SQL ] SELECT * FROM `sean_admin` WHERE  `id` = 1 LIMIT 1 [ RunTime:0.000444s ]
+[ sql ] [ SQL ] SELECT * FROM `sean_admin_menu` WHERE  `id` = 4 LIMIT 1 [ RunTime:0.000434s ]
+[ sql ] [ SQL ] SELECT * FROM `sean_admin` WHERE  `id` = 1 LIMIT 1 [ RunTime:0.000392s ]
+[ sql ] [ SQL ] SELECT * FROM `sean_admin_menu` WHERE  `id` = 4 LIMIT 1 [ RunTime:0.000441s ]
+[ sql ] [ SQL ] SELECT * FROM `sean_admin` WHERE  `id` = 1 LIMIT 1 [ RunTime:0.000396s ]
+[ sql ] [ SQL ] SELECT * FROM `sean_admin_menu` WHERE  `id` = 28 LIMIT 1 [ RunTime:0.000646s ]
+[ sql ] [ SQL ] SELECT * FROM `sean_admin` WHERE  `id` = 1 LIMIT 1 [ RunTime:0.000503s ]
+[ sql ] [ SQL ] SELECT * FROM `sean_admin_menu` WHERE  `id` = 28 LIMIT 1 [ RunTime:0.000356s ]
+[ sql ] [ SQL ] SELECT * FROM `sean_admin` WHERE  `id` = 1 LIMIT 1 [ RunTime:0.000536s ]
+[ sql ] [ SQL ] SELECT * FROM `sean_admin_menu` WHERE  `id` = 4 LIMIT 1 [ RunTime:0.000247s ]
+[ sql ] [ SQL ] SELECT * FROM `sean_admin` WHERE  `id` = 1 LIMIT 1 [ RunTime:0.000190s ]
+[ sql ] [ SQL ] SELECT * FROM `sean_admin_menu` WHERE  `id` = 51 LIMIT 1 [ RunTime:0.000213s ]
+[ sql ] [ SQL ] SELECT * FROM `sean_admin` WHERE  `id` = 1 LIMIT 1 [ RunTime:0.000226s ]
+[ sql ] [ SQL ] SELECT * FROM `sean_admin_menu` WHERE  `id` = 4 LIMIT 1 [ RunTime:0.000235s ]
+[ sql ] [ SQL ] SELECT * FROM `sean_admin` WHERE  `id` = 1 LIMIT 1 [ RunTime:0.000192s ]
+[ sql ] [ SQL ] SELECT * FROM `sean_admin_menu` WHERE  `id` = 4 LIMIT 1 [ RunTime:0.000207s ]
+[ sql ] [ SQL ] SELECT * FROM `sean_admin` WHERE  `id` = 1 LIMIT 1 [ RunTime:0.000190s ]
+[ sql ] [ SQL ] SELECT * FROM `sean_admin_menu` WHERE  `id` = 28 LIMIT 1 [ RunTime:0.000215s ]
+[ sql ] [ SQL ] SELECT * FROM `sean_admin` WHERE  `id` = 1 LIMIT 1 [ RunTime:0.000185s ]
+[ sql ] [ SQL ] SELECT * FROM `sean_admin_menu` WHERE  `id` = 4 LIMIT 1 [ RunTime:0.000201s ]
+[ sql ] [ SQL ] SELECT * FROM `sean_admin` WHERE  `id` = 1 LIMIT 1 [ RunTime:0.000175s ]
+[ sql ] [ SQL ] SELECT * FROM `sean_admin_menu` WHERE  `id` = 4 LIMIT 1 [ RunTime:0.000195s ]
+[ sql ] [ SQL ] SELECT * FROM `sean_admin` WHERE  `id` = 1 LIMIT 1 [ RunTime:0.000182s ]
+[ sql ] [ SQL ] SELECT * FROM `sean_admin_menu` WHERE  `id` = 4 LIMIT 1 [ RunTime:0.000195s ]
+[ sql ] [ SQL ] SELECT * FROM `sean_admin` WHERE  `id` = 1 LIMIT 1 [ RunTime:0.000181s ]
+[ sql ] [ SQL ] SELECT * FROM `sean_admin_menu` WHERE  `id` = 4 LIMIT 1 [ RunTime:0.000194s ]
+[ sql ] [ SQL ] SELECT * FROM `sean_admin` WHERE  `id` = 1 LIMIT 1 [ RunTime:0.000183s ]
+[ sql ] [ SQL ] SELECT * FROM `sean_admin_menu` WHERE  `id` = 4 LIMIT 1 [ RunTime:0.000196s ]
+[ sql ] [ SQL ] SELECT * FROM `sean_admin` WHERE  `id` = 1 LIMIT 1 [ RunTime:0.000237s ]
+[ sql ] [ SQL ] SELECT * FROM `sean_admin_menu` WHERE  `id` = 45 LIMIT 1 [ RunTime:0.000354s ]
+[ sql ] [ SQL ] SELECT * FROM `sean_admin` WHERE  `id` = 1 LIMIT 1 [ RunTime:0.000510s ]
+[ sql ] [ SQL ] SELECT * FROM `sean_admin_menu` WHERE  `id` = 45 LIMIT 1 [ RunTime:0.000307s ]
+[ sql ] [ SQL ] SELECT * FROM `sean_admin` WHERE  `id` = 1 LIMIT 1 [ RunTime:0.000286s ]
+[ sql ] [ SQL ] SELECT * FROM `sean_admin_menu` WHERE  `id` = 5 LIMIT 1 [ RunTime:0.000346s ]
+[ sql ] [ SQL ] SELECT * FROM `sean_admin` WHERE  `id` = 1 LIMIT 1 [ RunTime:0.000331s ]
+[ sql ] [ SQL ] SELECT * FROM `sean_admin_menu` WHERE  `id` = 4 LIMIT 1 [ RunTime:0.000254s ]
+[ sql ] [ SQL ] SELECT * FROM `sean_admin` WHERE  `id` = 1 LIMIT 1 [ RunTime:0.000183s ]
+[ sql ] [ SQL ] SELECT * FROM `sean_admin_menu` WHERE  `id` = 4 LIMIT 1 [ RunTime:0.000204s ]
+[ sql ] [ SQL ] SELECT * FROM `sean_admin` WHERE  `id` = 1 LIMIT 1 [ RunTime:0.000190s ]
+---------------------------------------------------------------
+[ 2019-11-06T19:52:14+08:00 ] 0.0.0.0 POST www.sean.com/admin/goodscate/publish.shtml
+[运行时间：0.064570s] [吞吐率：15.49req/s] [内存消耗：2,364.47kb] [文件加载：57]
+[ info ] [ LANG ] D:\web\phpweb\sean\thinkphp\lang\zh-cn.php
+[ info ] [ DB ] INIT mysql
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => 'goodscate',
+    2 => 'publish',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'cookie' => 'PHPSESSID=292iq1pcapgpu9ikf2j7opcb55; adminer_version=4.7.4',
+  'accept-language' => 'zh-CN,zh;q=0.9,en;q=0.8,und;q=0.7',
+  'accept-encoding' => 'gzip, deflate',
+  'referer' => 'http://www.sean.com/admin/goodscate/publish.shtml',
+  'content-type' => 'application/x-www-form-urlencoded; charset=UTF-8',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/78.0.3904.70 Safari/537.36',
+  'x-requested-with' => 'XMLHttpRequest',
+  'origin' => 'http://www.sean.com',
+  'accept' => '*/*',
+  'content-length' => '86',
+  'connection' => 'close',
+  'host' => 'www.sean.com',
+)
+[ info ] [ PARAM ] array (
+  'pid' => '0',
+  'name' => '水果2',
+  'tag' => '水果1',
+  'description' => '水果1',
+)
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ RUN ] app\admin\controller\Goodscate->publish[ D:\web\phpweb\sean\app\admin\controller\Goodscate.php ]
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.001260s ] mysql:host=127.0.0.1;port=3306;dbname=sean;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `sean_urlconfig` [ RunTime:0.004670s ]
+[ sql ] [ SQL ] SELECT `aliases`,`url` FROM `sean_urlconfig` WHERE  `status` = 1 [ RunTime:0.000304s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `sean_webconfig` [ RunTime:0.003810s ]
+[ sql ] [ SQL ] SELECT `black_ip` FROM `sean_webconfig` WHERE  `web` = 'web' LIMIT 1 [ RunTime:0.000201s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `sean_admin_cate` [ RunTime:0.005132s ]
+[ sql ] [ SQL ] SELECT `permissions` FROM `sean_admin_cate` WHERE  `id` = 1 LIMIT 1 [ RunTime:0.000229s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `sean_admin_menu` [ RunTime:0.003405s ]
+[ sql ] [ SQL ] SELECT * FROM `sean_admin_menu` WHERE  `module` = 'admin'  AND `controller` = 'Goodscate'  AND `function` = 'publish'  AND `type` = 1  AND `parameter` = 'goodscate=' LIMIT 1 [ RunTime:0.000361s ]
+[ sql ] [ SQL ] SELECT * FROM `sean_admin_menu` WHERE  `module` = 'admin'  AND `controller` = 'Goodscate'  AND `function` = 'publish'  AND `type` = 1 LIMIT 1 [ RunTime:0.000274s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `sean_goods_cate` [ RunTime:0.003413s ]
+[ sql ] [ SQL ] INSERT INTO `sean_goods_cate` (`pid` , `name` , `tag` , `description` , `create_time` , `update_time`) VALUES (0 , '水果2' , '水果1' , '水果1' , 1573041134 , 1573041134) [ RunTime:0.000242s ]
+[ sql ] [ SQL ] SELECT * FROM `sean_webconfig` WHERE  `web` = 'web' LIMIT 1 [ RunTime:0.000197s ]
+[ sql ] [ SQL ] SELECT `id` FROM `sean_admin_menu` WHERE  `module` = 'admin'  AND `controller` = 'Goodscate'  AND `function` = 'publish'  AND `parameter` = 'goodscate=' LIMIT 1 [ RunTime:0.000264s ]
+[ sql ] [ SQL ] SELECT `id` FROM `sean_admin_menu` WHERE  `module` = 'admin'  AND `controller` = 'Goodscate'  AND `function` = 'publish' LIMIT 1 [ RunTime:0.000231s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `sean_admin_log` [ RunTime:0.004464s ]
+[ error ] [10501]SQLSTATE[23000]: Integrity constraint violation: 1048 Column 'admin_menu_id' cannot be null[D:\web\phpweb\sean\thinkphp\library\think\db\Connection.php:453]
+---------------------------------------------------------------
+[ 2019-11-06T19:56:12+08:00 ] 0.0.0.0 GET www.sean.com/admin/admin/log.shtml
+[运行时间：0.120506s] [吞吐率：8.30req/s] [内存消耗：2,889.00kb] [文件加载：63]
+[ info ] [ LANG ] D:\web\phpweb\sean\thinkphp\lang\zh-cn.php
+[ info ] [ DB ] INIT mysql
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => 'admin',
+    2 => 'log',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'cookie' => 'PHPSESSID=292iq1pcapgpu9ikf2j7opcb55; adminer_version=4.7.4',
+  'accept-language' => 'zh-CN,zh;q=0.9,en;q=0.8,und;q=0.7',
+  'accept-encoding' => 'gzip, deflate',
+  'referer' => 'http://www.sean.com/admin',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/78.0.3904.70 Safari/537.36',
+  'upgrade-insecure-requests' => '1',
+  'connection' => 'close',
+  'host' => 'www.sean.com',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ RUN ] app\admin\controller\Admin->log[ D:\web\phpweb\sean\app\admin\controller\Admin.php ]
+[ info ] [ VIEW ] D:\web\phpweb\sean\public/../app/admin\view\admin\log.html [ array (
+  0 => 'log',
+  1 => 'admin_cate',
+  2 => 'info',
+) ]
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.001179s ] mysql:host=127.0.0.1;port=3306;dbname=sean;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `sean_urlconfig` [ RunTime:0.038313s ]
+[ sql ] [ SQL ] SELECT `aliases`,`url` FROM `sean_urlconfig` WHERE  `status` = 1 [ RunTime:0.000293s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `sean_webconfig` [ RunTime:0.004261s ]
+[ sql ] [ SQL ] SELECT `black_ip` FROM `sean_webconfig` WHERE  `web` = 'web' LIMIT 1 [ RunTime:0.000211s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `sean_admin_cate` [ RunTime:0.008978s ]
+[ sql ] [ SQL ] SELECT `permissions` FROM `sean_admin_cate` WHERE  `id` = 1 LIMIT 1 [ RunTime:0.000202s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `sean_admin_menu` [ RunTime:0.003748s ]
+[ sql ] [ SQL ] SELECT * FROM `sean_admin_menu` WHERE  `module` = 'admin'  AND `controller` = 'Admin'  AND `function` = 'log'  AND `type` = 1 LIMIT 1 [ RunTime:0.000418s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `sean_admin_log` [ RunTime:0.003413s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `sean_admin_log` LIMIT 1 [ RunTime:0.000147s ]
+[ sql ] [ SQL ] SELECT * FROM `sean_admin_log` ORDER BY `create_time` DESC LIMIT 0,20 [ RunTime:0.000229s ]
+[ sql ] [ SQL ] SELECT * FROM `sean_admin_cate` [ RunTime:0.000169s ]
+[ sql ] [ SQL ] SELECT * FROM `sean_admin_menu` [ RunTime:0.000340s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `sean_admin` [ RunTime:0.003437s ]
+[ sql ] [ SQL ] SELECT * FROM `sean_admin` [ RunTime:0.000182s ]
+[ sql ] [ SQL ] SELECT * FROM `sean_admin_menu` WHERE  `id` = 4 LIMIT 1 [ RunTime:0.000388s ]
+[ sql ] [ SQL ] SELECT * FROM `sean_admin` WHERE  `id` = 1 LIMIT 1 [ RunTime:0.000235s ]
+[ sql ] [ SQL ] SELECT * FROM `sean_admin_menu` WHERE  `id` = 4 LIMIT 1 [ RunTime:0.000214s ]
+[ sql ] [ SQL ] SELECT * FROM `sean_admin` WHERE  `id` = 1 LIMIT 1 [ RunTime:0.000185s ]
+[ sql ] [ SQL ] SELECT * FROM `sean_admin_menu` WHERE  `id` = 4 LIMIT 1 [ RunTime:0.000199s ]
+[ sql ] [ SQL ] SELECT * FROM `sean_admin` WHERE  `id` = 1 LIMIT 1 [ RunTime:0.000175s ]
+[ sql ] [ SQL ] SELECT * FROM `sean_admin_menu` WHERE  `id` = 28 LIMIT 1 [ RunTime:0.000195s ]
+[ sql ] [ SQL ] SELECT * FROM `sean_admin` WHERE  `id` = 1 LIMIT 1 [ RunTime:0.000185s ]
+[ sql ] [ SQL ] SELECT * FROM `sean_admin_menu` WHERE  `id` = 28 LIMIT 1 [ RunTime:0.000205s ]
+[ sql ] [ SQL ] SELECT * FROM `sean_admin` WHERE  `id` = 1 LIMIT 1 [ RunTime:0.000174s ]
+[ sql ] [ SQL ] SELECT * FROM `sean_admin_menu` WHERE  `id` = 4 LIMIT 1 [ RunTime:0.000196s ]
+[ sql ] [ SQL ] SELECT * FROM `sean_admin` WHERE  `id` = 1 LIMIT 1 [ RunTime:0.000174s ]
+[ sql ] [ SQL ] SELECT * FROM `sean_admin_menu` WHERE  `id` = 51 LIMIT 1 [ RunTime:0.000204s ]
+[ sql ] [ SQL ] SELECT * FROM `sean_admin` WHERE  `id` = 1 LIMIT 1 [ RunTime:0.000168s ]
+[ sql ] [ SQL ] SELECT * FROM `sean_admin_menu` WHERE  `id` = 4 LIMIT 1 [ RunTime:0.000203s ]
+[ sql ] [ SQL ] SELECT * FROM `sean_admin` WHERE  `id` = 1 LIMIT 1 [ RunTime:0.000176s ]
+[ sql ] [ SQL ] SELECT * FROM `sean_admin_menu` WHERE  `id` = 4 LIMIT 1 [ RunTime:0.000192s ]
+[ sql ] [ SQL ] SELECT * FROM `sean_admin` WHERE  `id` = 1 LIMIT 1 [ RunTime:0.000171s ]
+[ sql ] [ SQL ] SELECT * FROM `sean_admin_menu` WHERE  `id` = 28 LIMIT 1 [ RunTime:0.000264s ]
+[ sql ] [ SQL ] SELECT * FROM `sean_admin` WHERE  `id` = 1 LIMIT 1 [ RunTime:0.000277s ]
+[ sql ] [ SQL ] SELECT * FROM `sean_admin_menu` WHERE  `id` = 4 LIMIT 1 [ RunTime:0.000326s ]
+[ sql ] [ SQL ] SELECT * FROM `sean_admin` WHERE  `id` = 1 LIMIT 1 [ RunTime:0.000253s ]
+[ sql ] [ SQL ] SELECT * FROM `sean_admin_menu` WHERE  `id` = 4 LIMIT 1 [ RunTime:0.000233s ]
+[ sql ] [ SQL ] SELECT * FROM `sean_admin` WHERE  `id` = 1 LIMIT 1 [ RunTime:0.000178s ]
+[ sql ] [ SQL ] SELECT * FROM `sean_admin_menu` WHERE  `id` = 4 LIMIT 1 [ RunTime:0.000211s ]
+[ sql ] [ SQL ] SELECT * FROM `sean_admin` WHERE  `id` = 1 LIMIT 1 [ RunTime:0.000174s ]
+[ sql ] [ SQL ] SELECT * FROM `sean_admin_menu` WHERE  `id` = 4 LIMIT 1 [ RunTime:0.000208s ]
+[ sql ] [ SQL ] SELECT * FROM `sean_admin` WHERE  `id` = 1 LIMIT 1 [ RunTime:0.000186s ]
+[ sql ] [ SQL ] SELECT * FROM `sean_admin_menu` WHERE  `id` = 4 LIMIT 1 [ RunTime:0.000196s ]
+[ sql ] [ SQL ] SELECT * FROM `sean_admin` WHERE  `id` = 1 LIMIT 1 [ RunTime:0.000168s ]
+[ sql ] [ SQL ] SELECT * FROM `sean_admin_menu` WHERE  `id` = 45 LIMIT 1 [ RunTime:0.000217s ]
+[ sql ] [ SQL ] SELECT * FROM `sean_admin` WHERE  `id` = 1 LIMIT 1 [ RunTime:0.000176s ]
+[ sql ] [ SQL ] SELECT * FROM `sean_admin_menu` WHERE  `id` = 45 LIMIT 1 [ RunTime:0.000198s ]
+[ sql ] [ SQL ] SELECT * FROM `sean_admin` WHERE  `id` = 1 LIMIT 1 [ RunTime:0.000259s ]
+[ sql ] [ SQL ] SELECT * FROM `sean_admin_menu` WHERE  `id` = 5 LIMIT 1 [ RunTime:0.000257s ]
+[ sql ] [ SQL ] SELECT * FROM `sean_admin` WHERE  `id` = 1 LIMIT 1 [ RunTime:0.000265s ]
+[ sql ] [ SQL ] SELECT * FROM `sean_admin_menu` WHERE  `id` = 4 LIMIT 1 [ RunTime:0.000239s ]
+[ sql ] [ SQL ] SELECT * FROM `sean_admin` WHERE  `id` = 1 LIMIT 1 [ RunTime:0.000231s ]
+[ sql ] [ SQL ] SELECT * FROM `sean_admin_menu` WHERE  `id` = 4 LIMIT 1 [ RunTime:0.000291s ]
+[ sql ] [ SQL ] SELECT * FROM `sean_admin` WHERE  `id` = 1 LIMIT 1 [ RunTime:0.000221s ]

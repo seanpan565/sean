@@ -1,0 +1,103 @@
+<header id="header" class="header header-desktop header-2">
+    <div class="top-search">
+        <div class="container">
+            <div class="row">
+                <div class="col-sm-12">
+                    <form action="{:url('common/search')}" class="layui-form" method="get">
+                        <input type="search" class="top-search-input" name="goods_name" placeholder="搜索商品..." />
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="container">
+        <div class="row">
+            <div class="col-md-3">
+                <a href="javascript:;" id="logo">
+                    <img class="logo-image" src="__INDEX__/images/logo.png" alt="Organik Logo" />
+                </a>
+            </div>
+            <div class="col-md-9">
+                <div class="header-right">
+                    <nav class="menu">
+                        <ul class="main-menu">
+                            <li><a href="{:url('index/index')}" {if condition="$controller eq 'Index' "} style="color:#5fbd74;" {/if} >首页</a></li>
+                            <li><a href="{:url('Shop/index')}" {if condition="$controller eq 'Shop' "} style="color:#5fbd74;" {/if}>商品列表</a></li>
+                            <li><a href="{:url('About/index')}" {if condition="$controller eq 'About' "} style="color:#5fbd74;" {/if}>关于我们</a></li>
+                            <li><a href="{:url('Contact/index')}" {if condition="$controller eq 'Contact' "} style="color:#5fbd74;" {/if}>联系我们</a></li>
+                            <li><a href="{:url('Article/index')}" {if condition="$controller eq 'Article' "} style="color:#5fbd74;" {/if}>文章列表</a></li>
+                            <li><a href="{:url('User/index')}" {if condition="$controller eq 'User' "} style="color:#5fbd74;" {/if}>会员中心</a></li>
+                        </ul>
+                    </nav>
+                    <div class="btn-wrap">
+                        <div class="mini-cart-wrap">
+                            <div class="mini-cart">
+                                <div class="mini-cart-icon" data-count="{$cartCount}">
+                                    <i class="ion-bag"></i>
+                                </div>
+                            </div>
+                            <div class="widget-shopping-cart-content">
+                                    <ul class="cart-list">
+                                        {volist name="$cart_head['0']" id="vo"}
+                                            <li>
+                                                <a href="javascript:;" onclick="cart_del(this,{$vo.id})" class="remove">×</a>
+                                                <a href="{:url('Shopdateil/index',array('id'=>$vo['goods_id']))}"><img src="{$vo.goods_thumb}" alt="{$vo.goods_name}">{$vo.goods_name}</a>
+                                                <span class="quantity" style="margin-top: 15px;">vip：{$vo.goods_count} × ￥{$vo.goods_vip}</span>
+                                                <span class="quantity" style="float:right;">小计：￥{$vo.total_price}</span>
+                                            </li>
+                                        {/volist}
+                                    </ul>
+                                <p class="total">
+                                    <strong>总价:</strong>
+                                    <span class="amount">￥{$cart_head['1']}</span>
+                                </p>
+                                <p class="buttons">
+                                    <a href="{:url('Cart/index')}" class="view-cart">查看购物车</a>
+                                    <a href="{:url('Order/cart')}" class="checkout">结账</a>
+                                </p>
+                            </div>
+                        </div>
+                        <div class="top-search-btn-wrap">
+                            <div class="top-search-btn">
+                                <a href="javascript:void(0);">
+                                    <i class="ion-search"></i>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</header>
+<script type="text/javascript">
+    //layer弹窗组件
+    layui.use(['form', 'layer'],
+    function() {
+        $ = layui.jquery;
+        var form = layui.form,
+        layer = layui.layer;
+    });
+
+    //删除单件商品
+    function cart_del(obj,id){
+        $.ajax({
+            type:"post",
+            dataType:"json",
+            data:{cart_id:id},
+            url:"{:url('cart/del_cart')}",
+            success:function(data){
+                if (data.status == 1) {
+                    layer.msg(data.msg);
+                    $(obj).parents("li").remove();
+                } else {
+                    layer.msg(data.msg);
+                }
+            }
+        },'json');
+        return false;
+    }
+
+
+
+</script>

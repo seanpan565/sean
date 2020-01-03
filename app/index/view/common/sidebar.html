@@ -1,0 +1,53 @@
+<div class="sidebar">
+    <div class="widget widget-product-search">
+        <form class="form-search">
+            <input type="text" class="search-field" placeholder="搜索产品…" value="" name="s" />
+            <input type="submit" value="Search" />
+        </form>
+    </div>
+    <div class="widget widget-product-categories">
+        <h3 class="widget-title">产品类别</h3>
+        <ul class="product-categories">
+            {volist name="goodsCate" id="vo"}
+            <li><a href="{:url('shop/shopList',array('id'=>$vo['id']))}">{$vo.name}</a> </li>
+            {/volist}
+        </ul>
+    </div>
+    <!-- <div class="widget widget_price_filter">
+        <h3 class="widget-title">按价格过滤</h3>
+        <div class="price_slider_wrapper">
+            <div class="price_slider" style="display:none;"></div>
+            <div class="price_slider_amount">
+                <input type="text" id="min_price" name="min_price" value="" data-min="0" placeholder="Min price">
+                <input type="text" id="max_price" name="max_price" value="" data-max="150" placeholder="Max price">
+                <button type="submit" class="button">过滤</button>
+                <div class="price_label" style="display:none;">
+                    Price: <span class="from"></span> &mdash; <span class="to"></span>
+                </div>
+                <div class="clear"></div>
+            </div>
+        </div>
+    </div> -->
+    <div class="widget widget-products">
+        <h3 class="widget-title">制品</h3>
+        <ul class="product-list-widget">
+            {volist name="goodsVice" id="vo"}
+            <li>
+                <a href="{:url('Shopdateil/index',array('id'=>$vo['id']))}">
+                    <img src="{$vo.goods_thumb}" alt="{$vo.goods_name}" />
+                    <span class="product-title">{$vo.goods_name}</span>
+                </a>
+                <del>￥{$vo.goods_price}</del>
+                <ins>￥{$vo.goods_vip}</ins>
+            </li>
+            {/volist}
+        </ul>
+    </div>
+    <!-- <div class="widget widget-tags">
+        <h3 class="widget-title">产品标签</h3>
+        <div class="tagcloud">
+            <a href="#">果干</a>
+            <a href="#">蔬菜</a>
+        </div>
+    </div> -->
+</div>

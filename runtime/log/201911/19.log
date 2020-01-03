@@ -1,0 +1,2131 @@
+---------------------------------------------------------------
+[ 2019-11-19T15:02:57+08:00 ] 0.0.0.0 GET www.sean.com/admin/index/index.shtml
+[运行时间：0.146744s] [吞吐率：6.81req/s] [内存消耗：2,259.85kb] [文件加载：52]
+[ info ] [ LANG ] D:\web\phpweb\sean\thinkphp\lang\zh-cn.php
+[ info ] [ DB ] INIT mysql
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => 'index',
+    2 => 'index',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'cookie' => 'PHPSESSID=npa2c59arh39bi590jj24hal96; usermember=admin; adminer_version=4.7.5',
+  'accept-language' => 'zh-CN,zh;q=0.9,en;q=0.8,und;q=0.7',
+  'accept-encoding' => 'gzip, deflate',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/78.0.3904.97 Safari/537.36',
+  'upgrade-insecure-requests' => '1',
+  'connection' => 'close',
+  'host' => 'www.sean.com',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ RUN ] app\admin\controller\Index->index[ D:\web\phpweb\sean\app\admin\controller\Index.php ]
+[ info ] [ VIEW ] D:\web\phpweb\sean\public/../app/admin\view\index\index.html [ array (
+  0 => 'menus',
+  1 => 'cookie',
+) ]
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.001225s ] mysql:host=127.0.0.1;port=3306;dbname=sean;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `sean_urlconfig` [ RunTime:0.006544s ]
+[ sql ] [ SQL ] SELECT `aliases`,`url` FROM `sean_urlconfig` WHERE  `status` = 1 [ RunTime:0.000307s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `sean_webconfig` [ RunTime:0.005956s ]
+[ sql ] [ SQL ] SELECT `black_ip` FROM `sean_webconfig` WHERE  `web` = 'web' LIMIT 1 [ RunTime:0.000310s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `sean_admin_cate` [ RunTime:0.006321s ]
+[ sql ] [ SQL ] SELECT `permissions` FROM `sean_admin_cate` WHERE  `id` = 1 LIMIT 1 [ RunTime:0.000394s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `sean_admin_menu` [ RunTime:0.006420s ]
+[ sql ] [ SQL ] SELECT * FROM `sean_admin_menu` WHERE  `module` = 'admin'  AND `controller` = 'Index'  AND `function` = 'index'  AND `type` = 1 LIMIT 1 [ RunTime:0.002563s ]
+[ sql ] [ SQL ] SELECT * FROM `sean_admin_menu` WHERE  `is_display` = 1 ORDER BY `orders` ASC [ RunTime:0.001684s ]
+[ sql ] [ SQL ] SELECT `permissions` FROM `sean_admin_cate` WHERE  `id` = 1 LIMIT 1 [ RunTime:0.000368s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `sean_admin` [ RunTime:0.006703s ]
+[ sql ] [ SQL ] SELECT * FROM `sean_admin` WHERE  `id` = 1 LIMIT 1 [ RunTime:0.000362s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `sean_attachment` [ RunTime:0.015043s ]
+[ sql ] [ SQL ] SELECT * FROM `sean_attachment` WHERE  `id` = 5 LIMIT 1 [ RunTime:0.008297s ]
+---------------------------------------------------------------
+[ 2019-11-19T15:03:02+08:00 ] 0.0.0.0 GET www.sean.com/admin/main/index
+[运行时间：0.111813s] [吞吐率：8.94req/s] [内存消耗：2,210.81kb] [文件加载：52]
+[ info ] [ LANG ] D:\web\phpweb\sean\thinkphp\lang\zh-cn.php
+[ info ] [ DB ] INIT mysql
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => 'main',
+    2 => 'index',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'cookie' => 'PHPSESSID=npa2c59arh39bi590jj24hal96; usermember=admin; adminer_version=4.7.5',
+  'accept-language' => 'zh-CN,zh;q=0.9,en;q=0.8,und;q=0.7',
+  'accept-encoding' => 'gzip, deflate',
+  'referer' => 'http://www.sean.com/admin/index/index.shtml',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/78.0.3904.97 Safari/537.36',
+  'upgrade-insecure-requests' => '1',
+  'connection' => 'close',
+  'host' => 'www.sean.com',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ RUN ] app\admin\controller\Main->index[ D:\web\phpweb\sean\app\admin\controller\Main.php ]
+[ info ] [ VIEW ] D:\web\phpweb\sean\public/../app/admin\view\main\index.html [ array (
+  0 => 'info',
+  1 => 'web',
+) ]
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000727s ] mysql:host=127.0.0.1;port=3306;dbname=sean;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `sean_urlconfig` [ RunTime:0.005037s ]
+[ sql ] [ SQL ] SELECT `aliases`,`url` FROM `sean_urlconfig` WHERE  `status` = 1 [ RunTime:0.000398s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `sean_webconfig` [ RunTime:0.005233s ]
+[ sql ] [ SQL ] SELECT `black_ip` FROM `sean_webconfig` WHERE  `web` = 'web' LIMIT 1 [ RunTime:0.000367s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `sean_admin_cate` [ RunTime:0.005440s ]
+[ sql ] [ SQL ] SELECT `permissions` FROM `sean_admin_cate` WHERE  `id` = 1 LIMIT 1 [ RunTime:0.000263s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `sean_admin_menu` [ RunTime:0.004744s ]
+[ sql ] [ SQL ] SELECT * FROM `sean_admin_menu` WHERE  `module` = 'admin'  AND `controller` = 'Main'  AND `function` = 'index'  AND `type` = 1  AND `parameter` = 'main=' LIMIT 1 [ RunTime:0.000500s ]
+[ sql ] [ SQL ] SELECT * FROM `sean_admin_menu` WHERE  `module` = 'admin'  AND `controller` = 'Main'  AND `function` = 'index'  AND `type` = 1 LIMIT 1 [ RunTime:0.000370s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `sean_admin` [ RunTime:0.005313s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `sean_admin` LIMIT 1 [ RunTime:0.002536s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `sean_admin_cate` LIMIT 1 [ RunTime:0.000210s ]
+[ sql ] [ SQL ] SELECT `black_ip` FROM `sean_webconfig` LIMIT 1 [ RunTime:0.000207s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `sean_article` [ RunTime:0.006525s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `sean_article` LIMIT 1 [ RunTime:0.000246s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `sean_article` WHERE  `status` = 0 LIMIT 1 [ RunTime:0.001555s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `sean_article` WHERE  `is_top` = 1 LIMIT 1 [ RunTime:0.000340s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `sean_attachment` [ RunTime:0.005732s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `sean_attachment` LIMIT 1 [ RunTime:0.000721s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `sean_attachment` WHERE  `status` = 0 LIMIT 1 [ RunTime:0.000671s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `sean_attachment` WHERE  `status` = -1 LIMIT 1 [ RunTime:0.000288s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `sean_messages` [ RunTime:0.004666s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `sean_messages` LIMIT 1 [ RunTime:0.000225s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `sean_messages` WHERE  `is_look` = 0 LIMIT 1 [ RunTime:0.000312s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `sean_admin_log` [ RunTime:0.007329s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `sean_admin_log` WHERE  `admin_menu_id` = 50  AND ( `create_time` >= 1573315200 AND `create_time` <= 1573401600 ) LIMIT 1 [ RunTime:0.002218s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `sean_admin_log` WHERE  `admin_menu_id` = 50  AND ( `create_time` >= 1573401600 AND `create_time` <= 1573488000 ) LIMIT 1 [ RunTime:0.000443s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `sean_admin_log` WHERE  `admin_menu_id` = 50  AND ( `create_time` >= 1573488000 AND `create_time` <= 1573574400 ) LIMIT 1 [ RunTime:0.000281s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `sean_admin_log` WHERE  `admin_menu_id` = 50  AND ( `create_time` >= 1573574400 AND `create_time` <= 1573660800 ) LIMIT 1 [ RunTime:0.000340s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `sean_admin_log` WHERE  `admin_menu_id` = 50  AND ( `create_time` >= 1573660800 AND `create_time` <= 1573747200 ) LIMIT 1 [ RunTime:0.000292s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `sean_admin_log` WHERE  `admin_menu_id` = 50  AND ( `create_time` >= 1573747200 AND `create_time` <= 1573833600 ) LIMIT 1 [ RunTime:0.000262s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `sean_admin_log` WHERE  `admin_menu_id` = 50  AND ( `create_time` >= 1573833600 AND `create_time` <= 1573920000 ) LIMIT 1 [ RunTime:0.000233s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `sean_admin_log` WHERE  `admin_menu_id` = 50  AND ( `create_time` >= 1573920000 AND `create_time` <= 1574006400 ) LIMIT 1 [ RunTime:0.000243s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `sean_admin_log` WHERE  `admin_menu_id` = 50  AND ( `create_time` >= 1574006400 AND `create_time` <= 1574092800 ) LIMIT 1 [ RunTime:0.000318s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `sean_admin_log` WHERE  `admin_menu_id` = 50  AND ( `create_time` >= 1574092800 AND `create_time` <= 1574179200 ) LIMIT 1 [ RunTime:0.000243s ]
+---------------------------------------------------------------
+[ 2019-11-19T18:51:43+08:00 ] 0.0.0.0 GET www.sean.com/index/contact/index.shtml?name=inc.php&email=seanpan565%40gmail.com&title=dssssss&message=sdsdsdsdsd
+[运行时间：0.091065s] [吞吐率：10.98req/s] [内存消耗：2,332.59kb] [文件加载：54]
+[ info ] [ LANG ] D:\web\phpweb\sean\thinkphp\lang\zh-cn.php
+[ info ] [ DB ] INIT mysql
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'index',
+    1 => 'contact',
+    2 => 'index',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'cookie' => 'PHPSESSID=npa2c59arh39bi590jj24hal96; usermember=admin; adminer_version=4.7.5',
+  'accept-language' => 'zh-CN,zh;q=0.9,en;q=0.8,und;q=0.7',
+  'accept-encoding' => 'gzip, deflate',
+  'referer' => 'http://www.sean.com/index/contact/index.shtml',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/78.0.3904.97 Safari/537.36',
+  'upgrade-insecure-requests' => '1',
+  'cache-control' => 'max-age=0',
+  'connection' => 'close',
+  'host' => 'www.sean.com',
+)
+[ info ] [ PARAM ] array (
+  'name' => 'inc.php',
+  'email' => 'seanpan565@gmail.com',
+  'title' => 'dssssss',
+  'message' => 'sdsdsdsdsd',
+)
+[ info ] [ RUN ] app\index\controller\Contact->index[ D:\web\phpweb\sean\app\index\controller\Contact.php ]
+[ info ] [ VIEW ] D:\web\phpweb\sean\public/../app/index\view\contact\contact.html [ array (
+  0 => 'controller',
+) ]
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.023571s ] mysql:host=127.0.0.1;port=3306;dbname=sean;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `sean_urlconfig` [ RunTime:0.022482s ]
+[ sql ] [ SQL ] SELECT `aliases`,`url` FROM `sean_urlconfig` WHERE  `status` = 1 [ RunTime:0.001564s ]
+---------------------------------------------------------------
+[ 2019-11-19T18:51:50+08:00 ] 0.0.0.0 GET www.sean.com/index/contact/index.shtml?name=inc.php&email=seanpan565%40gmail.com&title=%E6%A0%87%E9%A2%98%E6%A0%87%E9%A2%98%E6%A0%87%E9%A2%98&message=dsssss
+[运行时间：0.044298s] [吞吐率：22.57req/s] [内存消耗：2,195.89kb] [文件加载：52]
+[ info ] [ LANG ] D:\web\phpweb\sean\thinkphp\lang\zh-cn.php
+[ info ] [ DB ] INIT mysql
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'index',
+    1 => 'contact',
+    2 => 'index',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'cookie' => 'PHPSESSID=npa2c59arh39bi590jj24hal96; usermember=admin; adminer_version=4.7.5',
+  'accept-language' => 'zh-CN,zh;q=0.9,en;q=0.8,und;q=0.7',
+  'accept-encoding' => 'gzip, deflate',
+  'referer' => 'http://www.sean.com/index/contact/index.shtml?name=inc.php&email=seanpan565%40gmail.com&title=dssssss&message=sdsdsdsdsd',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/78.0.3904.97 Safari/537.36',
+  'upgrade-insecure-requests' => '1',
+  'connection' => 'close',
+  'host' => 'www.sean.com',
+)
+[ info ] [ PARAM ] array (
+  'name' => 'inc.php',
+  'email' => 'seanpan565@gmail.com',
+  'title' => '标题标题标题',
+  'message' => 'dsssss',
+)
+[ info ] [ RUN ] app\index\controller\Contact->index[ D:\web\phpweb\sean\app\index\controller\Contact.php ]
+[ info ] [ VIEW ] D:\web\phpweb\sean\public/../app/index\view\contact\contact.html [ array (
+  0 => 'controller',
+) ]
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.001777s ] mysql:host=127.0.0.1;port=3306;dbname=sean;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `sean_urlconfig` [ RunTime:0.006516s ]
+[ sql ] [ SQL ] SELECT `aliases`,`url` FROM `sean_urlconfig` WHERE  `status` = 1 [ RunTime:0.000481s ]
+---------------------------------------------------------------
+[ 2019-11-19T18:52:56+08:00 ] 0.0.0.0 GET www.sean.com/index/contact/index.shtml?name=inc.php&email=seanpan565%40gmail.com&title=%E6%A0%87%E9%A2%98%E6%A0%87%E9%A2%98%E6%A0%87%E9%A2%98&message=dsssss
+[运行时间：0.041568s] [吞吐率：24.06req/s] [内存消耗：2,332.97kb] [文件加载：54]
+[ info ] [ LANG ] D:\web\phpweb\sean\thinkphp\lang\zh-cn.php
+[ info ] [ DB ] INIT mysql
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'index',
+    1 => 'contact',
+    2 => 'index',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'cookie' => 'PHPSESSID=npa2c59arh39bi590jj24hal96; usermember=admin; adminer_version=4.7.5',
+  'accept-language' => 'zh-CN,zh;q=0.9,en;q=0.8,und;q=0.7',
+  'accept-encoding' => 'gzip, deflate',
+  'referer' => 'http://www.sean.com/index/contact/index.shtml?name=inc.php&email=seanpan565%40gmail.com&title=dssssss&message=sdsdsdsdsd',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/78.0.3904.97 Safari/537.36',
+  'upgrade-insecure-requests' => '1',
+  'cache-control' => 'max-age=0',
+  'connection' => 'close',
+  'host' => 'www.sean.com',
+)
+[ info ] [ PARAM ] array (
+  'name' => 'inc.php',
+  'email' => 'seanpan565@gmail.com',
+  'title' => '标题标题标题',
+  'message' => 'dsssss',
+)
+[ info ] [ RUN ] app\index\controller\Contact->index[ D:\web\phpweb\sean\app\index\controller\Contact.php ]
+[ info ] [ VIEW ] D:\web\phpweb\sean\public/../app/index\view\contact\contact.html [ array (
+  0 => 'controller',
+) ]
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.001554s ] mysql:host=127.0.0.1;port=3306;dbname=sean;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `sean_urlconfig` [ RunTime:0.006430s ]
+[ sql ] [ SQL ] SELECT `aliases`,`url` FROM `sean_urlconfig` WHERE  `status` = 1 [ RunTime:0.000331s ]
+---------------------------------------------------------------
+[ 2019-11-19T18:53:34+08:00 ] 0.0.0.0 GET www.sean.com/index/contact/index.shtml?name=inc.php&email=seanpan565%40gmail.com&title=%E6%A0%87%E9%A2%98%E6%A0%87%E9%A2%98%E6%A0%87%E9%A2%98&message=dsssss
+[运行时间：0.043556s] [吞吐率：22.96req/s] [内存消耗：2,332.97kb] [文件加载：54]
+[ info ] [ LANG ] D:\web\phpweb\sean\thinkphp\lang\zh-cn.php
+[ info ] [ DB ] INIT mysql
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'index',
+    1 => 'contact',
+    2 => 'index',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'cookie' => 'PHPSESSID=npa2c59arh39bi590jj24hal96; usermember=admin; adminer_version=4.7.5',
+  'accept-language' => 'zh-CN,zh;q=0.9,en;q=0.8,und;q=0.7',
+  'accept-encoding' => 'gzip, deflate',
+  'referer' => 'http://www.sean.com/index/contact/index.shtml?name=inc.php&email=seanpan565%40gmail.com&title=dssssss&message=sdsdsdsdsd',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/78.0.3904.97 Safari/537.36',
+  'upgrade-insecure-requests' => '1',
+  'cache-control' => 'max-age=0',
+  'connection' => 'close',
+  'host' => 'www.sean.com',
+)
+[ info ] [ PARAM ] array (
+  'name' => 'inc.php',
+  'email' => 'seanpan565@gmail.com',
+  'title' => '标题标题标题',
+  'message' => 'dsssss',
+)
+[ info ] [ RUN ] app\index\controller\Contact->index[ D:\web\phpweb\sean\app\index\controller\Contact.php ]
+[ info ] [ VIEW ] D:\web\phpweb\sean\public/../app/index\view\contact\contact.html [ array (
+  0 => 'controller',
+) ]
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.001137s ] mysql:host=127.0.0.1;port=3306;dbname=sean;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `sean_urlconfig` [ RunTime:0.005688s ]
+[ sql ] [ SQL ] SELECT `aliases`,`url` FROM `sean_urlconfig` WHERE  `status` = 1 [ RunTime:0.000202s ]
+---------------------------------------------------------------
+[ 2019-11-19T18:53:40+08:00 ] 0.0.0.0 GET www.sean.com/index/contact/index.shtml?name=inc.php&email=seanpan565%40gmail.com&title=%E6%A0%87%E9%A2%98%E6%A0%87%E9%A2%98%E6%A0%87%E9%A2%98&message=dsadasd
+[运行时间：0.029421s] [吞吐率：33.99req/s] [内存消耗：2,196.17kb] [文件加载：52]
+[ info ] [ LANG ] D:\web\phpweb\sean\thinkphp\lang\zh-cn.php
+[ info ] [ DB ] INIT mysql
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'index',
+    1 => 'contact',
+    2 => 'index',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'cookie' => 'PHPSESSID=npa2c59arh39bi590jj24hal96; usermember=admin; adminer_version=4.7.5',
+  'accept-language' => 'zh-CN,zh;q=0.9,en;q=0.8,und;q=0.7',
+  'accept-encoding' => 'gzip, deflate',
+  'referer' => 'http://www.sean.com/index/contact/index.shtml?name=inc.php&email=seanpan565%40gmail.com&title=%E6%A0%87%E9%A2%98%E6%A0%87%E9%A2%98%E6%A0%87%E9%A2%98&message=dsssss',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/78.0.3904.97 Safari/537.36',
+  'upgrade-insecure-requests' => '1',
+  'connection' => 'close',
+  'host' => 'www.sean.com',
+)
+[ info ] [ PARAM ] array (
+  'name' => 'inc.php',
+  'email' => 'seanpan565@gmail.com',
+  'title' => '标题标题标题',
+  'message' => 'dsadasd',
+)
+[ info ] [ RUN ] app\index\controller\Contact->index[ D:\web\phpweb\sean\app\index\controller\Contact.php ]
+[ info ] [ VIEW ] D:\web\phpweb\sean\public/../app/index\view\contact\contact.html [ array (
+  0 => 'controller',
+) ]
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000656s ] mysql:host=127.0.0.1;port=3306;dbname=sean;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `sean_urlconfig` [ RunTime:0.006161s ]
+[ sql ] [ SQL ] SELECT `aliases`,`url` FROM `sean_urlconfig` WHERE  `status` = 1 [ RunTime:0.000198s ]
+---------------------------------------------------------------
+[ 2019-11-19T18:54:19+08:00 ] 0.0.0.0 GET www.sean.com/index/contact/index.shtml?name=inc.php&email=seanpan565%40gmail.com&title=%E6%A0%87%E9%A2%98%E6%A0%87%E9%A2%98%E6%A0%87%E9%A2%98&message=dsadasd
+[运行时间：0.048309s] [吞吐率：20.70req/s] [内存消耗：2,333.00kb] [文件加载：54]
+[ info ] [ LANG ] D:\web\phpweb\sean\thinkphp\lang\zh-cn.php
+[ info ] [ DB ] INIT mysql
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'index',
+    1 => 'contact',
+    2 => 'index',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'cookie' => 'PHPSESSID=npa2c59arh39bi590jj24hal96; usermember=admin; adminer_version=4.7.5',
+  'accept-language' => 'zh-CN,zh;q=0.9,en;q=0.8,und;q=0.7',
+  'accept-encoding' => 'gzip, deflate',
+  'referer' => 'http://www.sean.com/index/contact/index.shtml?name=inc.php&email=seanpan565%40gmail.com&title=%E6%A0%87%E9%A2%98%E6%A0%87%E9%A2%98%E6%A0%87%E9%A2%98&message=dsssss',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/78.0.3904.97 Safari/537.36',
+  'upgrade-insecure-requests' => '1',
+  'cache-control' => 'max-age=0',
+  'connection' => 'close',
+  'host' => 'www.sean.com',
+)
+[ info ] [ PARAM ] array (
+  'name' => 'inc.php',
+  'email' => 'seanpan565@gmail.com',
+  'title' => '标题标题标题',
+  'message' => 'dsadasd',
+)
+[ info ] [ RUN ] app\index\controller\Contact->index[ D:\web\phpweb\sean\app\index\controller\Contact.php ]
+[ info ] [ VIEW ] D:\web\phpweb\sean\public/../app/index\view\contact\contact.html [ array (
+  0 => 'controller',
+) ]
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000587s ] mysql:host=127.0.0.1;port=3306;dbname=sean;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `sean_urlconfig` [ RunTime:0.005659s ]
+[ sql ] [ SQL ] SELECT `aliases`,`url` FROM `sean_urlconfig` WHERE  `status` = 1 [ RunTime:0.000276s ]
+---------------------------------------------------------------
+[ 2019-11-19T18:54:45+08:00 ] 0.0.0.0 GET www.sean.com/index/contact/index.shtml?name=inc.php&email=seanpan565%40gmail.com&title=%E6%A0%87%E9%A2%98%E6%A0%87%E9%A2%98%E6%A0%87%E9%A2%98&message=dsadasd
+[运行时间：0.047376s] [吞吐率：21.11req/s] [内存消耗：2,333.00kb] [文件加载：54]
+[ info ] [ LANG ] D:\web\phpweb\sean\thinkphp\lang\zh-cn.php
+[ info ] [ DB ] INIT mysql
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'index',
+    1 => 'contact',
+    2 => 'index',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'cookie' => 'PHPSESSID=npa2c59arh39bi590jj24hal96; usermember=admin; adminer_version=4.7.5',
+  'accept-language' => 'zh-CN,zh;q=0.9,en;q=0.8,und;q=0.7',
+  'accept-encoding' => 'gzip, deflate',
+  'referer' => 'http://www.sean.com/index/contact/index.shtml?name=inc.php&email=seanpan565%40gmail.com&title=%E6%A0%87%E9%A2%98%E6%A0%87%E9%A2%98%E6%A0%87%E9%A2%98&message=dsssss',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/78.0.3904.97 Safari/537.36',
+  'upgrade-insecure-requests' => '1',
+  'cache-control' => 'max-age=0',
+  'connection' => 'close',
+  'host' => 'www.sean.com',
+)
+[ info ] [ PARAM ] array (
+  'name' => 'inc.php',
+  'email' => 'seanpan565@gmail.com',
+  'title' => '标题标题标题',
+  'message' => 'dsadasd',
+)
+[ info ] [ RUN ] app\index\controller\Contact->index[ D:\web\phpweb\sean\app\index\controller\Contact.php ]
+[ info ] [ VIEW ] D:\web\phpweb\sean\public/../app/index\view\contact\contact.html [ array (
+  0 => 'controller',
+) ]
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000602s ] mysql:host=127.0.0.1;port=3306;dbname=sean;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `sean_urlconfig` [ RunTime:0.013214s ]
+[ sql ] [ SQL ] SELECT `aliases`,`url` FROM `sean_urlconfig` WHERE  `status` = 1 [ RunTime:0.000285s ]
+---------------------------------------------------------------
+[ 2019-11-19T18:54:56+08:00 ] 0.0.0.0 GET www.sean.com/index/contact/index.shtml?name=inc.php&email=seanpan565%40gmail.com&title=%E6%A0%87%E9%A2%98%E6%A0%87%E9%A2%98%E6%A0%87%E9%A2%98&message=dsadasd
+[运行时间：0.031573s] [吞吐率：31.67req/s] [内存消耗：2,333.00kb] [文件加载：54]
+[ info ] [ LANG ] D:\web\phpweb\sean\thinkphp\lang\zh-cn.php
+[ info ] [ DB ] INIT mysql
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'index',
+    1 => 'contact',
+    2 => 'index',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'cookie' => 'PHPSESSID=npa2c59arh39bi590jj24hal96; usermember=admin; adminer_version=4.7.5',
+  'accept-language' => 'zh-CN,zh;q=0.9,en;q=0.8,und;q=0.7',
+  'accept-encoding' => 'gzip, deflate',
+  'referer' => 'http://www.sean.com/index/contact/index.shtml?name=inc.php&email=seanpan565%40gmail.com&title=%E6%A0%87%E9%A2%98%E6%A0%87%E9%A2%98%E6%A0%87%E9%A2%98&message=dsssss',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/78.0.3904.97 Safari/537.36',
+  'upgrade-insecure-requests' => '1',
+  'cache-control' => 'max-age=0',
+  'connection' => 'close',
+  'host' => 'www.sean.com',
+)
+[ info ] [ PARAM ] array (
+  'name' => 'inc.php',
+  'email' => 'seanpan565@gmail.com',
+  'title' => '标题标题标题',
+  'message' => 'dsadasd',
+)
+[ info ] [ RUN ] app\index\controller\Contact->index[ D:\web\phpweb\sean\app\index\controller\Contact.php ]
+[ info ] [ VIEW ] D:\web\phpweb\sean\public/../app/index\view\contact\contact.html [ array (
+  0 => 'controller',
+) ]
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.001723s ] mysql:host=127.0.0.1;port=3306;dbname=sean;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `sean_urlconfig` [ RunTime:0.004428s ]
+[ sql ] [ SQL ] SELECT `aliases`,`url` FROM `sean_urlconfig` WHERE  `status` = 1 [ RunTime:0.000202s ]
+---------------------------------------------------------------
+[ 2019-11-19T18:55:00+08:00 ] 0.0.0.0 GET www.sean.com/index/contact/index.shtml?name=sean_goods&email=seanpan565%40gmail.com&title=%E6%A0%87%E9%A2%98%E6%A0%87%E9%A2%98%E6%A0%87%E9%A2%98&message=dasd
+[运行时间：0.038319s] [吞吐率：26.10req/s] [内存消耗：2,196.17kb] [文件加载：52]
+[ info ] [ LANG ] D:\web\phpweb\sean\thinkphp\lang\zh-cn.php
+[ info ] [ DB ] INIT mysql
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'index',
+    1 => 'contact',
+    2 => 'index',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'cookie' => 'PHPSESSID=npa2c59arh39bi590jj24hal96; usermember=admin; adminer_version=4.7.5',
+  'accept-language' => 'zh-CN,zh;q=0.9,en;q=0.8,und;q=0.7',
+  'accept-encoding' => 'gzip, deflate',
+  'referer' => 'http://www.sean.com/index/contact/index.shtml?name=inc.php&email=seanpan565%40gmail.com&title=%E6%A0%87%E9%A2%98%E6%A0%87%E9%A2%98%E6%A0%87%E9%A2%98&message=dsadasd',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/78.0.3904.97 Safari/537.36',
+  'upgrade-insecure-requests' => '1',
+  'connection' => 'close',
+  'host' => 'www.sean.com',
+)
+[ info ] [ PARAM ] array (
+  'name' => 'sean_goods',
+  'email' => 'seanpan565@gmail.com',
+  'title' => '标题标题标题',
+  'message' => 'dasd',
+)
+[ info ] [ RUN ] app\index\controller\Contact->index[ D:\web\phpweb\sean\app\index\controller\Contact.php ]
+[ info ] [ VIEW ] D:\web\phpweb\sean\public/../app/index\view\contact\contact.html [ array (
+  0 => 'controller',
+) ]
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000574s ] mysql:host=127.0.0.1;port=3306;dbname=sean;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `sean_urlconfig` [ RunTime:0.013802s ]
+[ sql ] [ SQL ] SELECT `aliases`,`url` FROM `sean_urlconfig` WHERE  `status` = 1 [ RunTime:0.000209s ]
+---------------------------------------------------------------
+[ 2019-11-19T18:55:29+08:00 ] 0.0.0.0 GET www.sean.com/index/contact/index.shtml?name=sean_goods&email=seanpan565%40gmail.com&title=%E6%A0%87%E9%A2%98%E6%A0%87%E9%A2%98%E6%A0%87%E9%A2%98&message=dasd
+[运行时间：0.042963s] [吞吐率：23.28req/s] [内存消耗：2,333.00kb] [文件加载：54]
+[ info ] [ LANG ] D:\web\phpweb\sean\thinkphp\lang\zh-cn.php
+[ info ] [ DB ] INIT mysql
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'index',
+    1 => 'contact',
+    2 => 'index',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'cookie' => 'PHPSESSID=npa2c59arh39bi590jj24hal96; usermember=admin; adminer_version=4.7.5',
+  'accept-language' => 'zh-CN,zh;q=0.9,en;q=0.8,und;q=0.7',
+  'accept-encoding' => 'gzip, deflate',
+  'referer' => 'http://www.sean.com/index/contact/index.shtml?name=inc.php&email=seanpan565%40gmail.com&title=%E6%A0%87%E9%A2%98%E6%A0%87%E9%A2%98%E6%A0%87%E9%A2%98&message=dsadasd',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/78.0.3904.97 Safari/537.36',
+  'upgrade-insecure-requests' => '1',
+  'cache-control' => 'max-age=0',
+  'connection' => 'close',
+  'host' => 'www.sean.com',
+)
+[ info ] [ PARAM ] array (
+  'name' => 'sean_goods',
+  'email' => 'seanpan565@gmail.com',
+  'title' => '标题标题标题',
+  'message' => 'dasd',
+)
+[ info ] [ RUN ] app\index\controller\Contact->index[ D:\web\phpweb\sean\app\index\controller\Contact.php ]
+[ info ] [ VIEW ] D:\web\phpweb\sean\public/../app/index\view\contact\contact.html [ array (
+  0 => 'controller',
+) ]
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000576s ] mysql:host=127.0.0.1;port=3306;dbname=sean;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `sean_urlconfig` [ RunTime:0.004210s ]
+[ sql ] [ SQL ] SELECT `aliases`,`url` FROM `sean_urlconfig` WHERE  `status` = 1 [ RunTime:0.000196s ]
+---------------------------------------------------------------
+[ 2019-11-19T18:56:27+08:00 ] 0.0.0.0 GET www.sean.com/index/contact/index.shtml?name=sean_goods&email=seanpan565%40gmail.com&title=%E6%A0%87%E9%A2%98%E6%A0%87%E9%A2%98%E6%A0%87%E9%A2%98&message=dasd
+[运行时间：0.046280s] [吞吐率：21.61req/s] [内存消耗：2,333.00kb] [文件加载：54]
+[ info ] [ LANG ] D:\web\phpweb\sean\thinkphp\lang\zh-cn.php
+[ info ] [ DB ] INIT mysql
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'index',
+    1 => 'contact',
+    2 => 'index',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'cookie' => 'PHPSESSID=npa2c59arh39bi590jj24hal96; usermember=admin; adminer_version=4.7.5',
+  'accept-language' => 'zh-CN,zh;q=0.9,en;q=0.8,und;q=0.7',
+  'accept-encoding' => 'gzip, deflate',
+  'referer' => 'http://www.sean.com/index/contact/index.shtml?name=inc.php&email=seanpan565%40gmail.com&title=%E6%A0%87%E9%A2%98%E6%A0%87%E9%A2%98%E6%A0%87%E9%A2%98&message=dsadasd',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/78.0.3904.97 Safari/537.36',
+  'upgrade-insecure-requests' => '1',
+  'cache-control' => 'max-age=0',
+  'connection' => 'close',
+  'host' => 'www.sean.com',
+)
+[ info ] [ PARAM ] array (
+  'name' => 'sean_goods',
+  'email' => 'seanpan565@gmail.com',
+  'title' => '标题标题标题',
+  'message' => 'dasd',
+)
+[ info ] [ RUN ] app\index\controller\Contact->index[ D:\web\phpweb\sean\app\index\controller\Contact.php ]
+[ info ] [ VIEW ] D:\web\phpweb\sean\public/../app/index\view\contact\contact.html [ array (
+  0 => 'controller',
+) ]
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000563s ] mysql:host=127.0.0.1;port=3306;dbname=sean;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `sean_urlconfig` [ RunTime:0.004216s ]
+[ sql ] [ SQL ] SELECT `aliases`,`url` FROM `sean_urlconfig` WHERE  `status` = 1 [ RunTime:0.000224s ]
+---------------------------------------------------------------
+[ 2019-11-19T18:56:45+08:00 ] 0.0.0.0 GET www.sean.com/index/contact/index.shtml?name=sean_goods&email=seanpan565%40gmail.com&title=%E6%A0%87%E9%A2%98%E6%A0%87%E9%A2%98%E6%A0%87%E9%A2%98&message=dasd
+[运行时间：0.081490s] [吞吐率：12.27req/s] [内存消耗：2,333.00kb] [文件加载：54]
+[ info ] [ LANG ] D:\web\phpweb\sean\thinkphp\lang\zh-cn.php
+[ info ] [ DB ] INIT mysql
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'index',
+    1 => 'contact',
+    2 => 'index',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'cookie' => 'PHPSESSID=npa2c59arh39bi590jj24hal96; usermember=admin; adminer_version=4.7.5',
+  'accept-language' => 'zh-CN,zh;q=0.9,en;q=0.8,und;q=0.7',
+  'accept-encoding' => 'gzip, deflate',
+  'referer' => 'http://www.sean.com/index/contact/index.shtml?name=inc.php&email=seanpan565%40gmail.com&title=%E6%A0%87%E9%A2%98%E6%A0%87%E9%A2%98%E6%A0%87%E9%A2%98&message=dsadasd',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/78.0.3904.97 Safari/537.36',
+  'upgrade-insecure-requests' => '1',
+  'cache-control' => 'max-age=0',
+  'connection' => 'close',
+  'host' => 'www.sean.com',
+)
+[ info ] [ PARAM ] array (
+  'name' => 'sean_goods',
+  'email' => 'seanpan565@gmail.com',
+  'title' => '标题标题标题',
+  'message' => 'dasd',
+)
+[ info ] [ RUN ] app\index\controller\Contact->index[ D:\web\phpweb\sean\app\index\controller\Contact.php ]
+[ info ] [ VIEW ] D:\web\phpweb\sean\public/../app/index\view\contact\contact.html [ array (
+  0 => 'controller',
+) ]
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000665s ] mysql:host=127.0.0.1;port=3306;dbname=sean;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `sean_urlconfig` [ RunTime:0.042721s ]
+[ sql ] [ SQL ] SELECT `aliases`,`url` FROM `sean_urlconfig` WHERE  `status` = 1 [ RunTime:0.000377s ]
+---------------------------------------------------------------
+[ 2019-11-19T18:56:53+08:00 ] 0.0.0.0 POST www.sean.com/index/contact/message.shtml
+[运行时间：0.037676s] [吞吐率：26.54req/s] [内存消耗：2,124.37kb] [文件加载：52]
+[ info ] [ LANG ] D:\web\phpweb\sean\thinkphp\lang\zh-cn.php
+[ info ] [ DB ] INIT mysql
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'index',
+    1 => 'contact',
+    2 => 'message',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'cookie' => 'PHPSESSID=npa2c59arh39bi590jj24hal96; usermember=admin; adminer_version=4.7.5',
+  'accept-language' => 'zh-CN,zh;q=0.9,en;q=0.8,und;q=0.7',
+  'accept-encoding' => 'gzip, deflate',
+  'referer' => 'http://www.sean.com/index/contact/index.shtml?name=sean_goods&email=seanpan565%40gmail.com&title=%E6%A0%87%E9%A2%98%E6%A0%87%E9%A2%98%E6%A0%87%E9%A2%98&message=dasd',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/78.0.3904.97 Safari/537.36',
+  'x-requested-with' => 'XMLHttpRequest',
+  'origin' => 'http://www.sean.com',
+  'accept' => 'application/json, text/javascript, */*; q=0.01',
+  'content-length' => '0',
+  'connection' => 'close',
+  'host' => 'www.sean.com',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000523s ] mysql:host=127.0.0.1;port=3306;dbname=sean;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `sean_urlconfig` [ RunTime:0.006548s ]
+[ sql ] [ SQL ] SELECT `aliases`,`url` FROM `sean_urlconfig` WHERE  `status` = 1 [ RunTime:0.000207s ]
+[ error ] [0]方法参数错误:data[D:\web\phpweb\sean\thinkphp\library\think\App.php:431]
+---------------------------------------------------------------
+[ 2019-11-19T18:58:02+08:00 ] 0.0.0.0 POST www.sean.com/index/contact/message.shtml
+[运行时间：0.082935s] [吞吐率：12.06req/s] [内存消耗：1,976.41kb] [文件加载：48]
+[ info ] [ LANG ] D:\web\phpweb\sean\thinkphp\lang\zh-cn.php
+[ info ] [ DB ] INIT mysql
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'index',
+    1 => 'contact',
+    2 => 'message',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'cookie' => 'PHPSESSID=npa2c59arh39bi590jj24hal96; usermember=admin; adminer_version=4.7.5',
+  'accept-language' => 'zh-CN,zh;q=0.9,en;q=0.8,und;q=0.7',
+  'accept-encoding' => 'gzip, deflate',
+  'referer' => 'http://www.sean.com/index/contact/index.shtml?name=sean_goods&email=seanpan565%40gmail.com&title=%E6%A0%87%E9%A2%98%E6%A0%87%E9%A2%98%E6%A0%87%E9%A2%98&message=dasd',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/78.0.3904.97 Safari/537.36',
+  'x-requested-with' => 'XMLHttpRequest',
+  'origin' => 'http://www.sean.com',
+  'accept' => 'application/json, text/javascript, */*; q=0.01',
+  'content-length' => '0',
+  'connection' => 'close',
+  'host' => 'www.sean.com',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ RUN ] app\index\controller\Contact->message[ D:\web\phpweb\sean\app\index\controller\Contact.php ]
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.001804s ] mysql:host=127.0.0.1;port=3306;dbname=sean;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `sean_urlconfig` [ RunTime:0.056420s ]
+[ sql ] [ SQL ] SELECT `aliases`,`url` FROM `sean_urlconfig` WHERE  `status` = 1 [ RunTime:0.000211s ]
+---------------------------------------------------------------
+[ 2019-11-19T19:00:18+08:00 ] 0.0.0.0 GET www.sean.com/index/contact/index.shtml?name=sean_goods&email=seanpan565%40gmail.com&title=%E6%A0%87%E9%A2%98%E6%A0%87%E9%A2%98%E6%A0%87%E9%A2%98&message=dasd
+[运行时间：0.036743s] [吞吐率：27.22req/s] [内存消耗：2,333.13kb] [文件加载：54]
+[ info ] [ LANG ] D:\web\phpweb\sean\thinkphp\lang\zh-cn.php
+[ info ] [ DB ] INIT mysql
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'index',
+    1 => 'contact',
+    2 => 'index',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'cookie' => 'PHPSESSID=npa2c59arh39bi590jj24hal96; usermember=admin; adminer_version=4.7.5',
+  'accept-language' => 'zh-CN,zh;q=0.9,en;q=0.8,und;q=0.7',
+  'accept-encoding' => 'gzip, deflate',
+  'referer' => 'http://www.sean.com/index/contact/index.shtml?name=inc.php&email=seanpan565%40gmail.com&title=%E6%A0%87%E9%A2%98%E6%A0%87%E9%A2%98%E6%A0%87%E9%A2%98&message=dsadasd',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/78.0.3904.97 Safari/537.36',
+  'upgrade-insecure-requests' => '1',
+  'cache-control' => 'no-cache',
+  'pragma' => 'no-cache',
+  'connection' => 'close',
+  'host' => 'www.sean.com',
+)
+[ info ] [ PARAM ] array (
+  'name' => 'sean_goods',
+  'email' => 'seanpan565@gmail.com',
+  'title' => '标题标题标题',
+  'message' => 'dasd',
+)
+[ info ] [ RUN ] app\index\controller\Contact->index[ D:\web\phpweb\sean\app\index\controller\Contact.php ]
+[ info ] [ VIEW ] D:\web\phpweb\sean\public/../app/index\view\contact\contact.html [ array (
+  0 => 'controller',
+) ]
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.001383s ] mysql:host=127.0.0.1;port=3306;dbname=sean;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `sean_urlconfig` [ RunTime:0.004703s ]
+[ sql ] [ SQL ] SELECT `aliases`,`url` FROM `sean_urlconfig` WHERE  `status` = 1 [ RunTime:0.000222s ]
+---------------------------------------------------------------
+[ 2019-11-19T19:00:26+08:00 ] 0.0.0.0 POST www.sean.com/index/register/loginres.shtml
+[运行时间：0.042824s] [吞吐率：23.35req/s] [内存消耗：2,140.82kb] [文件加载：52]
+[ info ] [ LANG ] D:\web\phpweb\sean\thinkphp\lang\zh-cn.php
+[ info ] [ DB ] INIT mysql
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'index',
+    1 => 'register',
+    2 => 'loginres',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'cookie' => 'PHPSESSID=npa2c59arh39bi590jj24hal96; usermember=admin; adminer_version=4.7.5',
+  'accept-language' => 'zh-CN,zh;q=0.9,en;q=0.8,und;q=0.7',
+  'accept-encoding' => 'gzip, deflate',
+  'referer' => 'http://www.sean.com/index/contact/index.shtml?name=sean_goods&email=seanpan565%40gmail.com&title=%E6%A0%87%E9%A2%98%E6%A0%87%E9%A2%98%E6%A0%87%E9%A2%98&message=dasd',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/78.0.3904.97 Safari/537.36',
+  'x-requested-with' => 'XMLHttpRequest',
+  'origin' => 'http://www.sean.com',
+  'accept' => 'application/json, text/javascript, */*; q=0.01',
+  'content-length' => '0',
+  'connection' => 'close',
+  'host' => 'www.sean.com',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000683s ] mysql:host=127.0.0.1;port=3306;dbname=sean;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `sean_urlconfig` [ RunTime:0.016964s ]
+[ sql ] [ SQL ] SELECT `aliases`,`url` FROM `sean_urlconfig` WHERE  `status` = 1 [ RunTime:0.000223s ]
+[ error ] [0]方法参数错误:data[D:\web\phpweb\sean\thinkphp\library\think\App.php:431]
+---------------------------------------------------------------
+[ 2019-11-19T19:03:43+08:00 ] 0.0.0.0 GET www.sean.com/index/contact/index.shtml?name=sean_goods&email=seanpan565%40gmail.com&title=%E6%A0%87%E9%A2%98%E6%A0%87%E9%A2%98%E6%A0%87%E9%A2%98&message=dasd
+[运行时间：0.059637s] [吞吐率：16.77req/s] [内存消耗：2,333.00kb] [文件加载：54]
+[ info ] [ LANG ] D:\web\phpweb\sean\thinkphp\lang\zh-cn.php
+[ info ] [ DB ] INIT mysql
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'index',
+    1 => 'contact',
+    2 => 'index',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'cookie' => 'PHPSESSID=npa2c59arh39bi590jj24hal96; usermember=admin; adminer_version=4.7.5',
+  'accept-language' => 'zh-CN,zh;q=0.9,en;q=0.8,und;q=0.7',
+  'accept-encoding' => 'gzip, deflate',
+  'referer' => 'http://www.sean.com/index/contact/index.shtml?name=inc.php&email=seanpan565%40gmail.com&title=%E6%A0%87%E9%A2%98%E6%A0%87%E9%A2%98%E6%A0%87%E9%A2%98&message=dsadasd',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/78.0.3904.97 Safari/537.36',
+  'upgrade-insecure-requests' => '1',
+  'cache-control' => 'max-age=0',
+  'connection' => 'close',
+  'host' => 'www.sean.com',
+)
+[ info ] [ PARAM ] array (
+  'name' => 'sean_goods',
+  'email' => 'seanpan565@gmail.com',
+  'title' => '标题标题标题',
+  'message' => 'dasd',
+)
+[ info ] [ RUN ] app\index\controller\Contact->index[ D:\web\phpweb\sean\app\index\controller\Contact.php ]
+[ info ] [ VIEW ] D:\web\phpweb\sean\public/../app/index\view\contact\contact.html [ array (
+  0 => 'controller',
+) ]
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.002059s ] mysql:host=127.0.0.1;port=3306;dbname=sean;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `sean_urlconfig` [ RunTime:0.005127s ]
+[ sql ] [ SQL ] SELECT `aliases`,`url` FROM `sean_urlconfig` WHERE  `status` = 1 [ RunTime:0.000251s ]
+---------------------------------------------------------------
+[ 2019-11-19T19:03:50+08:00 ] 0.0.0.0 POST www.sean.com/index/contact/message.shtml
+[运行时间：0.037581s] [吞吐率：26.61req/s] [内存消耗：2,124.37kb] [文件加载：52]
+[ info ] [ LANG ] D:\web\phpweb\sean\thinkphp\lang\zh-cn.php
+[ info ] [ DB ] INIT mysql
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'index',
+    1 => 'contact',
+    2 => 'message',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'cookie' => 'PHPSESSID=npa2c59arh39bi590jj24hal96; usermember=admin; adminer_version=4.7.5',
+  'accept-language' => 'zh-CN,zh;q=0.9,en;q=0.8,und;q=0.7',
+  'accept-encoding' => 'gzip, deflate',
+  'referer' => 'http://www.sean.com/index/contact/index.shtml?name=sean_goods&email=seanpan565%40gmail.com&title=%E6%A0%87%E9%A2%98%E6%A0%87%E9%A2%98%E6%A0%87%E9%A2%98&message=dasd',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/78.0.3904.97 Safari/537.36',
+  'x-requested-with' => 'XMLHttpRequest',
+  'origin' => 'http://www.sean.com',
+  'accept' => 'application/json, text/javascript, */*; q=0.01',
+  'content-length' => '0',
+  'connection' => 'close',
+  'host' => 'www.sean.com',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000681s ] mysql:host=127.0.0.1;port=3306;dbname=sean;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `sean_urlconfig` [ RunTime:0.005933s ]
+[ sql ] [ SQL ] SELECT `aliases`,`url` FROM `sean_urlconfig` WHERE  `status` = 1 [ RunTime:0.000206s ]
+[ error ] [0]方法参数错误:data[D:\web\phpweb\sean\thinkphp\library\think\App.php:431]
+---------------------------------------------------------------
+[ 2019-11-19T19:04:46+08:00 ] 0.0.0.0 GET www.sean.com/index/contact/index.shtml?name=sean_goods&email=seanpan565%40gmail.com&title=%E6%A0%87%E9%A2%98%E6%A0%87%E9%A2%98%E6%A0%87%E9%A2%98&message=dasd
+[运行时间：0.077745s] [吞吐率：12.86req/s] [内存消耗：2,333.00kb] [文件加载：54]
+[ info ] [ LANG ] D:\web\phpweb\sean\thinkphp\lang\zh-cn.php
+[ info ] [ DB ] INIT mysql
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'index',
+    1 => 'contact',
+    2 => 'index',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'cookie' => 'PHPSESSID=npa2c59arh39bi590jj24hal96; usermember=admin; adminer_version=4.7.5',
+  'accept-language' => 'zh-CN,zh;q=0.9,en;q=0.8,und;q=0.7',
+  'accept-encoding' => 'gzip, deflate',
+  'referer' => 'http://www.sean.com/index/contact/index.shtml?name=inc.php&email=seanpan565%40gmail.com&title=%E6%A0%87%E9%A2%98%E6%A0%87%E9%A2%98%E6%A0%87%E9%A2%98&message=dsadasd',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/78.0.3904.97 Safari/537.36',
+  'upgrade-insecure-requests' => '1',
+  'cache-control' => 'max-age=0',
+  'connection' => 'close',
+  'host' => 'www.sean.com',
+)
+[ info ] [ PARAM ] array (
+  'name' => 'sean_goods',
+  'email' => 'seanpan565@gmail.com',
+  'title' => '标题标题标题',
+  'message' => 'dasd',
+)
+[ info ] [ RUN ] app\index\controller\Contact->index[ D:\web\phpweb\sean\app\index\controller\Contact.php ]
+[ info ] [ VIEW ] D:\web\phpweb\sean\public/../app/index\view\contact\contact.html [ array (
+  0 => 'controller',
+) ]
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.001002s ] mysql:host=127.0.0.1;port=3306;dbname=sean;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `sean_urlconfig` [ RunTime:0.048015s ]
+[ sql ] [ SQL ] SELECT `aliases`,`url` FROM `sean_urlconfig` WHERE  `status` = 1 [ RunTime:0.000220s ]
+---------------------------------------------------------------
+[ 2019-11-19T19:04:53+08:00 ] 0.0.0.0 GET www.sean.com/index/index/index.shtml
+[运行时间：0.052011s] [吞吐率：19.23req/s] [内存消耗：2,214.97kb] [文件加载：52]
+[ info ] [ LANG ] D:\web\phpweb\sean\thinkphp\lang\zh-cn.php
+[ info ] [ DB ] INIT mysql
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'index',
+    1 => 'index',
+    2 => 'index',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'cookie' => 'PHPSESSID=npa2c59arh39bi590jj24hal96; usermember=admin; adminer_version=4.7.5',
+  'accept-language' => 'zh-CN,zh;q=0.9,en;q=0.8,und;q=0.7',
+  'accept-encoding' => 'gzip, deflate',
+  'referer' => 'http://www.sean.com/index/contact/index.shtml?name=sean_goods&email=seanpan565%40gmail.com&title=%E6%A0%87%E9%A2%98%E6%A0%87%E9%A2%98%E6%A0%87%E9%A2%98&message=dasd',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/78.0.3904.97 Safari/537.36',
+  'upgrade-insecure-requests' => '1',
+  'connection' => 'close',
+  'host' => 'www.sean.com',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ RUN ] app\index\controller\Index->index[ D:\web\phpweb\sean\app\index\controller\Index.php ]
+[ info ] [ VIEW ] D:\web\phpweb\sean\public/../app/index\view\index\index.html [ array (
+  0 => 'controller',
+) ]
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.001998s ] mysql:host=127.0.0.1;port=3306;dbname=sean;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `sean_urlconfig` [ RunTime:0.009662s ]
+[ sql ] [ SQL ] SELECT `aliases`,`url` FROM `sean_urlconfig` WHERE  `status` = 1 [ RunTime:0.000283s ]
+---------------------------------------------------------------
+[ 2019-11-19T19:04:54+08:00 ] 0.0.0.0 GET www.sean.com/static/index/fonts/revicons.woff
+[运行时间：0.038212s] [吞吐率：26.17req/s] [内存消耗：1,854.45kb] [文件加载：43]
+[ info ] [ LANG ] D:\web\phpweb\sean\thinkphp\lang\zh-cn.php
+[ info ] [ DB ] INIT mysql
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'static',
+    1 => 'index',
+    2 => 'fonts',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'cookie' => 'PHPSESSID=npa2c59arh39bi590jj24hal96; usermember=admin; adminer_version=4.7.5',
+  'accept-language' => 'zh-CN,zh;q=0.9,en;q=0.8,und;q=0.7',
+  'accept-encoding' => 'gzip, deflate',
+  'referer' => 'http://www.sean.com/static/index/css/settings.css',
+  'accept' => '*/*',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/78.0.3904.97 Safari/537.36',
+  'origin' => 'http://www.sean.com',
+  'connection' => 'close',
+  'host' => 'www.sean.com',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.001463s ] mysql:host=127.0.0.1;port=3306;dbname=sean;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `sean_urlconfig` [ RunTime:0.009237s ]
+[ sql ] [ SQL ] SELECT `aliases`,`url` FROM `sean_urlconfig` WHERE  `status` = 1 [ RunTime:0.000337s ]
+---------------------------------------------------------------
+[ 2019-11-19T19:10:54+08:00 ] 0.0.0.0 GET www.sean.com/index/index/index.shtml
+[运行时间：0.042128s] [吞吐率：23.74req/s] [内存消耗：2,215.09kb] [文件加载：52]
+[ info ] [ LANG ] D:\web\phpweb\sean\thinkphp\lang\zh-cn.php
+[ info ] [ DB ] INIT mysql
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'index',
+    1 => 'index',
+    2 => 'index',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'cookie' => 'PHPSESSID=npa2c59arh39bi590jj24hal96; usermember=admin; adminer_version=4.7.5',
+  'accept-language' => 'zh-CN,zh;q=0.9,en;q=0.8,und;q=0.7',
+  'accept-encoding' => 'gzip, deflate',
+  'referer' => 'http://www.sean.com/index/contact/index.shtml?name=sean_goods&email=seanpan565%40gmail.com&title=%E6%A0%87%E9%A2%98%E6%A0%87%E9%A2%98%E6%A0%87%E9%A2%98&message=dasd',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/78.0.3904.97 Safari/537.36',
+  'upgrade-insecure-requests' => '1',
+  'cache-control' => 'no-cache',
+  'pragma' => 'no-cache',
+  'connection' => 'close',
+  'host' => 'www.sean.com',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ RUN ] app\index\controller\Index->index[ D:\web\phpweb\sean\app\index\controller\Index.php ]
+[ info ] [ VIEW ] D:\web\phpweb\sean\public/../app/index\view\index\index.html [ array (
+  0 => 'controller',
+) ]
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.001723s ] mysql:host=127.0.0.1;port=3306;dbname=sean;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `sean_urlconfig` [ RunTime:0.005012s ]
+[ sql ] [ SQL ] SELECT `aliases`,`url` FROM `sean_urlconfig` WHERE  `status` = 1 [ RunTime:0.000274s ]
+---------------------------------------------------------------
+[ 2019-11-19T19:10:55+08:00 ] 0.0.0.0 GET www.sean.com/static/index/fonts/revicons.woff
+[运行时间：0.072108s] [吞吐率：13.87req/s] [内存消耗：1,854.70kb] [文件加载：43]
+[ info ] [ LANG ] D:\web\phpweb\sean\thinkphp\lang\zh-cn.php
+[ info ] [ DB ] INIT mysql
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'static',
+    1 => 'index',
+    2 => 'fonts',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'cookie' => 'PHPSESSID=npa2c59arh39bi590jj24hal96; usermember=admin; adminer_version=4.7.5',
+  'accept-language' => 'zh-CN,zh;q=0.9,en;q=0.8,und;q=0.7',
+  'accept-encoding' => 'gzip, deflate',
+  'referer' => 'http://www.sean.com/static/index/css/settings.css',
+  'accept' => '*/*',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/78.0.3904.97 Safari/537.36',
+  'origin' => 'http://www.sean.com',
+  'cache-control' => 'no-cache',
+  'pragma' => 'no-cache',
+  'connection' => 'close',
+  'host' => 'www.sean.com',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.001658s ] mysql:host=127.0.0.1;port=3306;dbname=sean;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `sean_urlconfig` [ RunTime:0.044748s ]
+[ sql ] [ SQL ] SELECT `aliases`,`url` FROM `sean_urlconfig` WHERE  `status` = 1 [ RunTime:0.000319s ]
+---------------------------------------------------------------
+[ 2019-11-19T19:11:00+08:00 ] 0.0.0.0 GET www.sean.com/index/contact/index.shtml?name=sean_goods&email=seanpan565%40gmail.com&title=%E6%A0%87%E9%A2%98%E6%A0%87%E9%A2%98%E6%A0%87%E9%A2%98&message=dasd
+[运行时间：0.047550s] [吞吐率：21.03req/s] [内存消耗：2,332.94kb] [文件加载：54]
+[ info ] [ LANG ] D:\web\phpweb\sean\thinkphp\lang\zh-cn.php
+[ info ] [ DB ] INIT mysql
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'index',
+    1 => 'contact',
+    2 => 'index',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'cookie' => 'PHPSESSID=npa2c59arh39bi590jj24hal96; usermember=admin; adminer_version=4.7.5',
+  'accept-language' => 'zh-CN,zh;q=0.9,en;q=0.8,und;q=0.7',
+  'accept-encoding' => 'gzip, deflate',
+  'referer' => 'http://www.sean.com/index/contact/index.shtml?name=inc.php&email=seanpan565%40gmail.com&title=%E6%A0%87%E9%A2%98%E6%A0%87%E9%A2%98%E6%A0%87%E9%A2%98&message=dsadasd',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/78.0.3904.97 Safari/537.36',
+  'upgrade-insecure-requests' => '1',
+  'connection' => 'close',
+  'host' => 'www.sean.com',
+)
+[ info ] [ PARAM ] array (
+  'name' => 'sean_goods',
+  'email' => 'seanpan565@gmail.com',
+  'title' => '标题标题标题',
+  'message' => 'dasd',
+)
+[ info ] [ RUN ] app\index\controller\Contact->index[ D:\web\phpweb\sean\app\index\controller\Contact.php ]
+[ info ] [ VIEW ] D:\web\phpweb\sean\public/../app/index\view\contact\contact.html [ array (
+  0 => 'controller',
+) ]
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000741s ] mysql:host=127.0.0.1;port=3306;dbname=sean;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `sean_urlconfig` [ RunTime:0.008134s ]
+[ sql ] [ SQL ] SELECT `aliases`,`url` FROM `sean_urlconfig` WHERE  `status` = 1 [ RunTime:0.000278s ]
+---------------------------------------------------------------
+[ 2019-11-19T19:11:04+08:00 ] 0.0.0.0 GET www.sean.com/index/contact/index.shtml?name=sean_goods&email=seanpan565%40gmail.com&title=asdas&message=dasdasd
+[运行时间：0.037596s] [吞吐率：26.60req/s] [内存消耗：2,196.14kb] [文件加载：52]
+[ info ] [ LANG ] D:\web\phpweb\sean\thinkphp\lang\zh-cn.php
+[ info ] [ DB ] INIT mysql
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'index',
+    1 => 'contact',
+    2 => 'index',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'cookie' => 'PHPSESSID=npa2c59arh39bi590jj24hal96; usermember=admin; adminer_version=4.7.5',
+  'accept-language' => 'zh-CN,zh;q=0.9,en;q=0.8,und;q=0.7',
+  'accept-encoding' => 'gzip, deflate',
+  'referer' => 'http://www.sean.com/index/contact/index.shtml?name=sean_goods&email=seanpan565%40gmail.com&title=%E6%A0%87%E9%A2%98%E6%A0%87%E9%A2%98%E6%A0%87%E9%A2%98&message=dasd',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/78.0.3904.97 Safari/537.36',
+  'upgrade-insecure-requests' => '1',
+  'connection' => 'close',
+  'host' => 'www.sean.com',
+)
+[ info ] [ PARAM ] array (
+  'name' => 'sean_goods',
+  'email' => 'seanpan565@gmail.com',
+  'title' => 'asdas',
+  'message' => 'dasdasd',
+)
+[ info ] [ RUN ] app\index\controller\Contact->index[ D:\web\phpweb\sean\app\index\controller\Contact.php ]
+[ info ] [ VIEW ] D:\web\phpweb\sean\public/../app/index\view\contact\contact.html [ array (
+  0 => 'controller',
+) ]
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000760s ] mysql:host=127.0.0.1;port=3306;dbname=sean;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `sean_urlconfig` [ RunTime:0.006223s ]
+[ sql ] [ SQL ] SELECT `aliases`,`url` FROM `sean_urlconfig` WHERE  `status` = 1 [ RunTime:0.000451s ]
+---------------------------------------------------------------
+[ 2019-11-19T19:11:18+08:00 ] 0.0.0.0 GET www.sean.com/index/contact/index.shtml?name=sean_goods&email=seanpan565%40gmail.com&title=asdas&message=dasdasd
+[运行时间：0.030395s] [吞吐率：32.90req/s] [内存消耗：2,333.02kb] [文件加载：54]
+[ info ] [ LANG ] D:\web\phpweb\sean\thinkphp\lang\zh-cn.php
+[ info ] [ DB ] INIT mysql
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'index',
+    1 => 'contact',
+    2 => 'index',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'cookie' => 'PHPSESSID=npa2c59arh39bi590jj24hal96; usermember=admin; adminer_version=4.7.5',
+  'accept-language' => 'zh-CN,zh;q=0.9,en;q=0.8,und;q=0.7',
+  'accept-encoding' => 'gzip, deflate',
+  'referer' => 'http://www.sean.com/index/contact/index.shtml?name=sean_goods&email=seanpan565%40gmail.com&title=%E6%A0%87%E9%A2%98%E6%A0%87%E9%A2%98%E6%A0%87%E9%A2%98&message=dasd',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/78.0.3904.97 Safari/537.36',
+  'upgrade-insecure-requests' => '1',
+  'cache-control' => 'no-cache',
+  'pragma' => 'no-cache',
+  'connection' => 'close',
+  'host' => 'www.sean.com',
+)
+[ info ] [ PARAM ] array (
+  'name' => 'sean_goods',
+  'email' => 'seanpan565@gmail.com',
+  'title' => 'asdas',
+  'message' => 'dasdasd',
+)
+[ info ] [ RUN ] app\index\controller\Contact->index[ D:\web\phpweb\sean\app\index\controller\Contact.php ]
+[ info ] [ VIEW ] D:\web\phpweb\sean\public/../app/index\view\contact\contact.html [ array (
+  0 => 'controller',
+) ]
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000972s ] mysql:host=127.0.0.1;port=3306;dbname=sean;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `sean_urlconfig` [ RunTime:0.004127s ]
+[ sql ] [ SQL ] SELECT `aliases`,`url` FROM `sean_urlconfig` WHERE  `status` = 1 [ RunTime:0.000200s ]
+---------------------------------------------------------------
+[ 2019-11-19T19:11:29+08:00 ] 0.0.0.0 GET www.sean.com/index/contact/index.shtml?name=inc.php&email=seanpan565%40gmail.com&title=%E6%A0%87%E9%A2%98%E6%A0%87%E9%A2%98%E6%A0%87%E9%A2%98&message=sadsad
+[运行时间：0.036947s] [吞吐率：27.07req/s] [内存消耗：2,195.89kb] [文件加载：52]
+[ info ] [ LANG ] D:\web\phpweb\sean\thinkphp\lang\zh-cn.php
+[ info ] [ DB ] INIT mysql
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'index',
+    1 => 'contact',
+    2 => 'index',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'cookie' => 'PHPSESSID=npa2c59arh39bi590jj24hal96; usermember=admin; adminer_version=4.7.5',
+  'accept-language' => 'zh-CN,zh;q=0.9,en;q=0.8,und;q=0.7',
+  'accept-encoding' => 'gzip, deflate',
+  'referer' => 'http://www.sean.com/index/contact/index.shtml?name=sean_goods&email=seanpan565%40gmail.com&title=asdas&message=dasdasd',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/78.0.3904.97 Safari/537.36',
+  'upgrade-insecure-requests' => '1',
+  'connection' => 'close',
+  'host' => 'www.sean.com',
+)
+[ info ] [ PARAM ] array (
+  'name' => 'inc.php',
+  'email' => 'seanpan565@gmail.com',
+  'title' => '标题标题标题',
+  'message' => 'sadsad',
+)
+[ info ] [ RUN ] app\index\controller\Contact->index[ D:\web\phpweb\sean\app\index\controller\Contact.php ]
+[ info ] [ VIEW ] D:\web\phpweb\sean\public/../app/index\view\contact\contact.html [ array (
+  0 => 'controller',
+) ]
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000623s ] mysql:host=127.0.0.1;port=3306;dbname=sean;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `sean_urlconfig` [ RunTime:0.007638s ]
+[ sql ] [ SQL ] SELECT `aliases`,`url` FROM `sean_urlconfig` WHERE  `status` = 1 [ RunTime:0.000254s ]
+---------------------------------------------------------------
+[ 2019-11-19T19:14:39+08:00 ] 0.0.0.0 GET www.sean.com/index/contact/index.shtml?name=inc.php&email=seanpan565%40gmail.com&title=%E6%A0%87%E9%A2%98%E6%A0%87%E9%A2%98%E6%A0%87%E9%A2%98&message=sadsad
+[运行时间：0.058005s] [吞吐率：17.24req/s] [内存消耗：2,308.84kb] [文件加载：54]
+[ info ] [ LANG ] D:\web\phpweb\sean\thinkphp\lang\zh-cn.php
+[ info ] [ DB ] INIT mysql
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'index',
+    1 => 'contact',
+    2 => 'index',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'cookie' => 'PHPSESSID=npa2c59arh39bi590jj24hal96; usermember=admin; adminer_version=4.7.5',
+  'accept-language' => 'zh-CN,zh;q=0.9,en;q=0.8,und;q=0.7',
+  'accept-encoding' => 'gzip, deflate',
+  'referer' => 'http://www.sean.com/index/contact/index.shtml?name=sean_goods&email=seanpan565%40gmail.com&title=asdas&message=dasdasd',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/78.0.3904.97 Safari/537.36',
+  'upgrade-insecure-requests' => '1',
+  'cache-control' => 'max-age=0',
+  'connection' => 'close',
+  'host' => 'www.sean.com',
+)
+[ info ] [ PARAM ] array (
+  'name' => 'inc.php',
+  'email' => 'seanpan565@gmail.com',
+  'title' => '标题标题标题',
+  'message' => 'sadsad',
+)
+[ info ] [ RUN ] app\index\controller\Contact->index[ D:\web\phpweb\sean\app\index\controller\Contact.php ]
+[ info ] [ VIEW ] D:\web\phpweb\sean\public/../app/index\view\contact\contact.html [ array (
+  0 => 'controller',
+) ]
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.010996s ] mysql:host=127.0.0.1;port=3306;dbname=sean;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `sean_urlconfig` [ RunTime:0.010889s ]
+[ sql ] [ SQL ] SELECT `aliases`,`url` FROM `sean_urlconfig` WHERE  `status` = 1 [ RunTime:0.000459s ]
+---------------------------------------------------------------
+[ 2019-11-19T19:14:49+08:00 ] 0.0.0.0 GET www.sean.com/index/contact/index.shtml?name=inc.php&email=seanpan565%40gmail.com&title=%E6%A0%87%E9%A2%98%E6%A0%87%E9%A2%98%E6%A0%87%E9%A2%98&message=asdasd
+[运行时间：0.037096s] [吞吐率：26.96req/s] [内存消耗：2,176.17kb] [文件加载：52]
+[ info ] [ LANG ] D:\web\phpweb\sean\thinkphp\lang\zh-cn.php
+[ info ] [ DB ] INIT mysql
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'index',
+    1 => 'contact',
+    2 => 'index',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'cookie' => 'PHPSESSID=npa2c59arh39bi590jj24hal96; usermember=admin; adminer_version=4.7.5',
+  'accept-language' => 'zh-CN,zh;q=0.9,en;q=0.8,und;q=0.7',
+  'accept-encoding' => 'gzip, deflate',
+  'referer' => 'http://www.sean.com/index/contact/index.shtml?name=inc.php&email=seanpan565%40gmail.com&title=%E6%A0%87%E9%A2%98%E6%A0%87%E9%A2%98%E6%A0%87%E9%A2%98&message=sadsad',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/78.0.3904.97 Safari/537.36',
+  'upgrade-insecure-requests' => '1',
+  'connection' => 'close',
+  'host' => 'www.sean.com',
+)
+[ info ] [ PARAM ] array (
+  'name' => 'inc.php',
+  'email' => 'seanpan565@gmail.com',
+  'title' => '标题标题标题',
+  'message' => 'asdasd',
+)
+[ info ] [ RUN ] app\index\controller\Contact->index[ D:\web\phpweb\sean\app\index\controller\Contact.php ]
+[ info ] [ VIEW ] D:\web\phpweb\sean\public/../app/index\view\contact\contact.html [ array (
+  0 => 'controller',
+) ]
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000620s ] mysql:host=127.0.0.1;port=3306;dbname=sean;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `sean_urlconfig` [ RunTime:0.004285s ]
+[ sql ] [ SQL ] SELECT `aliases`,`url` FROM `sean_urlconfig` WHERE  `status` = 1 [ RunTime:0.000199s ]
+---------------------------------------------------------------
+[ 2019-11-19T19:15:14+08:00 ] 0.0.0.0 GET www.sean.com/index/contact/index.shtml?name=inc.php&email=seanpan565%40gmail.com&title=%E6%A0%87%E9%A2%98%E6%A0%87%E9%A2%98%E6%A0%87%E9%A2%98&message=asdasd
+[运行时间：0.057301s] [吞吐率：17.45req/s] [内存消耗：2,333.00kb] [文件加载：54]
+[ info ] [ LANG ] D:\web\phpweb\sean\thinkphp\lang\zh-cn.php
+[ info ] [ DB ] INIT mysql
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'index',
+    1 => 'contact',
+    2 => 'index',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'cookie' => 'PHPSESSID=npa2c59arh39bi590jj24hal96; usermember=admin; adminer_version=4.7.5',
+  'accept-language' => 'zh-CN,zh;q=0.9,en;q=0.8,und;q=0.7',
+  'accept-encoding' => 'gzip, deflate',
+  'referer' => 'http://www.sean.com/index/contact/index.shtml?name=inc.php&email=seanpan565%40gmail.com&title=%E6%A0%87%E9%A2%98%E6%A0%87%E9%A2%98%E6%A0%87%E9%A2%98&message=sadsad',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/78.0.3904.97 Safari/537.36',
+  'upgrade-insecure-requests' => '1',
+  'cache-control' => 'max-age=0',
+  'connection' => 'close',
+  'host' => 'www.sean.com',
+)
+[ info ] [ PARAM ] array (
+  'name' => 'inc.php',
+  'email' => 'seanpan565@gmail.com',
+  'title' => '标题标题标题',
+  'message' => 'asdasd',
+)
+[ info ] [ RUN ] app\index\controller\Contact->index[ D:\web\phpweb\sean\app\index\controller\Contact.php ]
+[ info ] [ VIEW ] D:\web\phpweb\sean\public/../app/index\view\contact\contact.html [ array (
+  0 => 'controller',
+) ]
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000621s ] mysql:host=127.0.0.1;port=3306;dbname=sean;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `sean_urlconfig` [ RunTime:0.010106s ]
+[ sql ] [ SQL ] SELECT `aliases`,`url` FROM `sean_urlconfig` WHERE  `status` = 1 [ RunTime:0.000251s ]
+---------------------------------------------------------------
+[ 2019-11-19T19:16:09+08:00 ] 0.0.0.0 GET www.sean.com/index/contact/index.shtml?name=inc.php&email=seanpan565%40gmail.com&title=%E6%A0%87%E9%A2%98%E6%A0%87%E9%A2%98%E6%A0%87%E9%A2%98&message=asdasd
+[运行时间：0.043744s] [吞吐率：22.86req/s] [内存消耗：2,333.00kb] [文件加载：54]
+[ info ] [ LANG ] D:\web\phpweb\sean\thinkphp\lang\zh-cn.php
+[ info ] [ DB ] INIT mysql
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'index',
+    1 => 'contact',
+    2 => 'index',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'cookie' => 'PHPSESSID=npa2c59arh39bi590jj24hal96; usermember=admin; adminer_version=4.7.5',
+  'accept-language' => 'zh-CN,zh;q=0.9,en;q=0.8,und;q=0.7',
+  'accept-encoding' => 'gzip, deflate',
+  'referer' => 'http://www.sean.com/index/contact/index.shtml?name=inc.php&email=seanpan565%40gmail.com&title=%E6%A0%87%E9%A2%98%E6%A0%87%E9%A2%98%E6%A0%87%E9%A2%98&message=sadsad',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/78.0.3904.97 Safari/537.36',
+  'upgrade-insecure-requests' => '1',
+  'cache-control' => 'max-age=0',
+  'connection' => 'close',
+  'host' => 'www.sean.com',
+)
+[ info ] [ PARAM ] array (
+  'name' => 'inc.php',
+  'email' => 'seanpan565@gmail.com',
+  'title' => '标题标题标题',
+  'message' => 'asdasd',
+)
+[ info ] [ RUN ] app\index\controller\Contact->index[ D:\web\phpweb\sean\app\index\controller\Contact.php ]
+[ info ] [ VIEW ] D:\web\phpweb\sean\public/../app/index\view\contact\contact.html [ array (
+  0 => 'controller',
+) ]
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.001009s ] mysql:host=127.0.0.1;port=3306;dbname=sean;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `sean_urlconfig` [ RunTime:0.007117s ]
+[ sql ] [ SQL ] SELECT `aliases`,`url` FROM `sean_urlconfig` WHERE  `status` = 1 [ RunTime:0.000367s ]
+---------------------------------------------------------------
+[ 2019-11-19T19:16:18+08:00 ] 0.0.0.0 POST www.sean.com/index/contact/message.shtml
+[运行时间：0.058639s] [吞吐率：17.05req/s] [内存消耗：2,124.37kb] [文件加载：52]
+[ info ] [ LANG ] D:\web\phpweb\sean\thinkphp\lang\zh-cn.php
+[ info ] [ DB ] INIT mysql
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'index',
+    1 => 'contact',
+    2 => 'message',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'cookie' => 'PHPSESSID=npa2c59arh39bi590jj24hal96; usermember=admin; adminer_version=4.7.5',
+  'accept-language' => 'zh-CN,zh;q=0.9,en;q=0.8,und;q=0.7',
+  'accept-encoding' => 'gzip, deflate',
+  'referer' => 'http://www.sean.com/index/contact/index.shtml?name=inc.php&email=seanpan565%40gmail.com&title=%E6%A0%87%E9%A2%98%E6%A0%87%E9%A2%98%E6%A0%87%E9%A2%98&message=asdasd',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/78.0.3904.97 Safari/537.36',
+  'x-requested-with' => 'XMLHttpRequest',
+  'origin' => 'http://www.sean.com',
+  'accept' => 'application/json, text/javascript, */*; q=0.01',
+  'content-length' => '0',
+  'connection' => 'close',
+  'host' => 'www.sean.com',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.010873s ] mysql:host=127.0.0.1;port=3306;dbname=sean;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `sean_urlconfig` [ RunTime:0.010404s ]
+[ sql ] [ SQL ] SELECT `aliases`,`url` FROM `sean_urlconfig` WHERE  `status` = 1 [ RunTime:0.000218s ]
+[ error ] [0]方法参数错误:data[D:\web\phpweb\sean\thinkphp\library\think\App.php:431]
+---------------------------------------------------------------
+[ 2019-11-19T19:16:49+08:00 ] 0.0.0.0 GET www.sean.com/index/contact/index.shtml?name=inc.php&email=seanpan565%40gmail.com&title=%E6%A0%87%E9%A2%98%E6%A0%87%E9%A2%98%E6%A0%87%E9%A2%98&message=asdasd
+[运行时间：0.051308s] [吞吐率：19.49req/s] [内存消耗：2,333.05kb] [文件加载：54]
+[ info ] [ LANG ] D:\web\phpweb\sean\thinkphp\lang\zh-cn.php
+[ info ] [ DB ] INIT mysql
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'index',
+    1 => 'contact',
+    2 => 'index',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'cookie' => 'PHPSESSID=npa2c59arh39bi590jj24hal96; usermember=admin; adminer_version=4.7.5',
+  'accept-language' => 'zh-CN,zh;q=0.9,en;q=0.8,und;q=0.7',
+  'accept-encoding' => 'gzip, deflate',
+  'referer' => 'http://www.sean.com/index/contact/index.shtml?name=inc.php&email=seanpan565%40gmail.com&title=%E6%A0%87%E9%A2%98%E6%A0%87%E9%A2%98%E6%A0%87%E9%A2%98&message=sadsad',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/78.0.3904.97 Safari/537.36',
+  'upgrade-insecure-requests' => '1',
+  'cache-control' => 'no-cache',
+  'pragma' => 'no-cache',
+  'connection' => 'close',
+  'host' => 'www.sean.com',
+)
+[ info ] [ PARAM ] array (
+  'name' => 'inc.php',
+  'email' => 'seanpan565@gmail.com',
+  'title' => '标题标题标题',
+  'message' => 'asdasd',
+)
+[ info ] [ RUN ] app\index\controller\Contact->index[ D:\web\phpweb\sean\app\index\controller\Contact.php ]
+[ info ] [ VIEW ] D:\web\phpweb\sean\public/../app/index\view\contact\contact.html [ array (
+  0 => 'controller',
+) ]
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000883s ] mysql:host=127.0.0.1;port=3306;dbname=sean;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `sean_urlconfig` [ RunTime:0.014036s ]
+[ sql ] [ SQL ] SELECT `aliases`,`url` FROM `sean_urlconfig` WHERE  `status` = 1 [ RunTime:0.000245s ]
+---------------------------------------------------------------
+[ 2019-11-19T19:17:19+08:00 ] 0.0.0.0 GET www.sean.com/index/contact/index.shtml?name=inc.php&email=seanpan565%40gmail.com&title=%E6%A0%87%E9%A2%98%E6%A0%87%E9%A2%98%E6%A0%87%E9%A2%98&message=asdasd
+[运行时间：0.044665s] [吞吐率：22.39req/s] [内存消耗：2,333.00kb] [文件加载：54]
+[ info ] [ LANG ] D:\web\phpweb\sean\thinkphp\lang\zh-cn.php
+[ info ] [ DB ] INIT mysql
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'index',
+    1 => 'contact',
+    2 => 'index',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'cookie' => 'PHPSESSID=npa2c59arh39bi590jj24hal96; usermember=admin; adminer_version=4.7.5',
+  'accept-language' => 'zh-CN,zh;q=0.9,en;q=0.8,und;q=0.7',
+  'accept-encoding' => 'gzip, deflate',
+  'referer' => 'http://www.sean.com/index/contact/index.shtml?name=inc.php&email=seanpan565%40gmail.com&title=%E6%A0%87%E9%A2%98%E6%A0%87%E9%A2%98%E6%A0%87%E9%A2%98&message=sadsad',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/78.0.3904.97 Safari/537.36',
+  'upgrade-insecure-requests' => '1',
+  'cache-control' => 'max-age=0',
+  'connection' => 'close',
+  'host' => 'www.sean.com',
+)
+[ info ] [ PARAM ] array (
+  'name' => 'inc.php',
+  'email' => 'seanpan565@gmail.com',
+  'title' => '标题标题标题',
+  'message' => 'asdasd',
+)
+[ info ] [ RUN ] app\index\controller\Contact->index[ D:\web\phpweb\sean\app\index\controller\Contact.php ]
+[ info ] [ VIEW ] D:\web\phpweb\sean\public/../app/index\view\contact\contact.html [ array (
+  0 => 'controller',
+) ]
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000544s ] mysql:host=127.0.0.1;port=3306;dbname=sean;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `sean_urlconfig` [ RunTime:0.012154s ]
+[ sql ] [ SQL ] SELECT `aliases`,`url` FROM `sean_urlconfig` WHERE  `status` = 1 [ RunTime:0.000214s ]
+---------------------------------------------------------------
+[ 2019-11-19T19:17:26+08:00 ] 0.0.0.0 GET www.sean.com/index/contact/index.shtml?name=inc.php&email=seanpan565%40gmail.com&title=sdadsad&message=asdsa
+[运行时间：0.043961s] [吞吐率：22.75req/s] [内存消耗：2,196.14kb] [文件加载：52]
+[ info ] [ LANG ] D:\web\phpweb\sean\thinkphp\lang\zh-cn.php
+[ info ] [ DB ] INIT mysql
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'index',
+    1 => 'contact',
+    2 => 'index',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'cookie' => 'PHPSESSID=npa2c59arh39bi590jj24hal96; usermember=admin; adminer_version=4.7.5',
+  'accept-language' => 'zh-CN,zh;q=0.9,en;q=0.8,und;q=0.7',
+  'accept-encoding' => 'gzip, deflate',
+  'referer' => 'http://www.sean.com/index/contact/index.shtml?name=inc.php&email=seanpan565%40gmail.com&title=%E6%A0%87%E9%A2%98%E6%A0%87%E9%A2%98%E6%A0%87%E9%A2%98&message=asdasd',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/78.0.3904.97 Safari/537.36',
+  'upgrade-insecure-requests' => '1',
+  'connection' => 'close',
+  'host' => 'www.sean.com',
+)
+[ info ] [ PARAM ] array (
+  'name' => 'inc.php',
+  'email' => 'seanpan565@gmail.com',
+  'title' => 'sdadsad',
+  'message' => 'asdsa',
+)
+[ info ] [ RUN ] app\index\controller\Contact->index[ D:\web\phpweb\sean\app\index\controller\Contact.php ]
+[ info ] [ VIEW ] D:\web\phpweb\sean\public/../app/index\view\contact\contact.html [ array (
+  0 => 'controller',
+) ]
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.001363s ] mysql:host=127.0.0.1;port=3306;dbname=sean;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `sean_urlconfig` [ RunTime:0.007146s ]
+[ sql ] [ SQL ] SELECT `aliases`,`url` FROM `sean_urlconfig` WHERE  `status` = 1 [ RunTime:0.000313s ]
+---------------------------------------------------------------
+[ 2019-11-19T19:22:14+08:00 ] 0.0.0.0 GET www.sean.com/index/contact/index.shtml?name=inc.php&email=seanpan565%40gmail.com&title=sdadsad&message=asdsa
+[运行时间：0.088729s] [吞吐率：11.27req/s] [内存消耗：2,329.02kb] [文件加载：54]
+[ info ] [ LANG ] D:\web\phpweb\sean\thinkphp\lang\zh-cn.php
+[ info ] [ DB ] INIT mysql
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'index',
+    1 => 'contact',
+    2 => 'index',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'cookie' => 'PHPSESSID=npa2c59arh39bi590jj24hal96; usermember=admin; adminer_version=4.7.5',
+  'accept-language' => 'zh-CN,zh;q=0.9,en;q=0.8,und;q=0.7',
+  'accept-encoding' => 'gzip, deflate',
+  'referer' => 'http://www.sean.com/index/contact/index.shtml?name=inc.php&email=seanpan565%40gmail.com&title=%E6%A0%87%E9%A2%98%E6%A0%87%E9%A2%98%E6%A0%87%E9%A2%98&message=asdasd',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/78.0.3904.97 Safari/537.36',
+  'upgrade-insecure-requests' => '1',
+  'cache-control' => 'no-cache',
+  'pragma' => 'no-cache',
+  'connection' => 'close',
+  'host' => 'www.sean.com',
+)
+[ info ] [ PARAM ] array (
+  'name' => 'inc.php',
+  'email' => 'seanpan565@gmail.com',
+  'title' => 'sdadsad',
+  'message' => 'asdsa',
+)
+[ info ] [ RUN ] app\index\controller\Contact->index[ D:\web\phpweb\sean\app\index\controller\Contact.php ]
+[ info ] [ VIEW ] D:\web\phpweb\sean\public/../app/index\view\contact\contact.html [ array (
+  0 => 'controller',
+) ]
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.001098s ] mysql:host=127.0.0.1;port=3306;dbname=sean;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `sean_urlconfig` [ RunTime:0.054967s ]
+[ sql ] [ SQL ] SELECT `aliases`,`url` FROM `sean_urlconfig` WHERE  `status` = 1 [ RunTime:0.000235s ]
+---------------------------------------------------------------
+[ 2019-11-19T19:22:49+08:00 ] 0.0.0.0 GET www.sean.com/index/contact/index.shtml?name=inc.php&email=seanpan565%40gmail.com&title=sdadsad&message=asdsa
+[运行时间：0.034621s] [吞吐率：28.88req/s] [内存消耗：2,329.02kb] [文件加载：54]
+[ info ] [ LANG ] D:\web\phpweb\sean\thinkphp\lang\zh-cn.php
+[ info ] [ DB ] INIT mysql
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'index',
+    1 => 'contact',
+    2 => 'index',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'cookie' => 'PHPSESSID=npa2c59arh39bi590jj24hal96; usermember=admin; adminer_version=4.7.5',
+  'accept-language' => 'zh-CN,zh;q=0.9,en;q=0.8,und;q=0.7',
+  'accept-encoding' => 'gzip, deflate',
+  'referer' => 'http://www.sean.com/index/contact/index.shtml?name=inc.php&email=seanpan565%40gmail.com&title=%E6%A0%87%E9%A2%98%E6%A0%87%E9%A2%98%E6%A0%87%E9%A2%98&message=asdasd',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/78.0.3904.97 Safari/537.36',
+  'upgrade-insecure-requests' => '1',
+  'cache-control' => 'no-cache',
+  'pragma' => 'no-cache',
+  'connection' => 'close',
+  'host' => 'www.sean.com',
+)
+[ info ] [ PARAM ] array (
+  'name' => 'inc.php',
+  'email' => 'seanpan565@gmail.com',
+  'title' => 'sdadsad',
+  'message' => 'asdsa',
+)
+[ info ] [ RUN ] app\index\controller\Contact->index[ D:\web\phpweb\sean\app\index\controller\Contact.php ]
+[ info ] [ VIEW ] D:\web\phpweb\sean\public/../app/index\view\contact\contact.html [ array (
+  0 => 'controller',
+) ]
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000634s ] mysql:host=127.0.0.1;port=3306;dbname=sean;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `sean_urlconfig` [ RunTime:0.004450s ]
+[ sql ] [ SQL ] SELECT `aliases`,`url` FROM `sean_urlconfig` WHERE  `status` = 1 [ RunTime:0.000264s ]
+---------------------------------------------------------------
+[ 2019-11-19T19:23:38+08:00 ] 0.0.0.0 GET www.sean.com/index/contact/index.shtml?name=inc.php&email=seanpan565%40gmail.com&title=sdadsad&message=asdsa
+[运行时间：0.045792s] [吞吐率：21.84req/s] [内存消耗：2,329.02kb] [文件加载：54]
+[ info ] [ LANG ] D:\web\phpweb\sean\thinkphp\lang\zh-cn.php
+[ info ] [ DB ] INIT mysql
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'index',
+    1 => 'contact',
+    2 => 'index',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'cookie' => 'PHPSESSID=npa2c59arh39bi590jj24hal96; usermember=admin; adminer_version=4.7.5',
+  'accept-language' => 'zh-CN,zh;q=0.9,en;q=0.8,und;q=0.7',
+  'accept-encoding' => 'gzip, deflate',
+  'referer' => 'http://www.sean.com/index/contact/index.shtml?name=inc.php&email=seanpan565%40gmail.com&title=%E6%A0%87%E9%A2%98%E6%A0%87%E9%A2%98%E6%A0%87%E9%A2%98&message=asdasd',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/78.0.3904.97 Safari/537.36',
+  'upgrade-insecure-requests' => '1',
+  'cache-control' => 'no-cache',
+  'pragma' => 'no-cache',
+  'connection' => 'close',
+  'host' => 'www.sean.com',
+)
+[ info ] [ PARAM ] array (
+  'name' => 'inc.php',
+  'email' => 'seanpan565@gmail.com',
+  'title' => 'sdadsad',
+  'message' => 'asdsa',
+)
+[ info ] [ RUN ] app\index\controller\Contact->index[ D:\web\phpweb\sean\app\index\controller\Contact.php ]
+[ info ] [ VIEW ] D:\web\phpweb\sean\public/../app/index\view\contact\contact.html [ array (
+  0 => 'controller',
+) ]
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000623s ] mysql:host=127.0.0.1;port=3306;dbname=sean;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `sean_urlconfig` [ RunTime:0.004647s ]
+[ sql ] [ SQL ] SELECT `aliases`,`url` FROM `sean_urlconfig` WHERE  `status` = 1 [ RunTime:0.000227s ]
+---------------------------------------------------------------
+[ 2019-11-19T19:23:42+08:00 ] 0.0.0.0 GET www.sean.com/index/contact/index.shtml?name=inc.php&email=seanpan565%40gmail.com&title=sdadsad&message=asdsa
+[运行时间：0.049812s] [吞吐率：20.08req/s] [内存消耗：2,192.20kb] [文件加载：52]
+[ info ] [ LANG ] D:\web\phpweb\sean\thinkphp\lang\zh-cn.php
+[ info ] [ DB ] INIT mysql
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'index',
+    1 => 'contact',
+    2 => 'index',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'cookie' => 'PHPSESSID=npa2c59arh39bi590jj24hal96; usermember=admin; adminer_version=4.7.5',
+  'accept-language' => 'zh-CN,zh;q=0.9,en;q=0.8,und;q=0.7',
+  'accept-encoding' => 'gzip, deflate',
+  'referer' => 'http://www.sean.com/index/contact/index.shtml?name=inc.php&email=seanpan565%40gmail.com&title=%E6%A0%87%E9%A2%98%E6%A0%87%E9%A2%98%E6%A0%87%E9%A2%98&message=asdasd',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/78.0.3904.97 Safari/537.36',
+  'upgrade-insecure-requests' => '1',
+  'cache-control' => 'max-age=0',
+  'connection' => 'close',
+  'host' => 'www.sean.com',
+)
+[ info ] [ PARAM ] array (
+  'name' => 'inc.php',
+  'email' => 'seanpan565@gmail.com',
+  'title' => 'sdadsad',
+  'message' => 'asdsa',
+)
+[ info ] [ RUN ] app\index\controller\Contact->index[ D:\web\phpweb\sean\app\index\controller\Contact.php ]
+[ info ] [ VIEW ] D:\web\phpweb\sean\public/../app/index\view\contact\contact.html [ array (
+  0 => 'controller',
+) ]
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000531s ] mysql:host=127.0.0.1;port=3306;dbname=sean;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `sean_urlconfig` [ RunTime:0.004311s ]
+[ sql ] [ SQL ] SELECT `aliases`,`url` FROM `sean_urlconfig` WHERE  `status` = 1 [ RunTime:0.000214s ]
+---------------------------------------------------------------
+[ 2019-11-19T19:24:14+08:00 ] 0.0.0.0 GET www.sean.com/index/contact/index.shtml?name=inc.php&email=seanpan565%40gmail.com&title=sdadsad&message=asdsa
+[运行时间：0.053889s] [吞吐率：18.56req/s] [内存消耗：2,329.02kb] [文件加载：54]
+[ info ] [ LANG ] D:\web\phpweb\sean\thinkphp\lang\zh-cn.php
+[ info ] [ DB ] INIT mysql
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'index',
+    1 => 'contact',
+    2 => 'index',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'cookie' => 'PHPSESSID=npa2c59arh39bi590jj24hal96; usermember=admin; adminer_version=4.7.5',
+  'accept-language' => 'zh-CN,zh;q=0.9,en;q=0.8,und;q=0.7',
+  'accept-encoding' => 'gzip, deflate',
+  'referer' => 'http://www.sean.com/index/contact/index.shtml?name=inc.php&email=seanpan565%40gmail.com&title=%E6%A0%87%E9%A2%98%E6%A0%87%E9%A2%98%E6%A0%87%E9%A2%98&message=asdasd',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/78.0.3904.97 Safari/537.36',
+  'upgrade-insecure-requests' => '1',
+  'cache-control' => 'no-cache',
+  'pragma' => 'no-cache',
+  'connection' => 'close',
+  'host' => 'www.sean.com',
+)
+[ info ] [ PARAM ] array (
+  'name' => 'inc.php',
+  'email' => 'seanpan565@gmail.com',
+  'title' => 'sdadsad',
+  'message' => 'asdsa',
+)
+[ info ] [ RUN ] app\index\controller\Contact->index[ D:\web\phpweb\sean\app\index\controller\Contact.php ]
+[ info ] [ VIEW ] D:\web\phpweb\sean\public/../app/index\view\contact\contact.html [ array (
+  0 => 'controller',
+) ]
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000545s ] mysql:host=127.0.0.1;port=3306;dbname=sean;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `sean_urlconfig` [ RunTime:0.014155s ]
+[ sql ] [ SQL ] SELECT `aliases`,`url` FROM `sean_urlconfig` WHERE  `status` = 1 [ RunTime:0.000250s ]
+---------------------------------------------------------------
+[ 2019-11-19T19:24:38+08:00 ] 0.0.0.0 GET www.sean.com/index/contact/index.shtml?name=inc.php&email=seanpan565%40gmail.com&title=sdadsad&message=asdsa
+[运行时间：0.034563s] [吞吐率：28.93req/s] [内存消耗：2,329.02kb] [文件加载：54]
+[ info ] [ LANG ] D:\web\phpweb\sean\thinkphp\lang\zh-cn.php
+[ info ] [ DB ] INIT mysql
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'index',
+    1 => 'contact',
+    2 => 'index',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'cookie' => 'PHPSESSID=npa2c59arh39bi590jj24hal96; usermember=admin; adminer_version=4.7.5',
+  'accept-language' => 'zh-CN,zh;q=0.9,en;q=0.8,und;q=0.7',
+  'accept-encoding' => 'gzip, deflate',
+  'referer' => 'http://www.sean.com/index/contact/index.shtml?name=inc.php&email=seanpan565%40gmail.com&title=%E6%A0%87%E9%A2%98%E6%A0%87%E9%A2%98%E6%A0%87%E9%A2%98&message=asdasd',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/78.0.3904.97 Safari/537.36',
+  'upgrade-insecure-requests' => '1',
+  'cache-control' => 'no-cache',
+  'pragma' => 'no-cache',
+  'connection' => 'close',
+  'host' => 'www.sean.com',
+)
+[ info ] [ PARAM ] array (
+  'name' => 'inc.php',
+  'email' => 'seanpan565@gmail.com',
+  'title' => 'sdadsad',
+  'message' => 'asdsa',
+)
+[ info ] [ RUN ] app\index\controller\Contact->index[ D:\web\phpweb\sean\app\index\controller\Contact.php ]
+[ info ] [ VIEW ] D:\web\phpweb\sean\public/../app/index\view\contact\contact.html [ array (
+  0 => 'controller',
+) ]
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000515s ] mysql:host=127.0.0.1;port=3306;dbname=sean;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `sean_urlconfig` [ RunTime:0.005712s ]
+[ sql ] [ SQL ] SELECT `aliases`,`url` FROM `sean_urlconfig` WHERE  `status` = 1 [ RunTime:0.000224s ]
+---------------------------------------------------------------
+[ 2019-11-19T19:24:45+08:00 ] 0.0.0.0 POST www.sean.com/index/contact/message.shtml
+[运行时间：0.057594s] [吞吐率：17.36req/s] [内存消耗：1,978.02kb] [文件加载：48]
+[ info ] [ LANG ] D:\web\phpweb\sean\thinkphp\lang\zh-cn.php
+[ info ] [ DB ] INIT mysql
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'index',
+    1 => 'contact',
+    2 => 'message',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'cookie' => 'PHPSESSID=npa2c59arh39bi590jj24hal96; usermember=admin; adminer_version=4.7.5',
+  'accept-language' => 'zh-CN,zh;q=0.9,en;q=0.8,und;q=0.7',
+  'accept-encoding' => 'gzip, deflate',
+  'referer' => 'http://www.sean.com/index/contact/index.shtml?name=inc.php&email=seanpan565%40gmail.com&title=sdadsad&message=asdsa',
+  'content-type' => 'application/x-www-form-urlencoded; charset=UTF-8',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/78.0.3904.97 Safari/537.36',
+  'x-requested-with' => 'XMLHttpRequest',
+  'origin' => 'http://www.sean.com',
+  'accept' => 'application/json, text/javascript, */*; q=0.01',
+  'content-length' => '157',
+  'connection' => 'close',
+  'host' => 'www.sean.com',
+)
+[ info ] [ PARAM ] array (
+  'data' => 
+  array (
+    'name' => 'sean_goods',
+    'email' => 'seanpan565@gmail.com',
+    'titel' => '标题标题标题',
+    'message' => 'sda',
+  ),
+)
+[ info ] [ RUN ] app\index\controller\Contact->message[ D:\web\phpweb\sean\app\index\controller\Contact.php ]
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000552s ] mysql:host=127.0.0.1;port=3306;dbname=sean;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `sean_urlconfig` [ RunTime:0.013888s ]
+[ sql ] [ SQL ] SELECT `aliases`,`url` FROM `sean_urlconfig` WHERE  `status` = 1 [ RunTime:0.000304s ]
+---------------------------------------------------------------
+[ 2019-11-19T19:24:49+08:00 ] 0.0.0.0 POST www.sean.com/index/contact/message.shtml
+[运行时间：0.039067s] [吞吐率：25.60req/s] [内存消耗：1,978.02kb] [文件加载：48]
+[ info ] [ LANG ] D:\web\phpweb\sean\thinkphp\lang\zh-cn.php
+[ info ] [ DB ] INIT mysql
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'index',
+    1 => 'contact',
+    2 => 'message',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'cookie' => 'PHPSESSID=npa2c59arh39bi590jj24hal96; usermember=admin; adminer_version=4.7.5',
+  'accept-language' => 'zh-CN,zh;q=0.9,en;q=0.8,und;q=0.7',
+  'accept-encoding' => 'gzip, deflate',
+  'referer' => 'http://www.sean.com/index/contact/index.shtml?name=inc.php&email=seanpan565%40gmail.com&title=sdadsad&message=asdsa',
+  'content-type' => 'application/x-www-form-urlencoded; charset=UTF-8',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/78.0.3904.97 Safari/537.36',
+  'x-requested-with' => 'XMLHttpRequest',
+  'origin' => 'http://www.sean.com',
+  'accept' => 'application/json, text/javascript, */*; q=0.01',
+  'content-length' => '157',
+  'connection' => 'close',
+  'host' => 'www.sean.com',
+)
+[ info ] [ PARAM ] array (
+  'data' => 
+  array (
+    'name' => 'sean_goods',
+    'email' => 'seanpan565@gmail.com',
+    'titel' => '标题标题标题',
+    'message' => 'sda',
+  ),
+)
+[ info ] [ RUN ] app\index\controller\Contact->message[ D:\web\phpweb\sean\app\index\controller\Contact.php ]
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000677s ] mysql:host=127.0.0.1;port=3306;dbname=sean;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `sean_urlconfig` [ RunTime:0.016539s ]
+[ sql ] [ SQL ] SELECT `aliases`,`url` FROM `sean_urlconfig` WHERE  `status` = 1 [ RunTime:0.000334s ]
+---------------------------------------------------------------
+[ 2019-11-19T19:33:45+08:00 ] 0.0.0.0 POST www.sean.com/index/contact/message.shtml
+[运行时间：0.034631s] [吞吐率：28.88req/s] [内存消耗：2,098.27kb] [文件加载：51]
+[ info ] [ LANG ] D:\web\phpweb\sean\thinkphp\lang\zh-cn.php
+[ info ] [ DB ] INIT mysql
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'index',
+    1 => 'contact',
+    2 => 'message',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'cookie' => 'PHPSESSID=npa2c59arh39bi590jj24hal96; usermember=admin; adminer_version=4.7.5',
+  'accept-language' => 'zh-CN,zh;q=0.9,en;q=0.8,und;q=0.7',
+  'accept-encoding' => 'gzip, deflate',
+  'referer' => 'http://www.sean.com/index/contact/index.shtml?name=inc.php&email=seanpan565%40gmail.com&title=sdadsad&message=asdsa',
+  'content-type' => 'application/x-www-form-urlencoded; charset=UTF-8',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/78.0.3904.97 Safari/537.36',
+  'x-requested-with' => 'XMLHttpRequest',
+  'origin' => 'http://www.sean.com',
+  'accept' => 'application/json, text/javascript, */*; q=0.01',
+  'content-length' => '157',
+  'connection' => 'close',
+  'host' => 'www.sean.com',
+)
+[ info ] [ PARAM ] array (
+  'data' => 
+  array (
+    'name' => 'sean_goods',
+    'email' => 'seanpan565@gmail.com',
+    'titel' => '标题标题标题',
+    'message' => 'sda',
+  ),
+)
+[ info ] [ RUN ] app\index\controller\Contact->message[ D:\web\phpweb\sean\app\index\controller\Contact.php ]
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.002297s ] mysql:host=127.0.0.1;port=3306;dbname=sean;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `sean_urlconfig` [ RunTime:0.005224s ]
+[ sql ] [ SQL ] SELECT `aliases`,`url` FROM `sean_urlconfig` WHERE  `status` = 1 [ RunTime:0.000555s ]
+---------------------------------------------------------------
+[ 2019-11-19T19:34:11+08:00 ] 0.0.0.0 POST www.sean.com/index/contact/message.shtml
+[运行时间：0.037931s] [吞吐率：26.36req/s] [内存消耗：2,097.16kb] [文件加载：51]
+[ info ] [ LANG ] D:\web\phpweb\sean\thinkphp\lang\zh-cn.php
+[ info ] [ DB ] INIT mysql
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'index',
+    1 => 'contact',
+    2 => 'message',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'cookie' => 'PHPSESSID=npa2c59arh39bi590jj24hal96; usermember=admin; adminer_version=4.7.5',
+  'accept-language' => 'zh-CN,zh;q=0.9,en;q=0.8,und;q=0.7',
+  'accept-encoding' => 'gzip, deflate',
+  'referer' => 'http://www.sean.com/index/contact/index.shtml?name=inc.php&email=seanpan565%40gmail.com&title=sdadsad&message=asdsa',
+  'content-type' => 'application/x-www-form-urlencoded; charset=UTF-8',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/78.0.3904.97 Safari/537.36',
+  'x-requested-with' => 'XMLHttpRequest',
+  'origin' => 'http://www.sean.com',
+  'accept' => 'application/json, text/javascript, */*; q=0.01',
+  'content-length' => '157',
+  'connection' => 'close',
+  'host' => 'www.sean.com',
+)
+[ info ] [ PARAM ] array (
+  'data' => 
+  array (
+    'name' => 'sean_goods',
+    'email' => 'seanpan565@gmail.com',
+    'titel' => '标题标题标题',
+    'message' => 'sda',
+  ),
+)
+[ info ] [ RUN ] app\index\controller\Contact->message[ D:\web\phpweb\sean\app\index\controller\Contact.php ]
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000617s ] mysql:host=127.0.0.1;port=3306;dbname=sean;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `sean_urlconfig` [ RunTime:0.006121s ]
+[ sql ] [ SQL ] SELECT `aliases`,`url` FROM `sean_urlconfig` WHERE  `status` = 1 [ RunTime:0.000271s ]
+---------------------------------------------------------------
+[ 2019-11-19T19:34:17+08:00 ] 0.0.0.0 POST www.sean.com/index/contact/message.shtml
+[运行时间：0.058287s] [吞吐率：17.16req/s] [内存消耗：2,097.16kb] [文件加载：51]
+[ info ] [ LANG ] D:\web\phpweb\sean\thinkphp\lang\zh-cn.php
+[ info ] [ DB ] INIT mysql
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'index',
+    1 => 'contact',
+    2 => 'message',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'cookie' => 'PHPSESSID=npa2c59arh39bi590jj24hal96; usermember=admin; adminer_version=4.7.5',
+  'accept-language' => 'zh-CN,zh;q=0.9,en;q=0.8,und;q=0.7',
+  'accept-encoding' => 'gzip, deflate',
+  'referer' => 'http://www.sean.com/index/contact/index.shtml?name=inc.php&email=seanpan565%40gmail.com&title=sdadsad&message=asdsa',
+  'content-type' => 'application/x-www-form-urlencoded; charset=UTF-8',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/78.0.3904.97 Safari/537.36',
+  'x-requested-with' => 'XMLHttpRequest',
+  'origin' => 'http://www.sean.com',
+  'accept' => 'application/json, text/javascript, */*; q=0.01',
+  'content-length' => '157',
+  'connection' => 'close',
+  'host' => 'www.sean.com',
+)
+[ info ] [ PARAM ] array (
+  'data' => 
+  array (
+    'name' => 'sean_goods',
+    'email' => 'seanpan565@gmail.com',
+    'titel' => '标题标题标题',
+    'message' => 'sda',
+  ),
+)
+[ info ] [ RUN ] app\index\controller\Contact->message[ D:\web\phpweb\sean\app\index\controller\Contact.php ]
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000567s ] mysql:host=127.0.0.1;port=3306;dbname=sean;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `sean_urlconfig` [ RunTime:0.022188s ]
+[ sql ] [ SQL ] SELECT `aliases`,`url` FROM `sean_urlconfig` WHERE  `status` = 1 [ RunTime:0.000202s ]
+---------------------------------------------------------------
+[ 2019-11-19T19:34:23+08:00 ] 0.0.0.0 GET www.sean.com/index/contact/index.shtml?name=inc.php&email=seanpan565%40gmail.com&title=sdadsad&message=asdsa
+[运行时间：0.038802s] [吞吐率：25.77req/s] [内存消耗：2,328.42kb] [文件加载：54]
+[ info ] [ LANG ] D:\web\phpweb\sean\thinkphp\lang\zh-cn.php
+[ info ] [ DB ] INIT mysql
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'index',
+    1 => 'contact',
+    2 => 'index',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'cookie' => 'PHPSESSID=npa2c59arh39bi590jj24hal96; usermember=admin; adminer_version=4.7.5',
+  'accept-language' => 'zh-CN,zh;q=0.9,en;q=0.8,und;q=0.7',
+  'accept-encoding' => 'gzip, deflate',
+  'referer' => 'http://www.sean.com/index/contact/index.shtml?name=inc.php&email=seanpan565%40gmail.com&title=%E6%A0%87%E9%A2%98%E6%A0%87%E9%A2%98%E6%A0%87%E9%A2%98&message=asdasd',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/78.0.3904.97 Safari/537.36',
+  'upgrade-insecure-requests' => '1',
+  'cache-control' => 'max-age=0',
+  'connection' => 'close',
+  'host' => 'www.sean.com',
+)
+[ info ] [ PARAM ] array (
+  'name' => 'inc.php',
+  'email' => 'seanpan565@gmail.com',
+  'title' => 'sdadsad',
+  'message' => 'asdsa',
+)
+[ info ] [ RUN ] app\index\controller\Contact->index[ D:\web\phpweb\sean\app\index\controller\Contact.php ]
+[ info ] [ VIEW ] D:\web\phpweb\sean\public/../app/index\view\contact\contact.html [ array (
+  0 => 'controller',
+) ]
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000717s ] mysql:host=127.0.0.1;port=3306;dbname=sean;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `sean_urlconfig` [ RunTime:0.007099s ]
+[ sql ] [ SQL ] SELECT `aliases`,`url` FROM `sean_urlconfig` WHERE  `status` = 1 [ RunTime:0.000214s ]
+---------------------------------------------------------------
+[ 2019-11-19T19:35:52+08:00 ] 0.0.0.0 GET www.sean.com/index/contact/index.shtml?name=inc.php&email=seanpan565%40gmail.com&title=sdadsad&message=asdsa
+[运行时间：0.047885s] [吞吐率：20.88req/s] [内存消耗：2,328.42kb] [文件加载：54]
+[ info ] [ LANG ] D:\web\phpweb\sean\thinkphp\lang\zh-cn.php
+[ info ] [ DB ] INIT mysql
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'index',
+    1 => 'contact',
+    2 => 'index',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'cookie' => 'PHPSESSID=npa2c59arh39bi590jj24hal96; usermember=admin; adminer_version=4.7.5',
+  'accept-language' => 'zh-CN,zh;q=0.9,en;q=0.8,und;q=0.7',
+  'accept-encoding' => 'gzip, deflate',
+  'referer' => 'http://www.sean.com/index/contact/index.shtml?name=inc.php&email=seanpan565%40gmail.com&title=%E6%A0%87%E9%A2%98%E6%A0%87%E9%A2%98%E6%A0%87%E9%A2%98&message=asdasd',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/78.0.3904.97 Safari/537.36',
+  'upgrade-insecure-requests' => '1',
+  'cache-control' => 'max-age=0',
+  'connection' => 'close',
+  'host' => 'www.sean.com',
+)
+[ info ] [ PARAM ] array (
+  'name' => 'inc.php',
+  'email' => 'seanpan565@gmail.com',
+  'title' => 'sdadsad',
+  'message' => 'asdsa',
+)
+[ info ] [ RUN ] app\index\controller\Contact->index[ D:\web\phpweb\sean\app\index\controller\Contact.php ]
+[ info ] [ VIEW ] D:\web\phpweb\sean\public/../app/index\view\contact\contact.html [ array (
+  0 => 'controller',
+) ]
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.002503s ] mysql:host=127.0.0.1;port=3306;dbname=sean;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `sean_urlconfig` [ RunTime:0.003416s ]
+[ sql ] [ SQL ] SELECT `aliases`,`url` FROM `sean_urlconfig` WHERE  `status` = 1 [ RunTime:0.000222s ]
+---------------------------------------------------------------
+[ 2019-11-19T19:36:48+08:00 ] 0.0.0.0 GET www.sean.com/index/contact/index.shtml?name=inc.php&email=seanpan565%40gmail.com&title=sdadsad&message=asdsa
+[运行时间：0.035638s] [吞吐率：28.06req/s] [内存消耗：2,328.48kb] [文件加载：54]
+[ info ] [ LANG ] D:\web\phpweb\sean\thinkphp\lang\zh-cn.php
+[ info ] [ DB ] INIT mysql
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'index',
+    1 => 'contact',
+    2 => 'index',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'cookie' => 'PHPSESSID=npa2c59arh39bi590jj24hal96; usermember=admin; adminer_version=4.7.5',
+  'accept-language' => 'zh-CN,zh;q=0.9,en;q=0.8,und;q=0.7',
+  'accept-encoding' => 'gzip, deflate',
+  'referer' => 'http://www.sean.com/index/contact/index.shtml?name=inc.php&email=seanpan565%40gmail.com&title=%E6%A0%87%E9%A2%98%E6%A0%87%E9%A2%98%E6%A0%87%E9%A2%98&message=asdasd',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/78.0.3904.97 Safari/537.36',
+  'upgrade-insecure-requests' => '1',
+  'cache-control' => 'no-cache',
+  'pragma' => 'no-cache',
+  'connection' => 'close',
+  'host' => 'www.sean.com',
+)
+[ info ] [ PARAM ] array (
+  'name' => 'inc.php',
+  'email' => 'seanpan565@gmail.com',
+  'title' => 'sdadsad',
+  'message' => 'asdsa',
+)
+[ info ] [ RUN ] app\index\controller\Contact->index[ D:\web\phpweb\sean\app\index\controller\Contact.php ]
+[ info ] [ VIEW ] D:\web\phpweb\sean\public/../app/index\view\contact\contact.html [ array (
+  0 => 'controller',
+) ]
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000579s ] mysql:host=127.0.0.1;port=3306;dbname=sean;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `sean_urlconfig` [ RunTime:0.003033s ]
+[ sql ] [ SQL ] SELECT `aliases`,`url` FROM `sean_urlconfig` WHERE  `status` = 1 [ RunTime:0.000194s ]
+---------------------------------------------------------------
+[ 2019-11-19T19:36:59+08:00 ] 0.0.0.0 POST www.sean.com/index/contact/message.shtml
+[运行时间：0.041811s] [吞吐率：23.92req/s] [内存消耗：2,097.16kb] [文件加载：51]
+[ info ] [ LANG ] D:\web\phpweb\sean\thinkphp\lang\zh-cn.php
+[ info ] [ DB ] INIT mysql
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'index',
+    1 => 'contact',
+    2 => 'message',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'cookie' => 'PHPSESSID=npa2c59arh39bi590jj24hal96; usermember=admin; adminer_version=4.7.5',
+  'accept-language' => 'zh-CN,zh;q=0.9,en;q=0.8,und;q=0.7',
+  'accept-encoding' => 'gzip, deflate',
+  'referer' => 'http://www.sean.com/index/contact/index.shtml?name=inc.php&email=seanpan565%40gmail.com&title=sdadsad&message=asdsa',
+  'content-type' => 'application/x-www-form-urlencoded; charset=UTF-8',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/78.0.3904.97 Safari/537.36',
+  'x-requested-with' => 'XMLHttpRequest',
+  'origin' => 'http://www.sean.com',
+  'accept' => 'application/json, text/javascript, */*; q=0.01',
+  'content-length' => '157',
+  'connection' => 'close',
+  'host' => 'www.sean.com',
+)
+[ info ] [ PARAM ] array (
+  'data' => 
+  array (
+    'name' => 'inc.php',
+    'email' => 'seanpan565@gmail.com',
+    'titel' => '标题标题标题',
+    'message' => 'asdasd',
+  ),
+)
+[ info ] [ RUN ] app\index\controller\Contact->message[ D:\web\phpweb\sean\app\index\controller\Contact.php ]
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000570s ] mysql:host=127.0.0.1;port=3306;dbname=sean;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `sean_urlconfig` [ RunTime:0.017289s ]
+[ sql ] [ SQL ] SELECT `aliases`,`url` FROM `sean_urlconfig` WHERE  `status` = 1 [ RunTime:0.000214s ]
+---------------------------------------------------------------
+[ 2019-11-19T19:37:37+08:00 ] 0.0.0.0 POST www.sean.com/index/contact/message.shtml
+[运行时间：0.048970s] [吞吐率：20.42req/s] [内存消耗：2,097.16kb] [文件加载：51]
+[ info ] [ LANG ] D:\web\phpweb\sean\thinkphp\lang\zh-cn.php
+[ info ] [ DB ] INIT mysql
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'index',
+    1 => 'contact',
+    2 => 'message',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'cookie' => 'PHPSESSID=npa2c59arh39bi590jj24hal96; usermember=admin; adminer_version=4.7.5',
+  'accept-language' => 'zh-CN,zh;q=0.9,en;q=0.8,und;q=0.7',
+  'accept-encoding' => 'gzip, deflate',
+  'referer' => 'http://www.sean.com/index/contact/index.shtml?name=inc.php&email=seanpan565%40gmail.com&title=sdadsad&message=asdsa',
+  'content-type' => 'application/x-www-form-urlencoded; charset=UTF-8',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/78.0.3904.97 Safari/537.36',
+  'x-requested-with' => 'XMLHttpRequest',
+  'origin' => 'http://www.sean.com',
+  'accept' => 'application/json, text/javascript, */*; q=0.01',
+  'content-length' => '157',
+  'connection' => 'close',
+  'host' => 'www.sean.com',
+)
+[ info ] [ PARAM ] array (
+  'data' => 
+  array (
+    'name' => 'inc.php',
+    'email' => 'seanpan565@gmail.com',
+    'titel' => '标题标题标题',
+    'message' => 'asdasd',
+  ),
+)
+[ info ] [ RUN ] app\index\controller\Contact->message[ D:\web\phpweb\sean\app\index\controller\Contact.php ]
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000604s ] mysql:host=127.0.0.1;port=3306;dbname=sean;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `sean_urlconfig` [ RunTime:0.027541s ]
+[ sql ] [ SQL ] SELECT `aliases`,`url` FROM `sean_urlconfig` WHERE  `status` = 1 [ RunTime:0.000279s ]
