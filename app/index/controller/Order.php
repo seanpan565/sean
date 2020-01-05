@@ -53,6 +53,9 @@ class Order extends Common
 		$order_price = $cart_data[1];
         //收货地址id
 		$address_id = $cartForm['address_id'];
+		if (empty($address_id)) {
+			$this->error("收货地址不存在",'user/address');
+		}
         //检查用户地址
 		$user_address_one = $OrderModel->checkUserAddress($address_id, $data);
 
@@ -106,6 +109,9 @@ class Order extends Common
 		$order_price = $buy_data[1];
         //收货地址id
 		$address_id = $buyForm['address_id'];
+		if (empty($address_id)) {
+			$this->error("收货地址不存在",'user/address');
+		}
         //检查用户地址
 		$user_address_one = $OrderModel->checkUserAddress($address_id, $data);
 

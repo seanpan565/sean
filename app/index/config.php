@@ -14,5 +14,6 @@ return [
 	'view_replace_str' => [
 		'__INDEX__'      => '/static/index',
 		'__PUBLIC__'     => '/static/public',
+		'__IMG__'        => '/static/admin/images',
 	],
 ];
