@@ -1,11 +1,13 @@
-<?php if (!defined('THINK_PATH')) exit(); /*a:6:{s:64:"D:\web\phpweb\sean\public/../app/index\view\article\article.html";i:1577866934;s:50:"D:\web\phpweb\sean\app\index\view\common\link.html";i:1576206405;s:57:"D:\web\phpweb\sean\app\index\view\common\mobile-part.html";i:1574418883;s:58:"D:\web\phpweb\sean\app\index\view\common\head-message.html";i:1574574104;s:57:"D:\web\phpweb\sean\app\index\view\common\header-part.html";i:1577867210;s:52:"D:\web\phpweb\sean\app\index\view\common\footer.html";i:1577863894;}*/ ?>
+<?php if (!defined('THINK_PATH')) exit(); /*a:6:{s:64:"D:\web\phpweb\sean\public/../app/index\view\article\article.html";i:1578048425;s:50:"D:\web\phpweb\sean\app\index\view\common\link.html";i:1576206405;s:57:"D:\web\phpweb\sean\app\index\view\common\mobile-part.html";i:1574418883;s:58:"D:\web\phpweb\sean\app\index\view\common\head-message.html";i:1574574104;s:57:"D:\web\phpweb\sean\app\index\view\common\header-part.html";i:1577867210;s:52:"D:\web\phpweb\sean\app\index\view\common\footer.html";i:1577863894;}*/ ?>
 <!doctype html>
 <html lang="zh-CN">
 <head>
 <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=0">
-<title>水果鲜生-文章详情</title>
 
+<title><?php echo $web_tdk['name']; ?>|<?php echo $articleItem['title']; ?></title>
+<meta name="keywords" content="<?php echo $web_tdk['keywords']; ?>" />
+<meta name="description" content="<?php echo $web_tdk['desc']; ?>" />
 <link rel="stylesheet" href="/static/index/css/bootstrap.min.css" type="text/css" media="all">
 <link rel="stylesheet" href="/static/index/css/font-awesome.min.css" type="text/css" media="all" />
 <link rel="stylesheet" href="/static/index/css/ionicons.min.css" type="text/css" media="all" />

@@ -11,6 +11,7 @@
 namespace app\index\controller;
 use think\Request;
 use think\Db;
+use kuaidi100\Kuaidi;
 use app\index\model\UserOrder as UserOrderModel;
 use app\index\controller\Common;
 class UserOrder extends Common
@@ -506,6 +507,53 @@ class UserOrder extends Common
 
         }
     }
+
+
+    /**
+	 * 查看物流
+	 */
+	public function kuaidi ()
+	{
+		$shipping_sn = input('shipping_sn');
+        $order_goods_one = db('order_goods')->where(array('shipping_sn'=>$shipping_sn, 'user_id'=>session('user_id')))->find();
+		if (empty($order_goods_one)) {
+			$this->error('订单商品不存在');
+		}
+		//查询物流数据
+        $delivery_one = db('delivery')->where(array('delivery_status' => 1, 'delivery_id' => $order_goods_one['shipping_id']))->field('delivery_en,delivery_name,delivery_phone')->find();
+		//快递接口
+		$kuaidi = new Kuaidi();
+        //快递英文名和单号
+		$delivery_data = $kuaidi->query($delivery_one['delivery_en'], $order_goods_one['shipping_sn']);
+
+		//快递状态
+		$message = isset($delivery_data['message']) ? $delivery_data['message'] : "";
+		$this->assign('message', $message);
+		//物流数据
+		$delivery_data = isset($delivery_data['data']) ? $delivery_data['data'] : "";
+
+		if ($delivery_data) {
+			$time_arr = array();
+			foreach ($delivery_data as $k1 => $v1) {
+				$delivery_data[$k1]['time'] = explode(" ", $delivery_data[$k1]['time']);
+				if (!in_array($delivery_data[$k1]['time'][0], $time_arr)) {
+					array_push($time_arr, $delivery_data[$k1]['time'][0]);
+					$delivery_data[$k1]['status'] = 1;
+				} else {
+					$delivery_data[$k1]['status'] = 0;
+				}
+				$delivery_data[$k1]['week'] = week_day(strtotime($delivery_data[$k1]['ftime']));
+			}
+		}
+        $delivery_one['shipping_sn'] = $shipping_sn;
+
+        $this->assign([
+            'delivery_data' => $delivery_data,
+            'delivery_one' => $delivery_one,
+        ]);
+        return $this->fetch();
+	}
+
 
 
     /**

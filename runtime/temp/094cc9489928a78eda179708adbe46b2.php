@@ -1,11 +1,13 @@
-<?php if (!defined('THINK_PATH')) exit(); /*a:7:{s:65:"D:\web\phpweb\sean\public/../app/index\view\user_order\index.html";i:1577186712;s:50:"D:\web\phpweb\sean\app\index\view\common\link.html";i:1576206405;s:57:"D:\web\phpweb\sean\app\index\view\common\mobile-part.html";i:1574418883;s:58:"D:\web\phpweb\sean\app\index\view\common\head-message.html";i:1574574104;s:57:"D:\web\phpweb\sean\app\index\view\common\header-part.html";i:1577867210;s:58:"D:\web\phpweb\sean\app\index\view\common\user-sidebar.html";i:1577869345;s:52:"D:\web\phpweb\sean\app\index\view\common\footer.html";i:1577863894;}*/ ?>
+<?php if (!defined('THINK_PATH')) exit(); /*a:7:{s:65:"D:\web\phpweb\sean\public/../app/index\view\user_order\index.html";i:1578210394;s:50:"D:\web\phpweb\sean\app\index\view\common\link.html";i:1576206405;s:57:"D:\web\phpweb\sean\app\index\view\common\mobile-part.html";i:1574418883;s:58:"D:\web\phpweb\sean\app\index\view\common\head-message.html";i:1574574104;s:57:"D:\web\phpweb\sean\app\index\view\common\header-part.html";i:1577867210;s:58:"D:\web\phpweb\sean\app\index\view\common\user-sidebar.html";i:1577869481;s:52:"D:\web\phpweb\sean\app\index\view\common\footer.html";i:1577863894;}*/ ?>
 <!doctype html>
 <html lang="zh-CN">
 <head>
-<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=0">
-<title>水果鲜生-订单列表</title>
-<link rel="stylesheet" href="/static/index/css/bootstrap.min.css" type="text/css" media="all">
+	<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=0">
+	<title><?php echo $web_tdk['name']; ?>|订单列表</title>
+	<meta name="keywords" content="<?php echo $web_tdk['keywords']; ?>" />
+	<meta name="description" content="<?php echo $web_tdk['desc']; ?>" />
+	<link rel="stylesheet" href="/static/index/css/bootstrap.min.css" type="text/css" media="all">
 <link rel="stylesheet" href="/static/index/css/font-awesome.min.css" type="text/css" media="all" />
 <link rel="stylesheet" href="/static/index/css/ionicons.min.css" type="text/css" media="all" />
 <link rel="stylesheet" href="/static/index/css/owl.carousel.css" type="text/css" media="all">
@@ -258,8 +260,8 @@
         <li class="layui-nav-item"><a href="<?php echo url('user/collect'); ?>" title="我的收藏">我的收藏</a></li>
         <li class="layui-nav-item"><a href="<?php echo url('UserOrder/index'); ?>" title="订单管理">订单管理</a></li>
         <li class="layui-nav-item"><a href="javascript:;" title="退货售后">退货售后</a></li>
-        <li class="layui-nav-item"><a href="javascript:;" title="商品评价">商品评价</a></li>
-        <li class="layui-nav-item"><a href="javascript:;" title="账单明细">账单明细</a></li>
+        <!-- <li class="layui-nav-item"><a href="javascript:;" title="商品评价">商品评价</a></li>
+        <li class="layui-nav-item"><a href="javascript:;" title="账单明细">账单明细</a></li> -->
         <span class="layui-nav-bar" style="top: 272.5px; height: 0px; opacity: 0;"></span>
     </ul>
 </div>
@@ -314,7 +316,7 @@
 											<span class="sub-title" <?php if($vo['order_status'] == 8): ?>style="display:block;" <?php else: ?> style="display:none;"<?php endif; ?>>付款超时</span>
 
                                             <a href="<?php echo url('UserOrder/order_details',array('order_sn'=>$v1['order_sn'])); ?>" target="_blank" style="display:block;">订单详情</a>
-											<?php switch($vo['order_status']): case "2": ?> <a href="javascript:;" class="order_freight" data-id="<?php echo $v1['order_sn']; ?>">查看物流</a><?php break; case "0":case "8": ?> <a href="javascript:;" class="order_call" data-id="<?php echo $v1['order_sn']; ?>">取消订单</a><?php break; case "3":case "4":case "5":case "6": break; case "1":case "7": ?> <a href="javascript:;" >申请退款</a> <?php break; default: endswitch; ?>
+											<?php switch($vo['order_status']): case "2": ?> <a href="<?php echo url('UserOrder/kuaidi',array('shipping_sn'=>$v1['shipping_sn'])); ?>" class="order_freight" data-id="<?php echo $v1['order_sn']; ?>">查看物流</a><?php break; case "0":case "8": ?> <a href="javascript:;" class="order_call" data-id="<?php echo $v1['order_sn']; ?>">取消订单</a><?php break; case "3":case "4":case "5":case "6": break; case "1":case "7": ?> <a href="javascript:;" >申请退款</a> <?php break; default: endswitch; ?>
   										</td>
   									</tr>
 									<?php endforeach; endif; else: echo "" ;endif; ?>
@@ -534,47 +536,6 @@ layui.use(['layer', 'form'], function() {
 		});
 	});
 
-
-
-	//查看物流
-	$('.order_freight').click(function (){
-		//订单编号
-		var order_sn = $(this).attr('data-id');
-		$.ajax({
-			url:"<?php echo url('UserOrder/order_freight'); ?>",
-			type:'post',
-			dataType:'json',
-			data:{order_sn:order_sn},
-			success:function (data){
-				if (data.status == 1) {
-					var _html = '';
-					$.each(data.delivery_data, function (k, v) {
-						_html += '<li class="latest">';
-						_html += '<p class="text">' + v['context'] + '</p>';
-						_html += '<div class="time-list">';
-						if (v['status'] == 0) {
-							_html += '<span class="date hidden">' + v['time'][0] + '</span>';
-							_html += '<span class="week hidden">' + v['week'] + '</span>';
-						} else {
-							_html += '<span class="date">' + v['time'][0] + '</span>';
-							_html += '<span class="week">' + v['week'] + '</span>';
-						}
-
-						_html += '<span class="time">' + v['time'][1] + '</span>';
-						_html += '</div>';
-						_html += '</li>';
-
-					})
-					obj.parent('.order-item-title').find(".order-goods-trade ul").html(_html);
-					obj.parent('.order-item-title').find('.order-goods-trade').show();
-					}
-				else {
-					layer.msg(data.msg);
-				}
-			}
-		},'json');
-		return false;
-	});
 
 
 

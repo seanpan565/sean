@@ -1,11 +1,13 @@
-<?php if (!defined('THINK_PATH')) exit(); /*a:6:{s:61:"D:\web\phpweb\sean\public/../app/index\view\article\list.html";i:1577866943;s:50:"D:\web\phpweb\sean\app\index\view\common\link.html";i:1576206405;s:57:"D:\web\phpweb\sean\app\index\view\common\mobile-part.html";i:1574418883;s:58:"D:\web\phpweb\sean\app\index\view\common\head-message.html";i:1574574104;s:57:"D:\web\phpweb\sean\app\index\view\common\header-part.html";i:1577867210;s:52:"D:\web\phpweb\sean\app\index\view\common\footer.html";i:1577863894;}*/ ?>
+<?php if (!defined('THINK_PATH')) exit(); /*a:6:{s:61:"D:\web\phpweb\sean\public/../app/index\view\article\list.html";i:1578217023;s:50:"D:\web\phpweb\sean\app\index\view\common\link.html";i:1576206405;s:57:"D:\web\phpweb\sean\app\index\view\common\mobile-part.html";i:1574418883;s:58:"D:\web\phpweb\sean\app\index\view\common\head-message.html";i:1574574104;s:57:"D:\web\phpweb\sean\app\index\view\common\header-part.html";i:1577867210;s:52:"D:\web\phpweb\sean\app\index\view\common\footer.html";i:1577863894;}*/ ?>
 <!doctype html>
 <html lang="zh-CN">
 <head>
 <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=0">
-<title>水果鲜生-文章列表</title>
 
+<title><?php echo $web_tdk['name']; ?>|文章列表</title>
+<meta name="keywords" content="<?php echo $web_tdk['keywords']; ?>" />
+<meta name="description" content="<?php echo $web_tdk['desc']; ?>" />
 <link rel="stylesheet" href="/static/index/css/bootstrap.min.css" type="text/css" media="all">
 <link rel="stylesheet" href="/static/index/css/font-awesome.min.css" type="text/css" media="all" />
 <link rel="stylesheet" href="/static/index/css/ionicons.min.css" type="text/css" media="all" />
@@ -257,7 +259,7 @@
 								<div class="container">
 									<div class="row">
 				                        <?php if(is_array($article) || $article instanceof \think\Collection || $article instanceof \think\Paginator): $i = 0; $__LIST__ = $article;if( count($__LIST__)==0 ) : echo "" ;else: foreach($__LIST__ as $key=>$vo): $mod = ($i % 2 );++$i;?>
-										<div class="col-md-4">
+										<div class="col-md-4" style="margin-top:10px;">
 											<div class="blog-grid-item">
 												<div class="post-thumbnail">
 													<a href="<?php echo url('article/article',array('id'=>$vo['id'])); ?>">

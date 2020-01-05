@@ -18,7 +18,7 @@ class Article extends Common
      */
     public function index()
     {
-        $article = db('article')->where('status','1')->field('id,title,thumb,status,is_top,read_count,create_time,description')->paginate(25);
+        $article = db('article')->where('status','1')->field('id,title,thumb,status,is_top,read_count,create_time,description')->paginate(10);
         $articleCate = db('article_cate')->where('pid','0')->field('id,name')->select();
         $article_istop = db('article')->where(array('status'=>'1','is_top'=>'1'))->field('id,title,thumb,status,is_top,read_count')->limit(5)->select();
         $this->assign([

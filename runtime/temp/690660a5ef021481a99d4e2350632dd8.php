@@ -1,10 +1,13 @@
-<?php if (!defined('THINK_PATH')) exit(); /*a:7:{s:65:"D:\web\phpweb\sean\public/../app/index\view\user\addresslist.html";i:1575530624;s:50:"D:\web\phpweb\sean\app\index\view\common\link.html";i:1576206405;s:57:"D:\web\phpweb\sean\app\index\view\common\mobile-part.html";i:1574418883;s:58:"D:\web\phpweb\sean\app\index\view\common\head-message.html";i:1574574104;s:57:"D:\web\phpweb\sean\app\index\view\common\header-part.html";i:1574596376;s:58:"D:\web\phpweb\sean\app\index\view\common\user-sidebar.html";i:1576577744;s:52:"D:\web\phpweb\sean\app\index\view\common\footer.html";i:1576644364;}*/ ?>
+<?php if (!defined('THINK_PATH')) exit(); /*a:7:{s:65:"D:\web\phpweb\sean\public/../app/index\view\user\addresslist.html";i:1578048450;s:50:"D:\web\phpweb\sean\app\index\view\common\link.html";i:1576206405;s:57:"D:\web\phpweb\sean\app\index\view\common\mobile-part.html";i:1574418883;s:58:"D:\web\phpweb\sean\app\index\view\common\head-message.html";i:1574574104;s:57:"D:\web\phpweb\sean\app\index\view\common\header-part.html";i:1577867210;s:58:"D:\web\phpweb\sean\app\index\view\common\user-sidebar.html";i:1577869481;s:52:"D:\web\phpweb\sean\app\index\view\common\footer.html";i:1577863894;}*/ ?>
 <!doctype html>
 <html lang="zh-CN">
 <head>
 <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=0">
-<title>水果鲜生-收货地址列表</title>
+
+<title><?php echo $web_tdk['name']; ?>|收货地址列表</title>
+<meta name="keywords" content="<?php echo $web_tdk['keywords']; ?>" />
+<meta name="description" content="<?php echo $web_tdk['desc']; ?>" />
 <link rel="stylesheet" href="/static/index/css/bootstrap.min.css" type="text/css" media="all">
 <link rel="stylesheet" href="/static/index/css/font-awesome.min.css" type="text/css" media="all" />
 <link rel="stylesheet" href="/static/index/css/ionicons.min.css" type="text/css" media="all" />
@@ -92,8 +95,8 @@
         <div class="container">
             <div class="row">
                 <div class="col-sm-12">
-                    <form>
-                        <input type="search" class="top-search-input" name="s" placeholder="你在找什么?" />
+                    <form action="<?php echo url('common/search'); ?>" class="layui-form" method="get">
+                        <input type="search" class="top-search-input" name="goods_name" placeholder="搜索商品..." />
                     </form>
                 </div>
             </div>
@@ -114,33 +117,35 @@
                             <li><a href="<?php echo url('Shop/index'); ?>" <?php if($controller == 'Shop'): ?> style="color:#5fbd74;" <?php endif; ?>>商品列表</a></li>
                             <li><a href="<?php echo url('About/index'); ?>" <?php if($controller == 'About'): ?> style="color:#5fbd74;" <?php endif; ?>>关于我们</a></li>
                             <li><a href="<?php echo url('Contact/index'); ?>" <?php if($controller == 'Contact'): ?> style="color:#5fbd74;" <?php endif; ?>>联系我们</a></li>
+                            <li><a href="<?php echo url('Article/index'); ?>" <?php if($controller == 'Article'): ?> style="color:#5fbd74;" <?php endif; ?>>文章列表</a></li>
                             <li><a href="<?php echo url('User/index'); ?>" <?php if($controller == 'User'): ?> style="color:#5fbd74;" <?php endif; ?>>会员中心</a></li>
                         </ul>
                     </nav>
                     <div class="btn-wrap">
                         <div class="mini-cart-wrap">
                             <div class="mini-cart">
-                                <div class="mini-cart-icon" data-count="2">
+                                <div class="mini-cart-icon" data-count="<?php echo $cartCount; ?>">
                                     <i class="ion-bag"></i>
                                 </div>
                             </div>
                             <div class="widget-shopping-cart-content">
-                                <ul class="cart-list">
-
-                                    <li>
-                                        <a href="javascript:;" class="remove">×</a>
-                                        <a href="shop-detail.html"><img src="/static/index/images/shop/thumb/shop_2.jpg" alt="" />蓝莓酱</a>
-                                        <span class="quantity">1 × ￥9.00</span>
-                                    </li>
-
-                                </ul>
+                                    <ul class="cart-list">
+                                        <?php if(is_array($cart_head['0']) || $cart_head['0'] instanceof \think\Collection || $cart_head['0'] instanceof \think\Paginator): $i = 0; $__LIST__ = $cart_head['0'];if( count($__LIST__)==0 ) : echo "" ;else: foreach($__LIST__ as $key=>$vo): $mod = ($i % 2 );++$i;?>
+                                            <li>
+                                                <a href="javascript:;" onclick="cart_del(this,<?php echo $vo['id']; ?>)" class="remove">×</a>
+                                                <a href="<?php echo url('Shopdateil/index',array('id'=>$vo['goods_id'])); ?>"><img src="<?php echo $vo['goods_thumb']; ?>" alt="<?php echo $vo['goods_name']; ?>"><?php echo $vo['goods_name']; ?></a>
+                                                <span class="quantity" style="margin-top: 15px;">vip：<?php echo $vo['goods_count']; ?> × ￥<?php echo $vo['goods_vip']; ?></span>
+                                                <span class="quantity" style="float:right;">小计：￥<?php echo $vo['total_price']; ?></span>
+                                            </li>
+                                        <?php endforeach; endif; else: echo "" ;endif; ?>
+                                    </ul>
                                 <p class="total">
                                     <strong>总价:</strong>
-                                    <span class="amount">￥21.00</span>
+                                    <span class="amount">￥<?php echo $cart_head['1']; ?></span>
                                 </p>
                                 <p class="buttons">
                                     <a href="<?php echo url('Cart/index'); ?>" class="view-cart">查看购物车</a>
-                                    <a href="<?php echo url('Checkout/index'); ?>" class="checkout">结账</a>
+                                    <a href="<?php echo url('Order/cart'); ?>" class="checkout">结账</a>
                                 </p>
                             </div>
                         </div>
@@ -157,6 +162,37 @@
         </div>
     </div>
 </header>
+<script type="text/javascript">
+    //layer弹窗组件
+    layui.use(['form', 'layer'],
+    function() {
+        $ = layui.jquery;
+        var form = layui.form,
+        layer = layui.layer;
+    });
+
+    //删除单件商品
+    function cart_del(obj,id){
+        $.ajax({
+            type:"post",
+            dataType:"json",
+            data:{cart_id:id},
+            url:"<?php echo url('cart/del_cart'); ?>",
+            success:function(data){
+                if (data.status == 1) {
+                    layer.msg(data.msg);
+                    $(obj).parents("li").remove();
+                } else {
+                    layer.msg(data.msg);
+                }
+            }
+        },'json');
+        return false;
+    }
+
+
+
+</script>
 
 
 	<header class="header header-mobile">
@@ -224,13 +260,13 @@
 <div class="col-md-3">
     <ul class="layui-nav layui-nav-tree layui-inline" lay-filter="demo" style="margin-right: 10px;width: 100%;">
         <li class="layui-nav-item"><a href="<?php echo url('user/index'); ?>" title="个人信息">个人信息</a></li>
-        <li class="layui-nav-item"><a href="<?php echo url('user/user_message'); ?>" title="安全设置">安全设置</a></li>
+        <li class="layui-nav-item"><a href="<?php echo url('UserMessage/index'); ?>" title="安全设置">安全设置</a></li>
         <li class="layui-nav-item"><a href="<?php echo url('user/addresslist'); ?>" title="收货地址">收货地址</a></li>
         <li class="layui-nav-item"><a href="<?php echo url('user/collect'); ?>" title="我的收藏">我的收藏</a></li>
         <li class="layui-nav-item"><a href="<?php echo url('UserOrder/index'); ?>" title="订单管理">订单管理</a></li>
         <li class="layui-nav-item"><a href="javascript:;" title="退货售后">退货售后</a></li>
-        <li class="layui-nav-item"><a href="javascript:;" title="商品评价">商品评价</a></li>
-        <li class="layui-nav-item"><a href="javascript:;" title="账单明细">账单明细</a></li>
+        <!-- <li class="layui-nav-item"><a href="javascript:;" title="商品评价">商品评价</a></li>
+        <li class="layui-nav-item"><a href="javascript:;" title="账单明细">账单明细</a></li> -->
         <span class="layui-nav-bar" style="top: 272.5px; height: 0px; opacity: 0;"></span>
     </ul>
 </div>
@@ -299,9 +335,9 @@
                 <div class="widget">
                     <h3 class="widget-title">信息来源</h3>
                     <ul>
-                        <li><a href="javascript:;">新产品</a></li>
-                        <li><a href="javascript:;">我们的博客</a></li>
-                        <li><a href="javascript:;">关于我们</a></li>
+                        <li><a href="<?php echo url('Shop/index'); ?>">新产品</a></li>
+                        <li><a href="<?php echo url('Article/index'); ?>">我们的博客</a></li>
+                        <li><a href="<?php echo url('About/index'); ?>">关于我们</a></li>
                     </ul>
                 </div>
             </div>
@@ -310,6 +346,7 @@
                     <h3 class="widget-title">友情链接</h3>
                     <ul>
                         <li><a href="javascript:;">博客园</a></li>
+                        <li><a href="https://m.kuaidi100.com/" target="_blank">快递查询</a></li>
                     </ul>
                 </div>
             </div>

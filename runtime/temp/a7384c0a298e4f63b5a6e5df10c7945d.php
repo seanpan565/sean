@@ -1,14 +1,13 @@
-<?php if (!defined('THINK_PATH')) exit(); /*a:7:{s:70:"D:\web\phpweb\sean\public/../app/index\view\user_message\password.html";i:1578048550;s:50:"D:\web\phpweb\sean\app\index\view\common\link.html";i:1576206405;s:57:"D:\web\phpweb\sean\app\index\view\common\mobile-part.html";i:1574418883;s:58:"D:\web\phpweb\sean\app\index\view\common\head-message.html";i:1574574104;s:57:"D:\web\phpweb\sean\app\index\view\common\header-part.html";i:1577867210;s:58:"D:\web\phpweb\sean\app\index\view\common\user-sidebar.html";i:1577869481;s:52:"D:\web\phpweb\sean\app\index\view\common\footer.html";i:1577863894;}*/ ?>
+<?php if (!defined('THINK_PATH')) exit(); /*a:7:{s:66:"D:\web\phpweb\sean\public/../app/index\view\user_order\kuaidi.html";i:1578210937;s:50:"D:\web\phpweb\sean\app\index\view\common\link.html";i:1576206405;s:57:"D:\web\phpweb\sean\app\index\view\common\mobile-part.html";i:1574418883;s:58:"D:\web\phpweb\sean\app\index\view\common\head-message.html";i:1574574104;s:57:"D:\web\phpweb\sean\app\index\view\common\header-part.html";i:1577867210;s:58:"D:\web\phpweb\sean\app\index\view\common\user-sidebar.html";i:1577869481;s:52:"D:\web\phpweb\sean\app\index\view\common\footer.html";i:1577863894;}*/ ?>
 <!doctype html>
 <html lang="zh-CN">
 <head>
-<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=0">
-
-<title><?php echo $web_tdk['name']; ?>|会员修改密码</title>
-<meta name="keywords" content="<?php echo $web_tdk['keywords']; ?>" />
-<meta name="description" content="<?php echo $web_tdk['desc']; ?>" />
-<link rel="stylesheet" href="/static/index/css/bootstrap.min.css" type="text/css" media="all">
+	<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=0">
+	<title><?php echo $web_tdk['name']; ?>|订单列表</title>
+	<meta name="keywords" content="<?php echo $web_tdk['keywords']; ?>" />
+	<meta name="description" content="<?php echo $web_tdk['desc']; ?>" />
+	<link rel="stylesheet" href="/static/index/css/bootstrap.min.css" type="text/css" media="all">
 <link rel="stylesheet" href="/static/index/css/font-awesome.min.css" type="text/css" media="all" />
 <link rel="stylesheet" href="/static/index/css/ionicons.min.css" type="text/css" media="all" />
 <link rel="stylesheet" href="/static/index/css/owl.carousel.css" type="text/css" media="all">
@@ -32,11 +31,8 @@
 <link rel="stylesheet" href="/static/public/layui/css/layui.css">
 <script type="text/javascript" src="/static/public/layui/layui.js" charset="utf-8"></script>
 
-<link href="/static/index/css/login.css" rel="stylesheet" type="text/css" media="all"/>
 </head>
 <body>
-
-
 <div class="noo-spinner">
 	<div class="spinner">
 		<div class="cube1"></div>
@@ -57,7 +53,11 @@
 </div>
 
 <!-- 移动端导航结束 -->
-
+<style media="screen">
+    .log-status{
+        margin:10px;
+    }
+</style>
 <div class="site">
 	<div class="topbar">
     <div class="container">
@@ -232,7 +232,7 @@
 			<div class="container">
 				<div class="row">
 					<div class="col-sm-12">
-						<h2 class="page-title text-center">user us</h2>
+						<h2 class="page-title text-center">order us</h2>
 					</div>
 				</div>
 			</div>
@@ -243,13 +243,12 @@
 					<div class="col-sm-12">
 						<ul class="breadcrumbs">
 							<li><a href="<?php echo url('index/index'); ?>">首页</a></li>
-							<li>个人中心</li>
+							<li>订单列表</li>
 						</ul>
 					</div>
 				</div>
 			</div>
 		</div>
-
 
         <!-- 详情页开始 -->
 		<div class="section pt-7 pb-7">
@@ -272,27 +271,47 @@
 </div>
 
 
-					<div class="col-md-6">
-                        <div class="w3_info">
-							<h2 style="margin-bottom:10px;">修改密码</h2>
-							<p>请确认是否要修改密码</p>
-                            <form action="javascript:;" method="post">
-                                <div class="input-group">
-                                    <span><i class="fa fa-lock" aria-hidden="true"></i></span>
-                                    <input type="Password" placeholder="密码" name="password" required="" id="password">
+					<div class="col-md-9" style="padding: 20px; background-color: #F2F2F2;min-height:400px;">
+						<div class="layui-tab layui-tab-brief" lay-filter="demoTitle">
+						    <ul class="layui-tab-title site-demo-title">
+						        <li class="layui-this">查看物流</li>
+						    </ul>
+						</div>
+
+                        <div class="layui-card">
+                            <div class="user-logistics">
+                                <hr/>
+                                <div class="package-title">
+                                    <div class="m-item">
+                                        <div class="item-info">
+                                            <p class="log-status">物流状态:<span><?php echo $message; ?></span> </p>
+                                            <p class="log-status">承运公司：<?php echo $delivery_one['delivery_name']; ?></p>
+                                            <p class="log-status">快递单号：<?php echo $delivery_one['shipping_sn']; ?></p>
+                                            <p class="log-status">官方电话：<?php echo $delivery_one['delivery_phone']; ?></p>
+                                        </div>
+                                    </div>
+                                    <div class="clear"></div>
                                 </div>
-                                <div class="input-group">
-                                    <span><i class="fa fa-lock" aria-hidden="true"></i></span>
-                                    <input type="Password" placeholder="新密码" required="" id="new_password">
+                                <div class="package-status">
+                                    <ul class="status-list">
+                                        <?php if(is_array($delivery_data) || $delivery_data instanceof \think\Collection || $delivery_data instanceof \think\Paginator): $i = 0; $__LIST__ = $delivery_data;if( count($__LIST__)==0 ) : echo "" ;else: foreach($__LIST__ as $key=>$vo): $mod = ($i % 2 );++$i;?>
+                                        <li class="latest">
+                                            <p class="log-status"><?php echo $vo['context']; ?></p>
+                                            <div class="log-status">
+                                                <span class="date <?php if($vo['status'] == 0): ?>hidden<?php endif; ?>"><?php echo $vo['time'][0]; ?></span>
+                                                <span class="week <?php if($vo['status'] == 0): ?>hidden<?php endif; ?>"><?php echo $vo['week']; ?></span>
+                                                <span class="time"><?php echo $vo['time'][1]; ?>&nbsp;&nbsp;</span>
+                                            </div>
+                                        </li>
+                                        <?php endforeach; endif; else: echo "" ;endif; ?>
+
+                                    </ul>
                                 </div>
-                                <div class="input-group">
-                                    <span><i class="fa fa-lock" aria-hidden="true"></i></span>
-                                    <input type="Password" placeholder="确认新密码" required="" id="new_re_password">
-                                </div>
-                                <input type="button" onclick="pass_submit()" value="立即修改" />
-                            </form>
+                            </div>
                         </div>
+
 					</div>
+
 				</div>
 			</div>
 		</div>
@@ -363,75 +382,6 @@
 </div>
 
 </div>
+
 </body>
-<script>
-	//layer弹窗组件
-	layui.use(['form', 'layer'],
-	function() {
-		$ = layui.jquery;
-		var form = layui.form,
-		layer = layui.layer;
-	});
-
-    //邮箱注册提交
-	function pass_submit () {
-
-		//请填写原密码
-		var password = $("#password").val().trim();
-		if (password.length == 0) {
-			layer.msg('原密码不能为空', {icon: 2});
-			return false;
-		}
-
-        //新密码
-        var new_password = $("#new_password").val().trim();
-        if (new_password.length == 0) {
-            layer.msg('原密码不能为空', {icon: 2});
-            return false;
-        }
-		//判断密码长度
-		if ((new_password.length < 6) || (new_password.length > 18)) {
-			layer.msg('密码不能小于6位或者大于18位', {icon: 2});
-			return false;
-		}
-		//判断两次输入的密码是否一致
-		var re_password = $("#new_re_password").val().trim();
-		if (new_password != re_password) {
-			layer.msg('两次输入的密码不一致', {icon: 2});
-			return false;
-		}
-
-		var data = {
-			password:password,
-			new_password:new_password,
-		}
-		ajax_reg(data);
-		return false;
-	}
-
-	/**
-	 * 发送ajax请求
-	 * @param data
-	 */
- 	function ajax_reg (data) {
- 		$.ajax({
- 			url:"<?php echo url('UserMessage/password'); ?>",
- 			async: false,
- 			type: "POST",
- 			data: data,
- 			dataType: "json",
- 			success: function (data) {
- 				if (data.status == 0) {
- 					layer.msg(data.msg, {icon: 2});
- 				} else {
- 					layer.msg(data.msg, {icon: 1});
- 					setTimeout(function () {
- 						location.href="<?php echo url('UserMessage/index'); ?>";
- 					},1000)
- 				}
- 			}
- 		});
- 	}
-
-</script>
 </html>

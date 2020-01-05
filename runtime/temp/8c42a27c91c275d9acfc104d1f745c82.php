@@ -1,4 +1,4 @@
-<?php if (!defined('THINK_PATH')) exit(); /*a:1:{s:61:"D:\web\phpweb\sean\public/../app/admin\view\order\addres.html";i:1576835113;}*/ ?>
+<?php if (!defined('THINK_PATH')) exit(); /*a:1:{s:61:"D:\web\phpweb\sean\public/../app/admin\view\order\addres.html";i:1578206162;}*/ ?>
 <!DOCTYPE html>
 <html>
 <head>
@@ -82,31 +82,39 @@
     <script src="/static/public/layui/layui.js"></script>
     <script src="/static/public/jquery/jquery.min.js"></script>
     <script>
+
       layui.use(['layer', 'form'], function() {
-          var layer = layui.layer,
-              $ = layui.jquery,
-              form = layui.form;
-          $(window).on('load', function() {
-              form.on('submit(admin)', function(data) {
-                  $.ajax({
-                      url:"<?php echo url('admin/order/delivery'); ?>",
-                      data:$('#admin').serialize(),
-                      type:'post',
-                      async: false,
-                      success:function(res) {
-                          if(res.code == 1) {
-                              layer.alert(res.msg, function(index){
-                                location.href = res.url;
-                              })
-                          } else {
-                              layer.msg(res.msg);
-                          }
-                      }
-                  })
-                  return false;
-              });
-          });
+      	var layer = layui.layer,
+      	$ = layui.jquery,
+      	form = layui.form;
+      	//监听提交
+      	form.on('submit(admin)',
+      	function(data) {
+      		//获取表单数据
+      		var dataadd = data.field;
+      		$.ajax({
+      			type:"post",
+      			dataType:"json",
+      			data:{data:dataadd},
+      			url:"<?php echo url('Order/delivery'); ?>",
+      			success:function(data){
+      				if (data.status == 1) {
+      					layer.alert(data.msg, {
+      						title: '提示框',
+      						icon: 1,
+      					});
+      				} else {
+      					layer.alert(data.msg, {
+      						title: '提示框',
+      						icon: 0,
+      					});
+      				}
+      			}
+      		},'json');
+      		return false;
+      	});
       });
+
     </script>
 
   </div>

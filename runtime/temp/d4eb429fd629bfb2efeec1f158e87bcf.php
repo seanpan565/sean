@@ -1,10 +1,13 @@
-<?php if (!defined('THINK_PATH')) exit(); /*a:7:{s:59:"D:\web\phpweb\sean\public/../app/index\view\user\index.html";i:1574854350;s:50:"D:\web\phpweb\sean\app\index\view\common\link.html";i:1576206405;s:57:"D:\web\phpweb\sean\app\index\view\common\mobile-part.html";i:1574418883;s:58:"D:\web\phpweb\sean\app\index\view\common\head-message.html";i:1574574104;s:57:"D:\web\phpweb\sean\app\index\view\common\header-part.html";i:1577867210;s:58:"D:\web\phpweb\sean\app\index\view\common\user-sidebar.html";i:1577869481;s:52:"D:\web\phpweb\sean\app\index\view\common\footer.html";i:1577863894;}*/ ?>
+<?php if (!defined('THINK_PATH')) exit(); /*a:7:{s:59:"D:\web\phpweb\sean\public/../app/index\view\user\index.html";i:1578048488;s:50:"D:\web\phpweb\sean\app\index\view\common\link.html";i:1576206405;s:57:"D:\web\phpweb\sean\app\index\view\common\mobile-part.html";i:1574418883;s:58:"D:\web\phpweb\sean\app\index\view\common\head-message.html";i:1574574104;s:57:"D:\web\phpweb\sean\app\index\view\common\header-part.html";i:1577867210;s:58:"D:\web\phpweb\sean\app\index\view\common\user-sidebar.html";i:1577869481;s:52:"D:\web\phpweb\sean\app\index\view\common\footer.html";i:1577863894;}*/ ?>
 <!doctype html>
 <html lang="zh-CN">
 <head>
 <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=0">
-<title>水果鲜生-会员信息</title>
+
+<title><?php echo $web_tdk['name']; ?>|会员信息</title>
+<meta name="keywords" content="<?php echo $web_tdk['keywords']; ?>" />
+<meta name="description" content="<?php echo $web_tdk['desc']; ?>" />
 <link rel="stylesheet" href="/static/index/css/bootstrap.min.css" type="text/css" media="all">
 <link rel="stylesheet" href="/static/index/css/font-awesome.min.css" type="text/css" media="all" />
 <link rel="stylesheet" href="/static/index/css/ionicons.min.css" type="text/css" media="all" />
@@ -273,7 +276,7 @@
 									<label class="layui-form-label">头像</label>
 									<div class="layui-input-block">
 										<?php if($usermsg['thumb'] == ''): ?>
-										<a id="btn-thumb"><img src="__IMG__/thumb.jpg" id="thumb-preview" style="cursor:pointer;width:100px; height:100px;"></a>
+										<a id="btn-thumb"><img src="/static/admin/images/thumb.jpg" id="thumb-preview" style="cursor:pointer;width:100px; height:100px;"></a>
 										<?php else: ?>
 										<a id="btn-thumb"><img src="<?php echo $usermsg['thumb']; ?>" id="thumb-preview" style="cursor:pointer;width:100px; height:100px;"></a>
 										<?php endif; ?>

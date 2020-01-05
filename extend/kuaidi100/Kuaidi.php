@@ -1,14 +1,5 @@
 <?php
-// +----------------------------------------------------------------------
-// | ThinkPHP [ WE CAN DO IT JUST THINK IT ]
-// +----------------------------------------------------------------------
-// | Copyright (c) 2009 http://thinkphp.cn All rights reserved.
-// +----------------------------------------------------------------------
-// | Licensed ( http://www.apache.org/licenses/LICENSE-2.0 )
-// +----------------------------------------------------------------------
-// | Author: superman <953369865@qq.com>
-// +----------------------------------------------------------------------
-namespace kauidi100;
+namespace kuaidi100;
 class Kuaidi
 {
 	protected $key = '6cb4071a68abf951';
@@ -99,9 +90,11 @@ class Kuaidi
 		}
 		return $hash;
 	}
-	public
-	function getError ()
+
+
+	public function getError ()
 	{
 		return $this->error;
 	}
+
 }

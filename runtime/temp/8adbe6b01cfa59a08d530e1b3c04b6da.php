@@ -1,4 +1,4 @@
-<?php if (!defined('THINK_PATH')) exit(); /*a:1:{s:68:"D:\web\phpweb\sean\public/../app/admin\view\articlecate\publish.html";i:1567493159;}*/ ?>
+<?php if (!defined('THINK_PATH')) exit(); /*a:1:{s:68:"D:\web\phpweb\sean\public/../app/admin\view\articlecate\publish.html";i:1567493160;}*/ ?>
 <!DOCTYPE html>
 <html>
 <head>

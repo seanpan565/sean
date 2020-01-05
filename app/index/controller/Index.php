@@ -21,7 +21,7 @@ class Index extends Common
             ->where(array('b.goods_putaway'=>1,'b.goods_recommend'=>'1'))
             ->limit(4)
             ->select();
-        $article = db('article')->where('status','1')->field('id,title,thumb,status,is_top,read_count,create_time,description')->limit(4)->select();
+        $article = db('article')->where('status','1')->field('id,title,thumb,status,is_top,read_count,create_time,description')->limit(3)->select();
         $this->assign([
             'article' => $article,
             'goodsList' => $goodsList,

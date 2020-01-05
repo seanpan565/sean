@@ -1,13 +1,12 @@
 <!doctype html>
 <html lang="zh-CN">
 <head>
-<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=0">
-
-<title>{$web_tdk.name}|订单列表</title>
-<meta name="keywords" content="{$web_tdk.keywords}" />
-<meta name="description" content="{$web_tdk.desc}" />
-{include file="common/link"}
+	<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=0">
+	<title>{$web_tdk.name}|订单列表</title>
+	<meta name="keywords" content="{$web_tdk.keywords}" />
+	<meta name="description" content="{$web_tdk.desc}" />
+	{include file="common/link"}
 </head>
 <body>
 <div class="noo-spinner">
@@ -135,7 +134,7 @@
 
                                             <a href="{:url('UserOrder/order_details',array('order_sn'=>$v1['order_sn']))}" target="_blank" style="display:block;">订单详情</a>
 											{switch name="$vo['order_status']"}
-											    {case value="2"} <a href="javascript:;" class="order_freight" data-id="{$v1.order_sn}">查看物流</a>{/case}
+											    {case value="2"} <a href="{:url('UserOrder/kuaidi',array('shipping_sn'=>$v1['shipping_sn']))}" class="order_freight" data-id="{$v1.order_sn}">查看物流</a>{/case}
 										    	{case value="0|8"} <a href="javascript:;" class="order_call" data-id="{$v1.order_sn}">取消订单</a>{/case}
 											    {case value="3|4|5|6"} {/case}
 												{case value="1|7"} <a href="javascript:;" >申请退款</a> {/case}
@@ -297,47 +296,6 @@ layui.use(['layer', 'form'], function() {
 		});
 	});
 
-
-
-	//查看物流
-	$('.order_freight').click(function (){
-		//订单编号
-		var order_sn = $(this).attr('data-id');
-		$.ajax({
-			url:"{:url('UserOrder/order_freight')}",
-			type:'post',
-			dataType:'json',
-			data:{order_sn:order_sn},
-			success:function (data){
-				if (data.status == 1) {
-					var _html = '';
-					$.each(data.delivery_data, function (k, v) {
-						_html += '<li class="latest">';
-						_html += '<p class="text">' + v['context'] + '</p>';
-						_html += '<div class="time-list">';
-						if (v['status'] == 0) {
-							_html += '<span class="date hidden">' + v['time'][0] + '</span>';
-							_html += '<span class="week hidden">' + v['week'] + '</span>';
-						} else {
-							_html += '<span class="date">' + v['time'][0] + '</span>';
-							_html += '<span class="week">' + v['week'] + '</span>';
-						}
-
-						_html += '<span class="time">' + v['time'][1] + '</span>';
-						_html += '</div>';
-						_html += '</li>';
-
-					})
-					obj.parent('.order-item-title').find(".order-goods-trade ul").html(_html);
-					obj.parent('.order-item-title').find('.order-goods-trade').show();
-					}
-				else {
-					layer.msg(data.msg);
-				}
-			}
-		},'json');
-		return false;
-	});
 
 
 

@@ -50,18 +50,18 @@ class Order extends Permissions
             return json(array('status' => 0, 'msg' => '请求类型错误！'));
         } else {
             $addres = $this->request->param();
+            $addres = $addres['data'];
             $order = db('order')->where(array('order_sn' => $addres['order_sn'], 'order_status' => 1))->field('order_sn,user_id,order_status')->find();
             if (empty($order)) {
                 return json(array('status' => 0, 'msg' => '该订单不存在！'));
             }
-
             //获取订单的商品
+
             $order_goods = db('order_goods')
-                ->where([
-                    'order_sn' => $order['order_sn'],
-                    'user_id' => $order['user_id'],
-                    'refund_status'    =>  ['>',0],
-                ])
+                ->where('order_sn',$order['order_sn'])
+                ->where('user_id',$order['user_id'])
+                ->where('return_status','eq',1)
+                ->where('return_status','eq',2)
                 ->select();
 
             //判断商品是否有退款或者退货退款的订单
@@ -382,7 +382,7 @@ class Order extends Permissions
             //退款操作
 
 
-            
+
             //开启事务
             Db::startTrans();
             try{

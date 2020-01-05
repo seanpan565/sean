@@ -166,6 +166,19 @@ function SendSms($param,$phone)
     $resp = $c ->execute($req);
 }
 
+/**
+ *显示星期几
+ */
+
+function week_day ($time = "")
+{
+	$week_arr = array("日", "一", "二", "三", "四", "五", "六");
+	if (empty($time)) {
+		$time = time();
+	}
+	return "星期" . $week_arr[date("w", $time)];
+}
+
 
 /**
  * 替换手机号码中间四位数字
@@ -175,4 +188,49 @@ function SendSms($param,$phone)
 function hide_phone($str){
     $resstr = substr_replace($str,'****',3,4);
     return $resstr;
+}
+
+
+
+/**php curl模拟get或者post提交数据
+ * @param $url
+ * @param array $data
+ * @param array $header
+ * @return bool|mixed
+ */
+function http_post_data ($url, $data = array(), $header = array())
+{
+	$ch = curl_init();
+	curl_setopt($ch, CURLOPT_USERAGENT, 'Mozilla/5.0 (iPhone; CPU iPhone OS 11_0 like Mac OS X) AppleWebKit/604.1.38 (KHTML, like Gecko) Version/11.0 Mobile/15A372 Safari/604.1');
+	//请求地址
+	curl_setopt($ch, CURLOPT_URL, $url);
+	//https协议不验证证书
+	curl_setopt($ch, CURLOPT_SSL_VERIFYPEER, false);
+	curl_setopt($ch, CURLOPT_SSL_VERIFYHOST, false);
+	//返回结果 不直接输出
+	curl_setopt($ch, CURLOPT_RETURNTRANSFER, 1);
+	//追踪内部跳转
+	curl_setopt($ch, CURLOPT_MAXREDIRS, 100);
+	curl_setopt($ch, CURLOPT_FOLLOWLOCATION, 1);
+	curl_setopt($ch, CURLOPT_REFERER, 'http://www.baidu.com/');
+	//设置头部信息
+	if ($header) {
+		//设置头部信息
+		curl_setopt($ch, CURLOPT_HTTPHEADER, $header);
+		// 设置响应信息的编码
+		curl_setopt($ch, CURLOPT_ENCODING, 'gzip, deflate');
+	}
+	//判断是否post提交
+	if ($data) {
+		curl_setopt($ch, CURLOPT_POST, 1);
+		curl_setopt($ch, CURLOPT_POSTFIELDS, $data);
+	}
+	$ret = curl_exec($ch);
+	curl_close($ch);
+	//返回结果
+	if ($ret) {
+		return $ret;
+	} else {
+		return false;
+	}
 }
