@@ -1,12 +1,12 @@
 <?php
 // +----------------------------------------------------------------------
-// | Author [ 小钻风 ]
+// | Tplay [ WE ONLY DO WHAT IS NECESSARY ]
 // +----------------------------------------------------------------------
-// | Time:2019-10-9
+// | Copyright (c) 2017 http://tplay.pengyichen.com All rights reserved.
 // +----------------------------------------------------------------------
-// | Blog ( http://www.seanpan.top )
+// | Licensed ( http://www.apache.org/licenses/LICENSE-2.0 )
 // +----------------------------------------------------------------------
-// | Email: < seanpan565@gmail.com >
+// | Author: 听雨 < 389625819@qq.com >
 // +----------------------------------------------------------------------
 
 
@@ -17,6 +17,6 @@ return [
 		'__PUBLIC__'   => '/static/public',
 		'__JS__'       => '/static/admin/js',
 		'__IMG__'      => '/static/admin/images',
-		'__INDEX__'      => '/static/index',
+		'__INDEX__'    => '/static/index',
 	],
 ];

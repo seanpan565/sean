@@ -12908,3 +12908,58 @@
 [ sql ] [ SQL ] SELECT * FROM `sean_attachment` WHERE  `id` = 52 LIMIT 1 [ RunTime:0.000170s ]
 [ sql ] [ SQL ] SELECT * FROM `sean_attachment` WHERE  `id` = 53 LIMIT 1 [ RunTime:0.000181s ]
 [ sql ] [ SQL ] SELECT * FROM `sean_attachment` WHERE  `id` = 54 LIMIT 1 [ RunTime:0.000171s ]
+---------------------------------------------------------------
+[ 2020-01-05T17:40:03+08:00 ] 0.0.0.0 GET www.sean.com/admin/order/index.shtml
+[运行时间：0.095552s] [吞吐率：10.47req/s] [内存消耗：2,377.37kb] [文件加载：56]
+[ info ] [ LANG ] D:\web\phpweb\sean\thinkphp\lang\zh-cn.php
+[ info ] [ DB ] INIT mysql
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => 'order',
+    2 => 'index',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'cookie' => 'PHPSESSID=442e6gogce0u2o1m3iclccpj33; _ga=GA1.2.992706210.1576118123; UM_distinctid=16efd778ef873-0621b0e78cbf94-2393f61-1fa400-16efd778ef94c4; CNZZDATA1278289424=1829273346-1576206471-null%7C1576643635; adminer_version=4.7.5; log-username=seanpan565%40gmail.com; log-password=b5d9e05bc58c8800793d82c3f63a5639',
+  'accept-language' => 'zh-CN,zh;q=0.9,en;q=0.8,und;q=0.7',
+  'accept-encoding' => 'gzip, deflate',
+  'referer' => 'http://www.sean.com/admin',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3;q=0.9',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/79.0.3945.88 Safari/537.36',
+  'upgrade-insecure-requests' => '1',
+  'cache-control' => 'no-cache',
+  'pragma' => 'no-cache',
+  'connection' => 'close',
+  'host' => 'www.sean.com',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+  'expire' => 3600,
+)
+[ info ] [ RUN ] app\admin\controller\Order->index[ D:\web\phpweb\sean\app\admin\controller\Order.php ]
+[ info ] [ VIEW ] D:\web\phpweb\sean\public/../app/admin\view\order\index.html [ array (
+  0 => 'order',
+) ]
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.010776s ] mysql:host=127.0.0.1;port=3306;dbname=sean;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `sean_urlconfig` [ RunTime:0.021318s ]
+[ sql ] [ SQL ] SELECT `aliases`,`url` FROM `sean_urlconfig` WHERE  `status` = 1 [ RunTime:0.000446s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `sean_webconfig` [ RunTime:0.004369s ]
+[ sql ] [ SQL ] SELECT `black_ip` FROM `sean_webconfig` WHERE  `web` = 'web' LIMIT 1 [ RunTime:0.000215s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `sean_admin_cate` [ RunTime:0.003547s ]
+[ sql ] [ SQL ] SELECT `permissions` FROM `sean_admin_cate` WHERE  `id` = 1 LIMIT 1 [ RunTime:0.000210s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `sean_admin_menu` [ RunTime:0.005659s ]
+[ sql ] [ SQL ] SELECT * FROM `sean_admin_menu` WHERE  `module` = 'admin'  AND `controller` = 'Order'  AND `function` = 'index'  AND `type` = 1  AND `parameter` = 'order=' LIMIT 1 [ RunTime:0.000473s ]
+[ sql ] [ SQL ] SELECT * FROM `sean_admin_menu` WHERE  `module` = 'admin'  AND `controller` = 'Order'  AND `function` = 'index'  AND `type` = 1 LIMIT 1 [ RunTime:0.000411s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `sean_order_main` [ RunTime:0.005966s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `sean_order_main` `a` LEFT JOIN `sean_user` `b` ON `a`.`user_id`=`b`.`id` WHERE  `order_status` <> -1 LIMIT 1 [ RunTime:0.001414s ]
+[ sql ] [ SQL ] SELECT `a`.*,`b`.`user_name` FROM `sean_order_main` `a` LEFT JOIN `sean_user` `b` ON `a`.`user_id`=`b`.`id` WHERE  `order_status` <> -1 LIMIT 0,15 [ RunTime:0.000265s ]
